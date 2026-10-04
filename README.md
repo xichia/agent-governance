@@ -28,6 +28,10 @@ Luna is the default worker/reviewer model when available. Record the actual mode
 | [templates/](templates/) | Task, progress, review, decision, incident forms |
 | [records/README.md](records/README.md) | Versioned records, naming, discovery, and handoffs |
 
+## Adapting the starter
+
+See [the adaptation proposal](research/adaptation.md) for minimum project context, authority boundaries, trial/activation, maintenance differences, provenance and upgrades. It is research for the next design iteration, not a configured project.
+
 ## What to validate
 
 Evaluate this design against a single-agent baseline using comparable tasks and budgets. Track acceptance success, escaped defects, cost, completion time, human interventions, and recovery after interruption. Add roles only when their benefit justifies coordination cost.
