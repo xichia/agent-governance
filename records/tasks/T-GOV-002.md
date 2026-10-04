@@ -1,6 +1,6 @@
 # Task: T-GOV-002 — Consolidate agent instructions
 
-- **Status:** review
+- **Status:** done
 - **Human owner:** requesting user, this conversation
 - **Coordinator / executor:** root
 - **Reviewer:** independent_review, separate Luna session
@@ -17,4 +17,4 @@
 
 ## Integration
 
-Pending candidate review and coordinator verification.
+Independent [review](../reviews/R-GOV-002-01.md) passed candidate `cee5d7b61626ebec97041ce9916eb56e39c6ba08`. Root verified local links and clean diffs; the reviewer verified exact instruction-content preservation, removal from current tree, unchanged decision rights, Git integrity, clone integrity, and archived file bytes. Delivery tag: `v0.1.1`; the closure commit changes records only. Final ZIP extraction and clone checks run during packaging. The charter remains unconfigured.
