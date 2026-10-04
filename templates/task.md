@@ -4,7 +4,7 @@
 
 - **Status:** proposed | ready | active | review | done | blocked | cancelled
 - **Human owner:** <name/contact> · **Coordinator:** <agent/session> · **Reviewer:** <independent agent/session>
-- **Executor:** <domain agent/session/model>
+- **Executor:** <domain agent/session/model; title/department if used>
 - **Governance version / commit:** <version; exact hash>
 - **Branch:** <branch> · **Base commit:** <hash>
 - **Bounds:** deadline <time/none>; resources <...>; retry cap <count>

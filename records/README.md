@@ -12,7 +12,7 @@ Git is the durable shared record; chat is a working channel. `main` is canonical
 | Decision | `decisions/D-<unique-id>.md` | Decision maker via coordinator |
 | Incident | `incidents/I-<unique-id>.md` | Named incident lead |
 
-Start from [templates](../templates/). Reserve IDs when assigning work; never reuse an existing filename. Use ISO 8601 UTC times and stable agent/session identifiers. Include exact evidence commit IDs and relative links where possible. External evidence should use durable, authorized references and a short result summary; do not commit sensitive content.
+Start from [templates](../templates/); standing roles use [the role template](../templates/role.md). Reserve IDs when assigning work; never reuse an existing filename. Use ISO 8601 UTC times and stable agent/session identifiers. Include exact evidence commit IDs and relative links where possible. External evidence should use durable, authorized references and a short result summary; do not commit sensitive content.
 
 Preserve consequential history. A correction is a new dated entry or record identifying what it supersedes; no force-push of shared history. Git authorship is not authenticated agent identity on its own: use trusted runtime identity and review records for assurance. Keep tool-specific credentials outside Git.
 

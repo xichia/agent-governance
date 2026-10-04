@@ -9,6 +9,7 @@ Version: **0.1.0** · Status: **starter; adopting owner must configure before op
 | Mission and system/project boundary | Unconfigured |
 | Human owner and escalation contact | Unconfigured |
 | Coordinator and substitute | Unconfigured |
+| Active roles/departments and standing mandates | Unconfigured; use the role template |
 | Mode | Project or maintenance — unconfigured |
 | Access profile and enforcement operator | Unconfigured |
 | Global resource limits and reserved actions | Unconfigured |
@@ -39,4 +40,4 @@ Repeated scope violations trigger documented containment: pause assignment, redu
 
 ## Project and maintenance modes
 
-Projects close when accepted outputs are integrated and verified. Maintenance additionally requires named component ownership, health checks and escalation thresholds, an incident lead with bounded rollback authority, a substitute, and a review cadence. Use [workflow](workflow.md) for recovery and adaptation. Governance roles are functions: create separate agents only where workload or independent verification warrants them.
+Projects close when accepted outputs are integrated and verified. Maintenance additionally requires named component ownership, health checks and escalation thresholds, an incident lead with bounded rollback authority, a substitute, and a review cadence. Use [workflow](workflow.md) for recovery and adaptation. Use the [role catalogue](roles.md) and optional [standing role template](../templates/role.md). Governance roles are functions: create separate agents only where workload or independent verification warrants them.
