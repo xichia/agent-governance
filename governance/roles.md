@@ -4,7 +4,8 @@ Use corporate titles as shorthand for functions, not as permission grants. The [
 
 | Role / function | Accountable work | Authority boundary |
 |---|---|---|
-| **Human owner / board** | Set or change mission, charter, risk appetite, reserved decisions, and any human-only approvals | Final authority where the charter reserves a decision. A CEO-agent cannot replace or overrule this authority. |
+| **Human owner** | Set or change mission, charter, risk appetite, reserved decisions, and any human-only approvals | Final authority where the charter reserves a decision. A CEO-agent cannot replace or overrule this authority. |
+| **Board / oversight council (optional)** | Examine strategy, risk, performance, and independent audit reports | Advisory in this starter. Governing powers require an explicit charter assignment to named authorized humans; an agent council cannot replace the human owner. |
 | **CEO / coordinator** | Coordinate priorities, assign DRIs, resolve dependencies, integrate outputs, report status and escalate | Decides routine coordination questions within the charter. Cannot change reserved policy, self-certify implementation, suppress an independent audit, or grant itself new authority. |
 | **COO / operations** | Maintain workflow, schedules, resource plans, handoffs, and continuity | Proposes resource or process changes; spending and policy decisions remain with the authority named in the charter. |
 | **CTO / engineering** | Own technical design, architecture proposals, implementation quality, and technical documentation | May decide within an assigned technical scope. A separate reviewer validates consequential work; the CTO cannot certify its own implementation. |

@@ -31,6 +31,8 @@ Dependencies: research and all disjoint drafts integrated. Read: project drafts 
 
 - 2026-10-04: active → review; corporate patterns and roles integrated; a new candidate review is required.
 
+- 2026-10-04: review → active → review; second review requested a documented company hierarchy and separation of owner from board. Added GitLab scope layers and made optional board oversight advisory by default. Third review pending.
+
 ## Integration
 
 Pending independent review, final checks, and packaging. This task bootstraps the starter; the operational charter remains unconfigured.

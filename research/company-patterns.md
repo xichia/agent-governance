@@ -9,4 +9,20 @@ These are documented practices, not proof that a company’s overall structure i
 | **Toyota — jidoka, andon, and kaizen.** Toyota’s [Production System overview](https://global.toyota/en/company/plant-tours/production-system/) describes jidoka: stop when an abnormality appears; an andon call alerts a leader, and work resumes after resolution. Toyota’s [company account](https://global.toyota/en/company/vision-and-philosophy/production-system/) also describes daily incremental kaizen. | Give the person closest to a defect a way to surface it; make the stop signal visible; resolve the cause before proceeding; feed recurring defects into process improvement. | Any agent may report a failed check and pause its own dependent work. The coordinator blocks the affected transition, preserves evidence, assigns an incident lead if needed, and records cause and corrective action. Use repeated failures to update checks and guidance. | Over-triggered stops interrupt useful work; weak thresholds normalize false alarms. Define stop conditions and who may resume. Manufacturing line-stop practices do not prove the same thresholds suit software or research tasks. |
 | **Valve — self-selection in a historical handbook.** Valve’s [official publications page](https://www.valvesoftware.com/en/publications) still offers its *Handbook for New Employees*, whose first edition is dated 2012 and describes a flat organization, peer project selection, and choosing work by moving one’s desk. This is evidence of a published 2012 self-description, not a verified account of Valve’s current structure. | Local initiative and peer choice can reveal motivation and expertise without a manager assigning every task. | Let agents propose or accept well-scoped tasks from a shared backlog when capability and dependencies permit. Keep an explicit integration owner and record ownership changes. | Self-selection can leave unattractive but necessary work undone, create coordination gaps, and reward visible work. Use a maintainer to cover neglected responsibilities and decide contested assignments; autonomy alone is not accountability. |
 
+## A documented hierarchy: GitLab
+
+GitLab's [organisational structure handbook](https://handbook.gitlab.com/handbook/company/structure/) explicitly describes a hierarchy with separate individual-contributor and people-manager tracks. Its public scope model includes:
+
+| Layer | Documented scope |
+| --- | --- |
+| CEO | Global organisation |
+| Executive, including CTO and Chief People Officer | Division |
+| VP / Fellow | Department(s) |
+| Director / Distinguished | Sub-department or multiple teams |
+| Manager / Staff | Across teams |
+
+These are scope layers, not a public list of current reporting relationships: GitLab says its up-to-date organisation chart is in Workday. Do not infer that every title manages people; its parallel contributor track matters.
+
+For agents, borrow the distinction between **functional responsibility**, **scope**, and **decision ownership**: a CTO function covers technical direction, a project DRI owns a particular outcome, and the CEO/coordinator handles integration. Keep only the layers needed. A DRI does not automatically outrank every department, and a company's hierarchy does not justify giving an agent unrestricted access.
+
 The most portable combination is small bounded work units (Amazon), one explicit decision owner with recorded consultation (GitLab), and a visible stop-and-learn path for defects (Toyota). Borrow Valve’s self-selection only for optional work with clear ownership. Keep mission, permissions, high-impact changes, and return-to-service authority explicit in the shared charter. Evaluate the combined workflow against a single-agent baseline; these company examples suggest mechanisms to test, not expected gains.
