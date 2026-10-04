@@ -2,7 +2,7 @@
 
 ## What the model governs
 
-An **organizational chart** assigns work and relationships: roles, owners, coordination paths, and interfaces. An **institution** sets the rules of the game: who may decide, what evidence is required, how shared resources and disputes are handled, and how rules change. A repository needs both. `AGENT.md` can state policy; Git records changes. Neither enforces access control.
+An **organizational chart** assigns work and relationships: roles, owners, coordination paths, and interfaces. An **institution** sets the rules of the game: who may decide, what evidence is required, how shared resources and disputes are handled, and how rules change. A repository needs both. `AGENTS.md` can state policy; Git records changes. Neither enforces access control.
 
 ## Structural options
 

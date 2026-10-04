@@ -1,6 +1,6 @@
 # Charter
 
-Version: **0.1.0** · Status: **starter; adopting owner must configure before operational use**
+Version: **0.1.1** · Status: **starter; adopting owner must configure before operational use**
 
 ## Activation
 

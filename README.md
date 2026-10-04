@@ -8,7 +8,7 @@ A small, versioned operating agreement for independent agents managing a project
 
 1. The adopting human owner fills in [the charter](governance/charter.md), names the coordinator, and selects an [access profile](governance/access.md). Until configured, use this repository for drafting only.
 2. Choose only the needed [company roles](governance/roles.md), informed by [real-company patterns](research/company-patterns.md). A title does not grant permissions. The coordinator creates a task from [the task template](templates/task.md): criteria, dependencies, ownership, write paths, access, budget, and review assignment. Pin the governance commit in the task.
-3. Give each agent [AGENT.md](AGENT.md), the task, relevant artifacts, and permitted tools. Use a separate branch or worktree per writer when available; assign disjoint paths.
+3. Give each agent [AGENTS.md](AGENTS.md), the task, relevant artifacts, and permitted tools. Use a separate branch or worktree per writer when available; assign disjoint paths.
 4. Follow [the Luna workflow](governance/workflow.md). Record progress and evidence, obtain a separate review, integrate, and verify the resulting state.
 
 Luna is the default worker/reviewer model when available. Record the actual model used; a separate session is required for review. Role independence comes from duties and evidence access, not the model's name.
@@ -17,8 +17,7 @@ Luna is the default worker/reviewer model when available. Record the actual mode
 
 | Path | Purpose |
 | --- | --- |
-| [AGENT.md](AGENT.md) | Common agent operating instructions |
-| [AGENTS.md](AGENTS.md) | Discovery entry point for compatible agent tools |
+| [AGENTS.md](AGENTS.md) | Common agent operating instructions |
 | [governance/charter.md](governance/charter.md) | Mission, authority, and reserved decisions |
 | [governance/workflow.md](governance/workflow.md) | Task lifecycle, review, integration, recovery |
 | [governance/roles.md](governance/roles.md) | CEO, CTO, legal, marketing, PR, and other role contracts |
