@@ -1,6 +1,6 @@
 # Task: T-GOV-003 — Investigate template adaptation
 
-- **Status:** review
+- **Status:** done
 - **Human owner:** requesting user, this conversation
 - **Coordinator/integrator:** root
 - **Researchers:** adaptation_research and adaptation_design, separate Luna sessions
@@ -14,4 +14,4 @@
 ## History and integration
 
 - 2026-10-04: ready → active → review. Luna researched primary guidance and critiqued the earlier five-file proposal; root integrated a smaller configuration design. Candidate is pinned in the review record.
-- Independent review and coordinator verification pending. Existing operational charter remains unconfigured; no new ZIP is authorized.
+- Independent [review](../reviews/R-GOV-003-01.md) passed candidate `6873c201b353f304383975ccb30753276e6d2b7f`. Root verified local links, table structure, clean diff and Git integrity. The closure commit adds review evidence and updates this record only. Proposed runtime trials remain unrun. Existing operational charter remains unconfigured; no new ZIP is authorized.
