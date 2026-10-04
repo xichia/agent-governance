@@ -1,6 +1,6 @@
 # Task: T-GOV-001 — Build the governance starter
 
-- **Status:** review
+- **Status:** done
 - **Human owner:** requesting user; contact: this conversation
 - **Coordinator / integrator:** root agent
 - **Implementers:** root; Luna institutional_research, access_research, record_templates
@@ -33,6 +33,14 @@ Dependencies: research and all disjoint drafts integrated. Read: project drafts 
 
 - 2026-10-04: review → active → review; second review requested a documented company hierarchy and separation of owner from board. Added GitLab scope layers and made optional board oversight advisory by default. Third review pending.
 
+- 2026-10-04: review → done; final independent review passed. Root verified the integrated repository; remaining delivery packaging is checked separately after the records commit.
+
 ## Integration
 
-Pending independent review, final checks, and packaging. This task bootstraps the starter; the operational charter remains unconfigured.
+- **Independent verdict:** [R-GOV-001-03](../reviews/R-GOV-001-03.md), pass.
+- **Reviewed and integrated artifact commit:** `c64e7f7d8d135e48f017db36007ded43a11f9e06` on main.
+- **Coordinator verification:** local-link scan (56 links, zero errors on reviewed tracked tree); Markdown-only tracked content; table columns; `git diff --check`; `git fsck --full` all passed. Separate reviewer also verified a local clone.
+- **Delivery version:** `v0.1.0`; final commit adds closure/review records only and changes no reviewed policy or research artifacts. Use `git rev-parse v0.1.0` for the delivered records commit. ZIP extraction, clone integrity, HEAD and tracked-file byte comparisons run during packaging.
+- **Limitations:** no hosted repository, activated runtime permissions, live-system tests, or multi-agent performance experiments. The charter requires configuration before operational adoption.
+
+ This task bootstraps the starter; the operational charter remains unconfigured.
