@@ -36,6 +36,8 @@ Luna is the default worker/reviewer model when available. Record the actual mode
 
 See [the adaptation proposal](research/adaptation.md) for minimum project context, authority boundaries, trial/activation, maintenance differences, provenance and upgrades. It is research for the next design iteration, not a configured project.
 
+The [live events-agency demo plan](planning/events-agency/PLAN.md) proposes specialist Luna workstreams, shared event data, a bounded rehearsal and an audience presentation. It is planning work; no agency runtime or operational event is configured.
+
 ## What to validate
 
 Evaluate this design against a single-agent baseline using comparable tasks and budgets. Track acceptance success, escaped defects, cost, completion time, human interventions, and recovery after interruption. Add roles only when their benefit justifies coordination cost.
