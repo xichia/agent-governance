@@ -2,6 +2,14 @@
 
 Updated 2026-10-05. This file supplies continuation context; [AGENTS.md](AGENTS.md) remains the instruction entry point and [the charter](governance/charter.md) defines authority.
 
+## Current continuation — T-GOV-009
+
+The owner accepted building the suggested fictional science-and-culture rehearsal kit, then explicitly requested the Luna workflow: plan, delegate scoped Luna implementation, separate Luna review, iterate, coordinator integration and verification. Use that workflow now and on future request; do not treat Luna as mandatory for every task. This restates the clarification recorded in T-GOV-008 and supersedes the unconditional local-model recommendation below.
+
+Start at the [rehearsal pack](planning/events-agency/rehearsal/README.md) and [current task](records/tasks/T-GOV-009.md) for actual build/review state. Fictional defaults: 80 adults, AUD 6,000, a three-hour Perth evening and one disclosed courtyard closure. These are editable scenario constraints, not a real commission or spending authority. Two Luna workers build contracts/runbook and case/checker on disjoint paths; a third session reviews a fixed candidate. Reference examples are hand-authored fixtures. No live agency rehearsal or audience demonstration has occurred.
+
+This section supersedes the earlier generic pending-project and possible-drafting recommendations for this specific demo-kit assignment. Historical planning and records remain unchanged. The charter is still unconfigured for operational use. A future rehearsal needs recorded session assignments, a pack pin and bounded run limits; use the pack runbook rather than claiming the fixtures are agent results.
+
 ## Read first
 
 1. [AGENTS.md](AGENTS.md): execution guardrails and the Luna workflow.

@@ -1,0 +1,50 @@
+{
+  "case_id": "EV-SCI-001",
+  "fictional": true,
+  "currency": "AUD",
+  "provenance": "Every supplier, venue, availability statement, capacity and price in this file is invented for a local rehearsal. Prices are integer cents, include modeled tax and fees, and are base costs before the brief's 10% contingency. They are not quotes or commitments.",
+  "versions": {
+    "1": {"available_rooms": ["ROOM-HALL", "ROOM-QUIET", "ROOM-COURT"]},
+    "2": {"available_rooms": ["ROOM-HALL", "ROOM-QUIET"]}
+  },
+  "rooms": [
+    {"id": "ROOM-HALL", "name": "Banksia Hall", "capacity": 80, "step_free": true, "source_id": "SRC-VEN-01"},
+    {"id": "ROOM-QUIET", "name": "Paperbark Quiet Room", "capacity": 20, "step_free": true, "source_id": "SRC-VEN-01"},
+    {"id": "ROOM-COURT", "name": "Covered Courtyard", "capacity": 40, "step_free": true, "source_id": "SRC-VEN-02"}
+  ],
+  "budget_cards": [
+    {"id": "SRC-VEN-01", "kind": "venue", "supplier": "Banksia Rooms (fictional)", "description": "Banksia Hall and Paperbark Quiet Room, step-free access, seating access for 80, event window including setup and pack-down, and clear internal wayfinding.", "unit_cents": 220000, "unit": "event booking", "availability": "invented availability for 2026-11-14, 18:00-21:00 Perth local time"},
+    {"id": "SRC-VEN-02", "kind": "venue", "supplier": "Banksia Rooms (fictional)", "description": "Optional covered courtyard add-on, step-free access, capacity 40, subject to version-2 closure notice.", "unit_cents": 30000, "unit": "event booking add-on", "availability": "invented availability only in brief version 1"},
+    {"id": "SRC-RES-01", "kind": "resource", "supplier": "Banksia Rooms (fictional)", "description": "Up to 80 movable chairs included in hall booking; seating inventory can be configured in either hall or quiet room.", "unit_cents": 0, "unit": "included inventory", "inventory_quantity": 80, "included_with": "SRC-VEN-01", "availability": "included with SRC-VEN-01; quantity 80"},
+    {"id": "SRC-RES-02", "kind": "resource", "supplier": "Bright Sound Hire (fictional)", "description": "Portable PA with handheld microphone and hearing-loop-compatible output; one set.", "unit_cents": 55000, "unit": "hire set", "availability": "invented availability for event date"},
+    {"id": "SRC-RES-03", "kind": "resource", "supplier": "Paper & Pencil (fictional)", "description": "Art and observation packs with pencils and reusable viewing cards; 40 people per pack-set.", "unit_cents": 48000, "unit": "pack-set", "availability": "invented availability for event date"},
+    {"id": "SRC-RES-04", "kind": "resource", "supplier": "Clear Path Print (fictional)", "description": "Large-print, high-contrast wayfinding sign set for one venue booking.", "unit_cents": 24000, "unit": "sign set", "availability": "invented availability for event date"},
+    {"id": "SRC-RES-05", "kind": "resource", "supplier": "Quiet Corner Kit (fictional)", "description": "Quiet-room sensory support kit; one kit supports up to 20 people at a time.", "unit_cents": 18000, "unit": "kit", "availability": "invented availability for event date"},
+    {"id": "SRC-RES-06", "kind": "resource", "supplier": "Kind Table Co. (fictional)", "description": "Light refreshment service for up to 80 adults; non-alcoholic drinks and labeled simple snacks.", "unit_cents": 72000, "unit": "service", "availability": "invented availability for event date"}
+  ],
+  "resources": [
+    {"id": "RES-CHAIRS", "name": "Movable chairs", "capacity": 80, "usage_mode": "attendees", "exclusive": false, "source_id": "SRC-RES-01", "purchase_required": false},
+    {"id": "RES-PA", "name": "Portable PA and microphone", "capacity": 1, "usage_mode": "exclusive", "exclusive": true, "source_id": "SRC-RES-02", "purchase_required": true},
+    {"id": "RES-ART", "name": "Art and observation pack-set", "capacity": 40, "usage_mode": "attendees", "exclusive": false, "source_id": "SRC-RES-03", "purchase_required": true},
+    {"id": "RES-SIGNS", "name": "High-contrast wayfinding sign set", "capacity": 1, "usage_mode": "event_unit", "exclusive": false, "source_id": "SRC-RES-04", "purchase_required": true},
+    {"id": "RES-QUIET", "name": "Quiet-room sensory kit", "capacity": 20, "usage_mode": "attendees", "exclusive": false, "source_id": "SRC-RES-05", "purchase_required": true},
+    {"id": "RES-REFRESH", "name": "Light refreshments", "capacity": 80, "usage_mode": "attendees", "exclusive": false, "source_id": "SRC-RES-06", "purchase_required": true}
+  ],
+  "programme_cards": [
+    {"id": "SRC-PROG-01", "description": "Welcome, plain-language framing and access/wayfinding orientation."},
+    {"id": "SRC-PROG-02", "description": "Short science talks with conversation and no audience experiments."},
+    {"id": "SRC-PROG-03", "description": "Art and observation workshop using paper, pencils and reusable viewing cards."},
+    {"id": "SRC-PROG-04", "description": "Quiet-space option with sensory support, available alongside the main programme."},
+    {"id": "SRC-PROG-05", "description": "Light refreshments and informal conversation."},
+    {"id": "SRC-PROG-06", "description": "Setup and pack-down occur within the booked venue window."}
+  ],
+  "risk_cards": [
+    {"id": "SRC-RISK-01", "description": "Crowd flow and room capacity need a practical arrival, transition and quiet-room plan."},
+    {"id": "SRC-RISK-02", "description": "Step-free access, seating, clear wayfinding and a quiet option should be checked in the final floor plan."},
+    {"id": "SRC-RISK-03", "description": "Food labeling and service details remain a human planning question; no attendee data is collected in this exercise."},
+    {"id": "SRC-RISK-04", "description": "The version-2 courtyard closure changes activity location and crowd flow; recheck the hall and quiet-room plan."}
+  ],
+  "support_cards": [
+    {"id": "SRC-INK-01", "description": "Fictional in-kind volunteer plan with no cash price: one lead facilitator for 3 hours, two science speakers for 1.5 hours each, two arrival/wayfinding stewards for 3 hours each, and one quiet-room host for 2 hours (14 volunteer-hours total). The exercise assumes those roles are donated; no actual people or availability are represented."}
+  ]
+}

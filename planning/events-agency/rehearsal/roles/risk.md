@@ -1,0 +1,12 @@
+# Risk contract — rehearsal only
+
+- **Assigned agent / session / model:** coordinator records the actual role assignment, stable session ID and model before dispatch; none is assigned by this document.
+- **Accountable to / substitute:** coordinator for this task; owner for risk-appetite decisions. No substitute is configured.
+- **Mandate:** identify scenario-specific safety, accessibility, operational, privacy and communications risks; give each issue an owner, practical mitigation, status (`open` or `mitigated`) and source IDs. Preserve uncertainty and human decisions. Advisory analysis is not legal clearance.
+- **Inputs / outputs:** use the frozen brief, interface and source cards plus matching-version finance and creative artifacts. Own `runs/<run-id>/outputs/risk.json`; include the standard specialist envelope and handoff. The integrated risks must retain traceable IDs and fields.
+- **Dependencies:** wait for both finance and creative outputs and acknowledge their role IDs in the handoff. After `CH-001`, reassess crowd flow and affected plans in v2; acknowledge the change. If either dependency is blocked or stale, remain blocked.
+- **Local decisions:** propose controls, residual risks and unresolved questions; flag risks that should stop integration pending a human decision. Do not claim a control is verified when it is only proposed.
+- **Reserved / escalation:** coordinator sequences and integrates; owner sets risk appetite and decides reserved issues. Escalate any unbounded or unacceptable risk, missing evidence, or request for legal approval or real-world action.
+- **Read / write / tools:** read task, governance, brief, interface, source cards and required dependencies; write only risk JSON in the assigned run directory. No network, external services, attendee data or contact.
+- **Proposed ceiling:** 8 minutes / 6,000 generated tokens for this role; one role session; maximum six model-response turns; no session restart/retry. This shares the run's maximum two correction rounds, 60-minute total wall-clock, and six-session cap. These are proposals only, not enforced grants or authority to spend; the owner must explicitly accept them before dispatch. If token usage is unavailable, use the session/turn/wall-clock bounds and record token telemetry as unavailable. Stop when any bound is reached.
+- **Review / activation:** the independent reviewer checks the frozen integrated candidate and risk coverage. No role title or recommendation grants operational, legal or safety approval.

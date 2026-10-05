@@ -1,0 +1,18 @@
+{
+  "case_id": "EV-SCI-001",
+  "changes": [
+    {
+      "id": "CH-001",
+      "event_id": "EV-SCI-001",
+      "from_version": 1,
+      "to_version": 2,
+      "field": "available_rooms.ROOM-COURT",
+      "old_value": "available",
+      "new_value": "unavailable",
+      "source_id": "SRC-VEN-02",
+      "authority": "Predeclared fictional brief change for this rehearsal; no real venue authority is represented.",
+      "affected_roles": ["finance", "risk", "creative", "marketing"],
+      "required_outcome": "Remove courtyard spend and references, relocate/reassign the observation activity into an available room, reassess crowd flow, and acknowledge CH-001 at brief version 2 in all four handoffs."
+    }
+  ]
+}

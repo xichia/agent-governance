@@ -38,6 +38,8 @@ See [the adaptation proposal](research/adaptation.md) for minimum project contex
 
 The [live events-agency demo plan](planning/events-agency/PLAN.md) proposes specialist Luna workstreams, shared event data, a bounded rehearsal and an audience presentation. It is planning work; no agency runtime or operational event is configured.
 
+The [fictional rehearsal pack](planning/events-agency/rehearsal/README.md) implements the brief, role/interface contracts, prepared case data and deterministic checker. Its reference proposals are labeled fixtures; they are not evidence of a live agency run. See [T-GOV-009](records/tasks/T-GOV-009.md) for the requested Luna construction and review workflow.
+
 ## What to validate
 
 Evaluate this design against a single-agent baseline using comparable tasks and budgets. Track acceptance success, escaped defects, cost, completion time, human interventions, and recovery after interruption. Add roles only when their benefit justifies coordination cost.

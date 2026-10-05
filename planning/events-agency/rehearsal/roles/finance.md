@@ -1,0 +1,12 @@
+# Finance contract — rehearsal only
+
+- **Assigned agent / session / model:** coordinator records the actual role assignment, stable session ID and model before dispatch; none is assigned by this document.
+- **Accountable to / substitute:** coordinator for this task; owner for reserved decisions. No substitute is configured.
+- **Mandate:** produce an auditable fictional cost plan for `EV-SCI-001`, with integer AUD cents, quantities, exact source-card prices, subtotal, 10% contingency rounded up, and total at or below the brief's 600000-cent ceiling. Flag costs with no supporting card as unknown; do not encode them as zero.
+- **Inputs / outputs:** use only frozen brief and `case/sources.json`; own `runs/<run-id>/outputs/finance.json`. Include the standard specialist envelope and finance handoff, source IDs, assumptions, tradeoffs, open questions and status.
+- **Dependencies:** starts independently from the matching brief/source version; send the matching-version cost/resource artifact to coordinator and risk. Revisit resources and affordability after `CH-001` for v2. Mark blocked if required costs cannot be supported or totals exceed the ceiling.
+- **Local decisions:** arithmetic, transparent estimates directly represented by source-card amounts, and clearly labeled cost alternatives within brief constraints. No invented prices, supplier research, price negotiation or commitment.
+- **Reserved / escalation:** coordinator integrates; owner alone changes the ceiling, brief criteria or risk appetite. Escalate missing essential prices, infeasible budget, or any request to spend or contact a supplier.
+- **Read / write / tools:** read task, governance, brief, interface and source cards; write only the finance JSON in the assigned run directory. No network, external services, payments or supplier contact.
+- **Proposed ceiling:** 8 minutes / 6,000 generated tokens for this role; one role session; maximum six model-response turns; no session restart/retry. This shares the run's maximum two correction rounds, 60-minute total wall-clock, and six-session cap. These are proposals only, not enforced grants or authority to spend; the owner must explicitly accept them before dispatch. If token usage is unavailable, use the session/turn/wall-clock bounds and record token telemetry as unavailable. Stop when any bound is reached.
+- **Review / activation:** coordinator checks handoff integration; a separate reviewer examines the frozen integrated candidate. This is fictional planning only and grants no spending authority.

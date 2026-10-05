@@ -1,0 +1,348 @@
+{
+  "event_id": "EV-SCI-001",
+  "brief_version": 1,
+  "fictional": true,
+  "title": "Science, art and shared wonder",
+  "attendance": 80,
+  "currency": "AUD",
+  "ceiling_cents": 600000,
+  "budget": [
+    {
+      "id": "LINE-VENUE",
+      "source_id": "SRC-VEN-01",
+      "quantity": 1,
+      "unit_cents": 220000
+    },
+    {
+      "id": "LINE-COURT",
+      "source_id": "SRC-VEN-02",
+      "quantity": 1,
+      "unit_cents": 30000
+    },
+    {
+      "id": "LINE-PA",
+      "source_id": "SRC-RES-02",
+      "quantity": 1,
+      "unit_cents": 55000
+    },
+    {
+      "id": "LINE-ART",
+      "source_id": "SRC-RES-03",
+      "quantity": 2,
+      "unit_cents": 48000
+    },
+    {
+      "id": "LINE-SIGNS",
+      "source_id": "SRC-RES-04",
+      "quantity": 1,
+      "unit_cents": 24000
+    },
+    {
+      "id": "LINE-QUIET",
+      "source_id": "SRC-RES-05",
+      "quantity": 1,
+      "unit_cents": 18000
+    },
+    {
+      "id": "LINE-FOOD",
+      "source_id": "SRC-RES-06",
+      "quantity": 1,
+      "unit_cents": 72000
+    }
+  ],
+  "subtotal_cents": 515000,
+  "contingency_cents": 51500,
+  "total_cents": 566500,
+  "programme": [
+    {
+      "id": "EVT-SET",
+      "title": "Set up the hall, quiet room and courtyard",
+      "room_id": "ROOM-HALL",
+      "start_minute": 1080,
+      "end_minute": 1100,
+      "attendees": 0,
+      "resources": [
+        "RES-SIGNS"
+      ],
+      "source_ids": [
+        "SRC-PROG-06"
+      ]
+    },
+    {
+      "id": "EVT-WELCOME",
+      "title": "Welcome and wayfinding",
+      "room_id": "ROOM-HALL",
+      "start_minute": 1100,
+      "end_minute": 1115,
+      "attendees": 80,
+      "resources": [
+        "RES-CHAIRS",
+        "RES-SIGNS"
+      ],
+      "source_ids": [
+        "SRC-PROG-01",
+        "SRC-RES-01"
+      ]
+    },
+    {
+      "id": "EVT-TALKS",
+      "title": "Short science talks",
+      "room_id": "ROOM-HALL",
+      "start_minute": 1115,
+      "end_minute": 1145,
+      "attendees": 80,
+      "resources": [
+        "RES-CHAIRS",
+        "RES-PA"
+      ],
+      "source_ids": [
+        "SRC-PROG-02",
+        "SRC-RES-01"
+      ]
+    },
+    {
+      "id": "EVT-OBS",
+      "title": "Art and observation workshop",
+      "room_id": "ROOM-COURT",
+      "start_minute": 1145,
+      "end_minute": 1210,
+      "attendees": 40,
+      "resources": [
+        "RES-CHAIRS",
+        "RES-ART"
+      ],
+      "source_ids": [
+        "SRC-PROG-03",
+        "SRC-RES-01"
+      ]
+    },
+    {
+      "id": "EVT-QUIET",
+      "title": "Quiet-space pause",
+      "room_id": "ROOM-QUIET",
+      "start_minute": 1145,
+      "end_minute": 1210,
+      "attendees": 20,
+      "resources": [
+        "RES-CHAIRS",
+        "RES-QUIET"
+      ],
+      "source_ids": [
+        "SRC-PROG-04",
+        "SRC-RES-01"
+      ]
+    },
+    {
+      "id": "EVT-TABLE",
+      "title": "Quiet conversation and observation",
+      "room_id": "ROOM-HALL",
+      "start_minute": 1145,
+      "end_minute": 1210,
+      "attendees": 20,
+      "resources": [
+        "RES-CHAIRS"
+      ],
+      "source_ids": [
+        "SRC-PROG-04",
+        "SRC-RES-01"
+      ]
+    },
+    {
+      "id": "EVT-FOOD",
+      "title": "Light refreshments and conversation",
+      "room_id": "ROOM-HALL",
+      "start_minute": 1210,
+      "end_minute": 1235,
+      "attendees": 80,
+      "resources": [
+        "RES-CHAIRS",
+        "RES-REFRESH"
+      ],
+      "source_ids": [
+        "SRC-PROG-05",
+        "SRC-RES-01"
+      ]
+    },
+    {
+      "id": "EVT-PACK",
+      "title": "Pack down",
+      "room_id": "ROOM-HALL",
+      "start_minute": 1235,
+      "end_minute": 1260,
+      "attendees": 0,
+      "resources": [
+        "RES-SIGNS"
+      ],
+      "source_ids": [
+        "SRC-PROG-06"
+      ]
+    }
+  ],
+  "risks": [
+    {
+      "id": "RISK-FLOW",
+      "issue": "Arrival and room transitions could create crowding, especially when the quiet option is in use.",
+      "owner": "risk",
+      "mitigation": "Keep the hall, courtyard in version 1, and quiet-room capacities visible in a human-reviewed floor plan; assign a steward at transitions.",
+      "status": "open",
+      "source_ids": [
+        "SRC-RISK-01"
+      ]
+    },
+    {
+      "id": "RISK-ACCESS",
+      "issue": "Step-free routes, seating placement and wayfinding still need a venue-specific walkthrough.",
+      "owner": "risk",
+      "mitigation": "Ask a human to verify routes, seating, signs and quiet-room location before any real event decision.",
+      "status": "open",
+      "source_ids": [
+        "SRC-RISK-02"
+      ]
+    },
+    {
+      "id": "RISK-FOOD",
+      "issue": "Food ingredients and attendee dietary requirements are not specified in this drafting exercise.",
+      "owner": "risk",
+      "mitigation": "Keep snack labels and a proportionate human-led access process as open planning questions; collect no attendee data here.",
+      "status": "open",
+      "source_ids": [
+        "SRC-RISK-03"
+      ]
+    }
+  ],
+  "marketing": {
+    "brief_version": 1,
+    "title": "Science, art and shared wonder",
+    "attendance": 80,
+    "programme_ids": [
+      "EVT-SET",
+      "EVT-WELCOME",
+      "EVT-TALKS",
+      "EVT-OBS",
+      "EVT-QUIET",
+      "EVT-TABLE",
+      "EVT-FOOD",
+      "EVT-PACK"
+    ],
+    "room_ids": [
+      "ROOM-HALL",
+      "ROOM-COURT",
+      "ROOM-QUIET"
+    ],
+    "draft_copy": "Join 80 adults for Science, art and shared wonder at Banksia Hall, with the art and observation workshop in the covered courtyard and a quiet-space option in the Paperbark Quiet Room. The draft programme includes welcome and wayfinding, short science talks, the workshop, and light refreshments and conversation. Setup and pack-down fit within the 18:00\u201321:00 venue booking.",
+    "publication_status": "draft_only"
+  },
+  "handoffs": {
+    "finance": {
+      "writer_session": "fixture:finance:v1",
+      "model": "hand-authored fixture; no model run",
+      "brief_version": 1,
+      "artifact": "fixture:finance:v1",
+      "status": "ready_for_review",
+      "dependencies_acknowledged": [],
+      "source_ids": [
+        "SRC-VEN-01",
+        "SRC-RES-02",
+        "SRC-RES-03",
+        "SRC-RES-04",
+        "SRC-RES-05",
+        "SRC-RES-06",
+        "SRC-INK-01"
+      ],
+      "assumptions": [
+        "This is a fictional, local drafting fixture; no availability or cost is a real quote.",
+        "SRC-INK-01 models a donated volunteer plan: one lead facilitator for 3 hours, two speakers for 1.5 hours each, two arrival/wayfinding stewards for 3 hours each, and one quiet-room host for 2 hours (14 volunteer-hours total); real availability is unverified."
+      ],
+      "open_questions": [
+        "A human would need to verify room layout and practical access details before any real-world use."
+      ],
+      "change_ack_ids": []
+    },
+    "risk": {
+      "writer_session": "fixture:risk:v1",
+      "model": "hand-authored fixture; no model run",
+      "brief_version": 1,
+      "artifact": "fixture:risk:v1",
+      "status": "ready_for_review",
+      "dependencies_acknowledged": [
+        "finance",
+        "creative"
+      ],
+      "source_ids": [
+        "SRC-RISK-01",
+        "SRC-RISK-02",
+        "SRC-RISK-03",
+        "SRC-INK-01"
+      ],
+      "assumptions": [
+        "This is a fictional, local drafting fixture; no availability or cost is a real quote.",
+        "SRC-INK-01 models a donated volunteer plan: one lead facilitator for 3 hours, two speakers for 1.5 hours each, two arrival/wayfinding stewards for 3 hours each, and one quiet-room host for 2 hours (14 volunteer-hours total); real availability is unverified."
+      ],
+      "open_questions": [
+        "A human would need to verify room layout and practical access details before any real-world use."
+      ],
+      "change_ack_ids": []
+    },
+    "creative": {
+      "writer_session": "fixture:creative:v1",
+      "model": "hand-authored fixture; no model run",
+      "brief_version": 1,
+      "artifact": "fixture:creative:v1",
+      "status": "ready_for_review",
+      "dependencies_acknowledged": [],
+      "source_ids": [
+        "SRC-PROG-01",
+        "SRC-PROG-02",
+        "SRC-PROG-03",
+        "SRC-PROG-04",
+        "SRC-PROG-05",
+        "SRC-PROG-06",
+        "SRC-VEN-01",
+        "SRC-VEN-02",
+        "SRC-INK-01"
+      ],
+      "assumptions": [
+        "This is a fictional, local drafting fixture; no availability or cost is a real quote.",
+        "SRC-INK-01 models a donated volunteer plan: one lead facilitator for 3 hours, two speakers for 1.5 hours each, two arrival/wayfinding stewards for 3 hours each, and one quiet-room host for 2 hours (14 volunteer-hours total); real availability is unverified."
+      ],
+      "open_questions": [
+        "A human would need to verify room layout and practical access details before any real-world use."
+      ],
+      "change_ack_ids": []
+    },
+    "marketing": {
+      "writer_session": "fixture:marketing:v1",
+      "model": "hand-authored fixture; no model run",
+      "brief_version": 1,
+      "artifact": "fixture:marketing:v1",
+      "status": "ready_for_review",
+      "dependencies_acknowledged": [
+        "finance",
+        "risk",
+        "creative"
+      ],
+      "source_ids": [
+        "SRC-PROG-01",
+        "SRC-PROG-02",
+        "SRC-PROG-03",
+        "SRC-PROG-04",
+        "SRC-PROG-05",
+        "SRC-VEN-01",
+        "SRC-VEN-02",
+        "SRC-INK-01"
+      ],
+      "assumptions": [
+        "This is a fictional, local drafting fixture; no availability or cost is a real quote.",
+        "SRC-INK-01 models a donated volunteer plan: one lead facilitator for 3 hours, two speakers for 1.5 hours each, two arrival/wayfinding stewards for 3 hours each, and one quiet-room host for 2 hours (14 volunteer-hours total); real availability is unverified."
+      ],
+      "open_questions": [
+        "A human would need to verify room layout and practical access details before any real-world use."
+      ],
+      "change_ack_ids": []
+    }
+  },
+  "pending_human_decisions": [
+    "Confirm the actual room layout, route and steward plan before any real-world event decision.",
+    "A human owner would need to decide whether the fictional budget and access assumptions remain suitable before any real commitment."
+  ]
+}
