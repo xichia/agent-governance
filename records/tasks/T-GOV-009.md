@@ -1,6 +1,6 @@
 # T-GOV-009 — Build the fictional events-agency rehearsal pack
 
-- **Status:** review
+- **Status:** done
 - **Owner / escalation:** requesting user in this chat
 - **Coordinator / executor:** `/root`, GPT-6; deployment identifier unavailable
 - **Review method:** owner explicitly invoked Luna workflow during implementation. Separate Luna workers and a separate fixed-candidate Luna reviewer; coordinator integrates and verifies. Future Luna use remains upon request.
@@ -44,3 +44,4 @@ Start at [rehearsal README](../../planning/events-agency/rehearsal/README.md). R
 - 2026-10-05: active → review. Original Luna checker author implemented F1/F2 fixes and added targeted negative cases. Coordinator aligned interface details with required programme/venue/resource evidence, verified 25 checker cases plus both direct CLI fixtures, local links and diff whitespace. A new fixed candidate receives scoped independent recheck, including expanded source-reference requirements; no pass claimed yet.
 - 2026-10-05: review → active. Separate Luna [R-GOV-009-02](../reviews/R-GOV-009-02.md) rechecked `127032835946a821c6d09f2b6b798426c10b4cad`: F1/F2 fixed; F3 remains because valid programme citations could be combined with forbidden risk/support cards. Original checker author receives correction round 2, the final permitted round. Interface and acceptance unchanged.
 - 2026-10-05: active → review. Original Luna author fixed F3 in the checker only, preserving interface and fixtures; coordinator reran 27 cases and both direct fixtures with passing results. Freeze the final corrected candidate for the second scoped recheck. Limits are unchanged; a failed final gate would require a new owner decision.
+- 2026-10-05: review → done. Separate Luna [R-GOV-009-03](../reviews/R-GOV-009-03.md) passed exact candidate `47b5cc1aab8373f1e8dab4c47550d565f16849c2`, preserving prior unchanged-artifact evidence and verifying all three findings resolved. Coordinator retained that candidate's artifacts on `work` and completed integrated verification: 27 self-test cases pass; direct fixture passes preserved from review/correction; 153 local Markdown links resolve; diff whitespace and Git integrity pass; reviewed artifact identity confirmed and historical governance/planning unchanged. This closure changes only task/progress/review records. No merge into remote main or GitHub push performed. Pack is ready for a separately scoped fictional rehearsal; no live run, isolation, actual availability or operational approval is established.
