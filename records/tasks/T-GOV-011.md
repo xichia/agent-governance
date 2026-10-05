@@ -1,6 +1,6 @@
 # T-GOV-011 — Assess rehearsal role performance and recommend improvements
 
-- **Status:** review
+- **Status:** done
 - **Owner / escalation:** requesting user in this chat
 - **Authority:** user requested the Luna workflow to review performance of agent roles and make recommendations. Assessment and recommendations only; do not implement operational/governance/pack changes.
 - **Coordinator:** `/root`, GPT-6; deployment identifier unavailable
@@ -31,3 +31,4 @@ Cooperative shared filesystem, no enforced ACL claim. Evidence-first review with
 
 - 2026-10-05T14:24:30Z: proposed → ready → active. Coordinator confirmed clean tracked tree at the completed rehearsal, read pinned instructions and recorded scope and disjoint assessment paths. User-facing times use Australia/Perth; durable records use UTC.
 - 2026-10-05: both Luna analysts delivered disjoint reports. Pre-integration correction round 1 corrected specialist-appraisal currency units (cents versus AUD), labeled startup-policy testing as a mock, and narrowed process timing/cap claims plus test ownership. No historical output or prior verdict changed. Coordinator integrated recommendations with source attribution and distinct priorities, preserving telemetry limits. Active → review; freeze committed candidate for a separate Luna reviewer. One correction round remains.
+- 2026-10-05T14:36:59Z: review → done. Separate Luna [R-GOV-011-01](../reviews/R-GOV-011-01.md) passed exact candidate `4ff6077cf478adf872c7cb052c0df9916e44f733`, reproduced the four synthetic coverage probes and numeric claims, and verified historical evidence unchanged. Coordinator retained reviewed reports on `work`, independently reproduced all four probes and currency arithmetic, confirmed candidate report bytes, historical run/pack/governance preservation, Git integrity, whitespace and 208 local links. Observed interval from scope clock to verification12m29s under30m; token/cost/internal-turn telemetry unavailable. One pre-integration correction round, no reviewer correction requested. Closure changes only task/progress/review records; no remote push. Read [REPORT](../../research/performance/SCI-20261005-01/REPORT.md). Proposals remain unimplemented/unapproved; prior rehearsal pass unchanged; all assessment assignments expire on closure.
