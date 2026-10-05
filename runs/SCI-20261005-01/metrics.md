@@ -34,3 +34,14 @@ Initial proposal snapshot: `078762986f8da27394d933bb689fd3722ce384d3`. Dependenc
 - CH-001 propagation: four of four specialist handoffs use v2 and acknowledge CH-001; no stale final handoff.
 - Routine coordinator interventions: shared brief dispatch, dependency sequencing, schema requests and disclosed-change routing. No criteria or budget changes, supplier facts invented beyond the pack, external actions or replacement agents observed.
 - Independent review: pending; no pass claimed. Qualitative source-to-claim inspection and exact final resource/staff feasibility await reviewer.
+
+## Final acceptance and verification
+
+- Outcome: pass for the local fictional rehearsal; accepted candidate `a9eacbe415e745f2e4df99bc0d1e61aa6dd52898`.
+- [Distinct Luna review](reviews/a9eacbe415e745f2e4df99bc0d1e61aa6dd52898.md): active window 09:02:38–09:04:34 UTC (116 seconds), one successful task activation, no blocking defect or review correction requested. Food pickup/Hall seating remains a material, explicitly bounded human decision before any real event.
+- Final coordinator verification: 09:06:22 UTC. Observed elapsed since first timed setup sample: 26 minutes 8 seconds, below the 60-minute total limit; initial orientation before the first clock sample is unmeasured. Exact coordinator active-time and internal sampling-turn telemetry remain unavailable; no claim those caps were platform-enforced.
+- Actual sessions: coordinator plus four specialists and distinct reviewer, six total. One failed finance startup plus same-session retry; no replacement session/model. Successful specialist task activations: finance 2, creative 2, risk 3, marketing 3; reviewer 1. Finance additionally had the failed delivery. Exact token/cost and per-agent tool-call totals remain unavailable.
+- Correction batches used: 1 of 2, initial schema alignment. CH-001 v2 responses are the planned change exercise, not retries. No review correction batch needed.
+- Reviewer findings: 0 blocking, no changes requested; the existing refreshment/seating planning limitation preserved. Internal host timing/chair-handling conflicts resolved at proposal level; actual human confirmations remain open.
+- Final checks: both v1/v2 checker passes; independently recomputed integer-cent totals; both raw specialist versions match integrated content/handoffs; actual chair maxima both 80 of 80; v2 equals integrated bytes; reviewed candidate/RESULT bytes unchanged; accepted pack/governance/AGENTS unchanged; Git integrity and diff whitespace pass; 169 local links resolve before record-only closure.
+- Task scope expires on closure; Markdown ownership remains cooperative and technical permission revocation/isolation is not claimed. No remote push, publication, contact, booking, attendee data collection or operational event.

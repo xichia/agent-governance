@@ -2,37 +2,40 @@
   "run_id": "SCI-20261005-01",
   "event_id": "EV-SCI-001",
   "brief_version": 2,
-  "status": "candidate_prepared",
+  "status": "done",
   "governance_pack_pin": "e577179d78bb7b18e70746326d4e3c883d85f44d",
   "authorization": "User: Lets proceed; Try again. Local fictional rehearsal using delivered defaults and Luna workflow.",
   "start_utc": "2026-10-05T08:40:14Z",
   "session_assignments": {
     "coordinator": {
       "id": "/root",
-      "model": "GPT-6"
+      "model": "GPT-6",
+      "state": "completed"
     },
     "finance": {
       "id": "/root/rehearsal_finance",
-      "model": "gpt-6-luna"
+      "model": "gpt-6-luna",
+      "state": "completed"
     },
     "creative": {
       "id": "/root/rehearsal_creative",
-      "model": "gpt-6-luna"
+      "model": "gpt-6-luna",
+      "state": "completed"
     },
     "risk": {
       "id": "/root/rehearsal_risk",
       "model": "gpt-6-luna",
-      "state": "dispatched"
+      "state": "completed"
     },
     "marketing": {
       "id": "/root/rehearsal_marketing",
       "model": "gpt-6-luna",
-      "state": "dispatched"
+      "state": "completed"
     },
     "reviewer": {
       "id": "/root/rehearsal_review",
       "model": "gpt-6-luna",
-      "state": "reserved"
+      "state": "completed"
     }
   },
   "limit_seconds": 3600,
@@ -66,6 +69,12 @@
     "risk_v2_end": "2026-10-05T08:57:16Z",
     "marketing_v2_start": "2026-10-05T08:58:02Z",
     "marketing_v2_end": "2026-10-05T08:58:43Z",
-    "v2_integrated_utc": "2026-10-05T09:00:32.287837+00:00"
-  }
+    "v2_integrated_utc": "2026-10-05T09:00:32.287837+00:00",
+    "review_start": "2026-10-05T09:02:38Z",
+    "review_end": "2026-10-05T09:04:34Z",
+    "final_verification_utc": "2026-10-05T09:06:22Z"
+  },
+  "accepted_candidate": "a9eacbe415e745f2e4df99bc0d1e61aa6dd52898",
+  "final_verification_utc": "2026-10-05T09:06:22Z",
+  "review_record": "reviews/a9eacbe415e745f2e4df99bc0d1e61aa6dd52898.md"
 }
