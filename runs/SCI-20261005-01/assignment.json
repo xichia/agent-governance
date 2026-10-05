@@ -1,8 +1,8 @@
 {
   "run_id": "SCI-20261005-01",
   "event_id": "EV-SCI-001",
-  "brief_version": 1,
-  "status": "v1_validated",
+  "brief_version": 2,
+  "status": "candidate_prepared",
   "governance_pack_pin": "e577179d78bb7b18e70746326d4e3c883d85f44d",
   "authorization": "User: Lets proceed; Try again. Local fictional rehearsal using delivered defaults and Luna workflow.",
   "start_utc": "2026-10-05T08:40:14Z",
@@ -56,6 +56,16 @@
     "risk_v1_end": "2026-10-05T08:48:40Z",
     "marketing_v1_start": "2026-10-05T08:49:15Z",
     "marketing_v1_end": "2026-10-05T08:50:06Z",
-    "v1_integrated_utc": "2026-10-05T08:51:19.593783+00:00"
+    "v1_integrated_utc": "2026-10-05T08:51:19.593783+00:00",
+    "change_issued_utc": "2026-10-05T08:51:46.857551+00:00",
+    "finance_v2_start": "2026-10-05T08:52:13Z",
+    "finance_v2_end": "2026-10-05T08:52:54Z",
+    "creative_v2_start": "2026-10-05T08:52:17Z",
+    "creative_v2_end": "2026-10-05T08:54:39Z",
+    "risk_v2_start": "2026-10-05T08:55:59Z",
+    "risk_v2_end": "2026-10-05T08:57:16Z",
+    "marketing_v2_start": "2026-10-05T08:58:02Z",
+    "marketing_v2_end": "2026-10-05T08:58:43Z",
+    "v2_integrated_utc": "2026-10-05T09:00:32.287837+00:00"
   }
 }

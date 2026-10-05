@@ -2,6 +2,12 @@
 
 Updated 2026-10-05. This file supplies continuation context; [AGENTS.md](AGENTS.md) remains the instruction entry point and [the charter](governance/charter.md) defines authority.
 
+## Current continuation — T-GOV-010
+
+The user authorized proceeding with the fictional rehearsal and asked to try again. Actual specialist Luna workstreams have produced outputs for run `SCI-20261005-01`, with initial proposal history preserved at `078762986f8da27394d933bb689fd3722ce384d3` and the disclosed CH-001 change propagated through matching-version handoffs. See [T-GOV-010](records/tasks/T-GOV-010.md) for current acceptance state, review and limits; [run metrics](runs/SCI-20261005-01/metrics.md) distinguish actual session evidence from fictional supplier data.
+
+This supersedes the earlier “no rehearsal has run” continuation statement for this local fictional run. The accepted pack remains a historical build artifact and its fixtures remain hand-authored examples. No real event, business activation, booking, publication or supplier contact occurred. Luna is the requested workflow for this run and future explicit requests.
+
 ## Current continuation — T-GOV-009
 
 The owner accepted building the suggested fictional science-and-culture rehearsal kit, then explicitly requested the Luna workflow: plan, delegate scoped Luna implementation, separate Luna review, iterate, coordinator integration and verification. Use that workflow now and on future request; do not treat Luna as mandatory for every task. This restates the clarification recorded in T-GOV-008 and supersedes the unconditional local-model recommendation below.

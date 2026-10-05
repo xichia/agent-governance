@@ -1,0 +1,77 @@
+{
+  "change": {
+    "id": "CH-001",
+    "event_id": "EV-SCI-001",
+    "from_version": 1,
+    "to_version": 2,
+    "field": "available_rooms.ROOM-COURT",
+    "old_value": "available",
+    "new_value": "unavailable",
+    "source_id": "SRC-VEN-02",
+    "authority": "Predeclared fictional brief change for this rehearsal; no real venue authority is represented.",
+    "affected_roles": [
+      "finance",
+      "risk",
+      "creative",
+      "marketing"
+    ],
+    "required_outcome": "Remove courtyard spend and references, relocate/reassign the observation activity into an available room, reassess crowd flow, and acknowledge CH-001 at brief version 2 in all four handoffs."
+  },
+  "issued_utc": "2026-10-05T08:51:46.857551+00:00",
+  "authority": "User continuation of the bounded rehearsal containing this predeclared fictional CH-001 exercise. No actual venue action.",
+  "v1_preserved_commit": "078762986f8da27394d933bb689fd3722ce384d3",
+  "unchanged_constraints": {
+    "attendance": 80,
+    "ceiling_cents": 600000,
+    "currency": "AUD",
+    "window": [
+      1080,
+      1260
+    ],
+    "access_requirements": "unchanged"
+  },
+  "acknowledgements": {
+    "finance": {
+      "brief_version": 2,
+      "writer_session": "/root/rehearsal_finance",
+      "change_ack_ids": [
+        "CH-001"
+      ]
+    },
+    "creative": {
+      "brief_version": 2,
+      "writer_session": "/root/rehearsal_creative",
+      "change_ack_ids": [
+        "CH-001"
+      ]
+    },
+    "risk": {
+      "brief_version": 2,
+      "writer_session": "/root/rehearsal_risk",
+      "change_ack_ids": [
+        "CH-001"
+      ]
+    },
+    "marketing": {
+      "brief_version": 2,
+      "writer_session": "/root/rehearsal_marketing",
+      "change_ack_ids": [
+        "CH-001"
+      ]
+    }
+  },
+  "conflicts": [
+    {
+      "id": "CON-001",
+      "issue": "Quiet host starts after quiet option and ends before public close",
+      "raised_by": "risk v1 RSK-03",
+      "disposition": "Resolved in proposed v2 schedule: public and dedicated quiet-host intervals both 18:30\u201320:30; real volunteer availability remains open."
+    },
+    {
+      "id": "CON-002",
+      "issue": "Stewards concurrently direct attendees and transfer chairs",
+      "raised_by": "risk v1 RSK-01/02",
+      "disposition": "Resolved in proposed v2 seating plan: fixed 60 Hall/20 Quiet; no public between-room chair transfers; actual floor-plan clearance remains open."
+    }
+  ]
+}

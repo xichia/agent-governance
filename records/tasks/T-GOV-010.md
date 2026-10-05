@@ -1,6 +1,6 @@
 # T-GOV-010 — Run the fictional science-and-culture agency rehearsal
 
-- **Status:** active
+- **Status:** review
 - **Owner / escalation:** requesting user, this chat; no substitute
 - **Authorization:** “Let's proceed”, followed by “Try again”, after delivery of the accepted pack and identification of a live rehearsal as next step. Proceed with the pack's fictional defaults and bounded local run; no further permission question needed. User's requested Luna workflow applies.
 - **Coordinator:** `/root`, GPT-6; runtime deployment identifier unavailable
@@ -36,3 +36,5 @@ All task contracts expire on completion/stop. Specialists are prompted with role
 
 - 2026-10-05T08:40:14Z: proposed → ready → active. Coordinator confirmed clean tree at the delivered pack, available local tools and explicit continuation authorization. No prior T-GOV-010 run exists. Set up bounded run and reserved disjoint writer paths and distinct reviewer.
 - 2026-10-05: finance startup failed with “Selected model is at capacity” before any artifact existed; creative session started. User's explicit “Try again” authorizes one same-session delivery retry for this transient startup failure. Record one failed dispatch/retry separately; no replacement session/model, output regeneration or expansion of fictional scope. If that delivery also fails, stop dependent work as blocked. This owner-directed exception supersedes the zero-retry proposal only for this startup event.
+- 2026-10-05: four matching v1 handoffs received. Initial schema-alignment correction batch 1 fixed risk-row citation categories and marketing literal title/audience prose; substantive risk issues stayed visible. Integrated v1 passed checker, recomputed arithmetic and actual 80-chair demand. Archived raw v1 and committed at `078762986f8da27394d933bb689fd3722ce384d3` before issuing CH-001.
+- 2026-10-05: CH-001 issued and all four same specialist sessions delivered v2 acknowledgements. Budget AUD 5335 versus v1 AUD 5665; indoor public programme 18:30–20:30 with exact two-hour quiet host, setup/pack-down inside unchanged 18:00–21:00 venue window. V1 staffing/chair-moving conflicts are addressed at the schedule level; real confirmations remain open. Integrated v2 passed checker and independent arithmetic/actual-chair checks. Active → review; freeze candidate, then dispatch distinct reviewer. One correction batch remains.

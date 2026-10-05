@@ -1,50 +1,51 @@
 {
   "event_id": "EV-SCI-001",
-  "brief_version": 1,
+  "brief_version": 2,
   "role": "marketing",
   "deliverable": {
     "marketing": {
-      "brief_version": 1,
+      "brief_version": 2,
       "title": "Science, art and shared wonder",
       "attendance": 80,
-      "programme_ids": ["CRE-01", "CRE-02", "CRE-03", "CRE-04", "CRE-05", "CRE-06", "CRE-07", "CRE-08", "CRE-09", "CRE-10", "CRE-11", "CRE-12", "CRE-13"],
-      "room_ids": ["ROOM-HALL", "ROOM-QUIET", "ROOM-COURT"],
-      "draft_copy": "Fictional local rehearsal draft — not an invitation or ticket offer. Join a welcoming evening for 80 adults, titled “Science, art and shared wonder,” to explore familiar science ideas through short talks, an art-and-observation workshop, and informal conversation over light refreshments. A quiet-space option is planned alongside the main programme. The draft schedule is 18:00–21:00 Perth local time on 14 November 2026, at the fictional Banksia Hall venue. Room access, staffing, transitions, and refreshment arrangements remain subject to human review; no venue, service, or accessibility details are confirmed.",
+      "programme_ids": ["CRE-01", "CRE-02", "CRE-03", "CRE-04", "CRE-05", "CRE-06", "CRE-07", "CRE-08", "CRE-09"],
+      "room_ids": ["ROOM-HALL", "ROOM-QUIET"],
+      "draft_copy": "Fictional local rehearsal draft — not an invitation or ticket offer. “Science, art and shared wonder” is a proposed evening for 80 adults to explore familiar science ideas through short talks, an art-and-observation workshop, and informal conversation. A quiet-space option is planned throughout the public programme, with light refreshments also proposed. The public programme is planned for 6:30–8:30 pm Perth local time on 14 November 2026, at fictional Banksia Hall and Paperbark Quiet Room. Room layout, access arrangements, volunteer coverage, and food details remain subject to human review; no venue, service, or accessibility details are confirmed.",
       "publication_status": "draft_only"
     },
     "assumptions": [
-      "This is draft copy for the fictional brief and invented source cards only; it is not for distribution, registration, or ticket sales.",
-      "The copy describes the creative team's v1 programme and planned rooms. Attendance remains 80; the covered courtyard is available only in fictional brief version 1.",
-      "The quiet-space option and refreshments are planned elements, not confirmation of staffing, food suitability, service details, or verified access conditions."
+      "This copy is for the fictional brief and invented source cards only; it is not for distribution, registration, or ticket sales.",
+      "Programme and room references reproduce the creative version-2 artifact in order. The public programme is 18:30–20:30 Perth local time; setup is planned 18:00–18:30 and pack-down 20:30–21:00 within the fictional venue window.",
+      "The quiet-space option and refreshments are proposed elements, not confirmation of staffing, food suitability, service details, or verified access conditions.",
+      "The fixed audience is 80 adults; actual attendance is not established."
     ],
     "open_questions": [
-      "Can the human owner confirm the volunteer coverage, including quiet-room support for the full chosen public window? The risk handoff identifies the 18:20–20:45 quiet option and 18:30–20:30 host assignment as an open staffing issue.",
-      "Can a human verify room layouts, step-free routes, chair transfers, transitions, and wayfinding before any audience-facing use?",
-      "What ingredients, allergen information, and refreshment service arrangements can be confirmed? The supplied source only describes labeled simple snacks.",
-      "If this scenario advances to version 2, how should copy describe the relocated workshop after the courtyard closes?"
+      "Can the human owner confirm volunteer availability for the proposed roles and hours, including continuous quiet-room hosting during the public programme?",
+      "Can a human verify the Hall and Quiet Room layout, accessible seating, observation stations, wayfinding, and step-free route before any audience-facing use?",
+      "What ingredient/allergen, cross-contact, and refreshment service details can be confirmed? The supplied source describes labeled simple snacks but does not establish these details.",
+      "Can a human confirm that the 60 Hall / 20 Quiet seating plan remains workable if Quiet Room attendees choose to rejoin the Hall during refreshments?"
     ],
     "pending_human_decisions": [
       "Keep this copy local and draft-only unless the human owner separately authorizes publication.",
-      "Before any real use, a human must confirm venue and schedule, staffing and quiet-room coverage, practical access arrangements, and food/service details; no legal, venue, accessibility, or food clearance is asserted.",
+      "Before any real use, a human must confirm venue and schedule, staffing, practical access arrangements, and food/service details; no legal, venue, accessibility, or food clearance is asserted.",
       "Do not collect attendee personal data as part of this rehearsal."
     ]
   },
   "handoff": {
     "writer_session": "/root/rehearsal_marketing",
     "model": "gpt-6-luna",
-    "brief_version": 1,
+    "brief_version": 2,
     "artifact": "runs/SCI-20261005-01/outputs/marketing.json",
     "status": "ready_for_review",
     "dependencies_acknowledged": ["finance", "risk", "creative"],
-    "source_ids": ["SRC-PROG-01", "SRC-PROG-02", "SRC-PROG-03", "SRC-PROG-04", "SRC-PROG-05", "SRC-PROG-06", "SRC-VEN-01", "SRC-VEN-02", "SRC-RES-06", "SRC-RISK-01", "SRC-RISK-02", "SRC-RISK-03", "SRC-INK-01"],
+    "source_ids": ["SRC-PROG-01", "SRC-PROG-02", "SRC-PROG-03", "SRC-PROG-04", "SRC-PROG-05", "SRC-PROG-06", "SRC-VEN-01", "SRC-VEN-02", "SRC-RES-01", "SRC-RES-02", "SRC-RES-03", "SRC-RES-04", "SRC-RES-05", "SRC-RES-06", "SRC-RISK-01", "SRC-RISK-02", "SRC-RISK-03", "SRC-RISK-04", "SRC-INK-01"],
     "assumptions": [
-      "Finance, creative, and risk v1 outputs were received and are marked ready_for_review; their artifacts are fictional planning inputs, not confirmations.",
-      "The marketing programme and room references reproduce the creative v1 artifact exactly."
+      "Finance, creative, and risk version-2 outputs were received and are marked ready_for_review; their artifacts are fictional planning inputs, not confirmations.",
+      "CH-001 is acknowledged. This copy follows the version-2 creative programme and references only its available rooms."
     ],
     "open_questions": [
-      "Resolve the creative and risk open issues around volunteer coverage, transitions, layout/access verification, and food details before any real-world use.",
-      "Reconcile all copy and room references with the matching-version integrated programme after CH-001."
+      "Resolve the creative and risk open issues around volunteer coverage, Hall layout and seating, access verification, and food details before any real-world use.",
+      "Keep all copy aligned with the matching-version integrated proposal; public release requires a separate human decision."
     ],
-    "change_ack_ids": []
+    "change_ack_ids": ["CH-001"]
   }
 }

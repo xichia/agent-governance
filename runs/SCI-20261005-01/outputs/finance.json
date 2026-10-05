@@ -1,72 +1,73 @@
 {
   "event_id": "EV-SCI-001",
-  "brief_version": 1,
+  "brief_version": 2,
   "role": "finance",
   "deliverable": {
     "currency": "AUD",
     "ceiling_cents": 600000,
     "budget": [
       {"id": "BUD-VEN-HALL", "source_id": "SRC-VEN-01", "quantity": 1, "unit_cents": 220000, "purpose": "Banksia Hall and Paperbark Quiet Room venue booking, including setup/pack-down window and seating/wayfinding access"},
-      {"id": "BUD-VEN-COURT", "source_id": "SRC-VEN-02", "quantity": 1, "unit_cents": 30000, "purpose": "Version-1 covered courtyard add-on for an art/observation activity"},
       {"id": "BUD-PA", "source_id": "SRC-RES-02", "quantity": 1, "unit_cents": 55000, "purpose": "Portable PA and handheld microphone"},
       {"id": "BUD-ART", "source_id": "SRC-RES-03", "quantity": 2, "unit_cents": 48000, "purpose": "Two art/observation pack-sets, covering potential participation by 80 people at 40 people per set"},
       {"id": "BUD-SIGNS", "source_id": "SRC-RES-04", "quantity": 1, "unit_cents": 24000, "purpose": "Large-print, high-contrast wayfinding sign set"},
       {"id": "BUD-QUIET", "source_id": "SRC-RES-05", "quantity": 1, "unit_cents": 18000, "purpose": "Quiet-room sensory support kit for up to 20 people at a time"},
       {"id": "BUD-REFRESH", "source_id": "SRC-RES-06", "quantity": 1, "unit_cents": 72000, "purpose": "Non-alcoholic drinks and labeled simple snacks for up to 80 adults"}
     ],
-    "subtotal_cents": 515000,
+    "subtotal_cents": 485000,
     "contingency_rate": 0.1,
-    "contingency_cents": 51500,
-    "total_cents": 566500,
-    "headroom_cents": 33500,
-    "calculation": "220000 + 30000 + 55000 + (2 * 48000) + 24000 + 18000 + 72000 = 515000 base cents; ceil(515000 * 10%) = 51500 contingency cents; total 566500 cents, below the 600000-cent ceiling.",
+    "contingency_cents": 48500,
+    "total_cents": 533500,
+    "headroom_cents": 66500,
+    "calculation": "220000 + 55000 + (2 * 48000) + 24000 + 18000 + 72000 = 485000 base cents; ceil(485000 * 10%) = 48500 contingency cents; total 533500 cents, below the 600000-cent ceiling by 66500 cents.",
     "in_kind_coverage": {
       "source_id": "SRC-INK-01",
       "cash_cost_cents": null,
-      "assumption": "The fictional plan assumes donated coverage: one lead facilitator for 3 hours, two science speakers for 1.5 hours each, two arrival/wayfinding stewards for 3 hours each, and one quiet-room host for 2 hours (14 volunteer-hours total). This is not a commitment or availability confirmation."
+      "assumption": "The fictional plan assumes donated coverage: one lead facilitator for 3 hours, two science speakers for 1.5 hours each, two arrival/wayfinding stewards for 3 hours each, and one quiet-room host for 2 hours (14 volunteer-hours total). The v2 creative replan is expected to fit duties within this existing coverage; it does not represent actual people, availability or a commitment."
     },
     "assumptions": [
-      "All budget amounts are fictional source-card base prices in integer AUD cents and include modeled taxes and fees; no additional prices are estimated.",
-      "The plan selects both venue cards for brief version 1; SRC-VEN-02 is expressly version-1-only and is subject to the predeclared closure in CH-001.",
-      "The full 80-person potential art participation is budgeted as two 40-person pack-sets. The courtyard capacity is 40, so no more than 40 participants may be assigned there at once; the programme must schedule a split/rotation or otherwise use rooms within stated capacities.",
-      "The venue card provides seating access for 80 and the included chair inventory (SRC-RES-01) is assumed available at no extra charge; no separate cash cost is assigned.",
-      "One quiet kit covers the stated maximum quiet-room capacity of 20 at a time; room use and transitions still require programme and floor-plan confirmation.",
-      "The 10% contingency is applied to total base cost and rounded up to the nearest cent; these source amounts yield an exact 51500 cents."
+      "All budget amounts are fictional source-card base prices in integer AUD cents and include modeled taxes and fees; no additional cash prices are estimated.",
+      "Version 2 selects SRC-VEN-01 only. Banksia Hall and Paperbark Quiet Room provide 80-seat access and the event window including setup and pack-down; the courtyard add-on is unavailable and is removed from this estimate.",
+      "The art activity is reassigned indoors; two 40-person sets cover potential participation by all 80 adults. Hall capacity is 80, and concurrent quiet-room use remains limited to 20.",
+      "The venue card includes access to 80 movable chairs (SRC-RES-01); inventory is assumed available at no extra cash charge and should be confirmed in the human floor-plan review.",
+      "One quiet kit covers up to 20 people at a time. The creative replan is expected to fit staffing into the fictional donated 14 volunteer-hours; actual staffing remains unconfirmed.",
+      "The 10% contingency is applied to total base cost and rounded up to the nearest cent; these source amounts yield an exact 48500 cents."
     ],
     "alternatives": [
       {
-        "option": "Keep the version-1 courtyard activity as costed",
-        "subtotal_cents": 515000,
-        "contingency_cents": 51500,
-        "total_cents": 566500,
-        "tradeoff": "Supports an outdoor observation setting but creates a 40-person room limit and a later relocation requirement under CH-001."
-      },
-      {
-        "option": "Do not select the courtyard add-on; plan the activity in Banksia Hall within its 80-person capacity",
+        "option": "Keep two art/observation pack-sets for possible participation by all 80 adults (selected)",
         "subtotal_cents": 485000,
         "contingency_cents": 48500,
         "total_cents": 533500,
-        "tradeoff": "Saves 30000 base cents and 33000 cents including associated contingency, while foregoing the courtyard setting. This alternative is not the selected v1 plan and requires programme/location consistency."
+        "tradeoff": "Preserves the stated 80-person participation possibility and remains within the ceiling."
+      },
+      {
+        "option": "Use one art/observation pack-set only if the programme explicitly caps workshop participation at 40",
+        "subtotal_cents": 437000,
+        "contingency_cents": 43700,
+        "total_cents": 480700,
+        "tradeoff": "Saves 48000 base cents and 52800 cents including contingency, but removes the budgeted materials capacity for the other 40 adults."
       }
     ],
     "pending_human_decisions": [
-      "Confirm whether fictional donated volunteer coverage is an acceptable planning assumption; no actual volunteer availability is established.",
-      "Confirm activity rotation, facilitator coverage, transition time, and maximum courtyard attendance of 40 in the v1 programme.",
-      "Confirm venue, suppliers, inventory, accessibility layout, food labeling/service details, and all availability with responsible humans before any real-world use; no legal or access clearance is asserted.",
-      "After CH-001, reselect venue resources for version 2 and preserve the ceiling and access requirements."
+      "Confirm venue, suppliers, inventory, accessibility layout, food labeling/service details, and availability with responsible humans before real-world use; no legal or access clearance is asserted.",
+      "Confirm that actual volunteer staffing can cover the roles and hours represented by the fictional donated-coverage assumption; the creative proposal allocates those existing hours but cannot confirm availability.",
+      "Confirm the indoor hall/quiet-room floor plan, transitions, and that 80-person workshop participation fits the detailed activity design."
     ],
-    "dependency_requests": ["Provide the matching-version creative programme for resource and capacity cross-check.", "Provide matching-version risk review of transitions, volunteer coverage and room limits."]
+    "dependency_requests": [
+      "Use the matching-version creative programme to confirm the indoor activity and volunteer-hour allocation.",
+      "Risk to cross-check indoor room flow, quiet-room coverage and the unchanged access assumptions."
+    ]
   },
   "handoff": {
     "writer_session": "/root/rehearsal_finance",
     "model": "gpt-6-luna",
-    "brief_version": 1,
+    "brief_version": 2,
     "artifact": "runs/SCI-20261005-01/outputs/finance.json",
     "status": "ready_for_review",
     "dependencies_acknowledged": [],
-    "source_ids": ["SRC-VEN-01", "SRC-VEN-02", "SRC-RES-02", "SRC-RES-03", "SRC-RES-04", "SRC-RES-05", "SRC-RES-06", "SRC-RES-01", "SRC-INK-01"],
-    "assumptions": ["Budget is an auditable fictional v1 plan using source-exact prices only.", "Courtyard capacity constrains simultaneous use to 40; 80 potential art participants require split/rotation if all participate."],
-    "open_questions": ["Will the programme schedule and staff an activity split within courtyard capacity?", "Are the assumed in-kind volunteer roles acceptable for planning, subject to later human confirmation?", "Which resource/room changes will creative and risk require after CH-001?"],
-    "change_ack_ids": []
+    "source_ids": ["SRC-VEN-01", "SRC-RES-02", "SRC-RES-03", "SRC-RES-04", "SRC-RES-05", "SRC-RES-06", "SRC-RES-01", "SRC-INK-01"],
+    "assumptions": ["Budget is an auditable fictional v2 plan using source-exact prices only.", "The selected venue has 80-capacity hall and quiet-room access; workshop participation by all 80 is budgeted with two pack-sets.", "Fictional in-kind coverage remains assumed, not confirmed; no cash rate is supplied or invented."],
+    "open_questions": ["Can human venue and supplier confirmation establish the assumed inventory and service details?", "Can actual volunteer availability later support the hours allocated in the creative replan?", "Does the detailed indoor floor plan preserve step-free access and transitions?"],
+    "change_ack_ids": ["CH-001"]
   }
 }

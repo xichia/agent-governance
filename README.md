@@ -40,6 +40,8 @@ The [live events-agency demo plan](planning/events-agency/PLAN.md) proposes spec
 
 The [fictional rehearsal pack](planning/events-agency/rehearsal/README.md) implements the brief, role/interface contracts, prepared case data and deterministic checker. Its reference proposals are labeled fixtures; they are not evidence of a live agency run. See [T-GOV-009](records/tasks/T-GOV-009.md) for the requested Luna construction and review workflow.
 
+Actual specialist-session rehearsal evidence is now recorded separately in [T-GOV-010](records/tasks/T-GOV-010.md) and [run metrics](runs/SCI-20261005-01/metrics.md). Supplier facts remain fictional; consult the task for the fixed-candidate review and final acceptance state.
+
 ## What to validate
 
 Evaluate this design against a single-agent baseline using comparable tasks and budgets. Track acceptance success, escaped defects, cost, completion time, human interventions, and recovery after interruption. Add roles only when their benefit justifies coordination cost.
