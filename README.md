@@ -4,6 +4,10 @@ A small, versioned operating agreement for independent agents managing a project
 
 **Default: autonomous work within explicit boundaries, shared non-sensitive records, scoped writes, independent review, and one accountable integrator.** This is a governance specification, not an agent runtime or an access-control implementation.
 
+## Continue with a local model
+
+Read [HANDOFF.md](HANDOFF.md) for current state, pending decisions and a continuation prompt. [TREE.md](TREE.md) maps the delivered files.
+
 ## Start here
 
 1. The adopting human owner fills in [the charter](governance/charter.md), names the coordinator, and selects an [access profile](governance/access.md). Until configured, use this repository for drafting only.
