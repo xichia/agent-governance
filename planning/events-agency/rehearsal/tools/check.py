@@ -341,6 +341,11 @@ def validate(proposal: Any, sources: Any, changes: Any) -> list[str]:
             for source_id in srcs:
                 if source_id not in cards:
                     err(f"programme {pid!r} references unknown source {source_id}")
+                else:
+                    category = card_categories.get(source_id)
+                    card_kind = cards[source_id].get("kind")
+                    if category != "programme_cards" and not (category == "budget_cards" and card_kind in ("venue", "resource")):
+                        err(f"programme {pid!r} source {source_id} has disallowed source category {category}")
             if not any(card_categories.get(source_id) == "programme_cards" for source_id in srcs):
                 err(f"programme {pid!r} must cite at least one programme evidence card")
             if room is not None and room.get("source_id") not in srcs:
@@ -537,6 +542,8 @@ def self_test(sources: Any, changes: Any) -> int:
     mutation_fails_with("unknown source", "references unknown source", lambda d: d["programme"][0].__setitem__("source_ids", ["SRC-DOES-NOT-EXIST"]))
     mutation_fails_with("risk-only programme source", "must cite at least one programme evidence card", lambda d: d["programme"][3].__setitem__("source_ids", ["SRC-RISK-01"]))
     mutation_fails_with("in-kind-only programme source", "must cite at least one programme evidence card", lambda d: d["programme"][3].__setitem__("source_ids", ["SRC-INK-01"]))
+    mutation_fails_with("irrelevant risk card alongside valid sources", "disallowed source category risk_cards", lambda d: d["programme"][3]["source_ids"].append("SRC-RISK-01"))
+    mutation_fails_with("in-kind card alongside valid sources", "disallowed source category support_cards", lambda d: d["programme"][3]["source_ids"].append("SRC-INK-01"))
     mutation_fails_with("closed room", "uses room ROOM-COURT unavailable", lambda d: d["programme"][3].__setitem__("room_id", "ROOM-COURT"))
     mutation_fails_with("stale version", "handoff creative has stale brief_version", lambda d: d["handoffs"]["creative"].__setitem__("brief_version", 1))
     mutation_fails_with("missing change acknowledgement", "handoff marketing change_ack_ids", lambda d: d["handoffs"]["marketing"].__setitem__("change_ack_ids", []))

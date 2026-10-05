@@ -1,6 +1,6 @@
 # T-GOV-009 — Build the fictional events-agency rehearsal pack
 
-- **Status:** active
+- **Status:** review
 - **Owner / escalation:** requesting user in this chat
 - **Coordinator / executor:** `/root`, GPT-6; deployment identifier unavailable
 - **Review method:** owner explicitly invoked Luna workflow during implementation. Separate Luna workers and a separate fixed-candidate Luna reviewer; coordinator integrates and verifies. Future Luna use remains upon request.
@@ -26,7 +26,7 @@ Independent review must pass a fixed candidate; coordinator must verify integrat
 - `/root/roles_pack`: configured `gpt-6-luna`; owns only `rehearsal/roles/*.md` and `rehearsal/runbook.md`.
 - `/root/case_checker`: configured `gpt-6-luna`; owns only `rehearsal/case/*.json`, `rehearsal/fixtures/*.json` and `rehearsal/tools/check.py`.
 - `/root`: coordinator GPT-6 owns remaining scoped documentation, task/progress, integration and Git operations.
-- Separate reviewer reserved as `/root/pack_review`, configured `gpt-6-luna`; writes only `records/reviews/R-GOV-009-01.md` (or `-02.md` for recheck).
+- Separate reviewer reserved as `/root/pack_review`, configured `gpt-6-luna`; writes only `records/reviews/R-GOV-009-01.md`, `-02.md` and `-03.md` for the initial review and two bounded rechecks.
 - Runtime: cooperative shared filesystem and local tools; intended ownership is not enforced isolation. Local checks only; no supplier lookup or external messages.
 
 Dependencies: reviewed T-GOV-007 plan; existing templates and T-GOV-008 review preference. Cooperative shared repository; Markdown scope does not enforce ACLs. No other writer active. User is the escalation contact; no substitute assigned for this local task.
@@ -42,3 +42,5 @@ Start at [rehearsal README](../../planning/events-agency/rehearsal/README.md). R
 - 2026-10-05: active → review. Both Luna implementers delivered scoped paths. Coordinator reconciled source resource semantics with the interface, reran 16 checker cases and both CLI fixtures, and checked local links/diff whitespace. Freeze a committed candidate for the separate reviewer; no live-run outcome or independent pass claimed yet.
 - 2026-10-05: review → active. Independent Luna [R-GOV-009-01](../reviews/R-GOV-009-01.md) returned changes-required against `64c5879792bfe6eae186afbd54942adad903e18c`: v2 courtyard spend remained acceptable; change-card metadata and programme source categories were underchecked. Assigned the original checker author correction round 1; coordinator clarified the interface and made README review status refer to this task. Criteria unchanged.
 - 2026-10-05: active → review. Original Luna checker author implemented F1/F2 fixes and added targeted negative cases. Coordinator aligned interface details with required programme/venue/resource evidence, verified 25 checker cases plus both direct CLI fixtures, local links and diff whitespace. A new fixed candidate receives scoped independent recheck, including expanded source-reference requirements; no pass claimed yet.
+- 2026-10-05: review → active. Separate Luna [R-GOV-009-02](../reviews/R-GOV-009-02.md) rechecked `127032835946a821c6d09f2b6b798426c10b4cad`: F1/F2 fixed; F3 remains because valid programme citations could be combined with forbidden risk/support cards. Original checker author receives correction round 2, the final permitted round. Interface and acceptance unchanged.
+- 2026-10-05: active → review. Original Luna author fixed F3 in the checker only, preserving interface and fixtures; coordinator reran 27 cases and both direct fixtures with passing results. Freeze the final corrected candidate for the second scoped recheck. Limits are unchanged; a failed final gate would require a new owner decision.
