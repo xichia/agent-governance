@@ -7,28 +7,33 @@
 
 ## Smallest useful team
 
-Use one coordinator/integrator, four parallel workstream agents, one integrator-selected independent reviewer, and the human owner. Coordinator and reviewer are separate sessions; reviewer cannot author reviewed content. The four workstreams are:
+Use one coordinator/integrator, four specialist workstreams staffed by separate sessions, one integrator-selected independent reviewer, and the human owner. Schedule at most three specialist workers at once alongside the coordinator. Coordinator and reviewer are separate sessions; reviewer cannot author reviewed content. The four workstreams are:
 
 | Workstream | Owns | Produces |
 |---|---|---|
 | Finance and sourcing | Cost model, quote/option comparison, supplier-input ledger | Budget with ranges, assumptions, source status, and decision points |
-| Legal and risk | Issue spotting, compliance questions, risk register and mitigations | Advisory checklist with escalation triggers; no legal clearance |
+| Legal and risk | Issue spotting, compliance questions, risk register and mitigations | Initial advisory checklist, then an options assessment after finance and curation return proposals; no legal clearance |
 | Marketing and audience | Audience framing, positioning, channel/content proposals | Draft campaign concept and measurable audience goals |
 | Art direction and curation | Themes, program/experience, accessibility and cultural fit | Curated concept options linked to brief and constraints |
 
 Do not create separate departments for each title. The coordinator owns the event brief, common schema, assignment/dependency tracking, conflict log, and final package. Every workstream has one named writer and one output path. Reviewer reviews the fixed integrated candidate against task criteria; it does not rewrite it. Human owner resolves priorities and reserved decisions.
 
-### Parallel dependency graph
+### Staggered dependency graph (maximum three active specialist workers)
 
 ```text
 Human chooses event type / input mode / limits (pending)
                      |
 Coordinator publishes versioned event brief + shared schema
-       |             |              |                 |
-    Budget &       Legal &       Marketing &      Art direction &
-    sourcing        risk          audience          curation
-       \             |              |                 /
-        +------ shared proposal handoffs / conflict log -----+
+                               |
+Wave 1 (three specialists, in parallel):
+ Finance & sourcing | Legal initial checklist | Art direction & curation
+           |                    |                         |
+           +-- cost/options ---+---------------- concepts -+
+                               |
+Coordinator consolidates proposals and logs open conflicts
+                               |
+Wave 2 (staggered; total active specialists never exceeds three):
+ Legal assesses returned options; Marketing develops audience proposal
                                |
 Coordinator resolves dependencies, flags unresolved choices
                                |
@@ -37,7 +42,7 @@ Independent reviewer checks fixed candidate and evidence
 Human reserved decisions; coordinator integrates/reports
 ```
 
-Workstreams can run in parallel after the brief is frozen. Midstream changes to audience, capacity, venue constraints, date, spend ceiling, or input mode are versioned by the coordinator; affected workstreams acknowledge and revise their outputs. Do not merge incompatible assumptions into a single “agreed” value. Record competing options and the decision owner.
+Finance/sourcing, the initial legal checklist, and art/curation can run in parallel after the brief is frozen. Legal returns to assess concrete cost and concept options; marketing starts after the coordinator consolidates the option set and relevant constraints. The coordinator staggers these sessions to keep no more than three specialist workers active at once. Midstream changes to audience, capacity, venue constraints, date, spend ceiling, or input mode are versioned by the coordinator; affected workstreams acknowledge and revise their outputs. Do not merge incompatible assumptions into a single “agreed” value. Record competing options and the decision owner.
 
 ## Role instructions and authority
 
@@ -77,4 +82,4 @@ The legal/risk workstream may identify questions and propose mitigations. It can
 
 Coordinator checks that every workstream uses the same brief version, unknowns and estimates are labeled, handoffs are complete, cross-stream conflicts are visible, dependencies have owners, and no reserved action is represented as authorized. The independent reviewer receives fixed candidate artifacts, criteria, and evidence and records pass/changes-required/inconclusive. A reviewer pass is limited to that candidate; changed content requires scoped recheck or new review. Coordinator performs integration checks after review, including local links, schema consistency, scope/authority language, and task acceptance coverage. Only then can the coordinator report readiness for owner decisions; this design alone is not evidence that an actual runtime enforces boundaries or that the event is ready to operate.
 
-**Handoff to coordinator:** align `demo-delivery.md` with the proposed four workstreams, shared event record and change/handoff rules. Coordinate on the illustrative brief and pending human choices. Treat runtime enforcement claims as unverified unless the rehearsal records direct evidence.
+**Handoff to coordinator:** align `demo-delivery.md` with the four workstreams, three-worker cap, staggered schedule, shared event record and change/handoff rules. Coordinate on the illustrative brief and pending human choices. Treat runtime enforcement claims as unverified unless the rehearsal records direct evidence.
