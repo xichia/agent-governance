@@ -1,0 +1,136 @@
+{
+  "event_id": "EV-SCI-001",
+  "brief_version": 1,
+  "role": "risk",
+  "deliverable": {
+    "risks": [
+      {
+        "id": "RSK-01",
+        "issue": "Room transitions, attendance distribution and movement of 40 chairs may create congestion or obstruct step-free routes. The v1 plan places up to 80 people across Hall/Quiet (60/20) and then Hall/Courtyard/Quiet (20/40/20), with chair transfers during two 15-minute transitions. The fictional rooms have capacities of 80, 20 and 40 respectively; the route, floor plan and handling time are unverified.",
+        "owner": "Event lead / coordinator",
+        "mitigation": "Proposed, not implemented: confirm a scaled floor plan and step-free routes; assign named people separately to crowd direction and furniture handling; count attendees before and after each move; keep exits and aisles clear; do not exceed room or total capacity. If the 40-chair transfer cannot be completed safely within the window, use the creative team's Hall rotation alternative and revise the schedule and staffing before integration.",
+        "status": "open",
+        "source_ids": [
+          "SRC-RISK-01",
+          "SRC-RISK-02"
+        ],
+        "supporting_source_ids": [
+          "SRC-VEN-01",
+          "SRC-VEN-02",
+          "SRC-RES-01",
+          "SRC-INK-01"
+        ]
+      },
+      {
+        "id": "RSK-02",
+        "issue": "Step-free room descriptions and a sign set do not establish that the final layout, route, seating distribution or signs work for attendees. The two stewards also have competing wayfinding, occupancy-counting and chair-moving tasks during transitions.",
+        "owner": "Event lead / access lead (to be appointed by the human owner)",
+        "mitigation": "Proposed, not implemented: inspect the fictional floor plan with access needs in mind; confirm clear routes, sightlines, sign placement, seating and a route between rooms; test the arrangement and transition before the event; assign a dedicated transition lead and avoid asking stewards to move furniture while directing attendees.",
+        "status": "open",
+        "source_ids": [
+          "SRC-RISK-02"
+        ],
+        "supporting_source_ids": [
+          "SRC-VEN-01",
+          "SRC-VEN-02",
+          "SRC-RES-01",
+          "SRC-RES-04",
+          "SRC-INK-01"
+        ]
+      },
+      {
+        "id": "RSK-03",
+        "issue": "The volunteer plan assumes 14 donated volunteer-hours, but availability is not confirmed. The quiet-room host is assigned 18:30–20:30 while quiet-space use begins at 18:20; the public programme continues to 20:45. A staffing gap could leave transitions, wayfinding or the quiet option unsupported.",
+        "owner": "Human event owner / event lead",
+        "mitigation": "Proposed, not implemented: confirm each role and exact coverage window; identify a backup for the lead and stewards; either extend quiet-room host coverage through the public window or clearly schedule and staff a quiet-space closure at 20:30. Do not treat the in-kind card as an availability commitment.",
+        "status": "open",
+        "source_ids": [
+          "SRC-RISK-01"
+        ],
+        "supporting_source_ids": [
+          "SRC-INK-01",
+          "SRC-PROG-04",
+          "SRC-PROG-06"
+        ]
+      },
+      {
+        "id": "RSK-04",
+        "issue": "The source card says snacks are labeled, but ingredients, allergen labeling, cross-contact controls, service layout and attendee dietary needs are not established. Hall and Courtyard service for 60 attendees may also create queues in circulation areas.",
+        "owner": "Refreshment lead / human event owner",
+        "mitigation": "Proposed, not implemented: obtain and check ingredient and allergen information with the service provider; decide how food is separated and served; keep queues and food away from exits and step-free routes; offer a clear route for questions without collecting attendee personal data for this exercise. If adequate information or service arrangements cannot be confirmed, revise or omit the affected food items in a human-approved plan.",
+        "status": "open",
+        "source_ids": [
+          "SRC-RISK-03"
+        ],
+        "supporting_source_ids": [
+          "SRC-RES-06",
+          "SRC-PROG-05"
+        ]
+      },
+      {
+        "id": "RSK-05",
+        "issue": "The exercise prohibits attendee personal data. A later attempt to manage access or dietary needs by collecting identifiable information would exceed this fictional plan's scope and create unnecessary privacy exposure.",
+        "owner": "Coordinator / human event owner",
+        "mitigation": "Proposed, not implemented: keep this rehearsal free of attendee data collection. Any real-world access or dietary planning process requires a separate human decision defining purpose, minimum necessary data, handling and retention before collection; this output grants no such authority.",
+        "status": "open",
+        "source_ids": [
+          "SRC-RISK-03"
+        ],
+        "supporting_source_ids": []
+      }
+    ],
+    "commentary": {
+      "mitigations": "Every mitigation above is a proposal; none is verified or implemented. The source pack is fictional and supports only the stated room, resource, role and service assumptions. No legal, venue, accessibility, food-safety or operational clearance is asserted.",
+      "pending_human_decisions": [
+        "Confirm whether the donated volunteer plan is acceptable as a planning assumption and whether named people can cover the listed hours; decide how to cover the quiet option from 18:20 to 20:45, including the 20:30 host end.",
+        "Approve a feasible floor plan, room counts, step-free route, chair-movement method, separated crowd-direction/furniture roles and transition timing; choose the Hall rotation alternative if these cannot be supported.",
+        "Confirm food ingredients/allergen information, service and queue layout, and whether the proposed food offering is suitable; do not infer suitability from the phrase 'labeled simple snacks'.",
+        "Confirm that the rehearsal collects no attendee personal information. Any future collection requires a separately scoped human decision.",
+        "On CH-001, remove courtyard use and spend, move/reassign the activity into an available room, and reassess room capacity, crowd flow, transitions, seating, staffing and wayfinding before accepting v2."
+      ],
+      "alternatives": [
+        "If courtyard movement or route clearance is not feasible, use the creative team's proposed Hall rotation in groups of up to 40, retaining the Quiet Room cap of 20 and total attendance cap of 80; rework timing and staffing first.",
+        "If volunteer coverage is unavailable, reduce or reschedule activities only through a human-approved revised programme; do not assume unpaid roles can be filled.",
+        "If food details or safe service arrangements remain unknown, defer the service plan for human resolution rather than representing the current card as a confirmed menu or clearance."
+      ],
+      "dependency_issues": "Finance v1 and creative v1 were both received and match brief version 1; both handoffs are ready_for_review. Their volunteer, chair-transfer, route and service assumptions remain unverified and are captured above. CH-001 has not yet been issued to this role; v2 reassessment and change acknowledgment remain pending."
+    }
+  },
+  "handoff": {
+    "writer_session": "/root/rehearsal_risk",
+    "model": "gpt-6-luna",
+    "brief_version": 1,
+    "artifact": "runs/SCI-20261005-01/outputs/risk.json",
+    "status": "ready_for_review",
+    "dependencies_acknowledged": [
+      "finance",
+      "creative"
+    ],
+    "source_ids": [
+      "SRC-RISK-01",
+      "SRC-RISK-02",
+      "SRC-RISK-03",
+      "SRC-RISK-04",
+      "SRC-VEN-01",
+      "SRC-VEN-02",
+      "SRC-RES-01",
+      "SRC-RES-04",
+      "SRC-RES-06",
+      "SRC-PROG-04",
+      "SRC-PROG-05",
+      "SRC-PROG-06",
+      "SRC-INK-01"
+    ],
+    "assumptions": [
+      "This is advisory risk analysis for fictional brief version 1 and fictional source cards only; no control is verified or implemented.",
+      "Finance and creative artifacts are the matching-version inputs; their availability and staffing statements do not establish real commitments or conditions."
+    ],
+    "open_questions": [
+      "Can the proposed room counts, step-free route, 40-chair movement and separate crowd/staff roles be made workable in the confirmed floor plan?",
+      "Can all volunteer roles, including quiet-room coverage for the full chosen public window, be confirmed?",
+      "What ingredient/allergen and food-service details can be confirmed without collecting attendee personal data?",
+      "How will the activity, room use and crowd flow change when CH-001 closes the courtyard?"
+    ],
+    "change_ack_ids": []
+  }
+}

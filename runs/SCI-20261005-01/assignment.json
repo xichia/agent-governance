@@ -1,0 +1,61 @@
+{
+  "run_id": "SCI-20261005-01",
+  "event_id": "EV-SCI-001",
+  "brief_version": 1,
+  "status": "v1_validated",
+  "governance_pack_pin": "e577179d78bb7b18e70746326d4e3c883d85f44d",
+  "authorization": "User: Lets proceed; Try again. Local fictional rehearsal using delivered defaults and Luna workflow.",
+  "start_utc": "2026-10-05T08:40:14Z",
+  "session_assignments": {
+    "coordinator": {
+      "id": "/root",
+      "model": "GPT-6"
+    },
+    "finance": {
+      "id": "/root/rehearsal_finance",
+      "model": "gpt-6-luna"
+    },
+    "creative": {
+      "id": "/root/rehearsal_creative",
+      "model": "gpt-6-luna"
+    },
+    "risk": {
+      "id": "/root/rehearsal_risk",
+      "model": "gpt-6-luna",
+      "state": "dispatched"
+    },
+    "marketing": {
+      "id": "/root/rehearsal_marketing",
+      "model": "gpt-6-luna",
+      "state": "dispatched"
+    },
+    "reviewer": {
+      "id": "/root/rehearsal_review",
+      "model": "gpt-6-luna",
+      "state": "reserved"
+    }
+  },
+  "limit_seconds": 3600,
+  "token_telemetry": "unavailable",
+  "tool_usage_telemetry": "unavailable",
+  "dispatch_errors": [
+    {
+      "role": "finance",
+      "error": "Selected model is at capacity",
+      "output_produced": false,
+      "same_session_retry": 1,
+      "authorization": "user Try again"
+    }
+  ],
+  "phase_observations": {
+    "finance_v1_start": "2026-10-05T08:43:48Z",
+    "finance_v1_end": "2026-10-05T08:44:45Z",
+    "creative_v1_start": "2026-10-05T08:43:11Z",
+    "creative_v1_end": "2026-10-05T08:45:52Z",
+    "risk_v1_start": "2026-10-05T08:47:20Z",
+    "risk_v1_end": "2026-10-05T08:48:40Z",
+    "marketing_v1_start": "2026-10-05T08:49:15Z",
+    "marketing_v1_end": "2026-10-05T08:50:06Z",
+    "v1_integrated_utc": "2026-10-05T08:51:19.593783+00:00"
+  }
+}

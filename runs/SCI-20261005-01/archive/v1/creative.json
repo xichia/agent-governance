@@ -1,0 +1,60 @@
+{
+  "event_id": "EV-SCI-001",
+  "brief_version": 1,
+  "role": "creative",
+  "deliverable": {
+    "title": "Science, art and shared wonder",
+    "theme": "Notice something familiar, ask a plain-language science question about it, then compare what different people see.",
+    "attendance_plan": "At every public interval, assign no more than 80 people across concurrent room rows: Hall/Quiet 60+20, then Hall/Courtyard/Quiet 20+40+20, later 40+20+20. Quiet space stays available; the quiet-room host is assigned 18:30–20:30. Allocate the included 80 movable chairs initially as 60 Hall and 20 Quiet; move 40 Hall chairs to the Courtyard during 19:00–19:15, then move 20 Courtyard chairs to the Hall during 19:45–20:00. The 15-minute moves also give attendees time to change rooms. Stewards direct people along the confirmed step-free route; keep aisles and exits clear. This chair plan needs a floor-plan and handling-time check.",
+    "programme": [
+      {"id":"CRE-01","title":"Setup: room, quiet-space and wayfinding set-out; chair count and access-route check","room_id":"ROOM-HALL","start_minute":1080,"end_minute":1100,"attendees":0,"resources":["RES-CHAIRS","RES-SIGNS"],"source_ids":["SRC-PROG-06","SRC-VEN-01","SRC-RES-01","SRC-RES-04"]},
+      {"id":"CRE-02","title":"Welcome, plain-language framing and access/wayfinding orientation","room_id":"ROOM-HALL","start_minute":1100,"end_minute":1110,"attendees":60,"resources":["RES-CHAIRS"],"source_ids":["SRC-PROG-01","SRC-VEN-01","SRC-RES-01"]},
+      {"id":"CRE-03","title":"Quiet-space option with sensory support","room_id":"ROOM-QUIET","start_minute":1100,"end_minute":1230,"attendees":20,"resources":["RES-CHAIRS","RES-QUIET"],"source_ids":["SRC-PROG-04","SRC-VEN-01","SRC-RES-01","SRC-RES-05"]},
+      {"id":"CRE-04","title":"Short science talks and conversation: two speakers, familiar examples, no audience experiments","room_id":"ROOM-HALL","start_minute":1110,"end_minute":1140,"attendees":60,"resources":["RES-CHAIRS","RES-PA"],"source_ids":["SRC-PROG-02","SRC-VEN-01","SRC-RES-01","SRC-RES-02"]},
+      {"id":"CRE-05","title":"Guided room change and chair transfer: 40 people and chairs move from Hall to Courtyard","room_id":"ROOM-HALL","start_minute":1140,"end_minute":1155,"attendees":20,"resources":["RES-CHAIRS"],"source_ids":["SRC-PROG-03","SRC-VEN-01","SRC-RES-01"]},
+      {"id":"CRE-06","title":"Guided room change and chair transfer: Courtyard arrival","room_id":"ROOM-COURT","start_minute":1140,"end_minute":1155,"attendees":40,"resources":["RES-CHAIRS"],"source_ids":["SRC-PROG-03","SRC-VEN-02","SRC-RES-01"]},
+      {"id":"CRE-07","title":"Art and observation workshop: look, sketch and compare; reusable viewing cards","room_id":"ROOM-COURT","start_minute":1155,"end_minute":1185,"attendees":40,"resources":["RES-CHAIRS","RES-ART"],"source_ids":["SRC-PROG-03","SRC-VEN-02","SRC-RES-01","SRC-RES-03"]},
+      {"id":"CRE-08","title":"Hosted conversation and observation prompts","room_id":"ROOM-HALL","start_minute":1155,"end_minute":1185,"attendees":20,"resources":["RES-CHAIRS"],"source_ids":["SRC-PROG-02","SRC-VEN-01","SRC-RES-01"]},
+      {"id":"CRE-09","title":"Guided room change and chair transfer: 20 people and chairs move from Courtyard to Hall","room_id":"ROOM-COURT","start_minute":1185,"end_minute":1200,"attendees":20,"resources":["RES-CHAIRS"],"source_ids":["SRC-PROG-03","SRC-VEN-02","SRC-RES-01"]},
+      {"id":"CRE-10","title":"Guided room change and chair transfer: Hall arrival","room_id":"ROOM-HALL","start_minute":1185,"end_minute":1200,"attendees":40,"resources":["RES-CHAIRS"],"source_ids":["SRC-PROG-03","SRC-VEN-01","SRC-RES-01"]},
+      {"id":"CRE-11","title":"Light refreshments and informal conversation, with service staged for the Hall and Courtyard","room_id":"ROOM-HALL","start_minute":1200,"end_minute":1245,"attendees":40,"resources":["RES-CHAIRS","RES-REFRESH"],"source_ids":["SRC-PROG-05","SRC-VEN-01","SRC-RES-01","SRC-RES-06"]},
+      {"id":"CRE-12","title":"Light refreshments and informal conversation","room_id":"ROOM-COURT","start_minute":1200,"end_minute":1245,"attendees":20,"resources":["RES-CHAIRS","RES-REFRESH"],"source_ids":["SRC-PROG-05","SRC-VEN-02","SRC-RES-01","SRC-RES-06"]},
+      {"id":"CRE-13","title":"Pack-down, chair inventory and clear-room check","room_id":"ROOM-HALL","start_minute":1245,"end_minute":1260,"attendees":0,"resources":["RES-CHAIRS"],"source_ids":["SRC-PROG-06","SRC-VEN-01","SRC-RES-01"]}
+    ],
+    "staff_assignments": [
+      "Volunteer lead facilitator (3h, 18:00–21:00): coordinate setup, welcome, transitions, close and pack-down.",
+      "Two science speakers (1.5h each, 18:15–19:45): prepare and deliver short talks; one may support the workshop handoff.",
+      "Two arrival/wayfinding stewards (3h each, 18:00–21:00): welcome, step-free wayfinding, count room occupancy, direct transitions and help move chairs while maintaining clear routes.",
+      "Quiet-room host (2h, 18:30–20:30): host quiet space and sensory kit; confirm whether remaining 15 minutes of public time can be covered or whether the quiet room must close to hosted use at 20:30."
+    ],
+    "alternatives": [
+      "If courtyard availability or the 40-chair transfer cannot be confirmed, run the observation workshop in the Hall in two groups of up to 40, one after the other; retain the Quiet Room at up to 20 and stagger Hall attendance so total attendance never exceeds 80. This adds a second workshop block and needs a revised schedule and staffing check.",
+      "If weather or comfort conditions make the covered courtyard unsuitable, use the same Hall rotation alternative; do not increase room capacity."
+    ],
+    "assumptions": [
+      "The 80 included chairs can be moved between rooms by the two stewards and lead, and the route is short, step-free and wide enough to keep access clear during the 15-minute transitions.",
+      "The quiet room is open and hosted from 18:30 to 20:30; quiet provision after that time through 20:45 requires a human staffing decision.",
+      "The fictional support-card volunteer roles are available for the listed hours; this is not a real availability claim.",
+      "Refreshments can be staged in the Hall and Courtyard and served to their combined 60 attendees; quiet-room use remains food-free and separate."
+    ],
+    "unresolved_questions": [
+      "Can the venue floor plan support 60 Hall chairs, 20 Quiet Room chairs, and transfer of 40 chairs to and from the Courtyard in each 15-minute window while keeping step-free routes and exits clear?",
+      "Can a quiet-room host cover the full public window, or should the quiet option end at 20:30? The source plan provides two host-hours.",
+      "Should the quiet room remain food-free, and can the refreshment service be staged across Hall and Courtyard without a queue blocking circulation?",
+      "Confirm actual courtyard/weather conditions and the final accessible route before any real-world operation; this proposal creates no booking or commitment."
+    ],
+    "source_ids": ["SRC-PROG-01","SRC-PROG-02","SRC-PROG-03","SRC-PROG-04","SRC-PROG-05","SRC-PROG-06","SRC-VEN-01","SRC-VEN-02","SRC-RES-01","SRC-RES-02","SRC-RES-03","SRC-RES-04","SRC-RES-05","SRC-RES-06","SRC-INK-01"]
+  },
+  "handoff": {
+    "writer_session": "/root/rehearsal_creative",
+    "model": "gpt-6-luna",
+    "brief_version": 1,
+    "artifact": "runs/SCI-20261005-01/outputs/creative.json",
+    "status": "ready_for_review",
+    "dependencies_acknowledged": [],
+    "source_ids": ["SRC-PROG-01","SRC-PROG-02","SRC-PROG-03","SRC-PROG-04","SRC-PROG-05","SRC-PROG-06","SRC-VEN-01","SRC-VEN-02","SRC-RES-01","SRC-RES-02","SRC-RES-03","SRC-RES-04","SRC-RES-05","SRC-RES-06","SRC-INK-01"],
+    "assumptions": ["All venue, price and support facts are invented and apply only to this local rehearsal."],
+    "open_questions": ["Verify chair movement, route clearance, refreshment service arrangement, and quiet-host coverage before any real event."],
+    "change_ack_ids": []
+  }
+}

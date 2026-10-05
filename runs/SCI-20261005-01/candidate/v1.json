@@ -1,0 +1,542 @@
+{
+  "event_id": "EV-SCI-001",
+  "brief_version": 1,
+  "fictional": true,
+  "title": "Science, art and shared wonder",
+  "attendance": 80,
+  "currency": "AUD",
+  "ceiling_cents": 600000,
+  "budget": [
+    {
+      "id": "BUD-VEN-HALL",
+      "source_id": "SRC-VEN-01",
+      "quantity": 1,
+      "unit_cents": 220000,
+      "purpose": "Banksia Hall and Paperbark Quiet Room venue booking, including setup/pack-down window and seating/wayfinding access"
+    },
+    {
+      "id": "BUD-VEN-COURT",
+      "source_id": "SRC-VEN-02",
+      "quantity": 1,
+      "unit_cents": 30000,
+      "purpose": "Version-1 covered courtyard add-on for an art/observation activity"
+    },
+    {
+      "id": "BUD-PA",
+      "source_id": "SRC-RES-02",
+      "quantity": 1,
+      "unit_cents": 55000,
+      "purpose": "Portable PA and handheld microphone"
+    },
+    {
+      "id": "BUD-ART",
+      "source_id": "SRC-RES-03",
+      "quantity": 2,
+      "unit_cents": 48000,
+      "purpose": "Two art/observation pack-sets, covering potential participation by 80 people at 40 people per set"
+    },
+    {
+      "id": "BUD-SIGNS",
+      "source_id": "SRC-RES-04",
+      "quantity": 1,
+      "unit_cents": 24000,
+      "purpose": "Large-print, high-contrast wayfinding sign set"
+    },
+    {
+      "id": "BUD-QUIET",
+      "source_id": "SRC-RES-05",
+      "quantity": 1,
+      "unit_cents": 18000,
+      "purpose": "Quiet-room sensory support kit for up to 20 people at a time"
+    },
+    {
+      "id": "BUD-REFRESH",
+      "source_id": "SRC-RES-06",
+      "quantity": 1,
+      "unit_cents": 72000,
+      "purpose": "Non-alcoholic drinks and labeled simple snacks for up to 80 adults"
+    }
+  ],
+  "subtotal_cents": 515000,
+  "contingency_cents": 51500,
+  "total_cents": 566500,
+  "programme": [
+    {
+      "id": "CRE-01",
+      "title": "Setup: room, quiet-space and wayfinding set-out; chair count and access-route check",
+      "room_id": "ROOM-HALL",
+      "start_minute": 1080,
+      "end_minute": 1100,
+      "attendees": 0,
+      "resources": [
+        "RES-CHAIRS",
+        "RES-SIGNS"
+      ],
+      "source_ids": [
+        "SRC-PROG-06",
+        "SRC-VEN-01",
+        "SRC-RES-01",
+        "SRC-RES-04"
+      ]
+    },
+    {
+      "id": "CRE-02",
+      "title": "Welcome, plain-language framing and access/wayfinding orientation",
+      "room_id": "ROOM-HALL",
+      "start_minute": 1100,
+      "end_minute": 1110,
+      "attendees": 60,
+      "resources": [
+        "RES-CHAIRS"
+      ],
+      "source_ids": [
+        "SRC-PROG-01",
+        "SRC-VEN-01",
+        "SRC-RES-01"
+      ]
+    },
+    {
+      "id": "CRE-03",
+      "title": "Quiet-space option with sensory support",
+      "room_id": "ROOM-QUIET",
+      "start_minute": 1100,
+      "end_minute": 1230,
+      "attendees": 20,
+      "resources": [
+        "RES-CHAIRS",
+        "RES-QUIET"
+      ],
+      "source_ids": [
+        "SRC-PROG-04",
+        "SRC-VEN-01",
+        "SRC-RES-01",
+        "SRC-RES-05"
+      ]
+    },
+    {
+      "id": "CRE-04",
+      "title": "Short science talks and conversation: two speakers, familiar examples, no audience experiments",
+      "room_id": "ROOM-HALL",
+      "start_minute": 1110,
+      "end_minute": 1140,
+      "attendees": 60,
+      "resources": [
+        "RES-CHAIRS",
+        "RES-PA"
+      ],
+      "source_ids": [
+        "SRC-PROG-02",
+        "SRC-VEN-01",
+        "SRC-RES-01",
+        "SRC-RES-02"
+      ]
+    },
+    {
+      "id": "CRE-05",
+      "title": "Guided room change and chair transfer: 40 people and chairs move from Hall to Courtyard",
+      "room_id": "ROOM-HALL",
+      "start_minute": 1140,
+      "end_minute": 1155,
+      "attendees": 20,
+      "resources": [
+        "RES-CHAIRS"
+      ],
+      "source_ids": [
+        "SRC-PROG-03",
+        "SRC-VEN-01",
+        "SRC-RES-01"
+      ]
+    },
+    {
+      "id": "CRE-06",
+      "title": "Guided room change and chair transfer: Courtyard arrival",
+      "room_id": "ROOM-COURT",
+      "start_minute": 1140,
+      "end_minute": 1155,
+      "attendees": 40,
+      "resources": [
+        "RES-CHAIRS"
+      ],
+      "source_ids": [
+        "SRC-PROG-03",
+        "SRC-VEN-02",
+        "SRC-RES-01"
+      ]
+    },
+    {
+      "id": "CRE-07",
+      "title": "Art and observation workshop: look, sketch and compare; reusable viewing cards",
+      "room_id": "ROOM-COURT",
+      "start_minute": 1155,
+      "end_minute": 1185,
+      "attendees": 40,
+      "resources": [
+        "RES-CHAIRS",
+        "RES-ART"
+      ],
+      "source_ids": [
+        "SRC-PROG-03",
+        "SRC-VEN-02",
+        "SRC-RES-01",
+        "SRC-RES-03"
+      ]
+    },
+    {
+      "id": "CRE-08",
+      "title": "Hosted conversation and observation prompts",
+      "room_id": "ROOM-HALL",
+      "start_minute": 1155,
+      "end_minute": 1185,
+      "attendees": 20,
+      "resources": [
+        "RES-CHAIRS"
+      ],
+      "source_ids": [
+        "SRC-PROG-02",
+        "SRC-VEN-01",
+        "SRC-RES-01"
+      ]
+    },
+    {
+      "id": "CRE-09",
+      "title": "Guided room change and chair transfer: 20 people and chairs move from Courtyard to Hall",
+      "room_id": "ROOM-COURT",
+      "start_minute": 1185,
+      "end_minute": 1200,
+      "attendees": 20,
+      "resources": [
+        "RES-CHAIRS"
+      ],
+      "source_ids": [
+        "SRC-PROG-03",
+        "SRC-VEN-02",
+        "SRC-RES-01"
+      ]
+    },
+    {
+      "id": "CRE-10",
+      "title": "Guided room change and chair transfer: Hall arrival",
+      "room_id": "ROOM-HALL",
+      "start_minute": 1185,
+      "end_minute": 1200,
+      "attendees": 40,
+      "resources": [
+        "RES-CHAIRS"
+      ],
+      "source_ids": [
+        "SRC-PROG-03",
+        "SRC-VEN-01",
+        "SRC-RES-01"
+      ]
+    },
+    {
+      "id": "CRE-11",
+      "title": "Light refreshments and informal conversation, with service staged for the Hall and Courtyard",
+      "room_id": "ROOM-HALL",
+      "start_minute": 1200,
+      "end_minute": 1245,
+      "attendees": 40,
+      "resources": [
+        "RES-CHAIRS",
+        "RES-REFRESH"
+      ],
+      "source_ids": [
+        "SRC-PROG-05",
+        "SRC-VEN-01",
+        "SRC-RES-01",
+        "SRC-RES-06"
+      ]
+    },
+    {
+      "id": "CRE-12",
+      "title": "Light refreshments and informal conversation",
+      "room_id": "ROOM-COURT",
+      "start_minute": 1200,
+      "end_minute": 1245,
+      "attendees": 20,
+      "resources": [
+        "RES-CHAIRS",
+        "RES-REFRESH"
+      ],
+      "source_ids": [
+        "SRC-PROG-05",
+        "SRC-VEN-02",
+        "SRC-RES-01",
+        "SRC-RES-06"
+      ]
+    },
+    {
+      "id": "CRE-13",
+      "title": "Pack-down, chair inventory and clear-room check",
+      "room_id": "ROOM-HALL",
+      "start_minute": 1245,
+      "end_minute": 1260,
+      "attendees": 0,
+      "resources": [
+        "RES-CHAIRS"
+      ],
+      "source_ids": [
+        "SRC-PROG-06",
+        "SRC-VEN-01",
+        "SRC-RES-01"
+      ]
+    }
+  ],
+  "risks": [
+    {
+      "id": "RSK-01",
+      "issue": "Room transitions, attendance distribution and movement of 40 chairs may create congestion or obstruct step-free routes. The v1 plan places up to 80 people across Hall/Quiet (60/20) and then Hall/Courtyard/Quiet (20/40/20), with chair transfers during two 15-minute transitions. The fictional rooms have capacities of 80, 20 and 40 respectively; the route, floor plan and handling time are unverified.",
+      "owner": "Event lead / coordinator",
+      "mitigation": "Proposed, not implemented: confirm a scaled floor plan and step-free routes; assign named people separately to crowd direction and furniture handling; count attendees before and after each move; keep exits and aisles clear; do not exceed room or total capacity. If the 40-chair transfer cannot be completed safely within the window, use the creative team's Hall rotation alternative and revise the schedule and staffing before integration.",
+      "status": "open",
+      "source_ids": [
+        "SRC-RISK-01",
+        "SRC-RISK-02"
+      ],
+      "supporting_source_ids": [
+        "SRC-VEN-01",
+        "SRC-VEN-02",
+        "SRC-RES-01",
+        "SRC-INK-01"
+      ]
+    },
+    {
+      "id": "RSK-02",
+      "issue": "Step-free room descriptions and a sign set do not establish that the final layout, route, seating distribution or signs work for attendees. The two stewards also have competing wayfinding, occupancy-counting and chair-moving tasks during transitions.",
+      "owner": "Event lead / access lead (to be appointed by the human owner)",
+      "mitigation": "Proposed, not implemented: inspect the fictional floor plan with access needs in mind; confirm clear routes, sightlines, sign placement, seating and a route between rooms; test the arrangement and transition before the event; assign a dedicated transition lead and avoid asking stewards to move furniture while directing attendees.",
+      "status": "open",
+      "source_ids": [
+        "SRC-RISK-02"
+      ],
+      "supporting_source_ids": [
+        "SRC-VEN-01",
+        "SRC-VEN-02",
+        "SRC-RES-01",
+        "SRC-RES-04",
+        "SRC-INK-01"
+      ]
+    },
+    {
+      "id": "RSK-03",
+      "issue": "The volunteer plan assumes 14 donated volunteer-hours, but availability is not confirmed. The quiet-room host is assigned 18:30\u201320:30 while quiet-space use begins at 18:20; the public programme continues to 20:45. A staffing gap could leave transitions, wayfinding or the quiet option unsupported.",
+      "owner": "Human event owner / event lead",
+      "mitigation": "Proposed, not implemented: confirm each role and exact coverage window; identify a backup for the lead and stewards; either extend quiet-room host coverage through the public window or clearly schedule and staff a quiet-space closure at 20:30. Do not treat the in-kind card as an availability commitment.",
+      "status": "open",
+      "source_ids": [
+        "SRC-RISK-01"
+      ],
+      "supporting_source_ids": [
+        "SRC-INK-01",
+        "SRC-PROG-04",
+        "SRC-PROG-06"
+      ]
+    },
+    {
+      "id": "RSK-04",
+      "issue": "The source card says snacks are labeled, but ingredients, allergen labeling, cross-contact controls, service layout and attendee dietary needs are not established. Hall and Courtyard service for 60 attendees may also create queues in circulation areas.",
+      "owner": "Refreshment lead / human event owner",
+      "mitigation": "Proposed, not implemented: obtain and check ingredient and allergen information with the service provider; decide how food is separated and served; keep queues and food away from exits and step-free routes; offer a clear route for questions without collecting attendee personal data for this exercise. If adequate information or service arrangements cannot be confirmed, revise or omit the affected food items in a human-approved plan.",
+      "status": "open",
+      "source_ids": [
+        "SRC-RISK-03"
+      ],
+      "supporting_source_ids": [
+        "SRC-RES-06",
+        "SRC-PROG-05"
+      ]
+    },
+    {
+      "id": "RSK-05",
+      "issue": "The exercise prohibits attendee personal data. A later attempt to manage access or dietary needs by collecting identifiable information would exceed this fictional plan's scope and create unnecessary privacy exposure.",
+      "owner": "Coordinator / human event owner",
+      "mitigation": "Proposed, not implemented: keep this rehearsal free of attendee data collection. Any real-world access or dietary planning process requires a separate human decision defining purpose, minimum necessary data, handling and retention before collection; this output grants no such authority.",
+      "status": "open",
+      "source_ids": [
+        "SRC-RISK-03"
+      ],
+      "supporting_source_ids": []
+    }
+  ],
+  "marketing": {
+    "brief_version": 1,
+    "title": "Science, art and shared wonder",
+    "attendance": 80,
+    "programme_ids": [
+      "CRE-01",
+      "CRE-02",
+      "CRE-03",
+      "CRE-04",
+      "CRE-05",
+      "CRE-06",
+      "CRE-07",
+      "CRE-08",
+      "CRE-09",
+      "CRE-10",
+      "CRE-11",
+      "CRE-12",
+      "CRE-13"
+    ],
+    "room_ids": [
+      "ROOM-HALL",
+      "ROOM-QUIET",
+      "ROOM-COURT"
+    ],
+    "draft_copy": "Fictional local rehearsal draft \u2014 not an invitation or ticket offer. Join a welcoming evening for 80 adults, titled \u201cScience, art and shared wonder,\u201d to explore familiar science ideas through short talks, an art-and-observation workshop, and informal conversation over light refreshments. A quiet-space option is planned alongside the main programme. The draft schedule is 18:00\u201321:00 Perth local time on 14 November 2026, at the fictional Banksia Hall venue. Room access, staffing, transitions, and refreshment arrangements remain subject to human review; no venue, service, or accessibility details are confirmed.",
+    "publication_status": "draft_only"
+  },
+  "handoffs": {
+    "finance": {
+      "writer_session": "/root/rehearsal_finance",
+      "model": "gpt-6-luna",
+      "brief_version": 1,
+      "artifact": "runs/SCI-20261005-01/outputs/finance.json",
+      "status": "ready_for_review",
+      "dependencies_acknowledged": [],
+      "source_ids": [
+        "SRC-VEN-01",
+        "SRC-VEN-02",
+        "SRC-RES-02",
+        "SRC-RES-03",
+        "SRC-RES-04",
+        "SRC-RES-05",
+        "SRC-RES-06",
+        "SRC-RES-01",
+        "SRC-INK-01"
+      ],
+      "assumptions": [
+        "Budget is an auditable fictional v1 plan using source-exact prices only.",
+        "Courtyard capacity constrains simultaneous use to 40; 80 potential art participants require split/rotation if all participate."
+      ],
+      "open_questions": [
+        "Will the programme schedule and staff an activity split within courtyard capacity?",
+        "Are the assumed in-kind volunteer roles acceptable for planning, subject to later human confirmation?",
+        "Which resource/room changes will creative and risk require after CH-001?"
+      ],
+      "change_ack_ids": []
+    },
+    "creative": {
+      "writer_session": "/root/rehearsal_creative",
+      "model": "gpt-6-luna",
+      "brief_version": 1,
+      "artifact": "runs/SCI-20261005-01/outputs/creative.json",
+      "status": "ready_for_review",
+      "dependencies_acknowledged": [],
+      "source_ids": [
+        "SRC-PROG-01",
+        "SRC-PROG-02",
+        "SRC-PROG-03",
+        "SRC-PROG-04",
+        "SRC-PROG-05",
+        "SRC-PROG-06",
+        "SRC-VEN-01",
+        "SRC-VEN-02",
+        "SRC-RES-01",
+        "SRC-RES-02",
+        "SRC-RES-03",
+        "SRC-RES-04",
+        "SRC-RES-05",
+        "SRC-RES-06",
+        "SRC-INK-01"
+      ],
+      "assumptions": [
+        "All venue, price and support facts are invented and apply only to this local rehearsal."
+      ],
+      "open_questions": [
+        "Verify chair movement, route clearance, refreshment service arrangement, and quiet-host coverage before any real event."
+      ],
+      "change_ack_ids": []
+    },
+    "risk": {
+      "writer_session": "/root/rehearsal_risk",
+      "model": "gpt-6-luna",
+      "brief_version": 1,
+      "artifact": "runs/SCI-20261005-01/outputs/risk.json",
+      "status": "ready_for_review",
+      "dependencies_acknowledged": [
+        "finance",
+        "creative"
+      ],
+      "source_ids": [
+        "SRC-RISK-01",
+        "SRC-RISK-02",
+        "SRC-RISK-03",
+        "SRC-RISK-04",
+        "SRC-VEN-01",
+        "SRC-VEN-02",
+        "SRC-RES-01",
+        "SRC-RES-04",
+        "SRC-RES-06",
+        "SRC-PROG-04",
+        "SRC-PROG-05",
+        "SRC-PROG-06",
+        "SRC-INK-01"
+      ],
+      "assumptions": [
+        "This is advisory risk analysis for fictional brief version 1 and fictional source cards only; no control is verified or implemented.",
+        "Finance and creative artifacts are the matching-version inputs; their availability and staffing statements do not establish real commitments or conditions."
+      ],
+      "open_questions": [
+        "Can the proposed room counts, step-free route, 40-chair movement and separate crowd/staff roles be made workable in the confirmed floor plan?",
+        "Can all volunteer roles, including quiet-room coverage for the full chosen public window, be confirmed?",
+        "What ingredient/allergen and food-service details can be confirmed without collecting attendee personal data?",
+        "How will the activity, room use and crowd flow change when CH-001 closes the courtyard?"
+      ],
+      "change_ack_ids": []
+    },
+    "marketing": {
+      "writer_session": "/root/rehearsal_marketing",
+      "model": "gpt-6-luna",
+      "brief_version": 1,
+      "artifact": "runs/SCI-20261005-01/outputs/marketing.json",
+      "status": "ready_for_review",
+      "dependencies_acknowledged": [
+        "finance",
+        "risk",
+        "creative"
+      ],
+      "source_ids": [
+        "SRC-PROG-01",
+        "SRC-PROG-02",
+        "SRC-PROG-03",
+        "SRC-PROG-04",
+        "SRC-PROG-05",
+        "SRC-PROG-06",
+        "SRC-VEN-01",
+        "SRC-VEN-02",
+        "SRC-RES-06",
+        "SRC-RISK-01",
+        "SRC-RISK-02",
+        "SRC-RISK-03",
+        "SRC-INK-01"
+      ],
+      "assumptions": [
+        "Finance, creative, and risk v1 outputs were received and are marked ready_for_review; their artifacts are fictional planning inputs, not confirmations.",
+        "The marketing programme and room references reproduce the creative v1 artifact exactly."
+      ],
+      "open_questions": [
+        "Resolve the creative and risk open issues around volunteer coverage, transitions, layout/access verification, and food details before any real-world use.",
+        "Reconcile all copy and room references with the matching-version integrated programme after CH-001."
+      ],
+      "change_ack_ids": []
+    }
+  },
+  "pending_human_decisions": [
+    "Confirm whether fictional donated volunteer coverage is an acceptable planning assumption; no actual volunteer availability is established.",
+    "Confirm activity rotation, facilitator coverage, transition time, and maximum courtyard attendance of 40 in the v1 programme.",
+    "Confirm venue, suppliers, inventory, accessibility layout, food labeling/service details, and all availability with responsible humans before any real-world use; no legal or access clearance is asserted.",
+    "After CH-001, reselect venue resources for version 2 and preserve the ceiling and access requirements.",
+    "Can the venue floor plan support 60 Hall chairs, 20 Quiet Room chairs, and transfer of 40 chairs to and from the Courtyard in each 15-minute window while keeping step-free routes and exits clear?",
+    "Can a quiet-room host cover the full public window, or should the quiet option end at 20:30? The source plan provides two host-hours.",
+    "Should the quiet room remain food-free, and can the refreshment service be staged across Hall and Courtyard without a queue blocking circulation?",
+    "Confirm actual courtyard/weather conditions and the final accessible route before any real-world operation; this proposal creates no booking or commitment.",
+    "Confirm whether the donated volunteer plan is acceptable as a planning assumption and whether named people can cover the listed hours; decide how to cover the quiet option from 18:20 to 20:45, including the 20:30 host end.",
+    "Approve a feasible floor plan, room counts, step-free route, chair-movement method, separated crowd-direction/furniture roles and transition timing; choose the Hall rotation alternative if these cannot be supported.",
+    "Confirm food ingredients/allergen information, service and queue layout, and whether the proposed food offering is suitable; do not infer suitability from the phrase 'labeled simple snacks'.",
+    "Confirm that the rehearsal collects no attendee personal information. Any future collection requires a separately scoped human decision.",
+    "On CH-001, remove courtyard use and spend, move/reassign the activity into an available room, and reassess room capacity, crowd flow, transitions, seating, staffing and wayfinding before accepting v2.",
+    "Keep this copy local and draft-only unless the human owner separately authorizes publication.",
+    "Before any real use, a human must confirm venue and schedule, staffing and quiet-room coverage, practical access arrangements, and food/service details; no legal, venue, accessibility, or food clearance is asserted.",
+    "Do not collect attendee personal data as part of this rehearsal."
+  ]
+}
