@@ -42,6 +42,8 @@ The [fictional rehearsal pack](planning/events-agency/rehearsal/README.md) imple
 
 Actual specialist-session rehearsal evidence is now recorded separately in [T-GOV-010](records/tasks/T-GOV-010.md) and [run metrics](runs/SCI-20261005-01/metrics.md). Supplier facts remain fictional; consult the task for the fixed-candidate review and final acceptance state.
 
+The [role performance assessment](research/performance/SCI-20261005-01/REPORT.md) appraises those outputs and coordination, with prioritized proposed improvements and observable next-run tests. See [T-GOV-011](records/tasks/T-GOV-011.md) for independent assessment-review status. Recommendations do not modify role mandates or implement changes.
+
 ## What to validate
 
 Evaluate this design against a single-agent baseline using comparable tasks and budgets. Track acceptance success, escaped defects, cost, completion time, human interventions, and recovery after interruption. Add roles only when their benefit justifies coordination cost.

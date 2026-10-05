@@ -2,6 +2,10 @@
 
 Updated 2026-10-05. This file supplies continuation context; [AGENTS.md](AGENTS.md) remains the instruction entry point and [the charter](governance/charter.md) defines authority.
 
+## Current continuation — T-GOV-011
+
+The user requested Luna workflow appraisal of role performance and recommendations. Two distinct Luna analysts assessed the specialists and coordinator/reviewer/system process; coordinator integrated the [performance report](research/performance/SCI-20261005-01/REPORT.md). [T-GOV-011](records/tasks/T-GOV-011.md) records the exact candidate, separate Luna review and final acceptance state. Findings refer to the actual single fictional run; timing/cost gaps prohibit role efficiency rankings or general reliability claims. Source/contracts, run history and prior verdicts are preserved. Recommendations are proposed changes and experiments, not approved implementation or operational activation.
+
 ## Current continuation — T-GOV-010
 
 The user authorized proceeding with the fictional rehearsal and asked to try again. Actual specialist Luna workstreams have produced outputs for run `SCI-20261005-01`, with initial proposal history preserved at `078762986f8da27394d933bb689fd3722ce384d3` and the disclosed CH-001 change propagated through matching-version handoffs. See [T-GOV-010](records/tasks/T-GOV-010.md) for current acceptance state, review and limits; [run metrics](runs/SCI-20261005-01/metrics.md) distinguish actual session evidence from fictional supplier data.
