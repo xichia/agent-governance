@@ -20,6 +20,8 @@ Updated 2026-10-05. This file supplies continuation context; [AGENTS.md](AGENTS.
 - Latest direction: choose one representative reversible task, define bounded trial authority, then evaluate the workflow. Compare against a single executor plus separate reviewer with matched criteria and resource ceilings.
 - Earlier tags v0.1.0 and v0.1.1 exclude later research and handoff changes. Use the delivered working HEAD for continuation.
 
+The user explicitly requested “Zip it” on 2026-10-05. This supersedes the earlier no-ZIP constraint recorded in D-GOV-003; that historical decision otherwise remains proposed. See [T-GOV-005](records/tasks/T-GOV-005.md) for this handoff/package assignment.
+
 ## Pending decisions
 
 The user still needs to identify a concrete project or maintained system, boundaries, actors, environment and budget. The reviewed pilot recommendation is not approval to operate a system. Until an assignment and authority are supplied, continue with read-only assessment or expressly requested repository drafting.
