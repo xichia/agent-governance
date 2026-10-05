@@ -1,6 +1,6 @@
 # Science, art and shared wonder — rehearsal pack
 
-This is a **fictional, local demonstration kit**. All suppliers, prices, availability and venues are invented. The examples are hand-authored checker fixtures, not outputs from agent sessions. No rehearsal has run and no independent review pass is claimed.
+This is a **fictional, local demonstration kit**. All suppliers, prices, availability and venues are invented. The examples are hand-authored checker fixtures, not outputs from agent sessions. No rehearsal has run. Current pack review status and evidence are recorded in [T-GOV-009](../../../records/tasks/T-GOV-009.md).
 
 The user accepted building this pack after the reviewed [plan](../PLAN.md). The default brief below makes the kit runnable without real supplier research. Change these fictional constraints before freezing a run if desired.
 

@@ -65,7 +65,9 @@
         "RES-SIGNS"
       ],
       "source_ids": [
-        "SRC-PROG-06"
+        "SRC-PROG-06",
+        "SRC-VEN-01",
+        "SRC-RES-04"
       ]
     },
     {
@@ -81,7 +83,9 @@
       ],
       "source_ids": [
         "SRC-PROG-01",
-        "SRC-RES-01"
+        "SRC-RES-01",
+        "SRC-VEN-01",
+        "SRC-RES-04"
       ]
     },
     {
@@ -97,7 +101,9 @@
       ],
       "source_ids": [
         "SRC-PROG-02",
-        "SRC-RES-01"
+        "SRC-RES-01",
+        "SRC-VEN-01",
+        "SRC-RES-02"
       ]
     },
     {
@@ -113,7 +119,9 @@
       ],
       "source_ids": [
         "SRC-PROG-03",
-        "SRC-RES-01"
+        "SRC-RES-01",
+        "SRC-VEN-02",
+        "SRC-RES-03"
       ]
     },
     {
@@ -129,7 +137,9 @@
       ],
       "source_ids": [
         "SRC-PROG-04",
-        "SRC-RES-01"
+        "SRC-RES-01",
+        "SRC-VEN-01",
+        "SRC-RES-05"
       ]
     },
     {
@@ -144,7 +154,8 @@
       ],
       "source_ids": [
         "SRC-PROG-04",
-        "SRC-RES-01"
+        "SRC-RES-01",
+        "SRC-VEN-01"
       ]
     },
     {
@@ -160,7 +171,9 @@
       ],
       "source_ids": [
         "SRC-PROG-05",
-        "SRC-RES-01"
+        "SRC-RES-01",
+        "SRC-VEN-01",
+        "SRC-RES-06"
       ]
     },
     {
@@ -174,7 +187,9 @@
         "RES-SIGNS"
       ],
       "source_ids": [
-        "SRC-PROG-06"
+        "SRC-PROG-06",
+        "SRC-VEN-01",
+        "SRC-RES-04"
       ]
     }
   ],

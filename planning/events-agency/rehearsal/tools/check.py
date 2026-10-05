@@ -100,6 +100,7 @@ def validate(proposal: Any, sources: Any, changes: Any) -> list[str]:
 
     # Source cards are the sole permitted price and provenance basis.
     cards: dict[str, dict[str, Any]] = {}
+    card_categories: dict[str, str] = {}
     all_card_ids: list[str] = []
     card_groups = ("budget_cards", "programme_cards", "risk_cards", "support_cards")
     for group in card_groups:
@@ -114,6 +115,7 @@ def validate(proposal: Any, sources: Any, changes: Any) -> list[str]:
             card_id = card["id"]
             all_card_ids.append(card_id)
             cards[card_id] = card
+            card_categories[card_id] = group
             if group == "budget_cards":
                 if not nonempty_string(card.get("kind")) or not nonempty_string(card.get("description")):
                     err(f"source card {card_id} requires kind and description")
@@ -209,6 +211,8 @@ def validate(proposal: Any, sources: Any, changes: Any) -> list[str]:
         budget_quantities[source_id] = budget_quantities.get(source_id, 0) + line["quantity"]
         if card.get("kind") == "venue":
             used_venue_cards.add(source_id)
+        if version == 2 and source_id == "SRC-VEN-02":
+            err("version 2 budget must remove the closed courtyard add-on SRC-VEN-02")
     budget_sources = [line.get("source_id") for line in budget_rows if isinstance(line, dict)]
     if duplicates([s for s in budget_sources if isinstance(s, str)]):
         err("each source card may appear on at most one budget line")
@@ -247,17 +251,38 @@ def validate(proposal: Any, sources: Any, changes: Any) -> list[str]:
         available_rooms: set[str] = set()
     else:
         available_rooms = set(x for x in version_entry["available_rooms"] if isinstance(x, str))
-    closure_ids: set[str] = set()
     change_rows = changes.get("changes")
     if not isinstance(change_rows, list):
         err("change pack changes must be a list")
         change_rows = []
-    for change in change_rows:
-        if isinstance(change, dict) and nonempty_string(change.get("id")):
-            closure_ids.add(change["id"])
-    court_changes = [c for c in change_rows if isinstance(c, dict) and c.get("field") == "available_rooms.ROOM-COURT"]
-    if not court_changes or court_changes[0].get("id") != "CH-001" or court_changes[0].get("from_version") != 1 or court_changes[0].get("to_version") != 2 or court_changes[0].get("new_value") != "unavailable":
-        err("change pack must declare CH-001 courtyard closure from version 1 to 2")
+    change_ids = [c.get("id") for c in change_rows if isinstance(c, dict) and nonempty_string(c.get("id"))]
+    if duplicates(change_ids):
+        err("change IDs must be unique")
+    if changes.get("case_id") != "EV-SCI-001":
+        err("change pack case_id must be EV-SCI-001")
+    court_changes = [c for c in change_rows if isinstance(c, dict) and c.get("id") == "CH-001"]
+    if len(court_changes) != 1:
+        err("change pack must contain exactly one CH-001 courtyard closure")
+    else:
+        change = court_changes[0]
+        if change.get("event_id") != "EV-SCI-001":
+            err("CH-001 event_id must be EV-SCI-001")
+        if change.get("field") != "available_rooms.ROOM-COURT":
+            err("CH-001 field must identify available_rooms.ROOM-COURT")
+        if not is_int(change.get("from_version")) or change.get("from_version") != 1:
+            err("CH-001 from_version must be literal integer 1")
+        if not is_int(change.get("to_version")) or change.get("to_version") != 2:
+            err("CH-001 to_version must be literal integer 2")
+        if change.get("old_value") != "available" or change.get("new_value") != "unavailable":
+            err("CH-001 old_value/new_value must be available/unavailable")
+        if change.get("source_id") != "SRC-VEN-02" or cards.get("SRC-VEN-02", {}).get("kind") != "venue":
+            err("CH-001 source_id must identify existing venue card SRC-VEN-02")
+        affected = change.get("affected_roles")
+        if not valid_string_list(affected) or duplicates(affected) or set(affected) != set(ROLES):
+            err("CH-001 affected_roles must list exactly finance, risk, creative, and marketing")
+        for field in ("authority", "required_outcome"):
+            if not nonempty_string(change.get(field)):
+                err(f"CH-001 {field} must be a nonempty string")
     expected_change_acks = ["CH-001"] if version == 2 else []
 
     selected_room_ids: set[str] = set()
@@ -316,6 +341,15 @@ def validate(proposal: Any, sources: Any, changes: Any) -> list[str]:
             for source_id in srcs:
                 if source_id not in cards:
                     err(f"programme {pid!r} references unknown source {source_id}")
+            if not any(card_categories.get(source_id) == "programme_cards" for source_id in srcs):
+                err(f"programme {pid!r} must cite at least one programme evidence card")
+            if room is not None and room.get("source_id") not in srcs:
+                err(f"programme {pid!r} must cite venue source {room.get('source_id')}")
+            for resource_id in row_resources:
+                resource = resources_by_id.get(resource_id)
+                resource_source = resource.get("source_id") if isinstance(resource, dict) else None
+                if isinstance(resource_source, str) and resource_source not in srcs:
+                    err(f"programme {pid!r} must cite resource source {resource_source}")
         normalized_programs.append(row)
     if duplicates(program_ids):
         err("programme IDs must be unique")
@@ -470,18 +504,23 @@ def validate(proposal: Any, sources: Any, changes: Any) -> list[str]:
 
 
 def self_test(sources: Any, changes: Any) -> int:
-    cases: list[tuple[str, Any, str | None]] = []
+    cases: list[tuple[str, Any, Any, Any, str | None]] = []
     try:
         initial, revised = read_json(INITIAL_PATH), read_json(REVISED_PATH)
     except InvalidData as exc:
         print(f"SELF-TEST FAIL: {exc}", file=sys.stderr)
         return 1
-    cases.extend((("initial fixture", initial, None), ("revised fixture", revised, None)))
+    cases.extend((("initial fixture", initial, sources, changes, None), ("revised fixture", revised, sources, changes, None)))
 
     def mutation_fails_with(name: str, expected: str, fn: Any) -> None:
         data = copy.deepcopy(revised)
         fn(data)
-        cases.append((name, data, expected))
+        cases.append((name, data, sources, changes, expected))
+
+    def metadata_mutation(name: str, expected: str, fn: Any) -> None:
+        data, source_data, change_data = copy.deepcopy(revised), copy.deepcopy(sources), copy.deepcopy(changes)
+        fn(data, source_data, change_data)
+        cases.append((name, data, source_data, change_data, expected))
 
     def recalculate(data: dict[str, Any]) -> None:
         subtotal = sum(row["quantity"] * row["unit_cents"] for row in data["budget"])
@@ -496,22 +535,30 @@ def self_test(sources: Any, changes: Any) -> int:
     mutation_fails_with("overlapping room", "overlapping room use", lambda d: d["programme"][3].__setitem__("start_minute", 1140))
     mutation_fails_with("overlapping exclusive resource", "exclusive resource RES-PA overlaps", lambda d: (d["programme"][3].__setitem__("resources", d["programme"][3]["resources"] + ["RES-PA"]), d["programme"][4].__setitem__("resources", d["programme"][4]["resources"] + ["RES-PA"])))
     mutation_fails_with("unknown source", "references unknown source", lambda d: d["programme"][0].__setitem__("source_ids", ["SRC-DOES-NOT-EXIST"]))
+    mutation_fails_with("risk-only programme source", "must cite at least one programme evidence card", lambda d: d["programme"][3].__setitem__("source_ids", ["SRC-RISK-01"]))
+    mutation_fails_with("in-kind-only programme source", "must cite at least one programme evidence card", lambda d: d["programme"][3].__setitem__("source_ids", ["SRC-INK-01"]))
     mutation_fails_with("closed room", "uses room ROOM-COURT unavailable", lambda d: d["programme"][3].__setitem__("room_id", "ROOM-COURT"))
     mutation_fails_with("stale version", "handoff creative has stale brief_version", lambda d: d["handoffs"]["creative"].__setitem__("brief_version", 1))
     mutation_fails_with("missing change acknowledgement", "handoff marketing change_ack_ids", lambda d: d["handoffs"]["marketing"].__setitem__("change_ack_ids", []))
     mutation_fails_with("inconsistent marketing", "marketing attendance must match", lambda d: d["marketing"].__setitem__("attendance", 79))
     mutation_fails_with("insufficient pooled resources", "resource RES-ART concurrent use", lambda d: (d["budget"][2].__setitem__("quantity", 1), recalculate(d)))
     mutation_fails_with("missing required resource purchase", "required resource RES-PA is missing", lambda d: (d["budget"].__setitem__(slice(None), [line for line in d["budget"] if line["source_id"] != "SRC-RES-02"]), recalculate(d)))
+    mutation_fails_with("v2 courtyard spend", "version 2 budget must remove the closed courtyard add-on", lambda d: (d["budget"].append({"id": "LINE-COURT-STALE", "source_id": "SRC-VEN-02", "quantity": 1, "unit_cents": 30000}), recalculate(d)))
+    metadata_mutation("change source missing", "CH-001 source_id must identify existing venue card", lambda d, s, c: c["changes"][0].__setitem__("source_id", "SRC-DOES-NOT-EXIST"))
+    metadata_mutation("change source wrong category", "CH-001 source_id must identify existing venue card", lambda d, s, c: next(card for card in s["budget_cards"] if card["id"] == "SRC-VEN-02").__setitem__("kind", "resource"))
+    metadata_mutation("change affected roles missing", "CH-001 affected_roles must list exactly", lambda d, s, c: c["changes"][0].__setitem__("affected_roles", []))
+    metadata_mutation("change version boolean", "CH-001 from_version must be literal integer 1", lambda d, s, c: c["changes"][0].__setitem__("from_version", True))
+    metadata_mutation("change old/new values malformed", "CH-001 old_value/new_value must be available/unavailable", lambda d, s, c: c["changes"][0].__setitem__("old_value", "closed"))
+    metadata_mutation("duplicate change ID", "change IDs must be unique", lambda d, s, c: c["changes"].append(copy.deepcopy(c["changes"][0])))
     # A malformed JSON parser case is exercised without touching a fixture file.
     try:
         json.loads('{"broken":')
-        cases.append(("malformed JSON", {}, ""))
     except json.JSONDecodeError:
         print("PASS malformed JSON: parser rejects truncated input")
 
     failures = 0
-    for name, candidate, expected in cases:
-        problems = validate(candidate, sources, changes)
+    for name, candidate, candidate_sources, candidate_changes, expected in cases:
+        problems = validate(candidate, candidate_sources, candidate_changes)
         if expected is None:
             okay = not problems
             expectation = "pass"
