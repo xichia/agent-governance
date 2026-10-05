@@ -1,6 +1,6 @@
 # Task: T-GOV-007 — Plan the live events-agency demo
 
-- **Status:** review
+- **Status:** done
 - **Human owner / escalation contact:** requesting user, this conversation
 - **Coordinator / integrator:** `/root`, Codex GPT-6 (exact deployment identifier unavailable)
 - **Implementers:** separate Luna sessions `agency_design` and `demo_delivery`; actual IDs recorded after assignment
@@ -39,3 +39,4 @@ Acceptance:
 - 2026-10-05: active → review. Separate `gpt-6-luna` sessions `/root/agency_design` and `/root/demo_delivery` delivered their disjoint contributions. Coordinator reconciled four workstreams, three-worker concurrency, dependency waves and one rehearsal sequence in PLAN.md. Fixed candidate commit and independent review pending. The branch name is retained from the cancelled drafting task; it is not operational authorization.
 - 2026-10-05: review → active. Separate `gpt-6-luna` reviewer `/root/plan_review` returned changes-required in [R-GOV-007-01](../reviews/R-GOV-007-01.md) against `35bcaee70c6df0dbc9b9e73ba32bc7e5ba9fa616`: agency-design contribution still depicted four simultaneous workers. Coordinator requested its assigned author align the contribution with the integrated three-worker schedule. Criteria unchanged; second and final review round follows a corrected candidate.
 - 2026-10-05T05:35Z: active → review. Assigned author corrected agency-design.md description, diagram and handoff sequencing to show three-worker waves and dependent marketing/risk follow-up. Coordinator inspected the diff; working diff whitespace check passed. Fixed correction candidate and scoped independent recheck pending; no acceptance criteria changed.
+- 2026-10-05T05:38:43Z: review → done. Separate Luna scoped recheck [R-GOV-007-02](../reviews/R-GOV-007-02.md) passed corrected candidate `cc171f20e7acb0f3692e250059e252ce8f1682f9`, preserving prior evidence for unchanged artifacts. Integrated by fast-forward into canonical `main` at `354af03ff6b5b86b2e55ea11f9f8e6130e2fa12b`. Coordinator verified reviewed planning artifacts and README exactly match the passing candidate, governance/AGENTS.md remain unchanged from the pin, integrated diff whitespace check passed, 45 Markdown files / 106 local links had zero unresolved targets, and the tree was clean. Closure edits only task/progress records; plan acceptance does not authorize implementation, rehearsal or agency operation. Outcome and remaining owner choices are in [PLAN.md](../../planning/events-agency/PLAN.md).
