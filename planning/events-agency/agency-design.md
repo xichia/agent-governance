@@ -1,8 +1,8 @@
 # Events agency: team and interface design
 
-**Status:** planning proposal only; no agency is activated.  
-**Task / policy:** T-GOV-007; charter 0.1.1, commit `5c35200db736c86b6a6e31cd30de8d3af48211de`.  
-**Author:** `/root/agency_design` (session/agent identifier), configured model `gpt-6-luna`; internal deployment identifier unavailable in this environment.  
+**Status:** planning proposal only; no agency is activated.
+**Task / policy:** T-GOV-007; charter 0.1.1, commit `5c35200db736c86b6a6e31cd30de8d3af48211de`.
+**Author:** `/root/agency_design` (session/agent identifier), configured model `gpt-6-luna`; internal deployment identifier unavailable in this environment.
 **Scope:** assigned contribution to `planning/events-agency/agency-design.md`; no external research or operational actions.
 
 ## Smallest useful team
