@@ -22,7 +22,9 @@ Initial [R-GOV-013-01](../../../../records/reviews/R-GOV-013-01.md) checked cand
 
 The coordinator separately ran 85 malformed scalar-field probes against the initial candidate: 17 required scalar positions × five null/collection values, all rejected without crash or mutation. This is targeted coverage, not an exhaustive fuzz or security result. The independent resource-only probe avoids confusing an attendance-overflow rejection with resource pooling correctness.
 
-Revised fixed-candidate recheck remains pending; no final acceptance claimed yet. Post-review closure facts belong in the task or a new dated verification record; earlier candidate observations remain in Git history.
+First recheck [R-GOV-013-02](../../../../records/reviews/R-GOV-013-02.md) at `79204291e7722ead231cf4807cdb9f25cf3dd26c` confirmed the URI repair and 46 fixtures but returned **changes-required** for a related URL-shape gap: a verified claim with source `https://` (empty authority) was accepted. Disposition **fixed** in repair round 2: use a standard-library parser to require HTTP(S), nonempty authority/hostname, and reject whitespace/control and parser-detected malformed ports/brackets. No network lookup or factual verification added. Five independent fixtures cover three malformed URLs and two valid HTTP(S) path/query URLs. The author corrected accidentally inherited expected-accept flags in the newly added negative fixtures; the final expectations match the agreed URL requirement, not a relaxed criterion. Coordinator reproduced **51/51 cases (ten valid, 41 invalid)**. Added fixtures were run after the fix; reviewer counterexamples establish actual pre-fix behavior.
+
+Final revised candidate recheck remains pending; no final acceptance claimed yet. Both allowed repair rounds are consumed; any remaining material finding blocks closure. Post-review closure facts belong in the task or a new dated verification record; earlier candidate observations remain in Git history.
 
 ## Interpretation and next experiment
 

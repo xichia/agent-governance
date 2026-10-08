@@ -26,7 +26,7 @@ A seated state must name a known `chair_resource`; its attendees count against t
 
 ## Claims and evidence labels
 
-`claims` may be empty. Each claim has a unique nonempty string `id`, nonempty string `text`, a `status`, and a source value. Allowed statuses are `supplied`, `verified`, `assumption`, and `unresolved`. A `supplied` claim must name a dependency path in the trusted manifest. A `verified` claim must include a nonempty HTTP(S) URL. This checks URL presence and shape only; it does not fetch the URL or establish that the claim is true. `assumption` and `unresolved` claims must retain a nonempty source/label so their stated status remains visible. No status semantically verifies free prose.
+`claims` may be empty. Each claim has a unique nonempty string `id`, nonempty string `text`, a `status`, and a source value. Allowed statuses are `supplied`, `verified`, `assumption`, and `unresolved`. A `supplied` claim must name a dependency path in the trusted manifest. A `verified` claim must include a shaped HTTP(S) URL: the standard-library URL parser must recognize an HTTP or HTTPS scheme, a nonempty authority and hostname, and no whitespace or control characters; malformed or out-of-range ports rejected by the parser also fail. This is a limited syntax check, not a complete URL-standard validator: it does not resolve DNS, contact the host, prove reachability, or establish that the claim is true. `assumption` and `unresolved` claims must retain a nonempty source/label so their stated status remains visible. No status semantically verifies free prose.
 
 ## Scope limits
 

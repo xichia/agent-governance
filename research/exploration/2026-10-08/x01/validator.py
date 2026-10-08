@@ -5,6 +5,7 @@ This module validates JSON-like Python values. It is not a security boundary.
 
 import hashlib
 import re
+from urllib.parse import urlsplit
 
 
 _HASH = re.compile(r"[0-9a-f]{64}\Z")
@@ -46,6 +47,22 @@ def _logical_path(path):
     parts = path.split("/")
     return all(part not in ("", ".", "..") and _URI_SCHEME.match(part) is None
                for part in parts)
+
+
+def _http_url_shape(value):
+    """Check basic HTTP(S) URL syntax without resolving or fetching it."""
+    if not _string(value) or not value:
+        return False
+    if any(ord(char) <= 32 or ord(char) == 127 for char in value):
+        return False
+    try:
+        parsed = urlsplit(value)
+        hostname = parsed.hostname
+        # Accessing .port makes urllib validate malformed and out-of-range ports.
+        parsed.port
+    except ValueError:
+        return False
+    return parsed.scheme.lower() in ("http", "https") and bool(parsed.netloc) and bool(hostname)
 
 
 def _add(errors, condition, message):
@@ -283,10 +300,8 @@ def validate(payload, assignment, inputs):
                 if not _string(source) or source not in manifest:
                     errors.append(f"{prefix}.source: supplied claim requires a known dependency path")
             elif status == "verified":
-                if not _string(source) or not source.strip():
-                    errors.append(f"{prefix}.source: verified claim requires a nonempty source URL")
-                elif not (source.startswith("https://") or source.startswith("http://")):
-                    errors.append(f"{prefix}.source: verified source must be an HTTP(S) URL")
+                if not _http_url_shape(source):
+                    errors.append(f"{prefix}.source: verified claim requires a shaped HTTP(S) URL with a hostname")
             elif status in ("assumption", "unresolved"):
                 if not _string(source) or not source.strip():
                     errors.append(f"{prefix}.source: assumption or unresolved claim must remain labeled")
