@@ -1,6 +1,6 @@
 {
   "package_id": "EXP-X04-20261008-05",
-  "status": "active",
+  "status": "released",
   "session": "/root",
   "thread_id": "01a10a9e-1700-7373-843c-34814db8a0b1",
   "started_at": "2026-10-08T04:57:40.103692+00:00",
@@ -12,5 +12,9 @@
     "/root/mediated_3": "trials/mediated_3.initial.json and .final.json",
     "/root/mediated_4": "trials/mediated_4.initial.json and .final.json"
   },
-  "reviewer": "distinct configured gpt-6-luna /root/mediated_review; only new R018 records"
+  "reviewer": "distinct configured gpt-6-luna /root/mediated_review; only new R018 records",
+  "released_at": "2026-10-08T05:09:46.623295+00:00",
+  "accepted_candidate": "a3daa24410eb10fa126d1f07b08509bdad835bb8",
+  "checkpoint": "CHECKPOINT.md",
+  "writer_completion": "All4nativeexecutor final/methodclarification notifications and distinctreviewer final received; list_agents completed; source/raw writes stopped. Coordinator final-record-only closure."
 }
