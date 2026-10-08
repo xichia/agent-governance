@@ -35,6 +35,8 @@
     "OWNER.json",
     "verification metadata",
     "records/tasks/T-GOV-019.md",
-    "records/tasks/T-GOV-019/root/"
-  ]
+    "records/tasks/T-GOV-019/root/",
+    "PRIORITIES.md (new owner-requested synthesis; accepted core unchanged)"
+  ],
+  "priority_reviewer_assignment": "stopped distinct /root/semantic_review; ONLY new R-GOV-019-04 after frozen priority artifact"
 }
