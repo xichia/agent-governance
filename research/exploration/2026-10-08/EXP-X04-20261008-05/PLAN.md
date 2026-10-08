@@ -1,0 +1,23 @@
+# EXP-X04-20261008-05 / T-GOV-018
+
+Coordinator /root, charter0.1.1, branch work, base 003ad05efed398a164f9209e6541af63f853ef71, activation2026-10-08T04:56:21Z; stop/checkpointby05:56:21Z. Cooperative atomic claim 2026-10-08T04:57:40.103692+00:00 before dispatch.04 acceptedffb52d9f93f94569b2cabc47a305586536b53c22, R01701PASS, closure779139e and verifiedhandoff003ad05; OWNERreleased and all native prior writers completed. Latest prompt recovered and matches04completed/05next. Repository/Python3.12.14/nativecollaboration present, same automationthread; no05existingclaim. One writer per artifact per OWNER.
+
+## Objective, facts, assumptions, questions
+
+Connect root-observed broker service to actual-agent source/status transitions.04 proved local16events,03 tested16model answers but reads were unaudited. Preserve T01/T02/T03/X04 and S03/E05/X05; fixed ideation pool, no generation. Fictional source descriptors are trusted experiment inputs, not authentic real authorities. Can agents keep stale/denied/changed/scope-expired evidence unresolved while recovering valid refreshes? Root native response delivery is observable; model reading/understanding and global mediation remain unproven. Shared filesystem/history and within-worker carryover are exposed, not blind/isolation.
+
+## Coverage and criteria
+
+Previous comparable03 scope16actual outputs. Approximately4x target64 meaningful transitions:16preserved prior packet families each crossed with refresh, withdrawal, changed bytes and scope/expiry update. Families retain their distinct original memory/context/admissibility predicates; transition updates define new authority without altering historical packets. Treat as clustered crossed design, not64independent samples. Record unique before/after rationale; remove redundant/masked variants rather than padding. A shortfall keeps SAME05 incomplete.
+
+Freeze exact packets/updates, source bytes/grants/groundtruth and grading schema BEFORE model dispatch. Initial agents evaluate only provided pre-update packet (no direct source reads), preserve initial claims and submit exact optional lookup request; coordinator alone invokes accepted04 broker and saves events/payload/recipient native message. Final agents receive root response plus authoritative transition notice, report value/status/source/version/digest, lookup request and limitations. Scope/expiry validation is distinct from broker-byte hash. Preserve all raw wrong answers; no edits after grading. Initial snapshots/hash before native final handoff prove local byte continuity, not reader isolation. Separate factual recovery, safe unresolved, false-current and event correspondence. Broker absent/failing never converted into source verification. No model/API/network/spend/topology superiority claim.
+
+Distinct configured gpt-6-luna reviewer of fixed candidate independently reconstructs all64and checks fabricated-current negative control and raw immutability, reachability, failed outputs/limits. At most2overall05artifact repairs; historicalX01 has exhausted2and staysblocked/untouched. Required evidence failure is blocking. Missing reviewer draft/selfcheck only. Criteria completion requires observed trials+review+final verification+durable checkpoint and exactlyONEsuccessor.
+
+## Ownership and protocol
+
+Root sole writer all frozen experiment, root receipts/nativehandoff records/grader/aggregate and closure artifacts. Four fresh configuredgpt-6-luna executors each sole writer own initial/final JSON16trials, read only assigned initialpacket and root-delivered update/receipt. They do not read oracle, fixtures, broker, other trials or original repository packets; this is cooperative asserted restriction, not enforced isolation. Distinct reviewer only new R-GOV-018 records, no trial execution. Backenddeployment identity unavailable. Initial claims saved before broker invocation; final raw files new paths, never overwriteinitial. No-artifact/malformedrequest recorded, not fabricated output. Release only actual writer completion.
+
+## Allocations, dependencies and fallback
+
+Recovery/claim/frame8min; freeze64and phasedparalleltrials24; aggregate/eventandclaimchecks10; separatefixedreview10; boundedcorrections/verification5; checkpoint/successor3=60min estimated. No idlefiller or guaranteedhour/backend/cost. Partial capacity checkpoint SAME05. Dependencies accepted04/Python/nativecollaboration/realwriterstatus, prior03frozenpackets and distinctreview. Missing tools => reproducibleunrunprotocol notmock substitutedfortrials; conflictingownership=>deferwrites/promptupdate; missingpriorbytes=>unknown. No new ideas/operations/governance/history/X01 changes. Preserve hourly/October15 end.

@@ -1,0 +1,16 @@
+{
+  "package_id": "EXP-X04-20261008-05",
+  "status": "active",
+  "session": "/root",
+  "thread_id": "01a10a9e-1700-7373-843c-34814db8a0b1",
+  "started_at": "2026-10-08T04:57:40.103692+00:00",
+  "base": "003ad05efed398a164f9209e6541af63f853ef71",
+  "writers": {
+    "/root": "PLAN, packets, updates, fixture sources/grants/truth, broker invocation, receipts, native handoffs, grader, observations, REPORT, CHECKPOINT, NEXT_PACKAGE, task/progress",
+    "/root/mediated_1": "trials/mediated_1.initial.json and .final.json",
+    "/root/mediated_2": "trials/mediated_2.initial.json and .final.json",
+    "/root/mediated_3": "trials/mediated_3.initial.json and .final.json",
+    "/root/mediated_4": "trials/mediated_4.initial.json and .final.json"
+  },
+  "reviewer": "distinct configured gpt-6-luna /root/mediated_review; only new R018 records"
+}
