@@ -1,0 +1,100 @@
+{
+  "executor": "/root/trial_1",
+  "configured_model": "gpt-6-luna",
+  "deployment_identity": "unavailable",
+  "reads_reported": [
+    "/workspace/agent-governance/AGENTS.md",
+    "/workspace/agent-governance/governance/charter.md",
+    "/workspace/agent-governance/governance/workflow.md",
+    "/workspace/agent-governance/governance/access.md",
+    "/workspace/agent-governance/research/exploration/2026-10-08/EXP-X04-20261008-03/assignments/trial_1.md",
+    "/workspace/agent-governance/research/exploration/2026-10-08/EXP-X04-20261008-03/packets/X04-TR-CUR-01.json",
+    "/workspace/agent-governance/research/exploration/2026-10-08/EXP-X04-20261008-03/packets/X04-TR-STA-03.json",
+    "/workspace/agent-governance/research/exploration/2026-10-08/EXP-X04-20261008-03/packets/X04-TR-MIS-03.json",
+    "/workspace/agent-governance/research/exploration/2026-10-08/EXP-X04-20261008-03/packets/X04-TR-ABS-03.json",
+    "/workspace/agent-governance/research/exploration/2026-10-08/EXP-X04-20261008-03/sources/X04-TR-ABS-03.json"
+  ],
+  "exposure": {
+    "oracle_seen": false,
+    "cross_trial_carryover": "Reasoned only from the four assigned packets and this trial's granted retrieval pointer. Shared-session context means independent blindness cannot be guaranteed; no other trial answers were read or used.",
+    "unassigned_reads": []
+  },
+  "trials": [
+    {
+      "trial_id": "X04-TR-CUR-01",
+      "status": "current",
+      "value": 40,
+      "source_id": "fictional.catalog",
+      "version": "v2",
+      "complete": true,
+      "reason": "The local record matches the authoritative source_id, version, and digest; its canonical digest recomputes correctly; key and scope match; valid_until is null.",
+      "lookups": [
+        {
+          "path": "none",
+          "attempted": false,
+          "result": "skipped",
+          "basis": "A permits no retrieval; local evidence is sufficient."
+        }
+      ],
+      "evidence_digest": "dddaae7e4648412d6bdd1e90792c2c71825cd914aeea9e1eddf673b57af4c4e7",
+      "limitation": "Digest was checked against packet-provided local fields; no external source was consulted."
+    },
+    {
+      "trial_id": "X04-TR-STA-03",
+      "status": "unresolved",
+      "value": null,
+      "source_id": null,
+      "version": null,
+      "complete": false,
+      "reason": "Only v1 is supplied, while the authoritative identity requires v2 and its digest. The supplied v1 record is expired as of 2026-10-08. It cannot establish the requested current value.",
+      "lookups": [
+        {
+          "path": "none",
+          "attempted": false,
+          "result": "skipped",
+          "basis": "C permits no retrieval; supplied records do not qualify."
+        }
+      ],
+      "evidence_digest": null,
+      "limitation": "No qualifying current record is present in the assigned packet."
+    },
+    {
+      "trial_id": "X04-TR-MIS-03",
+      "status": "unresolved",
+      "value": null,
+      "source_id": null,
+      "version": null,
+      "complete": false,
+      "reason": "No record for required_storage_limit_c is supplied, and the condition is C with retrieval marked missing. No value can be established.",
+      "lookups": [
+        {
+          "path": "none",
+          "attempted": false,
+          "result": "skipped",
+          "basis": "C permits no retrieval; packet contains no qualifying local record."
+        }
+      ],
+      "evidence_digest": null,
+      "limitation": "No qualifying record or retrieval evidence is available in the assigned packet."
+    },
+    {
+      "trial_id": "X04-TR-ABS-03",
+      "status": "unresolved",
+      "value": null,
+      "source_id": null,
+      "version": null,
+      "complete": false,
+      "reason": "The granted pointer was opened and reported state=failing with an empty records list. The packet contract says a failing receipt grants no source evidence.",
+      "lookups": [
+        {
+          "path": "/workspace/agent-governance/research/exploration/2026-10-08/EXP-X04-20261008-03/sources/X04-TR-ABS-03.json",
+          "attempted": true,
+          "result": "failing",
+          "basis": "Observed response from reading the exact authorized pointer: state is failing and records is empty."
+        }
+      ],
+      "evidence_digest": null,
+      "limitation": "The index identity matched, but the granted retrieval returned no source evidence."
+    }
+  ]
+}
