@@ -1,6 +1,6 @@
 # T-GOV-013 — One-hour work package: grounded acceptance prototype
 
-- Status: active. Owner: requesting user; coordinator `/root`, GPT-6, deployment ID unavailable.
+- Status: review. Owner: requesting user; coordinator `/root`, GPT-6, deployment ID unavailable.
 - Authority: owner requests continue now and each task about one hour of work. Research/isolated prototype implementing X01 from the reviewed ideation shortlist, not changes to historical checker, governance or operational systems.
 - Base/governance: `ca62b54`, charter 0.1.1. Branch `work`.
 - Estimated package: approximately 60 minutes of substantive work including framing, implementation, adversarial fixtures, independent review, fixes and coordinator verification. Begin 2026-10-08T00:36:00Z; checkpoint by 01:36:00Z if unfinished. Duration is an estimate, not a minimum, enforced runtime guarantee, token budget or cost estimate. No idle filler; at most two repair/recheck rounds.
@@ -37,3 +37,7 @@ Total estimated elapsed package allocation: 60 minutes. Delegate limits below ar
 
 Assignment: `{assignment_id, writer_session, title, attendance, dependencies:[{path, version, sha256}], resources:{resource_id:{inventory_units,seats_per_unit}}}`.
 Payload: `{handoff:{assignment_id,writer_session,status,dependencies:[{path,version,sha256}]}, attendance, title, states:[{id,start,end,attendees,seating,chair_resource}], marketing:{attendance,title,copy}, claims:[{id,status,text,source}]}`. For standing `chair_resource` must be null; for seated it is a known resource ID. Empty states are invalid; claims may be empty. Status must be `ready_for_review` for acceptance. Dependency list may be empty only when assignment's list is empty. Versions positive integers; hashes lowercase 64 hex characters; logical paths nonempty relative POSIX paths without traversal/absolute/backslash/URL components. Expose `render_copy(title,attendance)` returning exactly `f"{title} welcomes {attendance} adults."`. Fixture shape `{id,expect_valid,assignment,inputs:{path:text},payload}`. Unknown fields may be ignored; document that this is not an exact-key schema. Inputs may contain extra paths but assigned dependencies must be present and match.
+
+## History
+
+- 2026-10-08: two distinct configured-Luna contributors delivered validator/contract and 40 independently authored adversarial fixtures/runner on disjoint paths. Coordinator reproduced 40/40 expected outcomes and the four unchanged historical synthetic false-pass probes in memory; no historical edits. Active → review for a fixed committed prototype candidate. Estimated stage allocations were added after a separate scheduling review finding; no prototype correctness pass yet.

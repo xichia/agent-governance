@@ -1,0 +1,2326 @@
+[
+  {
+    "id": "valid_baseline",
+    "expect_valid": true,
+    "assignment": {
+      "assignment_id": "A-013",
+      "writer_session": "session-luna-7",
+      "title": "Community Workshop",
+      "attendance": 80,
+      "dependencies": [
+        {
+          "path": "docs/brief.md",
+          "version": 1,
+          "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+        }
+      ],
+      "resources": {
+        "chairs": {
+          "inventory_units": 80,
+          "seats_per_unit": 1
+        }
+      }
+    },
+    "inputs": {
+      "docs/brief.md": "Event brief: public workshop."
+    },
+    "payload": {
+      "handoff": {
+        "assignment_id": "A-013",
+        "writer_session": "session-luna-7",
+        "status": "ready_for_review",
+        "dependencies": [
+          {
+            "path": "docs/brief.md",
+            "version": 1,
+            "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+          }
+        ]
+      },
+      "attendance": 80,
+      "title": "Community Workshop",
+      "states": [
+        {
+          "id": "main",
+          "start": 0,
+          "end": 60,
+          "attendees": 80,
+          "seating": "seated",
+          "chair_resource": "chairs"
+        }
+      ],
+      "marketing": {
+        "attendance": 80,
+        "title": "Community Workshop",
+        "copy": "Community Workshop welcomes 80 adults."
+      },
+      "claims": []
+    }
+  },
+  {
+    "id": "valid_empty_dependencies",
+    "expect_valid": true,
+    "assignment": {
+      "assignment_id": "A-013",
+      "writer_session": "session-luna-7",
+      "title": "Community Workshop",
+      "attendance": 80,
+      "dependencies": [],
+      "resources": {
+        "chairs": {
+          "inventory_units": 80,
+          "seats_per_unit": 1
+        }
+      }
+    },
+    "inputs": {},
+    "payload": {
+      "handoff": {
+        "assignment_id": "A-013",
+        "writer_session": "session-luna-7",
+        "status": "ready_for_review",
+        "dependencies": []
+      },
+      "attendance": 80,
+      "title": "Community Workshop",
+      "states": [
+        {
+          "id": "main",
+          "start": 0,
+          "end": 60,
+          "attendees": 80,
+          "seating": "seated",
+          "chair_resource": "chairs"
+        }
+      ],
+      "marketing": {
+        "attendance": 80,
+        "title": "Community Workshop",
+        "copy": "Community Workshop welcomes 80 adults."
+      },
+      "claims": []
+    }
+  },
+  {
+    "id": "valid_standing_without_chairs",
+    "expect_valid": true,
+    "assignment": {
+      "assignment_id": "A-013",
+      "writer_session": "session-luna-7",
+      "title": "Community Workshop",
+      "attendance": 80,
+      "dependencies": [
+        {
+          "path": "docs/brief.md",
+          "version": 1,
+          "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+        }
+      ],
+      "resources": {
+        "chairs": {
+          "inventory_units": 80,
+          "seats_per_unit": 1
+        }
+      }
+    },
+    "inputs": {
+      "docs/brief.md": "Event brief: public workshop."
+    },
+    "payload": {
+      "handoff": {
+        "assignment_id": "A-013",
+        "writer_session": "session-luna-7",
+        "status": "ready_for_review",
+        "dependencies": [
+          {
+            "path": "docs/brief.md",
+            "version": 1,
+            "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+          }
+        ]
+      },
+      "attendance": 80,
+      "title": "Community Workshop",
+      "states": [
+        {
+          "id": "open_lawn",
+          "start": 0,
+          "end": 60,
+          "attendees": 80,
+          "seating": "standing",
+          "chair_resource": null
+        }
+      ],
+      "marketing": {
+        "attendance": 80,
+        "title": "Community Workshop",
+        "copy": "Community Workshop welcomes 80 adults."
+      },
+      "claims": []
+    }
+  },
+  {
+    "id": "valid_adjacent_intervals",
+    "expect_valid": true,
+    "assignment": {
+      "assignment_id": "A-013",
+      "writer_session": "session-luna-7",
+      "title": "Community Workshop",
+      "attendance": 80,
+      "dependencies": [
+        {
+          "path": "docs/brief.md",
+          "version": 1,
+          "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+        }
+      ],
+      "resources": {
+        "chairs": {
+          "inventory_units": 80,
+          "seats_per_unit": 1
+        }
+      }
+    },
+    "inputs": {
+      "docs/brief.md": "Event brief: public workshop."
+    },
+    "payload": {
+      "handoff": {
+        "assignment_id": "A-013",
+        "writer_session": "session-luna-7",
+        "status": "ready_for_review",
+        "dependencies": [
+          {
+            "path": "docs/brief.md",
+            "version": 1,
+            "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+          }
+        ]
+      },
+      "attendance": 80,
+      "title": "Community Workshop",
+      "states": [
+        {
+          "id": "morning",
+          "start": 0,
+          "end": 30,
+          "attendees": 80,
+          "seating": "seated",
+          "chair_resource": "chairs"
+        },
+        {
+          "id": "afternoon",
+          "start": 30,
+          "end": 60,
+          "attendees": 80,
+          "seating": "seated",
+          "chair_resource": "chairs"
+        }
+      ],
+      "marketing": {
+        "attendance": 80,
+        "title": "Community Workshop",
+        "copy": "Community Workshop welcomes 80 adults."
+      },
+      "claims": []
+    }
+  },
+  {
+    "id": "valid_claim_status_labels_and_metadata",
+    "expect_valid": true,
+    "assignment": {
+      "assignment_id": "A-013",
+      "writer_session": "session-luna-7",
+      "title": "Community Workshop",
+      "attendance": 80,
+      "dependencies": [
+        {
+          "path": "docs/brief.md",
+          "version": 1,
+          "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+        }
+      ],
+      "resources": {
+        "chairs": {
+          "inventory_units": 80,
+          "seats_per_unit": 1
+        }
+      }
+    },
+    "inputs": {
+      "docs/brief.md": "Event brief: public workshop."
+    },
+    "payload": {
+      "handoff": {
+        "assignment_id": "A-013",
+        "writer_session": "session-luna-7",
+        "status": "ready_for_review",
+        "dependencies": [
+          {
+            "path": "docs/brief.md",
+            "version": 1,
+            "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+          }
+        ]
+      },
+      "attendance": 80,
+      "title": "Community Workshop",
+      "states": [
+        {
+          "id": "main",
+          "start": 0,
+          "end": 60,
+          "attendees": 80,
+          "seating": "seated",
+          "chair_resource": "chairs"
+        }
+      ],
+      "marketing": {
+        "attendance": 80,
+        "title": "Community Workshop",
+        "copy": "Community Workshop welcomes 80 adults."
+      },
+      "claims": [
+        {
+          "id": "c1",
+          "status": "supplied",
+          "text": "Venue limit comes from the brief.",
+          "source": "docs/brief.md"
+        },
+        {
+          "id": "c2",
+          "status": "verified",
+          "text": "Venue page lists its address.",
+          "source": "https://venue.example/info"
+        },
+        {
+          "id": "c3",
+          "status": "assumption",
+          "text": "Assumption: Setup takes about one hour.",
+          "source": "Assumption: planning estimate"
+        },
+        {
+          "id": "c4",
+          "status": "unresolved",
+          "text": "Unresolved: Confirm access hours before booking.",
+          "source": "Unresolved: owner confirmation needed"
+        }
+      ]
+    }
+  },
+  {
+    "id": "stale_input_bytes",
+    "expect_valid": false,
+    "assignment": {
+      "assignment_id": "A-013",
+      "writer_session": "session-luna-7",
+      "title": "Community Workshop",
+      "attendance": 80,
+      "dependencies": [
+        {
+          "path": "docs/brief.md",
+          "version": 1,
+          "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+        }
+      ],
+      "resources": {
+        "chairs": {
+          "inventory_units": 80,
+          "seats_per_unit": 1
+        }
+      }
+    },
+    "inputs": {
+      "docs/brief.md": "Changed brief."
+    },
+    "payload": {
+      "handoff": {
+        "assignment_id": "A-013",
+        "writer_session": "session-luna-7",
+        "status": "ready_for_review",
+        "dependencies": [
+          {
+            "path": "docs/brief.md",
+            "version": 1,
+            "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+          }
+        ]
+      },
+      "attendance": 80,
+      "title": "Community Workshop",
+      "states": [
+        {
+          "id": "main",
+          "start": 0,
+          "end": 60,
+          "attendees": 80,
+          "seating": "seated",
+          "chair_resource": "chairs"
+        }
+      ],
+      "marketing": {
+        "attendance": 80,
+        "title": "Community Workshop",
+        "copy": "Community Workshop welcomes 80 adults."
+      },
+      "claims": []
+    }
+  },
+  {
+    "id": "substitution_with_receipt_recomputed",
+    "expect_valid": false,
+    "assignment": {
+      "assignment_id": "A-013",
+      "writer_session": "session-luna-7",
+      "title": "Community Workshop",
+      "attendance": 80,
+      "dependencies": [
+        {
+          "path": "docs/brief.md",
+          "version": 1,
+          "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+        }
+      ],
+      "resources": {
+        "chairs": {
+          "inventory_units": 80,
+          "seats_per_unit": 1
+        }
+      }
+    },
+    "inputs": {
+      "docs/brief.md": "Substituted brief text."
+    },
+    "payload": {
+      "handoff": {
+        "assignment_id": "A-013",
+        "writer_session": "session-luna-7",
+        "status": "ready_for_review",
+        "dependencies": [
+          {
+            "path": "docs/brief.md",
+            "version": 1,
+            "sha256": "3ea74fbd5bc1d68bdcee87b10f10d280cf017ac90de712a51775e260eda5f4bd"
+          }
+        ]
+      },
+      "attendance": 80,
+      "title": "Community Workshop",
+      "states": [
+        {
+          "id": "main",
+          "start": 0,
+          "end": 60,
+          "attendees": 80,
+          "seating": "seated",
+          "chair_resource": "chairs"
+        }
+      ],
+      "marketing": {
+        "attendance": 80,
+        "title": "Community Workshop",
+        "copy": "Community Workshop welcomes 80 adults."
+      },
+      "claims": []
+    }
+  },
+  {
+    "id": "wrong_receipt_path",
+    "expect_valid": false,
+    "assignment": {
+      "assignment_id": "A-013",
+      "writer_session": "session-luna-7",
+      "title": "Community Workshop",
+      "attendance": 80,
+      "dependencies": [
+        {
+          "path": "docs/brief.md",
+          "version": 1,
+          "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+        }
+      ],
+      "resources": {
+        "chairs": {
+          "inventory_units": 80,
+          "seats_per_unit": 1
+        }
+      }
+    },
+    "inputs": {
+      "docs/brief.md": "Event brief: public workshop."
+    },
+    "payload": {
+      "handoff": {
+        "assignment_id": "A-013",
+        "writer_session": "session-luna-7",
+        "status": "ready_for_review",
+        "dependencies": [
+          {
+            "path": "docs/other.md",
+            "version": 1,
+            "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+          }
+        ]
+      },
+      "attendance": 80,
+      "title": "Community Workshop",
+      "states": [
+        {
+          "id": "main",
+          "start": 0,
+          "end": 60,
+          "attendees": 80,
+          "seating": "seated",
+          "chair_resource": "chairs"
+        }
+      ],
+      "marketing": {
+        "attendance": 80,
+        "title": "Community Workshop",
+        "copy": "Community Workshop welcomes 80 adults."
+      },
+      "claims": []
+    }
+  },
+  {
+    "id": "wrong_receipt_version",
+    "expect_valid": false,
+    "assignment": {
+      "assignment_id": "A-013",
+      "writer_session": "session-luna-7",
+      "title": "Community Workshop",
+      "attendance": 80,
+      "dependencies": [
+        {
+          "path": "docs/brief.md",
+          "version": 1,
+          "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+        }
+      ],
+      "resources": {
+        "chairs": {
+          "inventory_units": 80,
+          "seats_per_unit": 1
+        }
+      }
+    },
+    "inputs": {
+      "docs/brief.md": "Event brief: public workshop."
+    },
+    "payload": {
+      "handoff": {
+        "assignment_id": "A-013",
+        "writer_session": "session-luna-7",
+        "status": "ready_for_review",
+        "dependencies": [
+          {
+            "path": "docs/brief.md",
+            "version": 2,
+            "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+          }
+        ]
+      },
+      "attendance": 80,
+      "title": "Community Workshop",
+      "states": [
+        {
+          "id": "main",
+          "start": 0,
+          "end": 60,
+          "attendees": 80,
+          "seating": "seated",
+          "chair_resource": "chairs"
+        }
+      ],
+      "marketing": {
+        "attendance": 80,
+        "title": "Community Workshop",
+        "copy": "Community Workshop welcomes 80 adults."
+      },
+      "claims": []
+    }
+  },
+  {
+    "id": "wrong_writer_session",
+    "expect_valid": false,
+    "assignment": {
+      "assignment_id": "A-013",
+      "writer_session": "session-luna-7",
+      "title": "Community Workshop",
+      "attendance": 80,
+      "dependencies": [
+        {
+          "path": "docs/brief.md",
+          "version": 1,
+          "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+        }
+      ],
+      "resources": {
+        "chairs": {
+          "inventory_units": 80,
+          "seats_per_unit": 1
+        }
+      }
+    },
+    "inputs": {
+      "docs/brief.md": "Event brief: public workshop."
+    },
+    "payload": {
+      "handoff": {
+        "assignment_id": "A-013",
+        "writer_session": "session-other",
+        "status": "ready_for_review",
+        "dependencies": [
+          {
+            "path": "docs/brief.md",
+            "version": 1,
+            "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+          }
+        ]
+      },
+      "attendance": 80,
+      "title": "Community Workshop",
+      "states": [
+        {
+          "id": "main",
+          "start": 0,
+          "end": 60,
+          "attendees": 80,
+          "seating": "seated",
+          "chair_resource": "chairs"
+        }
+      ],
+      "marketing": {
+        "attendance": 80,
+        "title": "Community Workshop",
+        "copy": "Community Workshop welcomes 80 adults."
+      },
+      "claims": []
+    }
+  },
+  {
+    "id": "wrong_assignment_identifier",
+    "expect_valid": false,
+    "assignment": {
+      "assignment_id": "A-013",
+      "writer_session": "session-luna-7",
+      "title": "Community Workshop",
+      "attendance": 80,
+      "dependencies": [
+        {
+          "path": "docs/brief.md",
+          "version": 1,
+          "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+        }
+      ],
+      "resources": {
+        "chairs": {
+          "inventory_units": 80,
+          "seats_per_unit": 1
+        }
+      }
+    },
+    "inputs": {
+      "docs/brief.md": "Event brief: public workshop."
+    },
+    "payload": {
+      "handoff": {
+        "assignment_id": "A-999",
+        "writer_session": "session-luna-7",
+        "status": "ready_for_review",
+        "dependencies": [
+          {
+            "path": "docs/brief.md",
+            "version": 1,
+            "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+          }
+        ]
+      },
+      "attendance": 80,
+      "title": "Community Workshop",
+      "states": [
+        {
+          "id": "main",
+          "start": 0,
+          "end": 60,
+          "attendees": 80,
+          "seating": "seated",
+          "chair_resource": "chairs"
+        }
+      ],
+      "marketing": {
+        "attendance": 80,
+        "title": "Community Workshop",
+        "copy": "Community Workshop welcomes 80 adults."
+      },
+      "claims": []
+    }
+  },
+  {
+    "id": "missing_dependency_receipt",
+    "expect_valid": false,
+    "assignment": {
+      "assignment_id": "A-013",
+      "writer_session": "session-luna-7",
+      "title": "Community Workshop",
+      "attendance": 80,
+      "dependencies": [
+        {
+          "path": "docs/brief.md",
+          "version": 1,
+          "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+        }
+      ],
+      "resources": {
+        "chairs": {
+          "inventory_units": 80,
+          "seats_per_unit": 1
+        }
+      }
+    },
+    "inputs": {
+      "docs/brief.md": "Event brief: public workshop."
+    },
+    "payload": {
+      "handoff": {
+        "assignment_id": "A-013",
+        "writer_session": "session-luna-7",
+        "status": "ready_for_review",
+        "dependencies": []
+      },
+      "attendance": 80,
+      "title": "Community Workshop",
+      "states": [
+        {
+          "id": "main",
+          "start": 0,
+          "end": 60,
+          "attendees": 80,
+          "seating": "seated",
+          "chair_resource": "chairs"
+        }
+      ],
+      "marketing": {
+        "attendance": 80,
+        "title": "Community Workshop",
+        "copy": "Community Workshop welcomes 80 adults."
+      },
+      "claims": []
+    }
+  },
+  {
+    "id": "duplicate_dependency_receipt",
+    "expect_valid": false,
+    "assignment": {
+      "assignment_id": "A-013",
+      "writer_session": "session-luna-7",
+      "title": "Community Workshop",
+      "attendance": 80,
+      "dependencies": [
+        {
+          "path": "docs/brief.md",
+          "version": 1,
+          "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+        }
+      ],
+      "resources": {
+        "chairs": {
+          "inventory_units": 80,
+          "seats_per_unit": 1
+        }
+      }
+    },
+    "inputs": {
+      "docs/brief.md": "Event brief: public workshop."
+    },
+    "payload": {
+      "handoff": {
+        "assignment_id": "A-013",
+        "writer_session": "session-luna-7",
+        "status": "ready_for_review",
+        "dependencies": [
+          {
+            "path": "docs/brief.md",
+            "version": 1,
+            "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+          },
+          {
+            "path": "docs/brief.md",
+            "version": 1,
+            "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+          }
+        ]
+      },
+      "attendance": 80,
+      "title": "Community Workshop",
+      "states": [
+        {
+          "id": "main",
+          "start": 0,
+          "end": 60,
+          "attendees": 80,
+          "seating": "seated",
+          "chair_resource": "chairs"
+        }
+      ],
+      "marketing": {
+        "attendance": 80,
+        "title": "Community Workshop",
+        "copy": "Community Workshop welcomes 80 adults."
+      },
+      "claims": []
+    }
+  },
+  {
+    "id": "missing_dependency_input",
+    "expect_valid": false,
+    "assignment": {
+      "assignment_id": "A-013",
+      "writer_session": "session-luna-7",
+      "title": "Community Workshop",
+      "attendance": 80,
+      "dependencies": [
+        {
+          "path": "docs/brief.md",
+          "version": 1,
+          "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+        }
+      ],
+      "resources": {
+        "chairs": {
+          "inventory_units": 80,
+          "seats_per_unit": 1
+        }
+      }
+    },
+    "inputs": {},
+    "payload": {
+      "handoff": {
+        "assignment_id": "A-013",
+        "writer_session": "session-luna-7",
+        "status": "ready_for_review",
+        "dependencies": [
+          {
+            "path": "docs/brief.md",
+            "version": 1,
+            "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+          }
+        ]
+      },
+      "attendance": 80,
+      "title": "Community Workshop",
+      "states": [
+        {
+          "id": "main",
+          "start": 0,
+          "end": 60,
+          "attendees": 80,
+          "seating": "seated",
+          "chair_resource": "chairs"
+        }
+      ],
+      "marketing": {
+        "attendance": 80,
+        "title": "Community Workshop",
+        "copy": "Community Workshop welcomes 80 adults."
+      },
+      "claims": []
+    }
+  },
+  {
+    "id": "extra_input_is_ignored_when_required_bytes_match",
+    "expect_valid": true,
+    "assignment": {
+      "assignment_id": "A-013",
+      "writer_session": "session-luna-7",
+      "title": "Community Workshop",
+      "attendance": 80,
+      "dependencies": [
+        {
+          "path": "docs/brief.md",
+          "version": 1,
+          "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+        }
+      ],
+      "resources": {
+        "chairs": {
+          "inventory_units": 80,
+          "seats_per_unit": 1
+        }
+      }
+    },
+    "inputs": {
+      "docs/brief.md": "Event brief: public workshop.",
+      "notes/extra.txt": "unassigned extra"
+    },
+    "payload": {
+      "handoff": {
+        "assignment_id": "A-013",
+        "writer_session": "session-luna-7",
+        "status": "ready_for_review",
+        "dependencies": [
+          {
+            "path": "docs/brief.md",
+            "version": 1,
+            "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+          }
+        ]
+      },
+      "attendance": 80,
+      "title": "Community Workshop",
+      "states": [
+        {
+          "id": "main",
+          "start": 0,
+          "end": 60,
+          "attendees": 80,
+          "seating": "seated",
+          "chair_resource": "chairs"
+        }
+      ],
+      "marketing": {
+        "attendance": 80,
+        "title": "Community Workshop",
+        "copy": "Community Workshop welcomes 80 adults."
+      },
+      "claims": []
+    }
+  },
+  {
+    "id": "inventory_40_against_80_attendees",
+    "expect_valid": false,
+    "assignment": {
+      "assignment_id": "A-013",
+      "writer_session": "session-luna-7",
+      "title": "Community Workshop",
+      "attendance": 80,
+      "dependencies": [
+        {
+          "path": "docs/brief.md",
+          "version": 1,
+          "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+        }
+      ],
+      "resources": {
+        "chairs": {
+          "inventory_units": 40,
+          "seats_per_unit": 1
+        }
+      }
+    },
+    "inputs": {
+      "docs/brief.md": "Event brief: public workshop."
+    },
+    "payload": {
+      "handoff": {
+        "assignment_id": "A-013",
+        "writer_session": "session-luna-7",
+        "status": "ready_for_review",
+        "dependencies": [
+          {
+            "path": "docs/brief.md",
+            "version": 1,
+            "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+          }
+        ]
+      },
+      "attendance": 80,
+      "title": "Community Workshop",
+      "states": [
+        {
+          "id": "main",
+          "start": 0,
+          "end": 60,
+          "attendees": 80,
+          "seating": "seated",
+          "chair_resource": "chairs"
+        }
+      ],
+      "marketing": {
+        "attendance": 80,
+        "title": "Community Workshop",
+        "copy": "Community Workshop welcomes 80 adults."
+      },
+      "claims": []
+    }
+  },
+  {
+    "id": "simultaneous_seat_aggregate_exceeds_80",
+    "expect_valid": false,
+    "assignment": {
+      "assignment_id": "A-013",
+      "writer_session": "session-luna-7",
+      "title": "Community Workshop",
+      "attendance": 80,
+      "dependencies": [
+        {
+          "path": "docs/brief.md",
+          "version": 1,
+          "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+        }
+      ],
+      "resources": {
+        "chairs": {
+          "inventory_units": 80,
+          "seats_per_unit": 1
+        }
+      }
+    },
+    "inputs": {
+      "docs/brief.md": "Event brief: public workshop."
+    },
+    "payload": {
+      "handoff": {
+        "assignment_id": "A-013",
+        "writer_session": "session-luna-7",
+        "status": "ready_for_review",
+        "dependencies": [
+          {
+            "path": "docs/brief.md",
+            "version": 1,
+            "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+          }
+        ]
+      },
+      "attendance": 80,
+      "title": "Community Workshop",
+      "states": [
+        {
+          "id": "room_a",
+          "start": 0,
+          "end": 30,
+          "attendees": 45,
+          "seating": "seated",
+          "chair_resource": "chairs"
+        },
+        {
+          "id": "room_b",
+          "start": 10,
+          "end": 40,
+          "attendees": 45,
+          "seating": "seated",
+          "chair_resource": "chairs"
+        }
+      ],
+      "marketing": {
+        "attendance": 80,
+        "title": "Community Workshop",
+        "copy": "Community Workshop welcomes 80 adults."
+      },
+      "claims": []
+    }
+  },
+  {
+    "id": "simultaneous_attendance_exceeds_expected",
+    "expect_valid": false,
+    "assignment": {
+      "assignment_id": "A-013",
+      "writer_session": "session-luna-7",
+      "title": "Community Workshop",
+      "attendance": 80,
+      "dependencies": [
+        {
+          "path": "docs/brief.md",
+          "version": 1,
+          "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+        }
+      ],
+      "resources": {
+        "chairs": {
+          "inventory_units": 100,
+          "seats_per_unit": 1
+        }
+      }
+    },
+    "inputs": {
+      "docs/brief.md": "Event brief: public workshop."
+    },
+    "payload": {
+      "handoff": {
+        "assignment_id": "A-013",
+        "writer_session": "session-luna-7",
+        "status": "ready_for_review",
+        "dependencies": [
+          {
+            "path": "docs/brief.md",
+            "version": 1,
+            "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+          }
+        ]
+      },
+      "attendance": 80,
+      "title": "Community Workshop",
+      "states": [
+        {
+          "id": "room_a",
+          "start": 0,
+          "end": 30,
+          "attendees": 50,
+          "seating": "seated",
+          "chair_resource": "chairs"
+        },
+        {
+          "id": "room_b",
+          "start": 10,
+          "end": 40,
+          "attendees": 50,
+          "seating": "seated",
+          "chair_resource": "chairs"
+        }
+      ],
+      "marketing": {
+        "attendance": 80,
+        "title": "Community Workshop",
+        "copy": "Community Workshop welcomes 80 adults."
+      },
+      "claims": []
+    }
+  },
+  {
+    "id": "unknown_seated_resource",
+    "expect_valid": false,
+    "assignment": {
+      "assignment_id": "A-013",
+      "writer_session": "session-luna-7",
+      "title": "Community Workshop",
+      "attendance": 80,
+      "dependencies": [
+        {
+          "path": "docs/brief.md",
+          "version": 1,
+          "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+        }
+      ],
+      "resources": {
+        "chairs": {
+          "inventory_units": 80,
+          "seats_per_unit": 1
+        }
+      }
+    },
+    "inputs": {
+      "docs/brief.md": "Event brief: public workshop."
+    },
+    "payload": {
+      "handoff": {
+        "assignment_id": "A-013",
+        "writer_session": "session-luna-7",
+        "status": "ready_for_review",
+        "dependencies": [
+          {
+            "path": "docs/brief.md",
+            "version": 1,
+            "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+          }
+        ]
+      },
+      "attendance": 80,
+      "title": "Community Workshop",
+      "states": [
+        {
+          "id": "main",
+          "start": 0,
+          "end": 60,
+          "attendees": 80,
+          "seating": "seated",
+          "chair_resource": "tables"
+        }
+      ],
+      "marketing": {
+        "attendance": 80,
+        "title": "Community Workshop",
+        "copy": "Community Workshop welcomes 80 adults."
+      },
+      "claims": []
+    }
+  },
+  {
+    "id": "missing_seated_resource_id",
+    "expect_valid": false,
+    "assignment": {
+      "assignment_id": "A-013",
+      "writer_session": "session-luna-7",
+      "title": "Community Workshop",
+      "attendance": 80,
+      "dependencies": [
+        {
+          "path": "docs/brief.md",
+          "version": 1,
+          "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+        }
+      ],
+      "resources": {
+        "chairs": {
+          "inventory_units": 80,
+          "seats_per_unit": 1
+        }
+      }
+    },
+    "inputs": {
+      "docs/brief.md": "Event brief: public workshop."
+    },
+    "payload": {
+      "handoff": {
+        "assignment_id": "A-013",
+        "writer_session": "session-luna-7",
+        "status": "ready_for_review",
+        "dependencies": [
+          {
+            "path": "docs/brief.md",
+            "version": 1,
+            "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+          }
+        ]
+      },
+      "attendance": 80,
+      "title": "Community Workshop",
+      "states": [
+        {
+          "id": "main",
+          "start": 0,
+          "end": 60,
+          "attendees": 80,
+          "seating": "seated",
+          "chair_resource": null
+        }
+      ],
+      "marketing": {
+        "attendance": 80,
+        "title": "Community Workshop",
+        "copy": "Community Workshop welcomes 80 adults."
+      },
+      "claims": []
+    }
+  },
+  {
+    "id": "standing_state_with_chair_resource",
+    "expect_valid": false,
+    "assignment": {
+      "assignment_id": "A-013",
+      "writer_session": "session-luna-7",
+      "title": "Community Workshop",
+      "attendance": 80,
+      "dependencies": [
+        {
+          "path": "docs/brief.md",
+          "version": 1,
+          "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+        }
+      ],
+      "resources": {
+        "chairs": {
+          "inventory_units": 80,
+          "seats_per_unit": 1
+        }
+      }
+    },
+    "inputs": {
+      "docs/brief.md": "Event brief: public workshop."
+    },
+    "payload": {
+      "handoff": {
+        "assignment_id": "A-013",
+        "writer_session": "session-luna-7",
+        "status": "ready_for_review",
+        "dependencies": [
+          {
+            "path": "docs/brief.md",
+            "version": 1,
+            "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+          }
+        ]
+      },
+      "attendance": 80,
+      "title": "Community Workshop",
+      "states": [
+        {
+          "id": "main",
+          "start": 0,
+          "end": 60,
+          "attendees": 80,
+          "seating": "standing",
+          "chair_resource": "chairs"
+        }
+      ],
+      "marketing": {
+        "attendance": 80,
+        "title": "Community Workshop",
+        "copy": "Community Workshop welcomes 80 adults."
+      },
+      "claims": []
+    }
+  },
+  {
+    "id": "empty_states",
+    "expect_valid": false,
+    "assignment": {
+      "assignment_id": "A-013",
+      "writer_session": "session-luna-7",
+      "title": "Community Workshop",
+      "attendance": 80,
+      "dependencies": [
+        {
+          "path": "docs/brief.md",
+          "version": 1,
+          "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+        }
+      ],
+      "resources": {
+        "chairs": {
+          "inventory_units": 80,
+          "seats_per_unit": 1
+        }
+      }
+    },
+    "inputs": {
+      "docs/brief.md": "Event brief: public workshop."
+    },
+    "payload": {
+      "handoff": {
+        "assignment_id": "A-013",
+        "writer_session": "session-luna-7",
+        "status": "ready_for_review",
+        "dependencies": [
+          {
+            "path": "docs/brief.md",
+            "version": 1,
+            "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+          }
+        ]
+      },
+      "attendance": 80,
+      "title": "Community Workshop",
+      "states": [],
+      "marketing": {
+        "attendance": 80,
+        "title": "Community Workshop",
+        "copy": "Community Workshop welcomes 80 adults."
+      },
+      "claims": []
+    }
+  },
+  {
+    "id": "synthetic_180_vs_80_copy",
+    "expect_valid": false,
+    "assignment": {
+      "assignment_id": "A-013",
+      "writer_session": "session-luna-7",
+      "title": "Community Workshop",
+      "attendance": 80,
+      "dependencies": [
+        {
+          "path": "docs/brief.md",
+          "version": 1,
+          "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+        }
+      ],
+      "resources": {
+        "chairs": {
+          "inventory_units": 80,
+          "seats_per_unit": 1
+        }
+      }
+    },
+    "inputs": {
+      "docs/brief.md": "Event brief: public workshop."
+    },
+    "payload": {
+      "handoff": {
+        "assignment_id": "A-013",
+        "writer_session": "session-luna-7",
+        "status": "ready_for_review",
+        "dependencies": [
+          {
+            "path": "docs/brief.md",
+            "version": 1,
+            "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+          }
+        ]
+      },
+      "attendance": 80,
+      "title": "Community Workshop",
+      "states": [
+        {
+          "id": "main",
+          "start": 0,
+          "end": 60,
+          "attendees": 80,
+          "seating": "seated",
+          "chair_resource": "chairs"
+        }
+      ],
+      "marketing": {
+        "attendance": 180,
+        "title": "Community Workshop",
+        "copy": "Community Workshop welcomes 180 adults."
+      },
+      "claims": []
+    }
+  },
+  {
+    "id": "marketing_title_conflicts_with_trusted_title",
+    "expect_valid": false,
+    "assignment": {
+      "assignment_id": "A-013",
+      "writer_session": "session-luna-7",
+      "title": "Community Workshop",
+      "attendance": 80,
+      "dependencies": [
+        {
+          "path": "docs/brief.md",
+          "version": 1,
+          "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+        }
+      ],
+      "resources": {
+        "chairs": {
+          "inventory_units": 80,
+          "seats_per_unit": 1
+        }
+      }
+    },
+    "inputs": {
+      "docs/brief.md": "Event brief: public workshop."
+    },
+    "payload": {
+      "handoff": {
+        "assignment_id": "A-013",
+        "writer_session": "session-luna-7",
+        "status": "ready_for_review",
+        "dependencies": [
+          {
+            "path": "docs/brief.md",
+            "version": 1,
+            "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+          }
+        ]
+      },
+      "attendance": 80,
+      "title": "Community Workshop",
+      "states": [
+        {
+          "id": "main",
+          "start": 0,
+          "end": 60,
+          "attendees": 80,
+          "seating": "seated",
+          "chair_resource": "chairs"
+        }
+      ],
+      "marketing": {
+        "attendance": 80,
+        "title": "Different Event",
+        "copy": "Different Event welcomes 80 adults."
+      },
+      "claims": []
+    }
+  },
+  {
+    "id": "supplied_claim_unknown_dependency",
+    "expect_valid": false,
+    "assignment": {
+      "assignment_id": "A-013",
+      "writer_session": "session-luna-7",
+      "title": "Community Workshop",
+      "attendance": 80,
+      "dependencies": [
+        {
+          "path": "docs/brief.md",
+          "version": 1,
+          "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+        }
+      ],
+      "resources": {
+        "chairs": {
+          "inventory_units": 80,
+          "seats_per_unit": 1
+        }
+      }
+    },
+    "inputs": {
+      "docs/brief.md": "Event brief: public workshop."
+    },
+    "payload": {
+      "handoff": {
+        "assignment_id": "A-013",
+        "writer_session": "session-luna-7",
+        "status": "ready_for_review",
+        "dependencies": [
+          {
+            "path": "docs/brief.md",
+            "version": 1,
+            "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+          }
+        ]
+      },
+      "attendance": 80,
+      "title": "Community Workshop",
+      "states": [
+        {
+          "id": "main",
+          "start": 0,
+          "end": 60,
+          "attendees": 80,
+          "seating": "seated",
+          "chair_resource": "chairs"
+        }
+      ],
+      "marketing": {
+        "attendance": 80,
+        "title": "Community Workshop",
+        "copy": "Community Workshop welcomes 80 adults."
+      },
+      "claims": [
+        {
+          "id": "c1",
+          "status": "supplied",
+          "text": "Claim.",
+          "source": "docs/missing.md"
+        }
+      ]
+    }
+  },
+  {
+    "id": "verified_claim_empty_source",
+    "expect_valid": false,
+    "assignment": {
+      "assignment_id": "A-013",
+      "writer_session": "session-luna-7",
+      "title": "Community Workshop",
+      "attendance": 80,
+      "dependencies": [
+        {
+          "path": "docs/brief.md",
+          "version": 1,
+          "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+        }
+      ],
+      "resources": {
+        "chairs": {
+          "inventory_units": 80,
+          "seats_per_unit": 1
+        }
+      }
+    },
+    "inputs": {
+      "docs/brief.md": "Event brief: public workshop."
+    },
+    "payload": {
+      "handoff": {
+        "assignment_id": "A-013",
+        "writer_session": "session-luna-7",
+        "status": "ready_for_review",
+        "dependencies": [
+          {
+            "path": "docs/brief.md",
+            "version": 1,
+            "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+          }
+        ]
+      },
+      "attendance": 80,
+      "title": "Community Workshop",
+      "states": [
+        {
+          "id": "main",
+          "start": 0,
+          "end": 60,
+          "attendees": 80,
+          "seating": "seated",
+          "chair_resource": "chairs"
+        }
+      ],
+      "marketing": {
+        "attendance": 80,
+        "title": "Community Workshop",
+        "copy": "Community Workshop welcomes 80 adults."
+      },
+      "claims": [
+        {
+          "id": "c1",
+          "status": "verified",
+          "text": "Claim.",
+          "source": ""
+        }
+      ]
+    }
+  },
+  {
+    "id": "unsupported_claim_status",
+    "expect_valid": false,
+    "assignment": {
+      "assignment_id": "A-013",
+      "writer_session": "session-luna-7",
+      "title": "Community Workshop",
+      "attendance": 80,
+      "dependencies": [
+        {
+          "path": "docs/brief.md",
+          "version": 1,
+          "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+        }
+      ],
+      "resources": {
+        "chairs": {
+          "inventory_units": 80,
+          "seats_per_unit": 1
+        }
+      }
+    },
+    "inputs": {
+      "docs/brief.md": "Event brief: public workshop."
+    },
+    "payload": {
+      "handoff": {
+        "assignment_id": "A-013",
+        "writer_session": "session-luna-7",
+        "status": "ready_for_review",
+        "dependencies": [
+          {
+            "path": "docs/brief.md",
+            "version": 1,
+            "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+          }
+        ]
+      },
+      "attendance": 80,
+      "title": "Community Workshop",
+      "states": [
+        {
+          "id": "main",
+          "start": 0,
+          "end": 60,
+          "attendees": 80,
+          "seating": "seated",
+          "chair_resource": "chairs"
+        }
+      ],
+      "marketing": {
+        "attendance": 80,
+        "title": "Community Workshop",
+        "copy": "Community Workshop welcomes 80 adults."
+      },
+      "claims": [
+        {
+          "id": "c1",
+          "status": "proved",
+          "text": "Claim.",
+          "source": "https://example.test"
+        }
+      ]
+    }
+  },
+  {
+    "id": "assumption_remains_labeled",
+    "expect_valid": true,
+    "assignment": {
+      "assignment_id": "A-013",
+      "writer_session": "session-luna-7",
+      "title": "Community Workshop",
+      "attendance": 80,
+      "dependencies": [
+        {
+          "path": "docs/brief.md",
+          "version": 1,
+          "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+        }
+      ],
+      "resources": {
+        "chairs": {
+          "inventory_units": 80,
+          "seats_per_unit": 1
+        }
+      }
+    },
+    "inputs": {
+      "docs/brief.md": "Event brief: public workshop."
+    },
+    "payload": {
+      "handoff": {
+        "assignment_id": "A-013",
+        "writer_session": "session-luna-7",
+        "status": "ready_for_review",
+        "dependencies": [
+          {
+            "path": "docs/brief.md",
+            "version": 1,
+            "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+          }
+        ]
+      },
+      "attendance": 80,
+      "title": "Community Workshop",
+      "states": [
+        {
+          "id": "main",
+          "start": 0,
+          "end": 60,
+          "attendees": 80,
+          "seating": "seated",
+          "chair_resource": "chairs"
+        }
+      ],
+      "marketing": {
+        "attendance": 80,
+        "title": "Community Workshop",
+        "copy": "Community Workshop welcomes 80 adults."
+      },
+      "claims": [
+        {
+          "id": "c1",
+          "status": "assumption",
+          "text": "Assumption: Room setup may take an hour.",
+          "source": "Assumption: planning estimate"
+        }
+      ]
+    }
+  },
+  {
+    "id": "boolean_attendance_masquerades_as_integer",
+    "expect_valid": false,
+    "assignment": {
+      "assignment_id": "A-013",
+      "writer_session": "session-luna-7",
+      "title": "Community Workshop",
+      "attendance": 80,
+      "dependencies": [
+        {
+          "path": "docs/brief.md",
+          "version": 1,
+          "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+        }
+      ],
+      "resources": {
+        "chairs": {
+          "inventory_units": 80,
+          "seats_per_unit": 1
+        }
+      }
+    },
+    "inputs": {
+      "docs/brief.md": "Event brief: public workshop."
+    },
+    "payload": {
+      "handoff": {
+        "assignment_id": "A-013",
+        "writer_session": "session-luna-7",
+        "status": "ready_for_review",
+        "dependencies": [
+          {
+            "path": "docs/brief.md",
+            "version": 1,
+            "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+          }
+        ]
+      },
+      "attendance": true,
+      "title": "Community Workshop",
+      "states": [
+        {
+          "id": "main",
+          "start": 0,
+          "end": 60,
+          "attendees": 80,
+          "seating": "seated",
+          "chair_resource": "chairs"
+        }
+      ],
+      "marketing": {
+        "attendance": true,
+        "title": "Community Workshop",
+        "copy": "Community Workshop welcomes True adults."
+      },
+      "claims": []
+    }
+  },
+  {
+    "id": "boolean_interval_endpoint_masquerades_as_integer",
+    "expect_valid": false,
+    "assignment": {
+      "assignment_id": "A-013",
+      "writer_session": "session-luna-7",
+      "title": "Community Workshop",
+      "attendance": 80,
+      "dependencies": [
+        {
+          "path": "docs/brief.md",
+          "version": 1,
+          "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+        }
+      ],
+      "resources": {
+        "chairs": {
+          "inventory_units": 80,
+          "seats_per_unit": 1
+        }
+      }
+    },
+    "inputs": {
+      "docs/brief.md": "Event brief: public workshop."
+    },
+    "payload": {
+      "handoff": {
+        "assignment_id": "A-013",
+        "writer_session": "session-luna-7",
+        "status": "ready_for_review",
+        "dependencies": [
+          {
+            "path": "docs/brief.md",
+            "version": 1,
+            "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+          }
+        ]
+      },
+      "attendance": 80,
+      "title": "Community Workshop",
+      "states": [
+        {
+          "id": "main",
+          "start": false,
+          "end": 60,
+          "attendees": 80,
+          "seating": "seated",
+          "chair_resource": "chairs"
+        }
+      ],
+      "marketing": {
+        "attendance": 80,
+        "title": "Community Workshop",
+        "copy": "Community Workshop welcomes 80 adults."
+      },
+      "claims": []
+    }
+  },
+  {
+    "id": "boolean_dependency_version_masquerades_as_integer",
+    "expect_valid": false,
+    "assignment": {
+      "assignment_id": "A-013",
+      "writer_session": "session-luna-7",
+      "title": "Community Workshop",
+      "attendance": 80,
+      "dependencies": [
+        {
+          "path": "docs/brief.md",
+          "version": 1,
+          "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+        }
+      ],
+      "resources": {
+        "chairs": {
+          "inventory_units": 80,
+          "seats_per_unit": 1
+        }
+      }
+    },
+    "inputs": {
+      "docs/brief.md": "Event brief: public workshop."
+    },
+    "payload": {
+      "handoff": {
+        "assignment_id": "A-013",
+        "writer_session": "session-luna-7",
+        "status": "ready_for_review",
+        "dependencies": [
+          {
+            "path": "docs/brief.md",
+            "version": true,
+            "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+          }
+        ]
+      },
+      "attendance": 80,
+      "title": "Community Workshop",
+      "states": [
+        {
+          "id": "main",
+          "start": 0,
+          "end": 60,
+          "attendees": 80,
+          "seating": "seated",
+          "chair_resource": "chairs"
+        }
+      ],
+      "marketing": {
+        "attendance": 80,
+        "title": "Community Workshop",
+        "copy": "Community Workshop welcomes 80 adults."
+      },
+      "claims": []
+    }
+  },
+  {
+    "id": "boolean_inventory_masquerades_as_integer",
+    "expect_valid": false,
+    "assignment": {
+      "assignment_id": "A-013",
+      "writer_session": "session-luna-7",
+      "title": "Community Workshop",
+      "attendance": 80,
+      "dependencies": [
+        {
+          "path": "docs/brief.md",
+          "version": 1,
+          "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+        }
+      ],
+      "resources": {
+        "chairs": {
+          "inventory_units": true,
+          "seats_per_unit": 1
+        }
+      }
+    },
+    "inputs": {
+      "docs/brief.md": "Event brief: public workshop."
+    },
+    "payload": {
+      "handoff": {
+        "assignment_id": "A-013",
+        "writer_session": "session-luna-7",
+        "status": "ready_for_review",
+        "dependencies": [
+          {
+            "path": "docs/brief.md",
+            "version": 1,
+            "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+          }
+        ]
+      },
+      "attendance": 80,
+      "title": "Community Workshop",
+      "states": [
+        {
+          "id": "main",
+          "start": 0,
+          "end": 60,
+          "attendees": 80,
+          "seating": "seated",
+          "chair_resource": "chairs"
+        }
+      ],
+      "marketing": {
+        "attendance": 80,
+        "title": "Community Workshop",
+        "copy": "Community Workshop welcomes 80 adults."
+      },
+      "claims": []
+    }
+  },
+  {
+    "id": "unhashable_chair_resource_value_does_not_crash",
+    "expect_valid": false,
+    "assignment": {
+      "assignment_id": "A-013",
+      "writer_session": "session-luna-7",
+      "title": "Community Workshop",
+      "attendance": 80,
+      "dependencies": [
+        {
+          "path": "docs/brief.md",
+          "version": 1,
+          "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+        }
+      ],
+      "resources": {
+        "chairs": {
+          "inventory_units": 80,
+          "seats_per_unit": 1
+        }
+      }
+    },
+    "inputs": {
+      "docs/brief.md": "Event brief: public workshop."
+    },
+    "payload": {
+      "handoff": {
+        "assignment_id": "A-013",
+        "writer_session": "session-luna-7",
+        "status": "ready_for_review",
+        "dependencies": [
+          {
+            "path": "docs/brief.md",
+            "version": 1,
+            "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+          }
+        ]
+      },
+      "attendance": 80,
+      "title": "Community Workshop",
+      "states": [
+        {
+          "id": "main",
+          "start": 0,
+          "end": 60,
+          "attendees": 80,
+          "seating": "seated",
+          "chair_resource": []
+        }
+      ],
+      "marketing": {
+        "attendance": 80,
+        "title": "Community Workshop",
+        "copy": "Community Workshop welcomes 80 adults."
+      },
+      "claims": []
+    }
+  },
+  {
+    "id": "malformed_nested_state_object",
+    "expect_valid": false,
+    "assignment": {
+      "assignment_id": "A-013",
+      "writer_session": "session-luna-7",
+      "title": "Community Workshop",
+      "attendance": 80,
+      "dependencies": [
+        {
+          "path": "docs/brief.md",
+          "version": 1,
+          "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+        }
+      ],
+      "resources": {
+        "chairs": {
+          "inventory_units": 80,
+          "seats_per_unit": 1
+        }
+      }
+    },
+    "inputs": {
+      "docs/brief.md": "Event brief: public workshop."
+    },
+    "payload": {
+      "handoff": {
+        "assignment_id": "A-013",
+        "writer_session": "session-luna-7",
+        "status": "ready_for_review",
+        "dependencies": [
+          {
+            "path": "docs/brief.md",
+            "version": 1,
+            "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+          }
+        ]
+      },
+      "attendance": 80,
+      "title": "Community Workshop",
+      "states": [
+        [
+          "main",
+          0,
+          60,
+          80,
+          "seated",
+          "chairs"
+        ]
+      ],
+      "marketing": {
+        "attendance": 80,
+        "title": "Community Workshop",
+        "copy": "Community Workshop welcomes 80 adults."
+      },
+      "claims": []
+    }
+  },
+  {
+    "id": "malformed_nested_assignment_resource",
+    "expect_valid": false,
+    "assignment": {
+      "assignment_id": "A-013",
+      "writer_session": "session-luna-7",
+      "title": "Community Workshop",
+      "attendance": 80,
+      "dependencies": [
+        {
+          "path": "docs/brief.md",
+          "version": 1,
+          "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+        }
+      ],
+      "resources": {
+        "chairs": []
+      }
+    },
+    "inputs": {
+      "docs/brief.md": "Event brief: public workshop."
+    },
+    "payload": {
+      "handoff": {
+        "assignment_id": "A-013",
+        "writer_session": "session-luna-7",
+        "status": "ready_for_review",
+        "dependencies": [
+          {
+            "path": "docs/brief.md",
+            "version": 1,
+            "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+          }
+        ]
+      },
+      "attendance": 80,
+      "title": "Community Workshop",
+      "states": [
+        {
+          "id": "main",
+          "start": 0,
+          "end": 60,
+          "attendees": 80,
+          "seating": "seated",
+          "chair_resource": "chairs"
+        }
+      ],
+      "marketing": {
+        "attendance": 80,
+        "title": "Community Workshop",
+        "copy": "Community Workshop welcomes 80 adults."
+      },
+      "claims": []
+    }
+  },
+  {
+    "id": "malformed_assignment_not_object",
+    "expect_valid": false,
+    "assignment": [
+      "A-013"
+    ],
+    "inputs": {
+      "docs/brief.md": "Event brief: public workshop."
+    },
+    "payload": {
+      "handoff": {
+        "assignment_id": "A-013",
+        "writer_session": "session-luna-7",
+        "status": "ready_for_review",
+        "dependencies": [
+          {
+            "path": "docs/brief.md",
+            "version": 1,
+            "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+          }
+        ]
+      },
+      "attendance": 80,
+      "title": "Community Workshop",
+      "states": [
+        {
+          "id": "main",
+          "start": 0,
+          "end": 60,
+          "attendees": 80,
+          "seating": "seated",
+          "chair_resource": "chairs"
+        }
+      ],
+      "marketing": {
+        "attendance": 80,
+        "title": "Community Workshop",
+        "copy": "Community Workshop welcomes 80 adults."
+      },
+      "claims": []
+    }
+  },
+  {
+    "id": "malformed_payload_not_object",
+    "expect_valid": false,
+    "assignment": {
+      "assignment_id": "A-013",
+      "writer_session": "session-luna-7",
+      "title": "Community Workshop",
+      "attendance": 80,
+      "dependencies": [
+        {
+          "path": "docs/brief.md",
+          "version": 1,
+          "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+        }
+      ],
+      "resources": {
+        "chairs": {
+          "inventory_units": 80,
+          "seats_per_unit": 1
+        }
+      }
+    },
+    "inputs": {
+      "docs/brief.md": "Event brief: public workshop."
+    },
+    "payload": [
+      "handoff"
+    ]
+  },
+  {
+    "id": "invalid_traversal_dependency_path",
+    "expect_valid": false,
+    "assignment": {
+      "assignment_id": "A-013",
+      "writer_session": "session-luna-7",
+      "title": "Community Workshop",
+      "attendance": 80,
+      "dependencies": [
+        {
+          "path": "../brief.md",
+          "version": 1,
+          "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+        }
+      ],
+      "resources": {
+        "chairs": {
+          "inventory_units": 80,
+          "seats_per_unit": 1
+        }
+      }
+    },
+    "inputs": {
+      "../brief.md": "Event brief: public workshop."
+    },
+    "payload": {
+      "handoff": {
+        "assignment_id": "A-013",
+        "writer_session": "session-luna-7",
+        "status": "ready_for_review",
+        "dependencies": [
+          {
+            "path": "../brief.md",
+            "version": 1,
+            "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+          }
+        ]
+      },
+      "attendance": 80,
+      "title": "Community Workshop",
+      "states": [
+        {
+          "id": "main",
+          "start": 0,
+          "end": 60,
+          "attendees": 80,
+          "seating": "seated",
+          "chair_resource": "chairs"
+        }
+      ],
+      "marketing": {
+        "attendance": 80,
+        "title": "Community Workshop",
+        "copy": "Community Workshop welcomes 80 adults."
+      },
+      "claims": []
+    }
+  },
+  {
+    "id": "invalid_absolute_dependency_path",
+    "expect_valid": false,
+    "assignment": {
+      "assignment_id": "A-013",
+      "writer_session": "session-luna-7",
+      "title": "Community Workshop",
+      "attendance": 80,
+      "dependencies": [
+        {
+          "path": "/docs/brief.md",
+          "version": 1,
+          "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+        }
+      ],
+      "resources": {
+        "chairs": {
+          "inventory_units": 80,
+          "seats_per_unit": 1
+        }
+      }
+    },
+    "inputs": {
+      "/docs/brief.md": "Event brief: public workshop."
+    },
+    "payload": {
+      "handoff": {
+        "assignment_id": "A-013",
+        "writer_session": "session-luna-7",
+        "status": "ready_for_review",
+        "dependencies": [
+          {
+            "path": "/docs/brief.md",
+            "version": 1,
+            "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+          }
+        ]
+      },
+      "attendance": 80,
+      "title": "Community Workshop",
+      "states": [
+        {
+          "id": "main",
+          "start": 0,
+          "end": 60,
+          "attendees": 80,
+          "seating": "seated",
+          "chair_resource": "chairs"
+        }
+      ],
+      "marketing": {
+        "attendance": 80,
+        "title": "Community Workshop",
+        "copy": "Community Workshop welcomes 80 adults."
+      },
+      "claims": []
+    }
+  },
+  {
+    "id": "nonready_handoff_status",
+    "expect_valid": false,
+    "assignment": {
+      "assignment_id": "A-013",
+      "writer_session": "session-luna-7",
+      "title": "Community Workshop",
+      "attendance": 80,
+      "dependencies": [
+        {
+          "path": "docs/brief.md",
+          "version": 1,
+          "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+        }
+      ],
+      "resources": {
+        "chairs": {
+          "inventory_units": 80,
+          "seats_per_unit": 1
+        }
+      }
+    },
+    "inputs": {
+      "docs/brief.md": "Event brief: public workshop."
+    },
+    "payload": {
+      "handoff": {
+        "assignment_id": "A-013",
+        "writer_session": "session-luna-7",
+        "status": "draft",
+        "dependencies": [
+          {
+            "path": "docs/brief.md",
+            "version": 1,
+            "sha256": "63a99ae3f87e5e8a61d7308f3520e99de76445bc24ee90f28a1d542ab2bb33f3"
+          }
+        ]
+      },
+      "attendance": 80,
+      "title": "Community Workshop",
+      "states": [
+        {
+          "id": "main",
+          "start": 0,
+          "end": 60,
+          "attendees": 80,
+          "seating": "seated",
+          "chair_resource": "chairs"
+        }
+      ],
+      "marketing": {
+        "attendance": 80,
+        "title": "Community Workshop",
+        "copy": "Community Workshop welcomes 80 adults."
+      },
+      "claims": []
+    }
+  }
+]
