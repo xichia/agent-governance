@@ -9,10 +9,11 @@
   "base": "3d8014a1eb681a74d63a86e3141ae198a52cc74d",
   "writers": {
     "/root": "PLAN/packets/truth/receipt_exports/grading/observations/native_handoffs/method/report/checkpoint/NEXT_PACKAGE/OWNER/taskprogress",
-    "/root/semantic_A": "trials/semantic_A.json",
-    "/root/semantic_B": "trials/semantic_B.json",
-    "/root/semantic_C": "trials/semantic_C.preliminary.json and trials/semantic_C.json",
-    "/root/semantic_D": "trials/semantic_D.preliminary.json and trials/semantic_D.json"
+    "/root/semantic_a": "trials/semantic_A.json",
+    "/root/semantic_b": "trials/semantic_B.json",
+    "/root/semantic_c": "trials/semantic_C.preliminary.json and trials/semantic_C.json",
+    "/root/semantic_d": "trials/semantic_D.preliminary.json and trials/semantic_D.json"
   },
-  "reviewer": "separate configured gpt-6-luna /root/semantic_review; ONLY new R-GOV-019 records"
+  "reviewer": "separate configured gpt-6-luna /root/semantic_review; ONLY new R-GOV-019 records",
+  "worker_labels": "semantic_A..D are packet labels; actual native sessions /root/semantic_a..d (lowercase task names). Caller labels not authentication."
 }
