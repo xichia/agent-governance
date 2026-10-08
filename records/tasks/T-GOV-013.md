@@ -6,6 +6,17 @@
 - Estimated package: approximately 60 minutes of substantive work including framing, implementation, adversarial fixtures, independent review, fixes and coordinator verification. Begin 2026-10-08T00:36:00Z; checkpoint by 01:36:00Z if unfinished. Duration is an estimate, not a minimum, enforced runtime guarantee, token budget or cost estimate. No idle filler; at most two repair/recheck rounds.
 - Dependencies: T-GOV-012 X01 / P01/P02/P03/S01/E02/E04 and current hourly automation. Preserve original pool/batch limits; this is defined implementation, not a new ideation round.
 
+## Estimated stage allocations
+
+| Stage | Package allocation | Coordination |
+|---|---|---|
+| Contract framing and assignment | 10 minutes | Coordinator fixes interface and criteria before dispatch |
+| Implementation and independent case generation | 25 minutes | Parallel, disjoint writers; allocation is elapsed package time, not sum of contributor time |
+| Separate candidate review and bounded corrections | 15 minutes | Distinct reviewer; checkpoint unresolved findings if allocation/whole-package limit is reached |
+| Coordinator verification and report/checkpoint | 10 minutes | Reproduce outcomes, preserve history, record limits and next step |
+
+Total estimated elapsed package allocation: 60 minutes. Delegate limits below are safety ceilings rather than promised stage duration and do not extend the whole-package stop time. Estimates are not measured effort, cost or minimum elapsed duration; no padding or idle waiting.
+
 ## Acceptance and fixed interface
 
 1. Isolated standard-library Python prototype and documented versioned contract. Expose `validate(payload, assignment, inputs) -> list[str]` without mutating inputs. Malformed/untrusted JSON-like values produce errors rather than crashes; this is an offline research validator, not a sandbox or production security boundary.
