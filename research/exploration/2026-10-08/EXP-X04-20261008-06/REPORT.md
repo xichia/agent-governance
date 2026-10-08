@@ -22,7 +22,7 @@ B first delivered eight answers, stopped, and then delivered only the 56 previou
 
 ## Preserved negative results and protocol limits
 
-D record M06-D-57a7df73d3 (prior X04-STA-04, base M05-06-R) states that the served payload has north_depot scope while the query asks south_depot. The authoritative v3 payload and final query both have south_depot scope and support current value35. The record instead reports unresolved with null answer fields. This is a false negative with contradicted supporting prose. A historical note had north_depot scope, but the observed error alone does not establish why the worker made it or a presentation effect.
+D record M06-D-57a7df73d3 (prior X04-STA-04, base M05-06-R) states that the served payload has north_depot scope while the query asks south_depot. The authoritative v3 payload and final query both have north_depot scope and support current value35. The record instead reports unresolved with null answer fields. This is a false negative with contradicted supporting prose. A historical note had south_depot scope, but the observed error alone does not establish why the worker made it or a presentation effect.
 
 B record M06-B-a6d580ace1 (base M05-12-S) correctly leaves the invalid scope/expiry source unresolved but reports service_seq13 instead of actual16. Service correspondence is therefore 63/64 despite all64 structured answer matches. Event identity and answer correctness are separate measures.
 
@@ -32,7 +32,7 @@ A/C reported incidental failed output-path attempts, and A reported temporary-fi
 
 ## Review, acceptance and recommendations
 
-A distinct configured gpt-6-luna reviewer completed read-only preliminary inspection and is waiting for the full fixed candidate. No final review verdict or completion is claimed. Manual review must compare every reason/limitation and lookup claim with frozen evidence; structured grading does not validate prose. Artifact repairs used: zero of maximum two. Original model answers and oracle will not be repaired to improve outcomes.
+A distinct configured gpt-6-luna reviewer completed read-only preliminary inspection and is waiting for the full fixed candidate. No final review verdict or completion is claimed. Manual review must compare every reason/limitation and lookup claim with frozen evidence; structured grading does not validate prose. Artifact repairs used: one of maximum two. Preliminary reviewer evidence exposed a reversed-scope account in the coordinator draft; this reporting error is corrected here, and the dated task correction preserves its original history. No raw answer was changed. Original model answers and oracle will not be repaired to improve outcomes.
 
 Current source-backed refinement, not operational recommendations: keep structured status, factual prose support, event correspondence and method provenance separate; preserve raw partial and incorrect records; bind authority/query scope and expiry independently of byte service. Each adds evidence/coordination work and should be assessed in bounded tests. A practical next study, if06 completes, would adjudicate claim/receipt support against fixed evidence, including the observed scope and sequence failures and unverifiable method assertions. The sole live [NEXT_PACKAGE](NEXT_PACKAGE.md) remains SAME06 while incomplete.
 
