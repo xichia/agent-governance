@@ -1,6 +1,6 @@
 # X01 — Grounded acceptance experiment
 
-Work package [T-GOV-013](../../../../records/tasks/T-GOV-013.md), derived from the reviewed [ideation shortlist](../SYNTHESIS.md). Current state: implementation and 40-case execution complete, awaiting separate review; [candidate observations](RESULTS.md) are not final acceptance.
+Work package [T-GOV-013](../../../../records/tasks/T-GOV-013.md), derived from the reviewed [ideation shortlist](../SYNTHESIS.md). Current state: first reviewer finding repaired and 46-case execution complete, awaiting separate recheck; [candidate observations](RESULTS.md) are not final acceptance.
 
 ## Research question and comparison
 

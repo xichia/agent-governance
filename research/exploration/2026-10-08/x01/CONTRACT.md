@@ -4,7 +4,7 @@
 
 ## Trust boundary and dependencies
 
-`assignment` is the trusted coordinator-supplied manifest. It contains nonempty `assignment_id`, `writer_session`, and `title`, positive integer `attendance`, `dependencies`, and `resources`. `payload` and `inputs` are candidate-controlled. Each dependency is `{path, version, sha256}`; paths are nonempty relative POSIX logical paths with no empty, `.` or `..` component, backslash, absolute prefix, or URL scheme. Versions are positive integers (booleans are rejected); hashes are lowercase 64-character SHA-256 hex strings. A dependency path must be unique.
+`assignment` is the trusted coordinator-supplied manifest. It contains nonempty `assignment_id`, `writer_session`, and `title`, positive integer `attendance`, `dependencies`, and `resources`. `payload` and `inputs` are candidate-controlled. Each dependency is `{path, version, sha256}`; paths are nonempty relative POSIX logical paths with no empty, `.` or `..` component, backslash, absolute prefix, or URI-scheme component (a component beginning with an RFC-style scheme prefix such as `https:`). Versions are positive integers (booleans are rejected); hashes are lowercase 64-character SHA-256 hex strings. A dependency path must be unique.
 
 The handoff receipt list must contain exactly the assignment's dependency paths once each, with matching versions and hashes. Every assigned path must map in `inputs` to actual `bytes`; SHA-256 is calculated over those bytes and compared with the manifest hash. A candidate cannot make substituted bytes acceptable by recomputing only its receipt hash. Extra input keys are ignored. If there are no assigned dependencies, the receipt list must be empty.
 

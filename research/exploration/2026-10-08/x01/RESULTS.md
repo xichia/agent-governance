@@ -18,7 +18,11 @@ The coordinator also reran the prior four synthetic probes, in memory, against u
 
 ## Review, dispositions and verification
 
-Pending separate fixed-candidate review. No final acceptance claimed yet. The reviewer must introduce additional boundary/negative observations and check the trust/semantic limitations. Any correction changes the candidate and requires bounded recheck. Post-review closure facts belong in the task or a new dated verification record; reviewed candidate results are preserved.
+Initial [R-GOV-013-01](../../../../records/reviews/R-GOV-013-01.md) checked candidate `6949b00c1e960188e7b3c4825881311af3eb9872`, reproduced 40/40 fixtures, introduced a resource-only aggregation probe (six simultaneous seats against five chairs, audience 100) and six missing-field checks. It returned **changes-required**: logical paths such as `https:brief`, `http:brief`, `docs/https:brief` and `https:/brief` were accepted despite the contract excluding URL components. Disposition **fixed** in repair round 1: reject URI-scheme prefixes in every logical path component; preserve normal nested relative paths. Six regression/positive fixtures added, preserving all earlier IDs and expectations. The suite now has **46 cases (eight valid, 38 invalid)**, all reproduced by the coordinator. Case author did not observe a pre-fix run of these added fixtures; the review record preserves the actual pre-fix counterexamples.
+
+The coordinator separately ran 85 malformed scalar-field probes against the initial candidate: 17 required scalar positions × five null/collection values, all rejected without crash or mutation. This is targeted coverage, not an exhaustive fuzz or security result. The independent resource-only probe avoids confusing an attendance-overflow rejection with resource pooling correctness.
+
+Revised fixed-candidate recheck remains pending; no final acceptance claimed yet. Post-review closure facts belong in the task or a new dated verification record; earlier candidate observations remain in Git history.
 
 ## Interpretation and next experiment
 

@@ -8,6 +8,7 @@ import re
 
 
 _HASH = re.compile(r"[0-9a-f]{64}\Z")
+_URI_SCHEME = re.compile(r"[A-Za-z][A-Za-z0-9+.-]*:")
 _CLAIM_STATUSES = {"supplied", "verified", "assumption", "unresolved"}
 
 
@@ -40,10 +41,11 @@ def _nonnegative(value):
 def _logical_path(path):
     if not _string(path) or not path:
         return False
-    if "\\" in path or "://" in path or path.startswith("/"):
+    if "\\" in path or path.startswith("/"):
         return False
     parts = path.split("/")
-    return all(part not in ("", ".", "..") for part in parts)
+    return all(part not in ("", ".", "..") and _URI_SCHEME.match(part) is None
+               for part in parts)
 
 
 def _add(errors, condition, message):
