@@ -3,7 +3,7 @@
   "session": "/root",
   "thread_id": "01a10a9e-1700-7373-843c-34814db8a0b1",
   "started_at": "2026-10-08T01:56:24.180967+00:00",
-  "status": "active",
+  "status": "released",
   "coordinator_paths": [
     "PLAN.md",
     "REPORT.md",
@@ -25,5 +25,7 @@
       "records/reviews/R-GOV-015-01.md (and bounded rechecks)"
     ]
   },
-  "model": "GPT-6 coordinator; contributor/reviewer configured gpt-6-luna; deployment identity unavailable"
+  "model": "GPT-6 coordinator; contributor/reviewer configured gpt-6-luna; deployment identity unavailable",
+  "released_at": "2026-10-08T02:04:56.499673+00:00",
+  "disposition": "Contributor and reviewer final completion confirmed; source artifacts fixed; final checkpoint saved. No further package writes planned."
 }
