@@ -1,6 +1,6 @@
 {
   "package_id": "EXP-X04-20261008-06",
-  "status": "active_closure_continuation",
+  "status": "released",
   "session": "/root",
   "thread_id": "01a10a9e-1700-7373-843c-34814db8a0b1",
   "started_at": "2026-10-08T06:04:36.763339+00:00",
@@ -18,12 +18,12 @@
   "worker_labels": "semantic_A..D are packet labels; actual native sessions /root/semantic_a..d (lowercase task names). Caller labels not authentication.",
   "continuation_assignment_at": "2026-10-08T06:11:16.041587+00:00",
   "last_checkpoint": "2026-10-08T07:09:48.663917+00:00",
-  "ownership_disposition": "retained for SAME06 closure; not released or transferred",
+  "ownership_disposition": "released after actual trial/reviewer completion and stopped experiment content writes; cooperative claim only",
   "contributors_actually_completed": true,
   "closure_reviewer_actually_completed": true,
-  "closure_review": "R-GOV-019-02 INCONCLUSIVE at773e7d6: runtime overrun; core2246211 PASS unchanged",
-  "root_state": "sole closure metadata writer; accepted core immutable",
-  "next_action": "verify prior root/native session status and same package ownership before continuing closure",
+  "closure_review": "R-GOV-019-03 PASS377d5f6 newcontinuation; priorR01902 INCONCLUSIVE remainshistoricalunwaived",
+  "root_state": "accepted content writes stopped; final persistence/audit records only",
+  "next_action": "next activation recover completed06 and execute sole07 handoff",
   "continuation_activation_start": "2026-10-08T07:59:47+00:00",
   "continuation_checkpoint_limit": "2026-10-08T08:59:47+00:00",
   "continuation_claimed_at": "2026-10-08T08:01:11.010290+00:00",
@@ -38,5 +38,9 @@
     "records/tasks/T-GOV-019/root/",
     "PRIORITIES.md (new owner-requested synthesis; accepted core unchanged)"
   ],
-  "priority_reviewer_assignment": "stopped distinct /root/semantic_review; ONLY new R-GOV-019-04 after frozen priority artifact"
+  "priority_reviewer_assignment": "stopped distinct /root/semantic_review; ONLY new R-GOV-019-04 after frozen priority artifact",
+  "released_at": "2026-10-08T08:07:43.037198+00:00",
+  "completion_commit": "809dc6351a6f09ae59a22738b841faec587df75b",
+  "accepted_core": "2246211f7381b2532c475c7791bf3f0b2ba2a63e",
+  "priority_review": "R-GOV-019-04 PASS50a1837"
 }
