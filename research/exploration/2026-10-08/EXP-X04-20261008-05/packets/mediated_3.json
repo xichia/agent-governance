@@ -1,0 +1,679 @@
+{
+  "worker": "mediated_3",
+  "phase": "initial",
+  "record_digest_rule": "For initial records SHA256 canonical UTF8 JSON excluding digest, sortedkeys compact separators ensure_ascii=False. Current requires exact authoritative identity/digest, requested key/scope and inclusive valid_until>=as_of (null valid_until means no expiry, as in02). Lookup unavailable in this phase; root handles submitted next request later.",
+  "trials": [
+    {
+      "trial_id": "M05-09-R",
+      "prior_case_id": "X04-MIS-03",
+      "context": {
+        "condition": "C",
+        "mechanism": "missing_fact",
+        "request": {
+          "key": "required_storage_limit_c",
+          "scope": "north_depot",
+          "as_of": "2026-10-08"
+        },
+        "authoritative": {
+          "source_id": "fictional.safety",
+          "version": "v3",
+          "digest": "fde2dddf00b638752eb1eb868dfff7417b575b7382bd09b4f7a975c05acfdd63"
+        },
+        "memory": [],
+        "local_sources": [],
+        "index": [],
+        "capability": {
+          "retrieval_state": "missing",
+          "scope": "Synthetic availability; real filesystem tools exist but only granted pointers may be read."
+        }
+      },
+      "next_lookup_request": {
+        "request_id": "req-M05-09-R",
+        "grant_id": "grant-M05-09-R",
+        "path": "M05-09-R.json",
+        "assignment": "mediated_3",
+        "scope": "north_depot",
+        "caller_label": "mediated_3"
+      },
+      "task": "Evaluate current value from provided initial records only. Submit next_lookup_request exactly to coordinator for a later authoritative update; do not open source files. Future authority/value is not yet provided."
+    },
+    {
+      "trial_id": "M05-09-W",
+      "prior_case_id": "X04-MIS-03",
+      "context": {
+        "condition": "C",
+        "mechanism": "missing_fact",
+        "request": {
+          "key": "required_storage_limit_c",
+          "scope": "north_depot",
+          "as_of": "2026-10-08"
+        },
+        "authoritative": {
+          "source_id": "fictional.safety",
+          "version": "v3",
+          "digest": "fde2dddf00b638752eb1eb868dfff7417b575b7382bd09b4f7a975c05acfdd63"
+        },
+        "memory": [],
+        "local_sources": [],
+        "index": [],
+        "capability": {
+          "retrieval_state": "missing",
+          "scope": "Synthetic availability; real filesystem tools exist but only granted pointers may be read."
+        }
+      },
+      "next_lookup_request": {
+        "request_id": "req-M05-09-W",
+        "grant_id": "grant-M05-09-W",
+        "path": "M05-09-W.json",
+        "assignment": "mediated_3",
+        "scope": "north_depot",
+        "caller_label": "mediated_3"
+      },
+      "task": "Evaluate current value from provided initial records only. Submit next_lookup_request exactly to coordinator for a later authoritative update; do not open source files. Future authority/value is not yet provided."
+    },
+    {
+      "trial_id": "M05-09-C",
+      "prior_case_id": "X04-MIS-03",
+      "context": {
+        "condition": "C",
+        "mechanism": "missing_fact",
+        "request": {
+          "key": "required_storage_limit_c",
+          "scope": "north_depot",
+          "as_of": "2026-10-08"
+        },
+        "authoritative": {
+          "source_id": "fictional.safety",
+          "version": "v3",
+          "digest": "fde2dddf00b638752eb1eb868dfff7417b575b7382bd09b4f7a975c05acfdd63"
+        },
+        "memory": [],
+        "local_sources": [],
+        "index": [],
+        "capability": {
+          "retrieval_state": "missing",
+          "scope": "Synthetic availability; real filesystem tools exist but only granted pointers may be read."
+        }
+      },
+      "next_lookup_request": {
+        "request_id": "req-M05-09-C",
+        "grant_id": "grant-M05-09-C",
+        "path": "M05-09-C.json",
+        "assignment": "mediated_3",
+        "scope": "north_depot",
+        "caller_label": "mediated_3"
+      },
+      "task": "Evaluate current value from provided initial records only. Submit next_lookup_request exactly to coordinator for a later authoritative update; do not open source files. Future authority/value is not yet provided."
+    },
+    {
+      "trial_id": "M05-09-S",
+      "prior_case_id": "X04-MIS-03",
+      "context": {
+        "condition": "C",
+        "mechanism": "missing_fact",
+        "request": {
+          "key": "required_storage_limit_c",
+          "scope": "north_depot",
+          "as_of": "2026-10-08"
+        },
+        "authoritative": {
+          "source_id": "fictional.safety",
+          "version": "v3",
+          "digest": "fde2dddf00b638752eb1eb868dfff7417b575b7382bd09b4f7a975c05acfdd63"
+        },
+        "memory": [],
+        "local_sources": [],
+        "index": [],
+        "capability": {
+          "retrieval_state": "missing",
+          "scope": "Synthetic availability; real filesystem tools exist but only granted pointers may be read."
+        }
+      },
+      "next_lookup_request": {
+        "request_id": "req-M05-09-S",
+        "grant_id": "grant-M05-09-S",
+        "path": "M05-09-S.json",
+        "assignment": "mediated_3",
+        "scope": "north_depot",
+        "caller_label": "mediated_3"
+      },
+      "task": "Evaluate current value from provided initial records only. Submit next_lookup_request exactly to coordinator for a later authoritative update; do not open source files. Future authority/value is not yet provided."
+    },
+    {
+      "trial_id": "M05-10-R",
+      "prior_case_id": "X04-MIS-04",
+      "context": {
+        "condition": "B",
+        "mechanism": "missing_fact",
+        "request": {
+          "key": "required_storage_limit_c",
+          "scope": "north_depot",
+          "as_of": "2026-10-08"
+        },
+        "authoritative": {
+          "source_id": "fictional.safety",
+          "version": "v3",
+          "digest": "fde2dddf00b638752eb1eb868dfff7417b575b7382bd09b4f7a975c05acfdd63"
+        },
+        "memory": [
+          {
+            "source_id": "fictional.catalog",
+            "version": "v1",
+            "key": "inventory_count",
+            "scope": "north_depot",
+            "value": 80,
+            "valid_until": "2026-10-01",
+            "digest": "16fbbd645024e324c61a82dae24881d2629d470f098b16df7d0c9e0b2b04209a"
+          }
+        ],
+        "local_sources": [],
+        "index": [
+          {
+            "source_id": "fictional.catalog",
+            "version": "v2",
+            "digest": "dddaae7e4648412d6bdd1e90792c2c71825cd914aeea9e1eddf673b57af4c4e7"
+          }
+        ],
+        "capability": {
+          "retrieval_state": "available",
+          "scope": "Synthetic availability; real filesystem tools exist but only granted pointers may be read."
+        }
+      },
+      "next_lookup_request": {
+        "request_id": "req-M05-10-R",
+        "grant_id": "grant-M05-10-R",
+        "path": "M05-10-R.json",
+        "assignment": "mediated_3",
+        "scope": "north_depot",
+        "caller_label": "mediated_3"
+      },
+      "task": "Evaluate current value from provided initial records only. Submit next_lookup_request exactly to coordinator for a later authoritative update; do not open source files. Future authority/value is not yet provided."
+    },
+    {
+      "trial_id": "M05-10-W",
+      "prior_case_id": "X04-MIS-04",
+      "context": {
+        "condition": "B",
+        "mechanism": "missing_fact",
+        "request": {
+          "key": "required_storage_limit_c",
+          "scope": "north_depot",
+          "as_of": "2026-10-08"
+        },
+        "authoritative": {
+          "source_id": "fictional.safety",
+          "version": "v3",
+          "digest": "fde2dddf00b638752eb1eb868dfff7417b575b7382bd09b4f7a975c05acfdd63"
+        },
+        "memory": [
+          {
+            "source_id": "fictional.catalog",
+            "version": "v1",
+            "key": "inventory_count",
+            "scope": "north_depot",
+            "value": 80,
+            "valid_until": "2026-10-01",
+            "digest": "16fbbd645024e324c61a82dae24881d2629d470f098b16df7d0c9e0b2b04209a"
+          }
+        ],
+        "local_sources": [],
+        "index": [
+          {
+            "source_id": "fictional.catalog",
+            "version": "v2",
+            "digest": "dddaae7e4648412d6bdd1e90792c2c71825cd914aeea9e1eddf673b57af4c4e7"
+          }
+        ],
+        "capability": {
+          "retrieval_state": "available",
+          "scope": "Synthetic availability; real filesystem tools exist but only granted pointers may be read."
+        }
+      },
+      "next_lookup_request": {
+        "request_id": "req-M05-10-W",
+        "grant_id": "grant-M05-10-W",
+        "path": "M05-10-W.json",
+        "assignment": "mediated_3",
+        "scope": "north_depot",
+        "caller_label": "mediated_3"
+      },
+      "task": "Evaluate current value from provided initial records only. Submit next_lookup_request exactly to coordinator for a later authoritative update; do not open source files. Future authority/value is not yet provided."
+    },
+    {
+      "trial_id": "M05-10-C",
+      "prior_case_id": "X04-MIS-04",
+      "context": {
+        "condition": "B",
+        "mechanism": "missing_fact",
+        "request": {
+          "key": "required_storage_limit_c",
+          "scope": "north_depot",
+          "as_of": "2026-10-08"
+        },
+        "authoritative": {
+          "source_id": "fictional.safety",
+          "version": "v3",
+          "digest": "fde2dddf00b638752eb1eb868dfff7417b575b7382bd09b4f7a975c05acfdd63"
+        },
+        "memory": [
+          {
+            "source_id": "fictional.catalog",
+            "version": "v1",
+            "key": "inventory_count",
+            "scope": "north_depot",
+            "value": 80,
+            "valid_until": "2026-10-01",
+            "digest": "16fbbd645024e324c61a82dae24881d2629d470f098b16df7d0c9e0b2b04209a"
+          }
+        ],
+        "local_sources": [],
+        "index": [
+          {
+            "source_id": "fictional.catalog",
+            "version": "v2",
+            "digest": "dddaae7e4648412d6bdd1e90792c2c71825cd914aeea9e1eddf673b57af4c4e7"
+          }
+        ],
+        "capability": {
+          "retrieval_state": "available",
+          "scope": "Synthetic availability; real filesystem tools exist but only granted pointers may be read."
+        }
+      },
+      "next_lookup_request": {
+        "request_id": "req-M05-10-C",
+        "grant_id": "grant-M05-10-C",
+        "path": "M05-10-C.json",
+        "assignment": "mediated_3",
+        "scope": "north_depot",
+        "caller_label": "mediated_3"
+      },
+      "task": "Evaluate current value from provided initial records only. Submit next_lookup_request exactly to coordinator for a later authoritative update; do not open source files. Future authority/value is not yet provided."
+    },
+    {
+      "trial_id": "M05-10-S",
+      "prior_case_id": "X04-MIS-04",
+      "context": {
+        "condition": "B",
+        "mechanism": "missing_fact",
+        "request": {
+          "key": "required_storage_limit_c",
+          "scope": "north_depot",
+          "as_of": "2026-10-08"
+        },
+        "authoritative": {
+          "source_id": "fictional.safety",
+          "version": "v3",
+          "digest": "fde2dddf00b638752eb1eb868dfff7417b575b7382bd09b4f7a975c05acfdd63"
+        },
+        "memory": [
+          {
+            "source_id": "fictional.catalog",
+            "version": "v1",
+            "key": "inventory_count",
+            "scope": "north_depot",
+            "value": 80,
+            "valid_until": "2026-10-01",
+            "digest": "16fbbd645024e324c61a82dae24881d2629d470f098b16df7d0c9e0b2b04209a"
+          }
+        ],
+        "local_sources": [],
+        "index": [
+          {
+            "source_id": "fictional.catalog",
+            "version": "v2",
+            "digest": "dddaae7e4648412d6bdd1e90792c2c71825cd914aeea9e1eddf673b57af4c4e7"
+          }
+        ],
+        "capability": {
+          "retrieval_state": "available",
+          "scope": "Synthetic availability; real filesystem tools exist but only granted pointers may be read."
+        }
+      },
+      "next_lookup_request": {
+        "request_id": "req-M05-10-S",
+        "grant_id": "grant-M05-10-S",
+        "path": "M05-10-S.json",
+        "assignment": "mediated_3",
+        "scope": "north_depot",
+        "caller_label": "mediated_3"
+      },
+      "task": "Evaluate current value from provided initial records only. Submit next_lookup_request exactly to coordinator for a later authoritative update; do not open source files. Future authority/value is not yet provided."
+    },
+    {
+      "trial_id": "M05-11-R",
+      "prior_case_id": "X04-ABS-01",
+      "context": {
+        "condition": "B",
+        "mechanism": "absent_retrieval",
+        "request": {
+          "key": "recall_code",
+          "scope": "archive_a",
+          "as_of": "2026-10-08"
+        },
+        "authoritative": {
+          "source_id": "fictional.registry",
+          "version": "v1",
+          "digest": "32f9555a3e61613bc12f63f744135ec17530ea93b25a267286f92217dd85f515"
+        },
+        "memory": [
+          {
+            "source_id": "fictional.registry",
+            "version": "v0",
+            "key": "recall_code",
+            "scope": "archive_a",
+            "value": "R-16",
+            "valid_until": null,
+            "digest": "06ee07d2edd2997a70ced356de3cf4b3159541d04f3f402aab0e71b6a8c0445e"
+          }
+        ],
+        "local_sources": [],
+        "index": [],
+        "capability": {
+          "retrieval_state": "missing",
+          "scope": "Synthetic availability; real filesystem tools exist but only granted pointers may be read."
+        }
+      },
+      "next_lookup_request": {
+        "request_id": "req-M05-11-R",
+        "grant_id": "grant-M05-11-R",
+        "path": "M05-11-R.json",
+        "assignment": "mediated_3",
+        "scope": "archive_a",
+        "caller_label": "mediated_3"
+      },
+      "task": "Evaluate current value from provided initial records only. Submit next_lookup_request exactly to coordinator for a later authoritative update; do not open source files. Future authority/value is not yet provided."
+    },
+    {
+      "trial_id": "M05-11-W",
+      "prior_case_id": "X04-ABS-01",
+      "context": {
+        "condition": "B",
+        "mechanism": "absent_retrieval",
+        "request": {
+          "key": "recall_code",
+          "scope": "archive_a",
+          "as_of": "2026-10-08"
+        },
+        "authoritative": {
+          "source_id": "fictional.registry",
+          "version": "v1",
+          "digest": "32f9555a3e61613bc12f63f744135ec17530ea93b25a267286f92217dd85f515"
+        },
+        "memory": [
+          {
+            "source_id": "fictional.registry",
+            "version": "v0",
+            "key": "recall_code",
+            "scope": "archive_a",
+            "value": "R-16",
+            "valid_until": null,
+            "digest": "06ee07d2edd2997a70ced356de3cf4b3159541d04f3f402aab0e71b6a8c0445e"
+          }
+        ],
+        "local_sources": [],
+        "index": [],
+        "capability": {
+          "retrieval_state": "missing",
+          "scope": "Synthetic availability; real filesystem tools exist but only granted pointers may be read."
+        }
+      },
+      "next_lookup_request": {
+        "request_id": "req-M05-11-W",
+        "grant_id": "grant-M05-11-W",
+        "path": "M05-11-W.json",
+        "assignment": "mediated_3",
+        "scope": "archive_a",
+        "caller_label": "mediated_3"
+      },
+      "task": "Evaluate current value from provided initial records only. Submit next_lookup_request exactly to coordinator for a later authoritative update; do not open source files. Future authority/value is not yet provided."
+    },
+    {
+      "trial_id": "M05-11-C",
+      "prior_case_id": "X04-ABS-01",
+      "context": {
+        "condition": "B",
+        "mechanism": "absent_retrieval",
+        "request": {
+          "key": "recall_code",
+          "scope": "archive_a",
+          "as_of": "2026-10-08"
+        },
+        "authoritative": {
+          "source_id": "fictional.registry",
+          "version": "v1",
+          "digest": "32f9555a3e61613bc12f63f744135ec17530ea93b25a267286f92217dd85f515"
+        },
+        "memory": [
+          {
+            "source_id": "fictional.registry",
+            "version": "v0",
+            "key": "recall_code",
+            "scope": "archive_a",
+            "value": "R-16",
+            "valid_until": null,
+            "digest": "06ee07d2edd2997a70ced356de3cf4b3159541d04f3f402aab0e71b6a8c0445e"
+          }
+        ],
+        "local_sources": [],
+        "index": [],
+        "capability": {
+          "retrieval_state": "missing",
+          "scope": "Synthetic availability; real filesystem tools exist but only granted pointers may be read."
+        }
+      },
+      "next_lookup_request": {
+        "request_id": "req-M05-11-C",
+        "grant_id": "grant-M05-11-C",
+        "path": "M05-11-C.json",
+        "assignment": "mediated_3",
+        "scope": "archive_a",
+        "caller_label": "mediated_3"
+      },
+      "task": "Evaluate current value from provided initial records only. Submit next_lookup_request exactly to coordinator for a later authoritative update; do not open source files. Future authority/value is not yet provided."
+    },
+    {
+      "trial_id": "M05-11-S",
+      "prior_case_id": "X04-ABS-01",
+      "context": {
+        "condition": "B",
+        "mechanism": "absent_retrieval",
+        "request": {
+          "key": "recall_code",
+          "scope": "archive_a",
+          "as_of": "2026-10-08"
+        },
+        "authoritative": {
+          "source_id": "fictional.registry",
+          "version": "v1",
+          "digest": "32f9555a3e61613bc12f63f744135ec17530ea93b25a267286f92217dd85f515"
+        },
+        "memory": [
+          {
+            "source_id": "fictional.registry",
+            "version": "v0",
+            "key": "recall_code",
+            "scope": "archive_a",
+            "value": "R-16",
+            "valid_until": null,
+            "digest": "06ee07d2edd2997a70ced356de3cf4b3159541d04f3f402aab0e71b6a8c0445e"
+          }
+        ],
+        "local_sources": [],
+        "index": [],
+        "capability": {
+          "retrieval_state": "missing",
+          "scope": "Synthetic availability; real filesystem tools exist but only granted pointers may be read."
+        }
+      },
+      "next_lookup_request": {
+        "request_id": "req-M05-11-S",
+        "grant_id": "grant-M05-11-S",
+        "path": "M05-11-S.json",
+        "assignment": "mediated_3",
+        "scope": "archive_a",
+        "caller_label": "mediated_3"
+      },
+      "task": "Evaluate current value from provided initial records only. Submit next_lookup_request exactly to coordinator for a later authoritative update; do not open source files. Future authority/value is not yet provided."
+    },
+    {
+      "trial_id": "M05-12-R",
+      "prior_case_id": "X04-ABS-02",
+      "context": {
+        "condition": "B",
+        "mechanism": "absent_retrieval",
+        "request": {
+          "key": "recall_code",
+          "scope": "archive_a",
+          "as_of": "2026-10-08"
+        },
+        "authoritative": {
+          "source_id": "fictional.registry",
+          "version": "v1",
+          "digest": "32f9555a3e61613bc12f63f744135ec17530ea93b25a267286f92217dd85f515"
+        },
+        "memory": [],
+        "local_sources": [],
+        "index": [
+          {
+            "source_id": "fictional.registry",
+            "version": "v1",
+            "digest": "32f9555a3e61613bc12f63f744135ec17530ea93b25a267286f92217dd85f515"
+          }
+        ],
+        "capability": {
+          "retrieval_state": "missing",
+          "scope": "Synthetic availability; real filesystem tools exist but only granted pointers may be read."
+        }
+      },
+      "next_lookup_request": {
+        "request_id": "req-M05-12-R",
+        "grant_id": "grant-M05-12-R",
+        "path": "M05-12-R.json",
+        "assignment": "mediated_3",
+        "scope": "archive_a",
+        "caller_label": "mediated_3"
+      },
+      "task": "Evaluate current value from provided initial records only. Submit next_lookup_request exactly to coordinator for a later authoritative update; do not open source files. Future authority/value is not yet provided."
+    },
+    {
+      "trial_id": "M05-12-W",
+      "prior_case_id": "X04-ABS-02",
+      "context": {
+        "condition": "B",
+        "mechanism": "absent_retrieval",
+        "request": {
+          "key": "recall_code",
+          "scope": "archive_a",
+          "as_of": "2026-10-08"
+        },
+        "authoritative": {
+          "source_id": "fictional.registry",
+          "version": "v1",
+          "digest": "32f9555a3e61613bc12f63f744135ec17530ea93b25a267286f92217dd85f515"
+        },
+        "memory": [],
+        "local_sources": [],
+        "index": [
+          {
+            "source_id": "fictional.registry",
+            "version": "v1",
+            "digest": "32f9555a3e61613bc12f63f744135ec17530ea93b25a267286f92217dd85f515"
+          }
+        ],
+        "capability": {
+          "retrieval_state": "missing",
+          "scope": "Synthetic availability; real filesystem tools exist but only granted pointers may be read."
+        }
+      },
+      "next_lookup_request": {
+        "request_id": "req-M05-12-W",
+        "grant_id": "grant-M05-12-W",
+        "path": "M05-12-W.json",
+        "assignment": "mediated_3",
+        "scope": "archive_a",
+        "caller_label": "mediated_3"
+      },
+      "task": "Evaluate current value from provided initial records only. Submit next_lookup_request exactly to coordinator for a later authoritative update; do not open source files. Future authority/value is not yet provided."
+    },
+    {
+      "trial_id": "M05-12-C",
+      "prior_case_id": "X04-ABS-02",
+      "context": {
+        "condition": "B",
+        "mechanism": "absent_retrieval",
+        "request": {
+          "key": "recall_code",
+          "scope": "archive_a",
+          "as_of": "2026-10-08"
+        },
+        "authoritative": {
+          "source_id": "fictional.registry",
+          "version": "v1",
+          "digest": "32f9555a3e61613bc12f63f744135ec17530ea93b25a267286f92217dd85f515"
+        },
+        "memory": [],
+        "local_sources": [],
+        "index": [
+          {
+            "source_id": "fictional.registry",
+            "version": "v1",
+            "digest": "32f9555a3e61613bc12f63f744135ec17530ea93b25a267286f92217dd85f515"
+          }
+        ],
+        "capability": {
+          "retrieval_state": "missing",
+          "scope": "Synthetic availability; real filesystem tools exist but only granted pointers may be read."
+        }
+      },
+      "next_lookup_request": {
+        "request_id": "req-M05-12-C",
+        "grant_id": "grant-M05-12-C",
+        "path": "M05-12-C.json",
+        "assignment": "mediated_3",
+        "scope": "archive_a",
+        "caller_label": "mediated_3"
+      },
+      "task": "Evaluate current value from provided initial records only. Submit next_lookup_request exactly to coordinator for a later authoritative update; do not open source files. Future authority/value is not yet provided."
+    },
+    {
+      "trial_id": "M05-12-S",
+      "prior_case_id": "X04-ABS-02",
+      "context": {
+        "condition": "B",
+        "mechanism": "absent_retrieval",
+        "request": {
+          "key": "recall_code",
+          "scope": "archive_a",
+          "as_of": "2026-10-08"
+        },
+        "authoritative": {
+          "source_id": "fictional.registry",
+          "version": "v1",
+          "digest": "32f9555a3e61613bc12f63f744135ec17530ea93b25a267286f92217dd85f515"
+        },
+        "memory": [],
+        "local_sources": [],
+        "index": [
+          {
+            "source_id": "fictional.registry",
+            "version": "v1",
+            "digest": "32f9555a3e61613bc12f63f744135ec17530ea93b25a267286f92217dd85f515"
+          }
+        ],
+        "capability": {
+          "retrieval_state": "missing",
+          "scope": "Synthetic availability; real filesystem tools exist but only granted pointers may be read."
+        }
+      },
+      "next_lookup_request": {
+        "request_id": "req-M05-12-S",
+        "grant_id": "grant-M05-12-S",
+        "path": "M05-12-S.json",
+        "assignment": "mediated_3",
+        "scope": "archive_a",
+        "caller_label": "mediated_3"
+      },
+      "task": "Evaluate current value from provided initial records only. Submit next_lookup_request exactly to coordinator for a later authoritative update; do not open source files. Future authority/value is not yet provided."
+    }
+  ]
+}

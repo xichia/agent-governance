@@ -14,7 +14,7 @@ for index,t in enumerate(prior['trials']):
  context={k:old[k] for k in ('condition','mechanism','request','authoritative','memory','local_sources','index','capability')}
  initial_valid=[]
  for r in context['memory']+context['local_sources']:
-  if (all(r.get(k)==context['authoritative'].get(k) for k in ('source_id','version','digest')) and r.get('digest')==canonical(r) and all(r.get(k)==context['request'].get(k) for k in ('key','scope')) and r['valid_until']>=context['request']['as_of']):initial_valid.append(r)
+  if (all(r.get(k)==context['authoritative'].get(k) for k in ('source_id','version','digest')) and r.get('digest')==canonical(r) and all(r.get(k)==context['request'].get(k) for k in ('key','scope')) and (r['valid_until'] is None or r['valid_until']>=context['request']['as_of'])):initial_valid.append(r)
  initial_expected=answer(initial_valid[0],initial_valid[0]['digest']) if initial_valid else answer()
  worker=f'mediated_{index//4+1}'
  for transition in ('R','W','C','S'):
@@ -40,7 +40,7 @@ for index,t in enumerate(prior['trials']):
   updates[worker].append(upd)
   truth.append({'trial_id':tid,'worker':worker,'prior_case_id':t['case_id'],'prior_packet_sha256':t['packet_sha256'],'mechanism':old['mechanism'],'condition':old['condition'],'transition':transition,'transition_kind':kind,'rationale':rationale,'initial_expected':initial_expected,'expected_request':request,'final_expected':final_expected,'expected_broker':{'status':expected_broker[0],'reason':expected_broker[1]},'actual_source_sha256':rawhash(data),'trusted_source_sha256':digest,'source_path':file})
 for worker,entries in packets.items():
- write(P/'packets'/f'{worker}.json',{'worker':worker,'phase':'initial','record_digest_rule':'For initial records SHA256 canonical UTF8 JSON excluding digest, sortedkeys compact separators ensure_ascii=False. Current requires exact authoritative identity/digest, requested key/scope and inclusive valid_until>=as_of. Lookup unavailable in this phase; root handles submitted next request later.','trials':entries})
+ write(P/'packets'/f'{worker}.json',{'worker':worker,'phase':'initial','record_digest_rule':'For initial records SHA256 canonical UTF8 JSON excluding digest, sortedkeys compact separators ensure_ascii=False. Current requires exact authoritative identity/digest, requested key/scope and inclusive valid_until>=as_of (null valid_until means no expiry, as in02). Lookup unavailable in this phase; root handles submitted next request later.','trials':entries})
  write(P/'updates'/f'{worker}.json',{'worker':worker,'phase':'final','trials':updates[worker]})
 write(P/'grants.json',{'schema_version':1,'grants':grants})
 write(P/'groundtruth.json',{'schema_version':1,'description':'Frozen fictional crossed family/transition oracle. Raw broker bytes hash differs from initial canonical record digest. Initial lookup deferred; original availability remains context, not exercised in initial phase.64cells, clustered within16families/fourworkers; no64independent predicates claim.','trials':truth})

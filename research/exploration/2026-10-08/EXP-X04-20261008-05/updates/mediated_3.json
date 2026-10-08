@@ -1,0 +1,246 @@
+{
+  "worker": "mediated_3",
+  "phase": "final",
+  "trials": [
+    {
+      "trial_id": "M05-09-R",
+      "transition": "R",
+      "authoritative": {
+        "source_id": "fictional.transition.X04-MIS-03",
+        "version": "v3",
+        "raw_sha256": "185b45aaff8fa115576e436f7428ebb9d4b9e147cdf47bcebaaab994cea42174"
+      },
+      "request": {
+        "key": "required_storage_limit_c",
+        "scope": "north_depot",
+        "as_of": "2026-10-08"
+      },
+      "notice": "Prior identity and all prior local/memory values are superseded for this final task. Only root service bytes matching this authority and final key/scope/date can establish a current value."
+    },
+    {
+      "trial_id": "M05-09-W",
+      "transition": "W",
+      "authoritative": {
+        "source_id": "fictional.transition.X04-MIS-03",
+        "version": "v3",
+        "raw_sha256": "185b45aaff8fa115576e436f7428ebb9d4b9e147cdf47bcebaaab994cea42174"
+      },
+      "request": {
+        "key": "required_storage_limit_c",
+        "scope": "north_depot",
+        "as_of": "2026-10-08"
+      },
+      "notice": "Prior identity and all prior local/memory values are superseded for this final task. Only root service bytes matching this authority and final key/scope/date can establish a current value. The lookup grant has been withdrawn; no replacement/local current source is authorized."
+    },
+    {
+      "trial_id": "M05-09-C",
+      "transition": "C",
+      "authoritative": {
+        "source_id": "fictional.transition.X04-MIS-03",
+        "version": "v3",
+        "raw_sha256": "185b45aaff8fa115576e436f7428ebb9d4b9e147cdf47bcebaaab994cea42174"
+      },
+      "request": {
+        "key": "required_storage_limit_c",
+        "scope": "north_depot",
+        "as_of": "2026-10-08"
+      },
+      "notice": "Prior identity and all prior local/memory values are superseded for this final task. Only root service bytes matching this authority and final key/scope/date can establish a current value. Source bytes may have changed without an authorized descriptor update; observed digest alone cannot supply a verified value."
+    },
+    {
+      "trial_id": "M05-09-S",
+      "transition": "S",
+      "authoritative": {
+        "source_id": "fictional.transition.X04-MIS-03",
+        "version": "v3",
+        "raw_sha256": "185b45aaff8fa115576e436f7428ebb9d4b9e147cdf47bcebaaab994cea42174"
+      },
+      "request": {
+        "key": "required_storage_limit_c",
+        "scope": "south_depot",
+        "as_of": "2026-10-08"
+      },
+      "notice": "Prior identity and all prior local/memory values are superseded for this final task. Only root service bytes matching this authority and final key/scope/date can establish a current value. This final query changes scope or date after the served record was requested. valid_until is inclusive; no other scope/date inference."
+    },
+    {
+      "trial_id": "M05-10-R",
+      "transition": "R",
+      "authoritative": {
+        "source_id": "fictional.transition.X04-MIS-04",
+        "version": "v3",
+        "raw_sha256": "1d1b9ba7d1392baa8d16a181f2a14d58fffb4e7ede9d66b666c5e530732818bc"
+      },
+      "request": {
+        "key": "required_storage_limit_c",
+        "scope": "north_depot",
+        "as_of": "2026-10-08"
+      },
+      "notice": "Prior identity and all prior local/memory values are superseded for this final task. Only root service bytes matching this authority and final key/scope/date can establish a current value."
+    },
+    {
+      "trial_id": "M05-10-W",
+      "transition": "W",
+      "authoritative": {
+        "source_id": "fictional.transition.X04-MIS-04",
+        "version": "v3",
+        "raw_sha256": "1d1b9ba7d1392baa8d16a181f2a14d58fffb4e7ede9d66b666c5e530732818bc"
+      },
+      "request": {
+        "key": "required_storage_limit_c",
+        "scope": "north_depot",
+        "as_of": "2026-10-08"
+      },
+      "notice": "Prior identity and all prior local/memory values are superseded for this final task. Only root service bytes matching this authority and final key/scope/date can establish a current value. The lookup grant has been withdrawn; no replacement/local current source is authorized."
+    },
+    {
+      "trial_id": "M05-10-C",
+      "transition": "C",
+      "authoritative": {
+        "source_id": "fictional.transition.X04-MIS-04",
+        "version": "v3",
+        "raw_sha256": "1d1b9ba7d1392baa8d16a181f2a14d58fffb4e7ede9d66b666c5e530732818bc"
+      },
+      "request": {
+        "key": "required_storage_limit_c",
+        "scope": "north_depot",
+        "as_of": "2026-10-08"
+      },
+      "notice": "Prior identity and all prior local/memory values are superseded for this final task. Only root service bytes matching this authority and final key/scope/date can establish a current value. Source bytes may have changed without an authorized descriptor update; observed digest alone cannot supply a verified value."
+    },
+    {
+      "trial_id": "M05-10-S",
+      "transition": "S",
+      "authoritative": {
+        "source_id": "fictional.transition.X04-MIS-04",
+        "version": "v3",
+        "raw_sha256": "1d1b9ba7d1392baa8d16a181f2a14d58fffb4e7ede9d66b666c5e530732818bc"
+      },
+      "request": {
+        "key": "required_storage_limit_c",
+        "scope": "north_depot",
+        "as_of": "2026-10-16"
+      },
+      "notice": "Prior identity and all prior local/memory values are superseded for this final task. Only root service bytes matching this authority and final key/scope/date can establish a current value. This final query changes scope or date after the served record was requested. valid_until is inclusive; no other scope/date inference."
+    },
+    {
+      "trial_id": "M05-11-R",
+      "transition": "R",
+      "authoritative": {
+        "source_id": "fictional.transition.X04-ABS-01",
+        "version": "v3",
+        "raw_sha256": "1a541cd5a5d958525fde914607d361efbbeaaba73d31f851f88dac295cdc332b"
+      },
+      "request": {
+        "key": "recall_code",
+        "scope": "archive_a",
+        "as_of": "2026-10-08"
+      },
+      "notice": "Prior identity and all prior local/memory values are superseded for this final task. Only root service bytes matching this authority and final key/scope/date can establish a current value."
+    },
+    {
+      "trial_id": "M05-11-W",
+      "transition": "W",
+      "authoritative": {
+        "source_id": "fictional.transition.X04-ABS-01",
+        "version": "v3",
+        "raw_sha256": "1a541cd5a5d958525fde914607d361efbbeaaba73d31f851f88dac295cdc332b"
+      },
+      "request": {
+        "key": "recall_code",
+        "scope": "archive_a",
+        "as_of": "2026-10-08"
+      },
+      "notice": "Prior identity and all prior local/memory values are superseded for this final task. Only root service bytes matching this authority and final key/scope/date can establish a current value. The lookup grant has been withdrawn; no replacement/local current source is authorized."
+    },
+    {
+      "trial_id": "M05-11-C",
+      "transition": "C",
+      "authoritative": {
+        "source_id": "fictional.transition.X04-ABS-01",
+        "version": "v3",
+        "raw_sha256": "1a541cd5a5d958525fde914607d361efbbeaaba73d31f851f88dac295cdc332b"
+      },
+      "request": {
+        "key": "recall_code",
+        "scope": "archive_a",
+        "as_of": "2026-10-08"
+      },
+      "notice": "Prior identity and all prior local/memory values are superseded for this final task. Only root service bytes matching this authority and final key/scope/date can establish a current value. Source bytes may have changed without an authorized descriptor update; observed digest alone cannot supply a verified value."
+    },
+    {
+      "trial_id": "M05-11-S",
+      "transition": "S",
+      "authoritative": {
+        "source_id": "fictional.transition.X04-ABS-01",
+        "version": "v3",
+        "raw_sha256": "1a541cd5a5d958525fde914607d361efbbeaaba73d31f851f88dac295cdc332b"
+      },
+      "request": {
+        "key": "recall_code",
+        "scope": "archive_a",
+        "as_of": "2026-10-15"
+      },
+      "notice": "Prior identity and all prior local/memory values are superseded for this final task. Only root service bytes matching this authority and final key/scope/date can establish a current value. This final query changes scope or date after the served record was requested. valid_until is inclusive; no other scope/date inference."
+    },
+    {
+      "trial_id": "M05-12-R",
+      "transition": "R",
+      "authoritative": {
+        "source_id": "fictional.transition.X04-ABS-02",
+        "version": "v3",
+        "raw_sha256": "4b9001318ac9e470080be5dcc9bb66aa85ef121a6c60ef2437cf9444c97070b3"
+      },
+      "request": {
+        "key": "recall_code",
+        "scope": "archive_a",
+        "as_of": "2026-10-08"
+      },
+      "notice": "Prior identity and all prior local/memory values are superseded for this final task. Only root service bytes matching this authority and final key/scope/date can establish a current value."
+    },
+    {
+      "trial_id": "M05-12-W",
+      "transition": "W",
+      "authoritative": {
+        "source_id": "fictional.transition.X04-ABS-02",
+        "version": "v3",
+        "raw_sha256": "4b9001318ac9e470080be5dcc9bb66aa85ef121a6c60ef2437cf9444c97070b3"
+      },
+      "request": {
+        "key": "recall_code",
+        "scope": "archive_a",
+        "as_of": "2026-10-08"
+      },
+      "notice": "Prior identity and all prior local/memory values are superseded for this final task. Only root service bytes matching this authority and final key/scope/date can establish a current value. The lookup grant has been withdrawn; no replacement/local current source is authorized."
+    },
+    {
+      "trial_id": "M05-12-C",
+      "transition": "C",
+      "authoritative": {
+        "source_id": "fictional.transition.X04-ABS-02",
+        "version": "v3",
+        "raw_sha256": "4b9001318ac9e470080be5dcc9bb66aa85ef121a6c60ef2437cf9444c97070b3"
+      },
+      "request": {
+        "key": "recall_code",
+        "scope": "archive_a",
+        "as_of": "2026-10-08"
+      },
+      "notice": "Prior identity and all prior local/memory values are superseded for this final task. Only root service bytes matching this authority and final key/scope/date can establish a current value. Source bytes may have changed without an authorized descriptor update; observed digest alone cannot supply a verified value."
+    },
+    {
+      "trial_id": "M05-12-S",
+      "transition": "S",
+      "authoritative": {
+        "source_id": "fictional.transition.X04-ABS-02",
+        "version": "v3",
+        "raw_sha256": "4b9001318ac9e470080be5dcc9bb66aa85ef121a6c60ef2437cf9444c97070b3"
+      },
+      "request": {
+        "key": "recall_code",
+        "scope": "south_depot",
+        "as_of": "2026-10-17"
+      },
+      "notice": "Prior identity and all prior local/memory values are superseded for this final task. Only root service bytes matching this authority and final key/scope/date can establish a current value. This final query changes scope or date after the served record was requested. valid_until is inclusive; no other scope/date inference."
+    }
+  ]
+}

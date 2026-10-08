@@ -1,0 +1,2694 @@
+{
+  "schema_version": 1,
+  "description": "Frozen fictional crossed family/transition oracle. Raw broker bytes hash differs from initial canonical record digest. Initial lookup deferred; original availability remains context, not exercised in initial phase.64cells, clustered within16families/fourworkers; no64independent predicates claim.",
+  "trials": [
+    {
+      "trial_id": "M05-01-R",
+      "worker": "mediated_1",
+      "prior_case_id": "X04-CUR-01",
+      "prior_packet_sha256": "6f157362d3cdc21a741573721d0ff0f1e8a77b41829831e54e923b13389e9e48",
+      "mechanism": "current",
+      "condition": "A",
+      "transition": "R",
+      "transition_kind": "authoritative_refresh",
+      "rationale": "X04-CUR-01 / Full local bundle contains the trusted current inventory record. Initial packet-only status current; final authoritative_refresh must yield current. Original routing is deferred to coordinator, not a replication of03 tool access.",
+      "initial_expected": {
+        "status": "current",
+        "value": 40,
+        "source_id": "fictional.catalog",
+        "version": "v2",
+        "evidence_digest": "dddaae7e4648412d6bdd1e90792c2c71825cd914aeea9e1eddf673b57af4c4e7",
+        "complete": true
+      },
+      "expected_request": {
+        "request_id": "req-M05-01-R",
+        "grant_id": "grant-M05-01-R",
+        "path": "M05-01-R.json",
+        "assignment": "mediated_1",
+        "scope": "north_depot",
+        "caller_label": "mediated_1"
+      },
+      "final_expected": {
+        "status": "current",
+        "value": 35,
+        "source_id": "fictional.transition.X04-CUR-01",
+        "version": "v3",
+        "evidence_digest": "96c4348fedac0dfd2e2bf0f8f1cbf8fe273b5212fe52cdadeaf27dbc1c6f7be2",
+        "complete": true
+      },
+      "expected_broker": {
+        "status": "served",
+        "reason": "verified_bytes"
+      },
+      "actual_source_sha256": "96c4348fedac0dfd2e2bf0f8f1cbf8fe273b5212fe52cdadeaf27dbc1c6f7be2",
+      "trusted_source_sha256": "96c4348fedac0dfd2e2bf0f8f1cbf8fe273b5212fe52cdadeaf27dbc1c6f7be2",
+      "source_path": "M05-01-R.json"
+    },
+    {
+      "trial_id": "M05-01-W",
+      "worker": "mediated_1",
+      "prior_case_id": "X04-CUR-01",
+      "prior_packet_sha256": "6f157362d3cdc21a741573721d0ff0f1e8a77b41829831e54e923b13389e9e48",
+      "mechanism": "current",
+      "condition": "A",
+      "transition": "W",
+      "transition_kind": "grant_withdrawal",
+      "rationale": "X04-CUR-01 / Full local bundle contains the trusted current inventory record. Initial packet-only status current; final grant_withdrawal must yield unresolved. Original routing is deferred to coordinator, not a replication of03 tool access.",
+      "initial_expected": {
+        "status": "current",
+        "value": 40,
+        "source_id": "fictional.catalog",
+        "version": "v2",
+        "evidence_digest": "dddaae7e4648412d6bdd1e90792c2c71825cd914aeea9e1eddf673b57af4c4e7",
+        "complete": true
+      },
+      "expected_request": {
+        "request_id": "req-M05-01-W",
+        "grant_id": "grant-M05-01-W",
+        "path": "M05-01-W.json",
+        "assignment": "mediated_1",
+        "scope": "north_depot",
+        "caller_label": "mediated_1"
+      },
+      "final_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_broker": {
+        "status": "denied",
+        "reason": "grant_not_found"
+      },
+      "actual_source_sha256": "96c4348fedac0dfd2e2bf0f8f1cbf8fe273b5212fe52cdadeaf27dbc1c6f7be2",
+      "trusted_source_sha256": "96c4348fedac0dfd2e2bf0f8f1cbf8fe273b5212fe52cdadeaf27dbc1c6f7be2",
+      "source_path": "M05-01-W.json"
+    },
+    {
+      "trial_id": "M05-01-C",
+      "worker": "mediated_1",
+      "prior_case_id": "X04-CUR-01",
+      "prior_packet_sha256": "6f157362d3cdc21a741573721d0ff0f1e8a77b41829831e54e923b13389e9e48",
+      "mechanism": "current",
+      "condition": "A",
+      "transition": "C",
+      "transition_kind": "byte_substitution",
+      "rationale": "X04-CUR-01 / Full local bundle contains the trusted current inventory record. Initial packet-only status current; final byte_substitution must yield unresolved. Original routing is deferred to coordinator, not a replication of03 tool access.",
+      "initial_expected": {
+        "status": "current",
+        "value": 40,
+        "source_id": "fictional.catalog",
+        "version": "v2",
+        "evidence_digest": "dddaae7e4648412d6bdd1e90792c2c71825cd914aeea9e1eddf673b57af4c4e7",
+        "complete": true
+      },
+      "expected_request": {
+        "request_id": "req-M05-01-C",
+        "grant_id": "grant-M05-01-C",
+        "path": "M05-01-C.json",
+        "assignment": "mediated_1",
+        "scope": "north_depot",
+        "caller_label": "mediated_1"
+      },
+      "final_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_broker": {
+        "status": "changed",
+        "reason": "content_mismatch"
+      },
+      "actual_source_sha256": "1f1378780bd8df906d48c554f9e6b47a58a0a86a9f19c80880125227a25ee01a",
+      "trusted_source_sha256": "96c4348fedac0dfd2e2bf0f8f1cbf8fe273b5212fe52cdadeaf27dbc1c6f7be2",
+      "source_path": "M05-01-C.json"
+    },
+    {
+      "trial_id": "M05-01-S",
+      "worker": "mediated_1",
+      "prior_case_id": "X04-CUR-01",
+      "prior_packet_sha256": "6f157362d3cdc21a741573721d0ff0f1e8a77b41829831e54e923b13389e9e48",
+      "mechanism": "current",
+      "condition": "A",
+      "transition": "S",
+      "transition_kind": "scope_change",
+      "rationale": "X04-CUR-01 / Full local bundle contains the trusted current inventory record. Initial packet-only status current; final scope_change must yield unresolved. Original routing is deferred to coordinator, not a replication of03 tool access.",
+      "initial_expected": {
+        "status": "current",
+        "value": 40,
+        "source_id": "fictional.catalog",
+        "version": "v2",
+        "evidence_digest": "dddaae7e4648412d6bdd1e90792c2c71825cd914aeea9e1eddf673b57af4c4e7",
+        "complete": true
+      },
+      "expected_request": {
+        "request_id": "req-M05-01-S",
+        "grant_id": "grant-M05-01-S",
+        "path": "M05-01-S.json",
+        "assignment": "mediated_1",
+        "scope": "north_depot",
+        "caller_label": "mediated_1"
+      },
+      "final_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_broker": {
+        "status": "served",
+        "reason": "verified_bytes"
+      },
+      "actual_source_sha256": "96c4348fedac0dfd2e2bf0f8f1cbf8fe273b5212fe52cdadeaf27dbc1c6f7be2",
+      "trusted_source_sha256": "96c4348fedac0dfd2e2bf0f8f1cbf8fe273b5212fe52cdadeaf27dbc1c6f7be2",
+      "source_path": "M05-01-S.json"
+    },
+    {
+      "trial_id": "M05-02-R",
+      "worker": "mediated_1",
+      "prior_case_id": "X04-CUR-02",
+      "prior_packet_sha256": "8759c916ed14daaa33d49d7ac64c971e94dfad1d665d171554a4a70971a39a88",
+      "mechanism": "current",
+      "condition": "B",
+      "transition": "R",
+      "transition_kind": "authoritative_refresh",
+      "rationale": "X04-CUR-02 / Selective/index path retrieves the exact current inventory record. Initial packet-only status unresolved; final authoritative_refresh must yield current. Original routing is deferred to coordinator, not a replication of03 tool access.",
+      "initial_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_request": {
+        "request_id": "req-M05-02-R",
+        "grant_id": "grant-M05-02-R",
+        "path": "M05-02-R.json",
+        "assignment": "mediated_1",
+        "scope": "north_depot",
+        "caller_label": "mediated_1"
+      },
+      "final_expected": {
+        "status": "current",
+        "value": 35,
+        "source_id": "fictional.transition.X04-CUR-02",
+        "version": "v3",
+        "evidence_digest": "d95d98477aa4b60408aed8caf2d50e66387922323fba125a4241fe567521ac23",
+        "complete": true
+      },
+      "expected_broker": {
+        "status": "served",
+        "reason": "verified_bytes"
+      },
+      "actual_source_sha256": "d95d98477aa4b60408aed8caf2d50e66387922323fba125a4241fe567521ac23",
+      "trusted_source_sha256": "d95d98477aa4b60408aed8caf2d50e66387922323fba125a4241fe567521ac23",
+      "source_path": "M05-02-R.json"
+    },
+    {
+      "trial_id": "M05-02-W",
+      "worker": "mediated_1",
+      "prior_case_id": "X04-CUR-02",
+      "prior_packet_sha256": "8759c916ed14daaa33d49d7ac64c971e94dfad1d665d171554a4a70971a39a88",
+      "mechanism": "current",
+      "condition": "B",
+      "transition": "W",
+      "transition_kind": "grant_withdrawal",
+      "rationale": "X04-CUR-02 / Selective/index path retrieves the exact current inventory record. Initial packet-only status unresolved; final grant_withdrawal must yield unresolved. Original routing is deferred to coordinator, not a replication of03 tool access.",
+      "initial_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_request": {
+        "request_id": "req-M05-02-W",
+        "grant_id": "grant-M05-02-W",
+        "path": "M05-02-W.json",
+        "assignment": "mediated_1",
+        "scope": "north_depot",
+        "caller_label": "mediated_1"
+      },
+      "final_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_broker": {
+        "status": "denied",
+        "reason": "grant_not_found"
+      },
+      "actual_source_sha256": "d95d98477aa4b60408aed8caf2d50e66387922323fba125a4241fe567521ac23",
+      "trusted_source_sha256": "d95d98477aa4b60408aed8caf2d50e66387922323fba125a4241fe567521ac23",
+      "source_path": "M05-02-W.json"
+    },
+    {
+      "trial_id": "M05-02-C",
+      "worker": "mediated_1",
+      "prior_case_id": "X04-CUR-02",
+      "prior_packet_sha256": "8759c916ed14daaa33d49d7ac64c971e94dfad1d665d171554a4a70971a39a88",
+      "mechanism": "current",
+      "condition": "B",
+      "transition": "C",
+      "transition_kind": "byte_substitution",
+      "rationale": "X04-CUR-02 / Selective/index path retrieves the exact current inventory record. Initial packet-only status unresolved; final byte_substitution must yield unresolved. Original routing is deferred to coordinator, not a replication of03 tool access.",
+      "initial_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_request": {
+        "request_id": "req-M05-02-C",
+        "grant_id": "grant-M05-02-C",
+        "path": "M05-02-C.json",
+        "assignment": "mediated_1",
+        "scope": "north_depot",
+        "caller_label": "mediated_1"
+      },
+      "final_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_broker": {
+        "status": "changed",
+        "reason": "content_mismatch"
+      },
+      "actual_source_sha256": "98905174c938252274344c3b7dd77e290187c54e2673952b5bf3950e6184b265",
+      "trusted_source_sha256": "d95d98477aa4b60408aed8caf2d50e66387922323fba125a4241fe567521ac23",
+      "source_path": "M05-02-C.json"
+    },
+    {
+      "trial_id": "M05-02-S",
+      "worker": "mediated_1",
+      "prior_case_id": "X04-CUR-02",
+      "prior_packet_sha256": "8759c916ed14daaa33d49d7ac64c971e94dfad1d665d171554a4a70971a39a88",
+      "mechanism": "current",
+      "condition": "B",
+      "transition": "S",
+      "transition_kind": "expired_after_access",
+      "rationale": "X04-CUR-02 / Selective/index path retrieves the exact current inventory record. Initial packet-only status unresolved; final expired_after_access must yield unresolved. Original routing is deferred to coordinator, not a replication of03 tool access.",
+      "initial_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_request": {
+        "request_id": "req-M05-02-S",
+        "grant_id": "grant-M05-02-S",
+        "path": "M05-02-S.json",
+        "assignment": "mediated_1",
+        "scope": "north_depot",
+        "caller_label": "mediated_1"
+      },
+      "final_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_broker": {
+        "status": "served",
+        "reason": "verified_bytes"
+      },
+      "actual_source_sha256": "d95d98477aa4b60408aed8caf2d50e66387922323fba125a4241fe567521ac23",
+      "trusted_source_sha256": "d95d98477aa4b60408aed8caf2d50e66387922323fba125a4241fe567521ac23",
+      "source_path": "M05-02-S.json"
+    },
+    {
+      "trial_id": "M05-03-R",
+      "worker": "mediated_1",
+      "prior_case_id": "X04-CUR-04",
+      "prior_packet_sha256": "fb39cc2ca669628994c9b1a2460f49899f9f59be6b764883fa34b6a41df9bde2",
+      "mechanism": "current",
+      "condition": "B",
+      "transition": "R",
+      "transition_kind": "authoritative_refresh",
+      "rationale": "X04-CUR-04 / The retrieval payload has an altered digest and no local copy exists; the trusted descriptor alone cannot supply the value. Initial packet-only status unresolved; final authoritative_refresh must yield current. Original routing is deferred to coordinator, not a replication of03 tool access.",
+      "initial_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_request": {
+        "request_id": "req-M05-03-R",
+        "grant_id": "grant-M05-03-R",
+        "path": "M05-03-R.json",
+        "assignment": "mediated_1",
+        "scope": "north_depot",
+        "caller_label": "mediated_1"
+      },
+      "final_expected": {
+        "status": "current",
+        "value": 35,
+        "source_id": "fictional.transition.X04-CUR-04",
+        "version": "v3",
+        "evidence_digest": "6caf63ae7c6b534cac54cb28dee73b8abc6d9014a85481f97348409c6d2cc568",
+        "complete": true
+      },
+      "expected_broker": {
+        "status": "served",
+        "reason": "verified_bytes"
+      },
+      "actual_source_sha256": "6caf63ae7c6b534cac54cb28dee73b8abc6d9014a85481f97348409c6d2cc568",
+      "trusted_source_sha256": "6caf63ae7c6b534cac54cb28dee73b8abc6d9014a85481f97348409c6d2cc568",
+      "source_path": "M05-03-R.json"
+    },
+    {
+      "trial_id": "M05-03-W",
+      "worker": "mediated_1",
+      "prior_case_id": "X04-CUR-04",
+      "prior_packet_sha256": "fb39cc2ca669628994c9b1a2460f49899f9f59be6b764883fa34b6a41df9bde2",
+      "mechanism": "current",
+      "condition": "B",
+      "transition": "W",
+      "transition_kind": "grant_withdrawal",
+      "rationale": "X04-CUR-04 / The retrieval payload has an altered digest and no local copy exists; the trusted descriptor alone cannot supply the value. Initial packet-only status unresolved; final grant_withdrawal must yield unresolved. Original routing is deferred to coordinator, not a replication of03 tool access.",
+      "initial_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_request": {
+        "request_id": "req-M05-03-W",
+        "grant_id": "grant-M05-03-W",
+        "path": "M05-03-W.json",
+        "assignment": "mediated_1",
+        "scope": "north_depot",
+        "caller_label": "mediated_1"
+      },
+      "final_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_broker": {
+        "status": "denied",
+        "reason": "grant_not_found"
+      },
+      "actual_source_sha256": "6caf63ae7c6b534cac54cb28dee73b8abc6d9014a85481f97348409c6d2cc568",
+      "trusted_source_sha256": "6caf63ae7c6b534cac54cb28dee73b8abc6d9014a85481f97348409c6d2cc568",
+      "source_path": "M05-03-W.json"
+    },
+    {
+      "trial_id": "M05-03-C",
+      "worker": "mediated_1",
+      "prior_case_id": "X04-CUR-04",
+      "prior_packet_sha256": "fb39cc2ca669628994c9b1a2460f49899f9f59be6b764883fa34b6a41df9bde2",
+      "mechanism": "current",
+      "condition": "B",
+      "transition": "C",
+      "transition_kind": "byte_substitution",
+      "rationale": "X04-CUR-04 / The retrieval payload has an altered digest and no local copy exists; the trusted descriptor alone cannot supply the value. Initial packet-only status unresolved; final byte_substitution must yield unresolved. Original routing is deferred to coordinator, not a replication of03 tool access.",
+      "initial_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_request": {
+        "request_id": "req-M05-03-C",
+        "grant_id": "grant-M05-03-C",
+        "path": "M05-03-C.json",
+        "assignment": "mediated_1",
+        "scope": "north_depot",
+        "caller_label": "mediated_1"
+      },
+      "final_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_broker": {
+        "status": "changed",
+        "reason": "content_mismatch"
+      },
+      "actual_source_sha256": "4bd16d1ce1f60fe64dc4f1a93bedb17a0b8d806fd3df806942909abb4359583f",
+      "trusted_source_sha256": "6caf63ae7c6b534cac54cb28dee73b8abc6d9014a85481f97348409c6d2cc568",
+      "source_path": "M05-03-C.json"
+    },
+    {
+      "trial_id": "M05-03-S",
+      "worker": "mediated_1",
+      "prior_case_id": "X04-CUR-04",
+      "prior_packet_sha256": "fb39cc2ca669628994c9b1a2460f49899f9f59be6b764883fa34b6a41df9bde2",
+      "mechanism": "current",
+      "condition": "B",
+      "transition": "S",
+      "transition_kind": "inclusive_expiry_boundary",
+      "rationale": "X04-CUR-04 / The retrieval payload has an altered digest and no local copy exists; the trusted descriptor alone cannot supply the value. Initial packet-only status unresolved; final inclusive_expiry_boundary must yield current. Original routing is deferred to coordinator, not a replication of03 tool access.",
+      "initial_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_request": {
+        "request_id": "req-M05-03-S",
+        "grant_id": "grant-M05-03-S",
+        "path": "M05-03-S.json",
+        "assignment": "mediated_1",
+        "scope": "north_depot",
+        "caller_label": "mediated_1"
+      },
+      "final_expected": {
+        "status": "current",
+        "value": 35,
+        "source_id": "fictional.transition.X04-CUR-04",
+        "version": "v3",
+        "evidence_digest": "6caf63ae7c6b534cac54cb28dee73b8abc6d9014a85481f97348409c6d2cc568",
+        "complete": true
+      },
+      "expected_broker": {
+        "status": "served",
+        "reason": "verified_bytes"
+      },
+      "actual_source_sha256": "6caf63ae7c6b534cac54cb28dee73b8abc6d9014a85481f97348409c6d2cc568",
+      "trusted_source_sha256": "6caf63ae7c6b534cac54cb28dee73b8abc6d9014a85481f97348409c6d2cc568",
+      "source_path": "M05-03-S.json"
+    },
+    {
+      "trial_id": "M05-04-R",
+      "worker": "mediated_1",
+      "prior_case_id": "X04-STA-01",
+      "prior_packet_sha256": "98953d9bed47d96e06813fe17ae0ae8055981ee143d78e51c9ff8a40b56662c2",
+      "mechanism": "stale",
+      "condition": "A",
+      "transition": "R",
+      "transition_kind": "authoritative_refresh",
+      "rationale": "X04-STA-01 / Stale memory says 80; full bundle establishes superseding v2 inventory of 40. Initial packet-only status current; final authoritative_refresh must yield current. Original routing is deferred to coordinator, not a replication of03 tool access.",
+      "initial_expected": {
+        "status": "current",
+        "value": 40,
+        "source_id": "fictional.catalog",
+        "version": "v2",
+        "evidence_digest": "dddaae7e4648412d6bdd1e90792c2c71825cd914aeea9e1eddf673b57af4c4e7",
+        "complete": true
+      },
+      "expected_request": {
+        "request_id": "req-M05-04-R",
+        "grant_id": "grant-M05-04-R",
+        "path": "M05-04-R.json",
+        "assignment": "mediated_1",
+        "scope": "north_depot",
+        "caller_label": "mediated_1"
+      },
+      "final_expected": {
+        "status": "current",
+        "value": 35,
+        "source_id": "fictional.transition.X04-STA-01",
+        "version": "v3",
+        "evidence_digest": "7fb56a6db3eb9e2fcfa85adcbd531ead41819c3756ba0bdb3883533b83e2b024",
+        "complete": true
+      },
+      "expected_broker": {
+        "status": "served",
+        "reason": "verified_bytes"
+      },
+      "actual_source_sha256": "7fb56a6db3eb9e2fcfa85adcbd531ead41819c3756ba0bdb3883533b83e2b024",
+      "trusted_source_sha256": "7fb56a6db3eb9e2fcfa85adcbd531ead41819c3756ba0bdb3883533b83e2b024",
+      "source_path": "M05-04-R.json"
+    },
+    {
+      "trial_id": "M05-04-W",
+      "worker": "mediated_1",
+      "prior_case_id": "X04-STA-01",
+      "prior_packet_sha256": "98953d9bed47d96e06813fe17ae0ae8055981ee143d78e51c9ff8a40b56662c2",
+      "mechanism": "stale",
+      "condition": "A",
+      "transition": "W",
+      "transition_kind": "grant_withdrawal",
+      "rationale": "X04-STA-01 / Stale memory says 80; full bundle establishes superseding v2 inventory of 40. Initial packet-only status current; final grant_withdrawal must yield unresolved. Original routing is deferred to coordinator, not a replication of03 tool access.",
+      "initial_expected": {
+        "status": "current",
+        "value": 40,
+        "source_id": "fictional.catalog",
+        "version": "v2",
+        "evidence_digest": "dddaae7e4648412d6bdd1e90792c2c71825cd914aeea9e1eddf673b57af4c4e7",
+        "complete": true
+      },
+      "expected_request": {
+        "request_id": "req-M05-04-W",
+        "grant_id": "grant-M05-04-W",
+        "path": "M05-04-W.json",
+        "assignment": "mediated_1",
+        "scope": "north_depot",
+        "caller_label": "mediated_1"
+      },
+      "final_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_broker": {
+        "status": "denied",
+        "reason": "grant_not_found"
+      },
+      "actual_source_sha256": "7fb56a6db3eb9e2fcfa85adcbd531ead41819c3756ba0bdb3883533b83e2b024",
+      "trusted_source_sha256": "7fb56a6db3eb9e2fcfa85adcbd531ead41819c3756ba0bdb3883533b83e2b024",
+      "source_path": "M05-04-W.json"
+    },
+    {
+      "trial_id": "M05-04-C",
+      "worker": "mediated_1",
+      "prior_case_id": "X04-STA-01",
+      "prior_packet_sha256": "98953d9bed47d96e06813fe17ae0ae8055981ee143d78e51c9ff8a40b56662c2",
+      "mechanism": "stale",
+      "condition": "A",
+      "transition": "C",
+      "transition_kind": "byte_substitution",
+      "rationale": "X04-STA-01 / Stale memory says 80; full bundle establishes superseding v2 inventory of 40. Initial packet-only status current; final byte_substitution must yield unresolved. Original routing is deferred to coordinator, not a replication of03 tool access.",
+      "initial_expected": {
+        "status": "current",
+        "value": 40,
+        "source_id": "fictional.catalog",
+        "version": "v2",
+        "evidence_digest": "dddaae7e4648412d6bdd1e90792c2c71825cd914aeea9e1eddf673b57af4c4e7",
+        "complete": true
+      },
+      "expected_request": {
+        "request_id": "req-M05-04-C",
+        "grant_id": "grant-M05-04-C",
+        "path": "M05-04-C.json",
+        "assignment": "mediated_1",
+        "scope": "north_depot",
+        "caller_label": "mediated_1"
+      },
+      "final_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_broker": {
+        "status": "changed",
+        "reason": "content_mismatch"
+      },
+      "actual_source_sha256": "7faf7e4e0d5ad9ce5295775c77108ffbf229b3498844a6272ee23f0e8d9ce440",
+      "trusted_source_sha256": "7fb56a6db3eb9e2fcfa85adcbd531ead41819c3756ba0bdb3883533b83e2b024",
+      "source_path": "M05-04-C.json"
+    },
+    {
+      "trial_id": "M05-04-S",
+      "worker": "mediated_1",
+      "prior_case_id": "X04-STA-01",
+      "prior_packet_sha256": "98953d9bed47d96e06813fe17ae0ae8055981ee143d78e51c9ff8a40b56662c2",
+      "mechanism": "stale",
+      "condition": "A",
+      "transition": "S",
+      "transition_kind": "scope_and_expiry_change",
+      "rationale": "X04-STA-01 / Stale memory says 80; full bundle establishes superseding v2 inventory of 40. Initial packet-only status current; final scope_and_expiry_change must yield unresolved. Original routing is deferred to coordinator, not a replication of03 tool access.",
+      "initial_expected": {
+        "status": "current",
+        "value": 40,
+        "source_id": "fictional.catalog",
+        "version": "v2",
+        "evidence_digest": "dddaae7e4648412d6bdd1e90792c2c71825cd914aeea9e1eddf673b57af4c4e7",
+        "complete": true
+      },
+      "expected_request": {
+        "request_id": "req-M05-04-S",
+        "grant_id": "grant-M05-04-S",
+        "path": "M05-04-S.json",
+        "assignment": "mediated_1",
+        "scope": "north_depot",
+        "caller_label": "mediated_1"
+      },
+      "final_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_broker": {
+        "status": "served",
+        "reason": "verified_bytes"
+      },
+      "actual_source_sha256": "7fb56a6db3eb9e2fcfa85adcbd531ead41819c3756ba0bdb3883533b83e2b024",
+      "trusted_source_sha256": "7fb56a6db3eb9e2fcfa85adcbd531ead41819c3756ba0bdb3883533b83e2b024",
+      "source_path": "M05-04-S.json"
+    },
+    {
+      "trial_id": "M05-05-R",
+      "worker": "mediated_2",
+      "prior_case_id": "X04-STA-03",
+      "prior_packet_sha256": "ac7235c15b9b0e4d6016e2b3f3511df0781fef9737ec507cf128ef427eca7175",
+      "mechanism": "stale",
+      "condition": "C",
+      "transition": "R",
+      "transition_kind": "authoritative_refresh",
+      "rationale": "X04-STA-03 / Only a superseded v1 record is visible in the no-index condition; no current claim is justified. Initial packet-only status unresolved; final authoritative_refresh must yield current. Original routing is deferred to coordinator, not a replication of03 tool access.",
+      "initial_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_request": {
+        "request_id": "req-M05-05-R",
+        "grant_id": "grant-M05-05-R",
+        "path": "M05-05-R.json",
+        "assignment": "mediated_2",
+        "scope": "north_depot",
+        "caller_label": "mediated_2"
+      },
+      "final_expected": {
+        "status": "current",
+        "value": 35,
+        "source_id": "fictional.transition.X04-STA-03",
+        "version": "v3",
+        "evidence_digest": "7b925f6463852d9f13da1873f2e66c8a57541c7ab597c55b3d188f8ac23930d8",
+        "complete": true
+      },
+      "expected_broker": {
+        "status": "served",
+        "reason": "verified_bytes"
+      },
+      "actual_source_sha256": "7b925f6463852d9f13da1873f2e66c8a57541c7ab597c55b3d188f8ac23930d8",
+      "trusted_source_sha256": "7b925f6463852d9f13da1873f2e66c8a57541c7ab597c55b3d188f8ac23930d8",
+      "source_path": "M05-05-R.json"
+    },
+    {
+      "trial_id": "M05-05-W",
+      "worker": "mediated_2",
+      "prior_case_id": "X04-STA-03",
+      "prior_packet_sha256": "ac7235c15b9b0e4d6016e2b3f3511df0781fef9737ec507cf128ef427eca7175",
+      "mechanism": "stale",
+      "condition": "C",
+      "transition": "W",
+      "transition_kind": "grant_withdrawal",
+      "rationale": "X04-STA-03 / Only a superseded v1 record is visible in the no-index condition; no current claim is justified. Initial packet-only status unresolved; final grant_withdrawal must yield unresolved. Original routing is deferred to coordinator, not a replication of03 tool access.",
+      "initial_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_request": {
+        "request_id": "req-M05-05-W",
+        "grant_id": "grant-M05-05-W",
+        "path": "M05-05-W.json",
+        "assignment": "mediated_2",
+        "scope": "north_depot",
+        "caller_label": "mediated_2"
+      },
+      "final_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_broker": {
+        "status": "denied",
+        "reason": "grant_not_found"
+      },
+      "actual_source_sha256": "7b925f6463852d9f13da1873f2e66c8a57541c7ab597c55b3d188f8ac23930d8",
+      "trusted_source_sha256": "7b925f6463852d9f13da1873f2e66c8a57541c7ab597c55b3d188f8ac23930d8",
+      "source_path": "M05-05-W.json"
+    },
+    {
+      "trial_id": "M05-05-C",
+      "worker": "mediated_2",
+      "prior_case_id": "X04-STA-03",
+      "prior_packet_sha256": "ac7235c15b9b0e4d6016e2b3f3511df0781fef9737ec507cf128ef427eca7175",
+      "mechanism": "stale",
+      "condition": "C",
+      "transition": "C",
+      "transition_kind": "byte_substitution",
+      "rationale": "X04-STA-03 / Only a superseded v1 record is visible in the no-index condition; no current claim is justified. Initial packet-only status unresolved; final byte_substitution must yield unresolved. Original routing is deferred to coordinator, not a replication of03 tool access.",
+      "initial_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_request": {
+        "request_id": "req-M05-05-C",
+        "grant_id": "grant-M05-05-C",
+        "path": "M05-05-C.json",
+        "assignment": "mediated_2",
+        "scope": "north_depot",
+        "caller_label": "mediated_2"
+      },
+      "final_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_broker": {
+        "status": "changed",
+        "reason": "content_mismatch"
+      },
+      "actual_source_sha256": "ae90fbcb237828a57323028d2c403b6f9b58a031dd7aa432d7b203ecdca754c9",
+      "trusted_source_sha256": "7b925f6463852d9f13da1873f2e66c8a57541c7ab597c55b3d188f8ac23930d8",
+      "source_path": "M05-05-C.json"
+    },
+    {
+      "trial_id": "M05-05-S",
+      "worker": "mediated_2",
+      "prior_case_id": "X04-STA-03",
+      "prior_packet_sha256": "ac7235c15b9b0e4d6016e2b3f3511df0781fef9737ec507cf128ef427eca7175",
+      "mechanism": "stale",
+      "condition": "C",
+      "transition": "S",
+      "transition_kind": "scope_change",
+      "rationale": "X04-STA-03 / Only a superseded v1 record is visible in the no-index condition; no current claim is justified. Initial packet-only status unresolved; final scope_change must yield unresolved. Original routing is deferred to coordinator, not a replication of03 tool access.",
+      "initial_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_request": {
+        "request_id": "req-M05-05-S",
+        "grant_id": "grant-M05-05-S",
+        "path": "M05-05-S.json",
+        "assignment": "mediated_2",
+        "scope": "north_depot",
+        "caller_label": "mediated_2"
+      },
+      "final_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_broker": {
+        "status": "served",
+        "reason": "verified_bytes"
+      },
+      "actual_source_sha256": "7b925f6463852d9f13da1873f2e66c8a57541c7ab597c55b3d188f8ac23930d8",
+      "trusted_source_sha256": "7b925f6463852d9f13da1873f2e66c8a57541c7ab597c55b3d188f8ac23930d8",
+      "source_path": "M05-05-S.json"
+    },
+    {
+      "trial_id": "M05-06-R",
+      "worker": "mediated_2",
+      "prior_case_id": "X04-STA-04",
+      "prior_packet_sha256": "634972897dc8aa2c1e7b184b23ea2362886a334ce4eaa53d5cdc52feaa0fff8e",
+      "mechanism": "stale",
+      "condition": "A",
+      "transition": "R",
+      "transition_kind": "authoritative_refresh",
+      "rationale": "X04-STA-04 / The exact trusted v2 record is present but names south_depot; request scope is north_depot, so it must remain unresolved. Initial packet-only status unresolved; final authoritative_refresh must yield current. Original routing is deferred to coordinator, not a replication of03 tool access.",
+      "initial_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_request": {
+        "request_id": "req-M05-06-R",
+        "grant_id": "grant-M05-06-R",
+        "path": "M05-06-R.json",
+        "assignment": "mediated_2",
+        "scope": "north_depot",
+        "caller_label": "mediated_2"
+      },
+      "final_expected": {
+        "status": "current",
+        "value": 35,
+        "source_id": "fictional.transition.X04-STA-04",
+        "version": "v3",
+        "evidence_digest": "f1fee92b0dd345f933033ac21800e08600228de1ef54ad26817d911d7cc000c7",
+        "complete": true
+      },
+      "expected_broker": {
+        "status": "served",
+        "reason": "verified_bytes"
+      },
+      "actual_source_sha256": "f1fee92b0dd345f933033ac21800e08600228de1ef54ad26817d911d7cc000c7",
+      "trusted_source_sha256": "f1fee92b0dd345f933033ac21800e08600228de1ef54ad26817d911d7cc000c7",
+      "source_path": "M05-06-R.json"
+    },
+    {
+      "trial_id": "M05-06-W",
+      "worker": "mediated_2",
+      "prior_case_id": "X04-STA-04",
+      "prior_packet_sha256": "634972897dc8aa2c1e7b184b23ea2362886a334ce4eaa53d5cdc52feaa0fff8e",
+      "mechanism": "stale",
+      "condition": "A",
+      "transition": "W",
+      "transition_kind": "grant_withdrawal",
+      "rationale": "X04-STA-04 / The exact trusted v2 record is present but names south_depot; request scope is north_depot, so it must remain unresolved. Initial packet-only status unresolved; final grant_withdrawal must yield unresolved. Original routing is deferred to coordinator, not a replication of03 tool access.",
+      "initial_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_request": {
+        "request_id": "req-M05-06-W",
+        "grant_id": "grant-M05-06-W",
+        "path": "M05-06-W.json",
+        "assignment": "mediated_2",
+        "scope": "north_depot",
+        "caller_label": "mediated_2"
+      },
+      "final_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_broker": {
+        "status": "denied",
+        "reason": "grant_not_found"
+      },
+      "actual_source_sha256": "f1fee92b0dd345f933033ac21800e08600228de1ef54ad26817d911d7cc000c7",
+      "trusted_source_sha256": "f1fee92b0dd345f933033ac21800e08600228de1ef54ad26817d911d7cc000c7",
+      "source_path": "M05-06-W.json"
+    },
+    {
+      "trial_id": "M05-06-C",
+      "worker": "mediated_2",
+      "prior_case_id": "X04-STA-04",
+      "prior_packet_sha256": "634972897dc8aa2c1e7b184b23ea2362886a334ce4eaa53d5cdc52feaa0fff8e",
+      "mechanism": "stale",
+      "condition": "A",
+      "transition": "C",
+      "transition_kind": "byte_substitution",
+      "rationale": "X04-STA-04 / The exact trusted v2 record is present but names south_depot; request scope is north_depot, so it must remain unresolved. Initial packet-only status unresolved; final byte_substitution must yield unresolved. Original routing is deferred to coordinator, not a replication of03 tool access.",
+      "initial_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_request": {
+        "request_id": "req-M05-06-C",
+        "grant_id": "grant-M05-06-C",
+        "path": "M05-06-C.json",
+        "assignment": "mediated_2",
+        "scope": "north_depot",
+        "caller_label": "mediated_2"
+      },
+      "final_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_broker": {
+        "status": "changed",
+        "reason": "content_mismatch"
+      },
+      "actual_source_sha256": "6774ec16def02c102d09d2ac2effc143f610e40f4e6a7837960f200ded03ecca",
+      "trusted_source_sha256": "f1fee92b0dd345f933033ac21800e08600228de1ef54ad26817d911d7cc000c7",
+      "source_path": "M05-06-C.json"
+    },
+    {
+      "trial_id": "M05-06-S",
+      "worker": "mediated_2",
+      "prior_case_id": "X04-STA-04",
+      "prior_packet_sha256": "634972897dc8aa2c1e7b184b23ea2362886a334ce4eaa53d5cdc52feaa0fff8e",
+      "mechanism": "stale",
+      "condition": "A",
+      "transition": "S",
+      "transition_kind": "expired_after_access",
+      "rationale": "X04-STA-04 / The exact trusted v2 record is present but names south_depot; request scope is north_depot, so it must remain unresolved. Initial packet-only status unresolved; final expired_after_access must yield unresolved. Original routing is deferred to coordinator, not a replication of03 tool access.",
+      "initial_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_request": {
+        "request_id": "req-M05-06-S",
+        "grant_id": "grant-M05-06-S",
+        "path": "M05-06-S.json",
+        "assignment": "mediated_2",
+        "scope": "north_depot",
+        "caller_label": "mediated_2"
+      },
+      "final_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_broker": {
+        "status": "served",
+        "reason": "verified_bytes"
+      },
+      "actual_source_sha256": "f1fee92b0dd345f933033ac21800e08600228de1ef54ad26817d911d7cc000c7",
+      "trusted_source_sha256": "f1fee92b0dd345f933033ac21800e08600228de1ef54ad26817d911d7cc000c7",
+      "source_path": "M05-06-S.json"
+    },
+    {
+      "trial_id": "M05-07-R",
+      "worker": "mediated_2",
+      "prior_case_id": "X04-MIS-01",
+      "prior_packet_sha256": "853e3f6d45b864dd82cace6068ebd622f37be33aa3b1cc4ab0c8114bad6d7f2a",
+      "mechanism": "missing_fact",
+      "condition": "A",
+      "transition": "R",
+      "transition_kind": "authoritative_refresh",
+      "rationale": "X04-MIS-01 / Inventory count is current, but the separately necessary storage limit is omitted; full bundle includes it. Initial packet-only status current; final authoritative_refresh must yield current. Original routing is deferred to coordinator, not a replication of03 tool access.",
+      "initial_expected": {
+        "status": "current",
+        "value": 18,
+        "source_id": "fictional.safety",
+        "version": "v3",
+        "evidence_digest": "fde2dddf00b638752eb1eb868dfff7417b575b7382bd09b4f7a975c05acfdd63",
+        "complete": true
+      },
+      "expected_request": {
+        "request_id": "req-M05-07-R",
+        "grant_id": "grant-M05-07-R",
+        "path": "M05-07-R.json",
+        "assignment": "mediated_2",
+        "scope": "north_depot",
+        "caller_label": "mediated_2"
+      },
+      "final_expected": {
+        "status": "current",
+        "value": 8,
+        "source_id": "fictional.transition.X04-MIS-01",
+        "version": "v3",
+        "evidence_digest": "a63d482d3bae53793107722bfdeaf7a423d2a69481cf4dc267833f6d18f0279e",
+        "complete": true
+      },
+      "expected_broker": {
+        "status": "served",
+        "reason": "verified_bytes"
+      },
+      "actual_source_sha256": "a63d482d3bae53793107722bfdeaf7a423d2a69481cf4dc267833f6d18f0279e",
+      "trusted_source_sha256": "a63d482d3bae53793107722bfdeaf7a423d2a69481cf4dc267833f6d18f0279e",
+      "source_path": "M05-07-R.json"
+    },
+    {
+      "trial_id": "M05-07-W",
+      "worker": "mediated_2",
+      "prior_case_id": "X04-MIS-01",
+      "prior_packet_sha256": "853e3f6d45b864dd82cace6068ebd622f37be33aa3b1cc4ab0c8114bad6d7f2a",
+      "mechanism": "missing_fact",
+      "condition": "A",
+      "transition": "W",
+      "transition_kind": "grant_withdrawal",
+      "rationale": "X04-MIS-01 / Inventory count is current, but the separately necessary storage limit is omitted; full bundle includes it. Initial packet-only status current; final grant_withdrawal must yield unresolved. Original routing is deferred to coordinator, not a replication of03 tool access.",
+      "initial_expected": {
+        "status": "current",
+        "value": 18,
+        "source_id": "fictional.safety",
+        "version": "v3",
+        "evidence_digest": "fde2dddf00b638752eb1eb868dfff7417b575b7382bd09b4f7a975c05acfdd63",
+        "complete": true
+      },
+      "expected_request": {
+        "request_id": "req-M05-07-W",
+        "grant_id": "grant-M05-07-W",
+        "path": "M05-07-W.json",
+        "assignment": "mediated_2",
+        "scope": "north_depot",
+        "caller_label": "mediated_2"
+      },
+      "final_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_broker": {
+        "status": "denied",
+        "reason": "grant_not_found"
+      },
+      "actual_source_sha256": "a63d482d3bae53793107722bfdeaf7a423d2a69481cf4dc267833f6d18f0279e",
+      "trusted_source_sha256": "a63d482d3bae53793107722bfdeaf7a423d2a69481cf4dc267833f6d18f0279e",
+      "source_path": "M05-07-W.json"
+    },
+    {
+      "trial_id": "M05-07-C",
+      "worker": "mediated_2",
+      "prior_case_id": "X04-MIS-01",
+      "prior_packet_sha256": "853e3f6d45b864dd82cace6068ebd622f37be33aa3b1cc4ab0c8114bad6d7f2a",
+      "mechanism": "missing_fact",
+      "condition": "A",
+      "transition": "C",
+      "transition_kind": "byte_substitution",
+      "rationale": "X04-MIS-01 / Inventory count is current, but the separately necessary storage limit is omitted; full bundle includes it. Initial packet-only status current; final byte_substitution must yield unresolved. Original routing is deferred to coordinator, not a replication of03 tool access.",
+      "initial_expected": {
+        "status": "current",
+        "value": 18,
+        "source_id": "fictional.safety",
+        "version": "v3",
+        "evidence_digest": "fde2dddf00b638752eb1eb868dfff7417b575b7382bd09b4f7a975c05acfdd63",
+        "complete": true
+      },
+      "expected_request": {
+        "request_id": "req-M05-07-C",
+        "grant_id": "grant-M05-07-C",
+        "path": "M05-07-C.json",
+        "assignment": "mediated_2",
+        "scope": "north_depot",
+        "caller_label": "mediated_2"
+      },
+      "final_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_broker": {
+        "status": "changed",
+        "reason": "content_mismatch"
+      },
+      "actual_source_sha256": "e53b410eb48359a5e082844786acd724c0f46ff394fa5ea961d418aade526b83",
+      "trusted_source_sha256": "a63d482d3bae53793107722bfdeaf7a423d2a69481cf4dc267833f6d18f0279e",
+      "source_path": "M05-07-C.json"
+    },
+    {
+      "trial_id": "M05-07-S",
+      "worker": "mediated_2",
+      "prior_case_id": "X04-MIS-01",
+      "prior_packet_sha256": "853e3f6d45b864dd82cace6068ebd622f37be33aa3b1cc4ab0c8114bad6d7f2a",
+      "mechanism": "missing_fact",
+      "condition": "A",
+      "transition": "S",
+      "transition_kind": "inclusive_expiry_boundary",
+      "rationale": "X04-MIS-01 / Inventory count is current, but the separately necessary storage limit is omitted; full bundle includes it. Initial packet-only status current; final inclusive_expiry_boundary must yield current. Original routing is deferred to coordinator, not a replication of03 tool access.",
+      "initial_expected": {
+        "status": "current",
+        "value": 18,
+        "source_id": "fictional.safety",
+        "version": "v3",
+        "evidence_digest": "fde2dddf00b638752eb1eb868dfff7417b575b7382bd09b4f7a975c05acfdd63",
+        "complete": true
+      },
+      "expected_request": {
+        "request_id": "req-M05-07-S",
+        "grant_id": "grant-M05-07-S",
+        "path": "M05-07-S.json",
+        "assignment": "mediated_2",
+        "scope": "north_depot",
+        "caller_label": "mediated_2"
+      },
+      "final_expected": {
+        "status": "current",
+        "value": 8,
+        "source_id": "fictional.transition.X04-MIS-01",
+        "version": "v3",
+        "evidence_digest": "a63d482d3bae53793107722bfdeaf7a423d2a69481cf4dc267833f6d18f0279e",
+        "complete": true
+      },
+      "expected_broker": {
+        "status": "served",
+        "reason": "verified_bytes"
+      },
+      "actual_source_sha256": "a63d482d3bae53793107722bfdeaf7a423d2a69481cf4dc267833f6d18f0279e",
+      "trusted_source_sha256": "a63d482d3bae53793107722bfdeaf7a423d2a69481cf4dc267833f6d18f0279e",
+      "source_path": "M05-07-S.json"
+    },
+    {
+      "trial_id": "M05-08-R",
+      "worker": "mediated_2",
+      "prior_case_id": "X04-MIS-02",
+      "prior_packet_sha256": "bad6a1797b48cc50d6deabf8588bba6aee3fba434c1dc4c4bb452c3f711a896f",
+      "mechanism": "missing_fact",
+      "condition": "B",
+      "transition": "R",
+      "transition_kind": "authoritative_refresh",
+      "rationale": "X04-MIS-02 / The omitted necessary fact can be recovered from a matching selective index entry. Initial packet-only status unresolved; final authoritative_refresh must yield current. Original routing is deferred to coordinator, not a replication of03 tool access.",
+      "initial_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_request": {
+        "request_id": "req-M05-08-R",
+        "grant_id": "grant-M05-08-R",
+        "path": "M05-08-R.json",
+        "assignment": "mediated_2",
+        "scope": "north_depot",
+        "caller_label": "mediated_2"
+      },
+      "final_expected": {
+        "status": "current",
+        "value": 8,
+        "source_id": "fictional.transition.X04-MIS-02",
+        "version": "v3",
+        "evidence_digest": "279c57a4376e33d8dd3d524f95e6ea49897ac3f6151147e94fa59c54ec501ff8",
+        "complete": true
+      },
+      "expected_broker": {
+        "status": "served",
+        "reason": "verified_bytes"
+      },
+      "actual_source_sha256": "279c57a4376e33d8dd3d524f95e6ea49897ac3f6151147e94fa59c54ec501ff8",
+      "trusted_source_sha256": "279c57a4376e33d8dd3d524f95e6ea49897ac3f6151147e94fa59c54ec501ff8",
+      "source_path": "M05-08-R.json"
+    },
+    {
+      "trial_id": "M05-08-W",
+      "worker": "mediated_2",
+      "prior_case_id": "X04-MIS-02",
+      "prior_packet_sha256": "bad6a1797b48cc50d6deabf8588bba6aee3fba434c1dc4c4bb452c3f711a896f",
+      "mechanism": "missing_fact",
+      "condition": "B",
+      "transition": "W",
+      "transition_kind": "grant_withdrawal",
+      "rationale": "X04-MIS-02 / The omitted necessary fact can be recovered from a matching selective index entry. Initial packet-only status unresolved; final grant_withdrawal must yield unresolved. Original routing is deferred to coordinator, not a replication of03 tool access.",
+      "initial_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_request": {
+        "request_id": "req-M05-08-W",
+        "grant_id": "grant-M05-08-W",
+        "path": "M05-08-W.json",
+        "assignment": "mediated_2",
+        "scope": "north_depot",
+        "caller_label": "mediated_2"
+      },
+      "final_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_broker": {
+        "status": "denied",
+        "reason": "grant_not_found"
+      },
+      "actual_source_sha256": "279c57a4376e33d8dd3d524f95e6ea49897ac3f6151147e94fa59c54ec501ff8",
+      "trusted_source_sha256": "279c57a4376e33d8dd3d524f95e6ea49897ac3f6151147e94fa59c54ec501ff8",
+      "source_path": "M05-08-W.json"
+    },
+    {
+      "trial_id": "M05-08-C",
+      "worker": "mediated_2",
+      "prior_case_id": "X04-MIS-02",
+      "prior_packet_sha256": "bad6a1797b48cc50d6deabf8588bba6aee3fba434c1dc4c4bb452c3f711a896f",
+      "mechanism": "missing_fact",
+      "condition": "B",
+      "transition": "C",
+      "transition_kind": "byte_substitution",
+      "rationale": "X04-MIS-02 / The omitted necessary fact can be recovered from a matching selective index entry. Initial packet-only status unresolved; final byte_substitution must yield unresolved. Original routing is deferred to coordinator, not a replication of03 tool access.",
+      "initial_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_request": {
+        "request_id": "req-M05-08-C",
+        "grant_id": "grant-M05-08-C",
+        "path": "M05-08-C.json",
+        "assignment": "mediated_2",
+        "scope": "north_depot",
+        "caller_label": "mediated_2"
+      },
+      "final_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_broker": {
+        "status": "changed",
+        "reason": "content_mismatch"
+      },
+      "actual_source_sha256": "98006d3933401ee0a483bfa98dcb339f194478ba7a4b3c4553f4e8e3ae1cec0c",
+      "trusted_source_sha256": "279c57a4376e33d8dd3d524f95e6ea49897ac3f6151147e94fa59c54ec501ff8",
+      "source_path": "M05-08-C.json"
+    },
+    {
+      "trial_id": "M05-08-S",
+      "worker": "mediated_2",
+      "prior_case_id": "X04-MIS-02",
+      "prior_packet_sha256": "bad6a1797b48cc50d6deabf8588bba6aee3fba434c1dc4c4bb452c3f711a896f",
+      "mechanism": "missing_fact",
+      "condition": "B",
+      "transition": "S",
+      "transition_kind": "scope_and_expiry_change",
+      "rationale": "X04-MIS-02 / The omitted necessary fact can be recovered from a matching selective index entry. Initial packet-only status unresolved; final scope_and_expiry_change must yield unresolved. Original routing is deferred to coordinator, not a replication of03 tool access.",
+      "initial_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_request": {
+        "request_id": "req-M05-08-S",
+        "grant_id": "grant-M05-08-S",
+        "path": "M05-08-S.json",
+        "assignment": "mediated_2",
+        "scope": "north_depot",
+        "caller_label": "mediated_2"
+      },
+      "final_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_broker": {
+        "status": "served",
+        "reason": "verified_bytes"
+      },
+      "actual_source_sha256": "279c57a4376e33d8dd3d524f95e6ea49897ac3f6151147e94fa59c54ec501ff8",
+      "trusted_source_sha256": "279c57a4376e33d8dd3d524f95e6ea49897ac3f6151147e94fa59c54ec501ff8",
+      "source_path": "M05-08-S.json"
+    },
+    {
+      "trial_id": "M05-09-R",
+      "worker": "mediated_3",
+      "prior_case_id": "X04-MIS-03",
+      "prior_packet_sha256": "e30bc5267afdbfde684b4f7417a095373b223a7c2b8d8327417191068e79576e",
+      "mechanism": "missing_fact",
+      "condition": "C",
+      "transition": "R",
+      "transition_kind": "authoritative_refresh",
+      "rationale": "X04-MIS-03 / No-index ablation exposes no record for the necessary fact, so completeness remains false. Initial packet-only status unresolved; final authoritative_refresh must yield current. Original routing is deferred to coordinator, not a replication of03 tool access.",
+      "initial_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_request": {
+        "request_id": "req-M05-09-R",
+        "grant_id": "grant-M05-09-R",
+        "path": "M05-09-R.json",
+        "assignment": "mediated_3",
+        "scope": "north_depot",
+        "caller_label": "mediated_3"
+      },
+      "final_expected": {
+        "status": "current",
+        "value": 8,
+        "source_id": "fictional.transition.X04-MIS-03",
+        "version": "v3",
+        "evidence_digest": "185b45aaff8fa115576e436f7428ebb9d4b9e147cdf47bcebaaab994cea42174",
+        "complete": true
+      },
+      "expected_broker": {
+        "status": "served",
+        "reason": "verified_bytes"
+      },
+      "actual_source_sha256": "185b45aaff8fa115576e436f7428ebb9d4b9e147cdf47bcebaaab994cea42174",
+      "trusted_source_sha256": "185b45aaff8fa115576e436f7428ebb9d4b9e147cdf47bcebaaab994cea42174",
+      "source_path": "M05-09-R.json"
+    },
+    {
+      "trial_id": "M05-09-W",
+      "worker": "mediated_3",
+      "prior_case_id": "X04-MIS-03",
+      "prior_packet_sha256": "e30bc5267afdbfde684b4f7417a095373b223a7c2b8d8327417191068e79576e",
+      "mechanism": "missing_fact",
+      "condition": "C",
+      "transition": "W",
+      "transition_kind": "grant_withdrawal",
+      "rationale": "X04-MIS-03 / No-index ablation exposes no record for the necessary fact, so completeness remains false. Initial packet-only status unresolved; final grant_withdrawal must yield unresolved. Original routing is deferred to coordinator, not a replication of03 tool access.",
+      "initial_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_request": {
+        "request_id": "req-M05-09-W",
+        "grant_id": "grant-M05-09-W",
+        "path": "M05-09-W.json",
+        "assignment": "mediated_3",
+        "scope": "north_depot",
+        "caller_label": "mediated_3"
+      },
+      "final_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_broker": {
+        "status": "denied",
+        "reason": "grant_not_found"
+      },
+      "actual_source_sha256": "185b45aaff8fa115576e436f7428ebb9d4b9e147cdf47bcebaaab994cea42174",
+      "trusted_source_sha256": "185b45aaff8fa115576e436f7428ebb9d4b9e147cdf47bcebaaab994cea42174",
+      "source_path": "M05-09-W.json"
+    },
+    {
+      "trial_id": "M05-09-C",
+      "worker": "mediated_3",
+      "prior_case_id": "X04-MIS-03",
+      "prior_packet_sha256": "e30bc5267afdbfde684b4f7417a095373b223a7c2b8d8327417191068e79576e",
+      "mechanism": "missing_fact",
+      "condition": "C",
+      "transition": "C",
+      "transition_kind": "byte_substitution",
+      "rationale": "X04-MIS-03 / No-index ablation exposes no record for the necessary fact, so completeness remains false. Initial packet-only status unresolved; final byte_substitution must yield unresolved. Original routing is deferred to coordinator, not a replication of03 tool access.",
+      "initial_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_request": {
+        "request_id": "req-M05-09-C",
+        "grant_id": "grant-M05-09-C",
+        "path": "M05-09-C.json",
+        "assignment": "mediated_3",
+        "scope": "north_depot",
+        "caller_label": "mediated_3"
+      },
+      "final_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_broker": {
+        "status": "changed",
+        "reason": "content_mismatch"
+      },
+      "actual_source_sha256": "9539ff25398a79301249b5aea5b28df243556b4b6a13e7bc1e870e6a84048e51",
+      "trusted_source_sha256": "185b45aaff8fa115576e436f7428ebb9d4b9e147cdf47bcebaaab994cea42174",
+      "source_path": "M05-09-C.json"
+    },
+    {
+      "trial_id": "M05-09-S",
+      "worker": "mediated_3",
+      "prior_case_id": "X04-MIS-03",
+      "prior_packet_sha256": "e30bc5267afdbfde684b4f7417a095373b223a7c2b8d8327417191068e79576e",
+      "mechanism": "missing_fact",
+      "condition": "C",
+      "transition": "S",
+      "transition_kind": "scope_change",
+      "rationale": "X04-MIS-03 / No-index ablation exposes no record for the necessary fact, so completeness remains false. Initial packet-only status unresolved; final scope_change must yield unresolved. Original routing is deferred to coordinator, not a replication of03 tool access.",
+      "initial_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_request": {
+        "request_id": "req-M05-09-S",
+        "grant_id": "grant-M05-09-S",
+        "path": "M05-09-S.json",
+        "assignment": "mediated_3",
+        "scope": "north_depot",
+        "caller_label": "mediated_3"
+      },
+      "final_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_broker": {
+        "status": "served",
+        "reason": "verified_bytes"
+      },
+      "actual_source_sha256": "185b45aaff8fa115576e436f7428ebb9d4b9e147cdf47bcebaaab994cea42174",
+      "trusted_source_sha256": "185b45aaff8fa115576e436f7428ebb9d4b9e147cdf47bcebaaab994cea42174",
+      "source_path": "M05-09-S.json"
+    },
+    {
+      "trial_id": "M05-10-R",
+      "worker": "mediated_3",
+      "prior_case_id": "X04-MIS-04",
+      "prior_packet_sha256": "e6c15aa8496426ac65638a2345a81e34518f588a7e50e7fb61e13cee91d6a8c4",
+      "mechanism": "missing_fact",
+      "condition": "B",
+      "transition": "R",
+      "transition_kind": "authoritative_refresh",
+      "rationale": "X04-MIS-04 / Current inventory 40 (superseding 80) is available, but the distinct required limit is absent from retrieval. Initial packet-only status unresolved; final authoritative_refresh must yield current. Original routing is deferred to coordinator, not a replication of03 tool access.",
+      "initial_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_request": {
+        "request_id": "req-M05-10-R",
+        "grant_id": "grant-M05-10-R",
+        "path": "M05-10-R.json",
+        "assignment": "mediated_3",
+        "scope": "north_depot",
+        "caller_label": "mediated_3"
+      },
+      "final_expected": {
+        "status": "current",
+        "value": 8,
+        "source_id": "fictional.transition.X04-MIS-04",
+        "version": "v3",
+        "evidence_digest": "1d1b9ba7d1392baa8d16a181f2a14d58fffb4e7ede9d66b666c5e530732818bc",
+        "complete": true
+      },
+      "expected_broker": {
+        "status": "served",
+        "reason": "verified_bytes"
+      },
+      "actual_source_sha256": "1d1b9ba7d1392baa8d16a181f2a14d58fffb4e7ede9d66b666c5e530732818bc",
+      "trusted_source_sha256": "1d1b9ba7d1392baa8d16a181f2a14d58fffb4e7ede9d66b666c5e530732818bc",
+      "source_path": "M05-10-R.json"
+    },
+    {
+      "trial_id": "M05-10-W",
+      "worker": "mediated_3",
+      "prior_case_id": "X04-MIS-04",
+      "prior_packet_sha256": "e6c15aa8496426ac65638a2345a81e34518f588a7e50e7fb61e13cee91d6a8c4",
+      "mechanism": "missing_fact",
+      "condition": "B",
+      "transition": "W",
+      "transition_kind": "grant_withdrawal",
+      "rationale": "X04-MIS-04 / Current inventory 40 (superseding 80) is available, but the distinct required limit is absent from retrieval. Initial packet-only status unresolved; final grant_withdrawal must yield unresolved. Original routing is deferred to coordinator, not a replication of03 tool access.",
+      "initial_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_request": {
+        "request_id": "req-M05-10-W",
+        "grant_id": "grant-M05-10-W",
+        "path": "M05-10-W.json",
+        "assignment": "mediated_3",
+        "scope": "north_depot",
+        "caller_label": "mediated_3"
+      },
+      "final_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_broker": {
+        "status": "denied",
+        "reason": "grant_not_found"
+      },
+      "actual_source_sha256": "1d1b9ba7d1392baa8d16a181f2a14d58fffb4e7ede9d66b666c5e530732818bc",
+      "trusted_source_sha256": "1d1b9ba7d1392baa8d16a181f2a14d58fffb4e7ede9d66b666c5e530732818bc",
+      "source_path": "M05-10-W.json"
+    },
+    {
+      "trial_id": "M05-10-C",
+      "worker": "mediated_3",
+      "prior_case_id": "X04-MIS-04",
+      "prior_packet_sha256": "e6c15aa8496426ac65638a2345a81e34518f588a7e50e7fb61e13cee91d6a8c4",
+      "mechanism": "missing_fact",
+      "condition": "B",
+      "transition": "C",
+      "transition_kind": "byte_substitution",
+      "rationale": "X04-MIS-04 / Current inventory 40 (superseding 80) is available, but the distinct required limit is absent from retrieval. Initial packet-only status unresolved; final byte_substitution must yield unresolved. Original routing is deferred to coordinator, not a replication of03 tool access.",
+      "initial_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_request": {
+        "request_id": "req-M05-10-C",
+        "grant_id": "grant-M05-10-C",
+        "path": "M05-10-C.json",
+        "assignment": "mediated_3",
+        "scope": "north_depot",
+        "caller_label": "mediated_3"
+      },
+      "final_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_broker": {
+        "status": "changed",
+        "reason": "content_mismatch"
+      },
+      "actual_source_sha256": "9a68701ddbf2fec0e73e3a8d8d4f40e4c872b40ed90dc139da0ce6f0e41a9e34",
+      "trusted_source_sha256": "1d1b9ba7d1392baa8d16a181f2a14d58fffb4e7ede9d66b666c5e530732818bc",
+      "source_path": "M05-10-C.json"
+    },
+    {
+      "trial_id": "M05-10-S",
+      "worker": "mediated_3",
+      "prior_case_id": "X04-MIS-04",
+      "prior_packet_sha256": "e6c15aa8496426ac65638a2345a81e34518f588a7e50e7fb61e13cee91d6a8c4",
+      "mechanism": "missing_fact",
+      "condition": "B",
+      "transition": "S",
+      "transition_kind": "expired_after_access",
+      "rationale": "X04-MIS-04 / Current inventory 40 (superseding 80) is available, but the distinct required limit is absent from retrieval. Initial packet-only status unresolved; final expired_after_access must yield unresolved. Original routing is deferred to coordinator, not a replication of03 tool access.",
+      "initial_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_request": {
+        "request_id": "req-M05-10-S",
+        "grant_id": "grant-M05-10-S",
+        "path": "M05-10-S.json",
+        "assignment": "mediated_3",
+        "scope": "north_depot",
+        "caller_label": "mediated_3"
+      },
+      "final_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_broker": {
+        "status": "served",
+        "reason": "verified_bytes"
+      },
+      "actual_source_sha256": "1d1b9ba7d1392baa8d16a181f2a14d58fffb4e7ede9d66b666c5e530732818bc",
+      "trusted_source_sha256": "1d1b9ba7d1392baa8d16a181f2a14d58fffb4e7ede9d66b666c5e530732818bc",
+      "source_path": "M05-10-S.json"
+    },
+    {
+      "trial_id": "M05-11-R",
+      "worker": "mediated_3",
+      "prior_case_id": "X04-ABS-01",
+      "prior_packet_sha256": "d3c991616547a327d47b26fff164a4245bda1d5304595ee820fd3e9a5af59556",
+      "mechanism": "absent_retrieval",
+      "condition": "B",
+      "transition": "R",
+      "transition_kind": "authoritative_refresh",
+      "rationale": "X04-ABS-01 / No exact index pointer exists and the local memory is not evidence for the requested recall code. Initial packet-only status unresolved; final authoritative_refresh must yield current. Original routing is deferred to coordinator, not a replication of03 tool access.",
+      "initial_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_request": {
+        "request_id": "req-M05-11-R",
+        "grant_id": "grant-M05-11-R",
+        "path": "M05-11-R.json",
+        "assignment": "mediated_3",
+        "scope": "archive_a",
+        "caller_label": "mediated_3"
+      },
+      "final_expected": {
+        "status": "current",
+        "value": 8,
+        "source_id": "fictional.transition.X04-ABS-01",
+        "version": "v3",
+        "evidence_digest": "1a541cd5a5d958525fde914607d361efbbeaaba73d31f851f88dac295cdc332b",
+        "complete": true
+      },
+      "expected_broker": {
+        "status": "served",
+        "reason": "verified_bytes"
+      },
+      "actual_source_sha256": "1a541cd5a5d958525fde914607d361efbbeaaba73d31f851f88dac295cdc332b",
+      "trusted_source_sha256": "1a541cd5a5d958525fde914607d361efbbeaaba73d31f851f88dac295cdc332b",
+      "source_path": "M05-11-R.json"
+    },
+    {
+      "trial_id": "M05-11-W",
+      "worker": "mediated_3",
+      "prior_case_id": "X04-ABS-01",
+      "prior_packet_sha256": "d3c991616547a327d47b26fff164a4245bda1d5304595ee820fd3e9a5af59556",
+      "mechanism": "absent_retrieval",
+      "condition": "B",
+      "transition": "W",
+      "transition_kind": "grant_withdrawal",
+      "rationale": "X04-ABS-01 / No exact index pointer exists and the local memory is not evidence for the requested recall code. Initial packet-only status unresolved; final grant_withdrawal must yield unresolved. Original routing is deferred to coordinator, not a replication of03 tool access.",
+      "initial_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_request": {
+        "request_id": "req-M05-11-W",
+        "grant_id": "grant-M05-11-W",
+        "path": "M05-11-W.json",
+        "assignment": "mediated_3",
+        "scope": "archive_a",
+        "caller_label": "mediated_3"
+      },
+      "final_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_broker": {
+        "status": "denied",
+        "reason": "grant_not_found"
+      },
+      "actual_source_sha256": "1a541cd5a5d958525fde914607d361efbbeaaba73d31f851f88dac295cdc332b",
+      "trusted_source_sha256": "1a541cd5a5d958525fde914607d361efbbeaaba73d31f851f88dac295cdc332b",
+      "source_path": "M05-11-W.json"
+    },
+    {
+      "trial_id": "M05-11-C",
+      "worker": "mediated_3",
+      "prior_case_id": "X04-ABS-01",
+      "prior_packet_sha256": "d3c991616547a327d47b26fff164a4245bda1d5304595ee820fd3e9a5af59556",
+      "mechanism": "absent_retrieval",
+      "condition": "B",
+      "transition": "C",
+      "transition_kind": "byte_substitution",
+      "rationale": "X04-ABS-01 / No exact index pointer exists and the local memory is not evidence for the requested recall code. Initial packet-only status unresolved; final byte_substitution must yield unresolved. Original routing is deferred to coordinator, not a replication of03 tool access.",
+      "initial_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_request": {
+        "request_id": "req-M05-11-C",
+        "grant_id": "grant-M05-11-C",
+        "path": "M05-11-C.json",
+        "assignment": "mediated_3",
+        "scope": "archive_a",
+        "caller_label": "mediated_3"
+      },
+      "final_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_broker": {
+        "status": "changed",
+        "reason": "content_mismatch"
+      },
+      "actual_source_sha256": "160b63d51bdf86d20ef3d17c768ff61519260faac5027bb6c4ab14bf7e713481",
+      "trusted_source_sha256": "1a541cd5a5d958525fde914607d361efbbeaaba73d31f851f88dac295cdc332b",
+      "source_path": "M05-11-C.json"
+    },
+    {
+      "trial_id": "M05-11-S",
+      "worker": "mediated_3",
+      "prior_case_id": "X04-ABS-01",
+      "prior_packet_sha256": "d3c991616547a327d47b26fff164a4245bda1d5304595ee820fd3e9a5af59556",
+      "mechanism": "absent_retrieval",
+      "condition": "B",
+      "transition": "S",
+      "transition_kind": "inclusive_expiry_boundary",
+      "rationale": "X04-ABS-01 / No exact index pointer exists and the local memory is not evidence for the requested recall code. Initial packet-only status unresolved; final inclusive_expiry_boundary must yield current. Original routing is deferred to coordinator, not a replication of03 tool access.",
+      "initial_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_request": {
+        "request_id": "req-M05-11-S",
+        "grant_id": "grant-M05-11-S",
+        "path": "M05-11-S.json",
+        "assignment": "mediated_3",
+        "scope": "archive_a",
+        "caller_label": "mediated_3"
+      },
+      "final_expected": {
+        "status": "current",
+        "value": 8,
+        "source_id": "fictional.transition.X04-ABS-01",
+        "version": "v3",
+        "evidence_digest": "1a541cd5a5d958525fde914607d361efbbeaaba73d31f851f88dac295cdc332b",
+        "complete": true
+      },
+      "expected_broker": {
+        "status": "served",
+        "reason": "verified_bytes"
+      },
+      "actual_source_sha256": "1a541cd5a5d958525fde914607d361efbbeaaba73d31f851f88dac295cdc332b",
+      "trusted_source_sha256": "1a541cd5a5d958525fde914607d361efbbeaaba73d31f851f88dac295cdc332b",
+      "source_path": "M05-11-S.json"
+    },
+    {
+      "trial_id": "M05-12-R",
+      "worker": "mediated_3",
+      "prior_case_id": "X04-ABS-02",
+      "prior_packet_sha256": "c0023aa87883358593d76ad81cd81c302cbefd8ff50d2fa4f3b407da44665a51",
+      "mechanism": "absent_retrieval",
+      "condition": "B",
+      "transition": "R",
+      "transition_kind": "authoritative_refresh",
+      "rationale": "X04-ABS-02 / A matching index descriptor exists but retrieval tool is missing; indexed metadata alone is not the source record. Initial packet-only status unresolved; final authoritative_refresh must yield current. Original routing is deferred to coordinator, not a replication of03 tool access.",
+      "initial_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_request": {
+        "request_id": "req-M05-12-R",
+        "grant_id": "grant-M05-12-R",
+        "path": "M05-12-R.json",
+        "assignment": "mediated_3",
+        "scope": "archive_a",
+        "caller_label": "mediated_3"
+      },
+      "final_expected": {
+        "status": "current",
+        "value": 8,
+        "source_id": "fictional.transition.X04-ABS-02",
+        "version": "v3",
+        "evidence_digest": "4b9001318ac9e470080be5dcc9bb66aa85ef121a6c60ef2437cf9444c97070b3",
+        "complete": true
+      },
+      "expected_broker": {
+        "status": "served",
+        "reason": "verified_bytes"
+      },
+      "actual_source_sha256": "4b9001318ac9e470080be5dcc9bb66aa85ef121a6c60ef2437cf9444c97070b3",
+      "trusted_source_sha256": "4b9001318ac9e470080be5dcc9bb66aa85ef121a6c60ef2437cf9444c97070b3",
+      "source_path": "M05-12-R.json"
+    },
+    {
+      "trial_id": "M05-12-W",
+      "worker": "mediated_3",
+      "prior_case_id": "X04-ABS-02",
+      "prior_packet_sha256": "c0023aa87883358593d76ad81cd81c302cbefd8ff50d2fa4f3b407da44665a51",
+      "mechanism": "absent_retrieval",
+      "condition": "B",
+      "transition": "W",
+      "transition_kind": "grant_withdrawal",
+      "rationale": "X04-ABS-02 / A matching index descriptor exists but retrieval tool is missing; indexed metadata alone is not the source record. Initial packet-only status unresolved; final grant_withdrawal must yield unresolved. Original routing is deferred to coordinator, not a replication of03 tool access.",
+      "initial_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_request": {
+        "request_id": "req-M05-12-W",
+        "grant_id": "grant-M05-12-W",
+        "path": "M05-12-W.json",
+        "assignment": "mediated_3",
+        "scope": "archive_a",
+        "caller_label": "mediated_3"
+      },
+      "final_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_broker": {
+        "status": "denied",
+        "reason": "grant_not_found"
+      },
+      "actual_source_sha256": "4b9001318ac9e470080be5dcc9bb66aa85ef121a6c60ef2437cf9444c97070b3",
+      "trusted_source_sha256": "4b9001318ac9e470080be5dcc9bb66aa85ef121a6c60ef2437cf9444c97070b3",
+      "source_path": "M05-12-W.json"
+    },
+    {
+      "trial_id": "M05-12-C",
+      "worker": "mediated_3",
+      "prior_case_id": "X04-ABS-02",
+      "prior_packet_sha256": "c0023aa87883358593d76ad81cd81c302cbefd8ff50d2fa4f3b407da44665a51",
+      "mechanism": "absent_retrieval",
+      "condition": "B",
+      "transition": "C",
+      "transition_kind": "byte_substitution",
+      "rationale": "X04-ABS-02 / A matching index descriptor exists but retrieval tool is missing; indexed metadata alone is not the source record. Initial packet-only status unresolved; final byte_substitution must yield unresolved. Original routing is deferred to coordinator, not a replication of03 tool access.",
+      "initial_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_request": {
+        "request_id": "req-M05-12-C",
+        "grant_id": "grant-M05-12-C",
+        "path": "M05-12-C.json",
+        "assignment": "mediated_3",
+        "scope": "archive_a",
+        "caller_label": "mediated_3"
+      },
+      "final_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_broker": {
+        "status": "changed",
+        "reason": "content_mismatch"
+      },
+      "actual_source_sha256": "6d7efdb47c8f4e2be0eb265acd1e17e6c50f2bf6cfe61db4976b016ddcace8b5",
+      "trusted_source_sha256": "4b9001318ac9e470080be5dcc9bb66aa85ef121a6c60ef2437cf9444c97070b3",
+      "source_path": "M05-12-C.json"
+    },
+    {
+      "trial_id": "M05-12-S",
+      "worker": "mediated_3",
+      "prior_case_id": "X04-ABS-02",
+      "prior_packet_sha256": "c0023aa87883358593d76ad81cd81c302cbefd8ff50d2fa4f3b407da44665a51",
+      "mechanism": "absent_retrieval",
+      "condition": "B",
+      "transition": "S",
+      "transition_kind": "scope_and_expiry_change",
+      "rationale": "X04-ABS-02 / A matching index descriptor exists but retrieval tool is missing; indexed metadata alone is not the source record. Initial packet-only status unresolved; final scope_and_expiry_change must yield unresolved. Original routing is deferred to coordinator, not a replication of03 tool access.",
+      "initial_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_request": {
+        "request_id": "req-M05-12-S",
+        "grant_id": "grant-M05-12-S",
+        "path": "M05-12-S.json",
+        "assignment": "mediated_3",
+        "scope": "archive_a",
+        "caller_label": "mediated_3"
+      },
+      "final_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_broker": {
+        "status": "served",
+        "reason": "verified_bytes"
+      },
+      "actual_source_sha256": "4b9001318ac9e470080be5dcc9bb66aa85ef121a6c60ef2437cf9444c97070b3",
+      "trusted_source_sha256": "4b9001318ac9e470080be5dcc9bb66aa85ef121a6c60ef2437cf9444c97070b3",
+      "source_path": "M05-12-S.json"
+    },
+    {
+      "trial_id": "M05-13-R",
+      "worker": "mediated_4",
+      "prior_case_id": "X04-ABS-03",
+      "prior_packet_sha256": "9063cec73a8bb74728cf0708dad08059ed405f6eb03712f28e627da8f4fc1192",
+      "mechanism": "absent_retrieval",
+      "condition": "B",
+      "transition": "R",
+      "transition_kind": "authoritative_refresh",
+      "rationale": "X04-ABS-03 / A matching pointer exists but retrieval fails; a supplied retrieval payload must not be treated as observed evidence. Initial packet-only status unresolved; final authoritative_refresh must yield current. Original routing is deferred to coordinator, not a replication of03 tool access.",
+      "initial_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_request": {
+        "request_id": "req-M05-13-R",
+        "grant_id": "grant-M05-13-R",
+        "path": "M05-13-R.json",
+        "assignment": "mediated_4",
+        "scope": "archive_a",
+        "caller_label": "mediated_4"
+      },
+      "final_expected": {
+        "status": "current",
+        "value": 8,
+        "source_id": "fictional.transition.X04-ABS-03",
+        "version": "v3",
+        "evidence_digest": "6e799ddb812ac9d62278181e13a7ded7f92df3f5658cf9b7e063a06af46f7cf3",
+        "complete": true
+      },
+      "expected_broker": {
+        "status": "served",
+        "reason": "verified_bytes"
+      },
+      "actual_source_sha256": "6e799ddb812ac9d62278181e13a7ded7f92df3f5658cf9b7e063a06af46f7cf3",
+      "trusted_source_sha256": "6e799ddb812ac9d62278181e13a7ded7f92df3f5658cf9b7e063a06af46f7cf3",
+      "source_path": "M05-13-R.json"
+    },
+    {
+      "trial_id": "M05-13-W",
+      "worker": "mediated_4",
+      "prior_case_id": "X04-ABS-03",
+      "prior_packet_sha256": "9063cec73a8bb74728cf0708dad08059ed405f6eb03712f28e627da8f4fc1192",
+      "mechanism": "absent_retrieval",
+      "condition": "B",
+      "transition": "W",
+      "transition_kind": "grant_withdrawal",
+      "rationale": "X04-ABS-03 / A matching pointer exists but retrieval fails; a supplied retrieval payload must not be treated as observed evidence. Initial packet-only status unresolved; final grant_withdrawal must yield unresolved. Original routing is deferred to coordinator, not a replication of03 tool access.",
+      "initial_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_request": {
+        "request_id": "req-M05-13-W",
+        "grant_id": "grant-M05-13-W",
+        "path": "M05-13-W.json",
+        "assignment": "mediated_4",
+        "scope": "archive_a",
+        "caller_label": "mediated_4"
+      },
+      "final_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_broker": {
+        "status": "denied",
+        "reason": "grant_not_found"
+      },
+      "actual_source_sha256": "6e799ddb812ac9d62278181e13a7ded7f92df3f5658cf9b7e063a06af46f7cf3",
+      "trusted_source_sha256": "6e799ddb812ac9d62278181e13a7ded7f92df3f5658cf9b7e063a06af46f7cf3",
+      "source_path": "M05-13-W.json"
+    },
+    {
+      "trial_id": "M05-13-C",
+      "worker": "mediated_4",
+      "prior_case_id": "X04-ABS-03",
+      "prior_packet_sha256": "9063cec73a8bb74728cf0708dad08059ed405f6eb03712f28e627da8f4fc1192",
+      "mechanism": "absent_retrieval",
+      "condition": "B",
+      "transition": "C",
+      "transition_kind": "byte_substitution",
+      "rationale": "X04-ABS-03 / A matching pointer exists but retrieval fails; a supplied retrieval payload must not be treated as observed evidence. Initial packet-only status unresolved; final byte_substitution must yield unresolved. Original routing is deferred to coordinator, not a replication of03 tool access.",
+      "initial_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_request": {
+        "request_id": "req-M05-13-C",
+        "grant_id": "grant-M05-13-C",
+        "path": "M05-13-C.json",
+        "assignment": "mediated_4",
+        "scope": "archive_a",
+        "caller_label": "mediated_4"
+      },
+      "final_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_broker": {
+        "status": "changed",
+        "reason": "content_mismatch"
+      },
+      "actual_source_sha256": "9232c76efee7466bf3914e626e6edc3e948c2a3aefb734926a5530d814b21666",
+      "trusted_source_sha256": "6e799ddb812ac9d62278181e13a7ded7f92df3f5658cf9b7e063a06af46f7cf3",
+      "source_path": "M05-13-C.json"
+    },
+    {
+      "trial_id": "M05-13-S",
+      "worker": "mediated_4",
+      "prior_case_id": "X04-ABS-03",
+      "prior_packet_sha256": "9063cec73a8bb74728cf0708dad08059ed405f6eb03712f28e627da8f4fc1192",
+      "mechanism": "absent_retrieval",
+      "condition": "B",
+      "transition": "S",
+      "transition_kind": "scope_change",
+      "rationale": "X04-ABS-03 / A matching pointer exists but retrieval fails; a supplied retrieval payload must not be treated as observed evidence. Initial packet-only status unresolved; final scope_change must yield unresolved. Original routing is deferred to coordinator, not a replication of03 tool access.",
+      "initial_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_request": {
+        "request_id": "req-M05-13-S",
+        "grant_id": "grant-M05-13-S",
+        "path": "M05-13-S.json",
+        "assignment": "mediated_4",
+        "scope": "archive_a",
+        "caller_label": "mediated_4"
+      },
+      "final_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_broker": {
+        "status": "served",
+        "reason": "verified_bytes"
+      },
+      "actual_source_sha256": "6e799ddb812ac9d62278181e13a7ded7f92df3f5658cf9b7e063a06af46f7cf3",
+      "trusted_source_sha256": "6e799ddb812ac9d62278181e13a7ded7f92df3f5658cf9b7e063a06af46f7cf3",
+      "source_path": "M05-13-S.json"
+    },
+    {
+      "trial_id": "M05-14-R",
+      "worker": "mediated_4",
+      "prior_case_id": "X04-ABS-04",
+      "prior_packet_sha256": "68dd25fb1b3338f168f35793c1385b24833c6d51f65290e1ac7abf49eef5465f",
+      "mechanism": "absent_retrieval",
+      "condition": "C",
+      "transition": "R",
+      "transition_kind": "authoritative_refresh",
+      "rationale": "X04-ABS-04 / No-index ablation forbids pointer lookup; stale memory remains insufficient even when a trusted descriptor names the current record. Initial packet-only status unresolved; final authoritative_refresh must yield current. Original routing is deferred to coordinator, not a replication of03 tool access.",
+      "initial_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_request": {
+        "request_id": "req-M05-14-R",
+        "grant_id": "grant-M05-14-R",
+        "path": "M05-14-R.json",
+        "assignment": "mediated_4",
+        "scope": "archive_a",
+        "caller_label": "mediated_4"
+      },
+      "final_expected": {
+        "status": "current",
+        "value": 8,
+        "source_id": "fictional.transition.X04-ABS-04",
+        "version": "v3",
+        "evidence_digest": "08f6701f341208314c526611049eefddae935fe7d39830480dc2624af75522f3",
+        "complete": true
+      },
+      "expected_broker": {
+        "status": "served",
+        "reason": "verified_bytes"
+      },
+      "actual_source_sha256": "08f6701f341208314c526611049eefddae935fe7d39830480dc2624af75522f3",
+      "trusted_source_sha256": "08f6701f341208314c526611049eefddae935fe7d39830480dc2624af75522f3",
+      "source_path": "M05-14-R.json"
+    },
+    {
+      "trial_id": "M05-14-W",
+      "worker": "mediated_4",
+      "prior_case_id": "X04-ABS-04",
+      "prior_packet_sha256": "68dd25fb1b3338f168f35793c1385b24833c6d51f65290e1ac7abf49eef5465f",
+      "mechanism": "absent_retrieval",
+      "condition": "C",
+      "transition": "W",
+      "transition_kind": "grant_withdrawal",
+      "rationale": "X04-ABS-04 / No-index ablation forbids pointer lookup; stale memory remains insufficient even when a trusted descriptor names the current record. Initial packet-only status unresolved; final grant_withdrawal must yield unresolved. Original routing is deferred to coordinator, not a replication of03 tool access.",
+      "initial_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_request": {
+        "request_id": "req-M05-14-W",
+        "grant_id": "grant-M05-14-W",
+        "path": "M05-14-W.json",
+        "assignment": "mediated_4",
+        "scope": "archive_a",
+        "caller_label": "mediated_4"
+      },
+      "final_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_broker": {
+        "status": "denied",
+        "reason": "grant_not_found"
+      },
+      "actual_source_sha256": "08f6701f341208314c526611049eefddae935fe7d39830480dc2624af75522f3",
+      "trusted_source_sha256": "08f6701f341208314c526611049eefddae935fe7d39830480dc2624af75522f3",
+      "source_path": "M05-14-W.json"
+    },
+    {
+      "trial_id": "M05-14-C",
+      "worker": "mediated_4",
+      "prior_case_id": "X04-ABS-04",
+      "prior_packet_sha256": "68dd25fb1b3338f168f35793c1385b24833c6d51f65290e1ac7abf49eef5465f",
+      "mechanism": "absent_retrieval",
+      "condition": "C",
+      "transition": "C",
+      "transition_kind": "byte_substitution",
+      "rationale": "X04-ABS-04 / No-index ablation forbids pointer lookup; stale memory remains insufficient even when a trusted descriptor names the current record. Initial packet-only status unresolved; final byte_substitution must yield unresolved. Original routing is deferred to coordinator, not a replication of03 tool access.",
+      "initial_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_request": {
+        "request_id": "req-M05-14-C",
+        "grant_id": "grant-M05-14-C",
+        "path": "M05-14-C.json",
+        "assignment": "mediated_4",
+        "scope": "archive_a",
+        "caller_label": "mediated_4"
+      },
+      "final_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_broker": {
+        "status": "changed",
+        "reason": "content_mismatch"
+      },
+      "actual_source_sha256": "e0687ebd5fc0abca5000df7e5363cc3cb0066b07d837bca0109974e13ad0a8dc",
+      "trusted_source_sha256": "08f6701f341208314c526611049eefddae935fe7d39830480dc2624af75522f3",
+      "source_path": "M05-14-C.json"
+    },
+    {
+      "trial_id": "M05-14-S",
+      "worker": "mediated_4",
+      "prior_case_id": "X04-ABS-04",
+      "prior_packet_sha256": "68dd25fb1b3338f168f35793c1385b24833c6d51f65290e1ac7abf49eef5465f",
+      "mechanism": "absent_retrieval",
+      "condition": "C",
+      "transition": "S",
+      "transition_kind": "expired_after_access",
+      "rationale": "X04-ABS-04 / No-index ablation forbids pointer lookup; stale memory remains insufficient even when a trusted descriptor names the current record. Initial packet-only status unresolved; final expired_after_access must yield unresolved. Original routing is deferred to coordinator, not a replication of03 tool access.",
+      "initial_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_request": {
+        "request_id": "req-M05-14-S",
+        "grant_id": "grant-M05-14-S",
+        "path": "M05-14-S.json",
+        "assignment": "mediated_4",
+        "scope": "archive_a",
+        "caller_label": "mediated_4"
+      },
+      "final_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_broker": {
+        "status": "served",
+        "reason": "verified_bytes"
+      },
+      "actual_source_sha256": "08f6701f341208314c526611049eefddae935fe7d39830480dc2624af75522f3",
+      "trusted_source_sha256": "08f6701f341208314c526611049eefddae935fe7d39830480dc2624af75522f3",
+      "source_path": "M05-14-S.json"
+    },
+    {
+      "trial_id": "M05-15-R",
+      "worker": "mediated_4",
+      "prior_case_id": "X04-STA-05",
+      "prior_packet_sha256": "f30e32073da51d2d47d1dc8def4750b363ba0106b52da3089a33c3dffe8814c7",
+      "mechanism": "stale",
+      "condition": "A",
+      "transition": "R",
+      "transition_kind": "authoritative_refresh",
+      "rationale": "X04-STA-05 / A stale v1 memory is accompanied by exact trusted v2 bytes whose validity ended the previous day; expiry rejects them. Initial packet-only status unresolved; final authoritative_refresh must yield current. Original routing is deferred to coordinator, not a replication of03 tool access.",
+      "initial_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_request": {
+        "request_id": "req-M05-15-R",
+        "grant_id": "grant-M05-15-R",
+        "path": "M05-15-R.json",
+        "assignment": "mediated_4",
+        "scope": "north_depot",
+        "caller_label": "mediated_4"
+      },
+      "final_expected": {
+        "status": "current",
+        "value": 35,
+        "source_id": "fictional.transition.X04-STA-05",
+        "version": "v3",
+        "evidence_digest": "9c07d3cf88e034ea981208d0f3dc23952349d5adcab2ba5ddb3b4a7735a1e978",
+        "complete": true
+      },
+      "expected_broker": {
+        "status": "served",
+        "reason": "verified_bytes"
+      },
+      "actual_source_sha256": "9c07d3cf88e034ea981208d0f3dc23952349d5adcab2ba5ddb3b4a7735a1e978",
+      "trusted_source_sha256": "9c07d3cf88e034ea981208d0f3dc23952349d5adcab2ba5ddb3b4a7735a1e978",
+      "source_path": "M05-15-R.json"
+    },
+    {
+      "trial_id": "M05-15-W",
+      "worker": "mediated_4",
+      "prior_case_id": "X04-STA-05",
+      "prior_packet_sha256": "f30e32073da51d2d47d1dc8def4750b363ba0106b52da3089a33c3dffe8814c7",
+      "mechanism": "stale",
+      "condition": "A",
+      "transition": "W",
+      "transition_kind": "grant_withdrawal",
+      "rationale": "X04-STA-05 / A stale v1 memory is accompanied by exact trusted v2 bytes whose validity ended the previous day; expiry rejects them. Initial packet-only status unresolved; final grant_withdrawal must yield unresolved. Original routing is deferred to coordinator, not a replication of03 tool access.",
+      "initial_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_request": {
+        "request_id": "req-M05-15-W",
+        "grant_id": "grant-M05-15-W",
+        "path": "M05-15-W.json",
+        "assignment": "mediated_4",
+        "scope": "north_depot",
+        "caller_label": "mediated_4"
+      },
+      "final_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_broker": {
+        "status": "denied",
+        "reason": "grant_not_found"
+      },
+      "actual_source_sha256": "9c07d3cf88e034ea981208d0f3dc23952349d5adcab2ba5ddb3b4a7735a1e978",
+      "trusted_source_sha256": "9c07d3cf88e034ea981208d0f3dc23952349d5adcab2ba5ddb3b4a7735a1e978",
+      "source_path": "M05-15-W.json"
+    },
+    {
+      "trial_id": "M05-15-C",
+      "worker": "mediated_4",
+      "prior_case_id": "X04-STA-05",
+      "prior_packet_sha256": "f30e32073da51d2d47d1dc8def4750b363ba0106b52da3089a33c3dffe8814c7",
+      "mechanism": "stale",
+      "condition": "A",
+      "transition": "C",
+      "transition_kind": "byte_substitution",
+      "rationale": "X04-STA-05 / A stale v1 memory is accompanied by exact trusted v2 bytes whose validity ended the previous day; expiry rejects them. Initial packet-only status unresolved; final byte_substitution must yield unresolved. Original routing is deferred to coordinator, not a replication of03 tool access.",
+      "initial_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_request": {
+        "request_id": "req-M05-15-C",
+        "grant_id": "grant-M05-15-C",
+        "path": "M05-15-C.json",
+        "assignment": "mediated_4",
+        "scope": "north_depot",
+        "caller_label": "mediated_4"
+      },
+      "final_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_broker": {
+        "status": "changed",
+        "reason": "content_mismatch"
+      },
+      "actual_source_sha256": "cb2aa80edb9ad3d0f34a6f1e1327adafa1cb98f31d863c00120d44cb53011874",
+      "trusted_source_sha256": "9c07d3cf88e034ea981208d0f3dc23952349d5adcab2ba5ddb3b4a7735a1e978",
+      "source_path": "M05-15-C.json"
+    },
+    {
+      "trial_id": "M05-15-S",
+      "worker": "mediated_4",
+      "prior_case_id": "X04-STA-05",
+      "prior_packet_sha256": "f30e32073da51d2d47d1dc8def4750b363ba0106b52da3089a33c3dffe8814c7",
+      "mechanism": "stale",
+      "condition": "A",
+      "transition": "S",
+      "transition_kind": "inclusive_expiry_boundary",
+      "rationale": "X04-STA-05 / A stale v1 memory is accompanied by exact trusted v2 bytes whose validity ended the previous day; expiry rejects them. Initial packet-only status unresolved; final inclusive_expiry_boundary must yield current. Original routing is deferred to coordinator, not a replication of03 tool access.",
+      "initial_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_request": {
+        "request_id": "req-M05-15-S",
+        "grant_id": "grant-M05-15-S",
+        "path": "M05-15-S.json",
+        "assignment": "mediated_4",
+        "scope": "north_depot",
+        "caller_label": "mediated_4"
+      },
+      "final_expected": {
+        "status": "current",
+        "value": 35,
+        "source_id": "fictional.transition.X04-STA-05",
+        "version": "v3",
+        "evidence_digest": "9c07d3cf88e034ea981208d0f3dc23952349d5adcab2ba5ddb3b4a7735a1e978",
+        "complete": true
+      },
+      "expected_broker": {
+        "status": "served",
+        "reason": "verified_bytes"
+      },
+      "actual_source_sha256": "9c07d3cf88e034ea981208d0f3dc23952349d5adcab2ba5ddb3b4a7735a1e978",
+      "trusted_source_sha256": "9c07d3cf88e034ea981208d0f3dc23952349d5adcab2ba5ddb3b4a7735a1e978",
+      "source_path": "M05-15-S.json"
+    },
+    {
+      "trial_id": "M05-16-R",
+      "worker": "mediated_4",
+      "prior_case_id": "X04-STA-06",
+      "prior_packet_sha256": "858222939e440ff5152c3d148b8b31a0dfe85a9a5315e5db1c86532a44a38427",
+      "mechanism": "stale",
+      "condition": "A",
+      "transition": "R",
+      "transition_kind": "authoritative_refresh",
+      "rationale": "X04-STA-06 / A stale v2 memory is superseded by exact trusted v3 bytes valid through as_of itself; inclusive expiry accepts the boundary date. Initial packet-only status current; final authoritative_refresh must yield current. Original routing is deferred to coordinator, not a replication of03 tool access.",
+      "initial_expected": {
+        "status": "current",
+        "value": 18,
+        "source_id": "fictional.safety",
+        "version": "v3",
+        "evidence_digest": "f1bbbd94d10d2a8a9d0ce953dd98d3c8c10c3ad7f2bb5dbdcbb60d9c3f77ed34",
+        "complete": true
+      },
+      "expected_request": {
+        "request_id": "req-M05-16-R",
+        "grant_id": "grant-M05-16-R",
+        "path": "M05-16-R.json",
+        "assignment": "mediated_4",
+        "scope": "north_depot",
+        "caller_label": "mediated_4"
+      },
+      "final_expected": {
+        "status": "current",
+        "value": 8,
+        "source_id": "fictional.transition.X04-STA-06",
+        "version": "v3",
+        "evidence_digest": "b5a6f7b75b666a9d1fca72fadc3dde369590a7127645202cbeb1b420b686ee5c",
+        "complete": true
+      },
+      "expected_broker": {
+        "status": "served",
+        "reason": "verified_bytes"
+      },
+      "actual_source_sha256": "b5a6f7b75b666a9d1fca72fadc3dde369590a7127645202cbeb1b420b686ee5c",
+      "trusted_source_sha256": "b5a6f7b75b666a9d1fca72fadc3dde369590a7127645202cbeb1b420b686ee5c",
+      "source_path": "M05-16-R.json"
+    },
+    {
+      "trial_id": "M05-16-W",
+      "worker": "mediated_4",
+      "prior_case_id": "X04-STA-06",
+      "prior_packet_sha256": "858222939e440ff5152c3d148b8b31a0dfe85a9a5315e5db1c86532a44a38427",
+      "mechanism": "stale",
+      "condition": "A",
+      "transition": "W",
+      "transition_kind": "grant_withdrawal",
+      "rationale": "X04-STA-06 / A stale v2 memory is superseded by exact trusted v3 bytes valid through as_of itself; inclusive expiry accepts the boundary date. Initial packet-only status current; final grant_withdrawal must yield unresolved. Original routing is deferred to coordinator, not a replication of03 tool access.",
+      "initial_expected": {
+        "status": "current",
+        "value": 18,
+        "source_id": "fictional.safety",
+        "version": "v3",
+        "evidence_digest": "f1bbbd94d10d2a8a9d0ce953dd98d3c8c10c3ad7f2bb5dbdcbb60d9c3f77ed34",
+        "complete": true
+      },
+      "expected_request": {
+        "request_id": "req-M05-16-W",
+        "grant_id": "grant-M05-16-W",
+        "path": "M05-16-W.json",
+        "assignment": "mediated_4",
+        "scope": "north_depot",
+        "caller_label": "mediated_4"
+      },
+      "final_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_broker": {
+        "status": "denied",
+        "reason": "grant_not_found"
+      },
+      "actual_source_sha256": "b5a6f7b75b666a9d1fca72fadc3dde369590a7127645202cbeb1b420b686ee5c",
+      "trusted_source_sha256": "b5a6f7b75b666a9d1fca72fadc3dde369590a7127645202cbeb1b420b686ee5c",
+      "source_path": "M05-16-W.json"
+    },
+    {
+      "trial_id": "M05-16-C",
+      "worker": "mediated_4",
+      "prior_case_id": "X04-STA-06",
+      "prior_packet_sha256": "858222939e440ff5152c3d148b8b31a0dfe85a9a5315e5db1c86532a44a38427",
+      "mechanism": "stale",
+      "condition": "A",
+      "transition": "C",
+      "transition_kind": "byte_substitution",
+      "rationale": "X04-STA-06 / A stale v2 memory is superseded by exact trusted v3 bytes valid through as_of itself; inclusive expiry accepts the boundary date. Initial packet-only status current; final byte_substitution must yield unresolved. Original routing is deferred to coordinator, not a replication of03 tool access.",
+      "initial_expected": {
+        "status": "current",
+        "value": 18,
+        "source_id": "fictional.safety",
+        "version": "v3",
+        "evidence_digest": "f1bbbd94d10d2a8a9d0ce953dd98d3c8c10c3ad7f2bb5dbdcbb60d9c3f77ed34",
+        "complete": true
+      },
+      "expected_request": {
+        "request_id": "req-M05-16-C",
+        "grant_id": "grant-M05-16-C",
+        "path": "M05-16-C.json",
+        "assignment": "mediated_4",
+        "scope": "north_depot",
+        "caller_label": "mediated_4"
+      },
+      "final_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_broker": {
+        "status": "changed",
+        "reason": "content_mismatch"
+      },
+      "actual_source_sha256": "137a0236ccabe4bc7b582c2015e3b3aa5dab9cbc7d87ceb33497750733101b1c",
+      "trusted_source_sha256": "b5a6f7b75b666a9d1fca72fadc3dde369590a7127645202cbeb1b420b686ee5c",
+      "source_path": "M05-16-C.json"
+    },
+    {
+      "trial_id": "M05-16-S",
+      "worker": "mediated_4",
+      "prior_case_id": "X04-STA-06",
+      "prior_packet_sha256": "858222939e440ff5152c3d148b8b31a0dfe85a9a5315e5db1c86532a44a38427",
+      "mechanism": "stale",
+      "condition": "A",
+      "transition": "S",
+      "transition_kind": "scope_and_expiry_change",
+      "rationale": "X04-STA-06 / A stale v2 memory is superseded by exact trusted v3 bytes valid through as_of itself; inclusive expiry accepts the boundary date. Initial packet-only status current; final scope_and_expiry_change must yield unresolved. Original routing is deferred to coordinator, not a replication of03 tool access.",
+      "initial_expected": {
+        "status": "current",
+        "value": 18,
+        "source_id": "fictional.safety",
+        "version": "v3",
+        "evidence_digest": "f1bbbd94d10d2a8a9d0ce953dd98d3c8c10c3ad7f2bb5dbdcbb60d9c3f77ed34",
+        "complete": true
+      },
+      "expected_request": {
+        "request_id": "req-M05-16-S",
+        "grant_id": "grant-M05-16-S",
+        "path": "M05-16-S.json",
+        "assignment": "mediated_4",
+        "scope": "north_depot",
+        "caller_label": "mediated_4"
+      },
+      "final_expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "evidence_digest": null,
+        "complete": false
+      },
+      "expected_broker": {
+        "status": "served",
+        "reason": "verified_bytes"
+      },
+      "actual_source_sha256": "b5a6f7b75b666a9d1fca72fadc3dde369590a7127645202cbeb1b420b686ee5c",
+      "trusted_source_sha256": "b5a6f7b75b666a9d1fca72fadc3dde369590a7127645202cbeb1b420b686ee5c",
+      "source_path": "M05-16-S.json"
+    }
+  ]
+}
