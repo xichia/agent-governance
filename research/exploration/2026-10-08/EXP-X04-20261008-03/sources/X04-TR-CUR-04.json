@@ -1,0 +1,14 @@
+{
+  "state": "available",
+  "records": [
+    {
+      "source_id": "fictional.catalog",
+      "version": "v2",
+      "key": "inventory_count",
+      "scope": "north_depot",
+      "value": 40,
+      "valid_until": null,
+      "digest": "0000000000000000000000000000000000000000000000000000000000000000"
+    }
+  ]
+}

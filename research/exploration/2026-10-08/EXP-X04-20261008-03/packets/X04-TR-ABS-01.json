@@ -1,0 +1,35 @@
+{
+  "condition": "B",
+  "mechanism": "absent_retrieval",
+  "request": {
+    "key": "recall_code",
+    "scope": "archive_a",
+    "as_of": "2026-10-08"
+  },
+  "authoritative": {
+    "source_id": "fictional.registry",
+    "version": "v1",
+    "digest": "32f9555a3e61613bc12f63f744135ec17530ea93b25a267286f92217dd85f515"
+  },
+  "memory": [
+    {
+      "source_id": "fictional.registry",
+      "version": "v0",
+      "key": "recall_code",
+      "scope": "archive_a",
+      "value": "R-16",
+      "valid_until": null,
+      "digest": "06ee07d2edd2997a70ced356de3cf4b3159541d04f3f402aab0e71b6a8c0445e"
+    }
+  ],
+  "local_sources": [],
+  "index": [],
+  "trial_id": "X04-TR-ABS-01",
+  "case_id": "X04-ABS-01",
+  "capability": {
+    "retrieval_state": "missing",
+    "scope": "Synthetic availability; real filesystem tools exist but only granted pointers may be read."
+  },
+  "retrieval_pointer": null,
+  "routing_contract": "Use memory/local first; B may open ONLY its exact granted pointer when index identity matches. Missing/failing receipt grants no source evidence. A/C no lookup. Unknown facts remain unresolved; no inference from another trial."
+}

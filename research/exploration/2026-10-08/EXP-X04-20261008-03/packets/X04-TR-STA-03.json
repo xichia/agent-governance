@@ -1,0 +1,45 @@
+{
+  "condition": "C",
+  "mechanism": "stale",
+  "request": {
+    "key": "inventory_count",
+    "scope": "north_depot",
+    "as_of": "2026-10-08"
+  },
+  "authoritative": {
+    "source_id": "fictional.catalog",
+    "version": "v2",
+    "digest": "dddaae7e4648412d6bdd1e90792c2c71825cd914aeea9e1eddf673b57af4c4e7"
+  },
+  "memory": [
+    {
+      "source_id": "fictional.catalog",
+      "version": "v1",
+      "key": "inventory_count",
+      "scope": "north_depot",
+      "value": 80,
+      "valid_until": "2026-10-01",
+      "digest": "16fbbd645024e324c61a82dae24881d2629d470f098b16df7d0c9e0b2b04209a"
+    }
+  ],
+  "local_sources": [
+    {
+      "source_id": "fictional.catalog",
+      "version": "v1",
+      "key": "inventory_count",
+      "scope": "north_depot",
+      "value": 80,
+      "valid_until": "2026-10-01",
+      "digest": "16fbbd645024e324c61a82dae24881d2629d470f098b16df7d0c9e0b2b04209a"
+    }
+  ],
+  "index": [],
+  "trial_id": "X04-TR-STA-03",
+  "case_id": "X04-STA-03",
+  "capability": {
+    "retrieval_state": "missing",
+    "scope": "Synthetic availability; real filesystem tools exist but only granted pointers may be read."
+  },
+  "retrieval_pointer": null,
+  "routing_contract": "Use memory/local first; B may open ONLY its exact granted pointer when index identity matches. Missing/failing receipt grants no source evidence. A/C no lookup. Unknown facts remain unresolved; no inference from another trial."
+}

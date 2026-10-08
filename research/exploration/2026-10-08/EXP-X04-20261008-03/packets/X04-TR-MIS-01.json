@@ -1,0 +1,35 @@
+{
+  "condition": "A",
+  "mechanism": "missing_fact",
+  "request": {
+    "key": "required_storage_limit_c",
+    "scope": "north_depot",
+    "as_of": "2026-10-08"
+  },
+  "authoritative": {
+    "source_id": "fictional.safety",
+    "version": "v3",
+    "digest": "fde2dddf00b638752eb1eb868dfff7417b575b7382bd09b4f7a975c05acfdd63"
+  },
+  "memory": [],
+  "local_sources": [
+    {
+      "source_id": "fictional.safety",
+      "version": "v3",
+      "key": "required_storage_limit_c",
+      "scope": "north_depot",
+      "value": 18,
+      "valid_until": null,
+      "digest": "fde2dddf00b638752eb1eb868dfff7417b575b7382bd09b4f7a975c05acfdd63"
+    }
+  ],
+  "index": [],
+  "trial_id": "X04-TR-MIS-01",
+  "case_id": "X04-MIS-01",
+  "capability": {
+    "retrieval_state": "missing",
+    "scope": "Synthetic availability; real filesystem tools exist but only granted pointers may be read."
+  },
+  "retrieval_pointer": null,
+  "routing_contract": "Use memory/local first; B may open ONLY its exact granted pointer when index identity matches. Missing/failing receipt grants no source evidence. A/C no lookup. Unknown facts remain unresolved; no inference from another trial."
+}

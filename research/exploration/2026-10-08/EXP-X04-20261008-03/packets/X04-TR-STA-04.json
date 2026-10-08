@@ -1,0 +1,35 @@
+{
+  "condition": "A",
+  "mechanism": "stale",
+  "request": {
+    "key": "inventory_count",
+    "scope": "north_depot",
+    "as_of": "2026-10-08"
+  },
+  "authoritative": {
+    "source_id": "fictional.catalog",
+    "version": "v2",
+    "digest": "b18fcc017c4ef9d78121e03ad8da940790bad8bbc24d8e8a4b6855ce92288af6"
+  },
+  "memory": [],
+  "local_sources": [
+    {
+      "source_id": "fictional.catalog",
+      "version": "v2",
+      "key": "inventory_count",
+      "scope": "south_depot",
+      "value": 40,
+      "valid_until": null,
+      "digest": "b18fcc017c4ef9d78121e03ad8da940790bad8bbc24d8e8a4b6855ce92288af6"
+    }
+  ],
+  "index": [],
+  "trial_id": "X04-TR-STA-04",
+  "case_id": "X04-STA-04",
+  "capability": {
+    "retrieval_state": "missing",
+    "scope": "Synthetic availability; real filesystem tools exist but only granted pointers may be read."
+  },
+  "retrieval_pointer": null,
+  "routing_contract": "Use memory/local first; B may open ONLY its exact granted pointer when index identity matches. Missing/failing receipt grants no source evidence. A/C no lookup. Unknown facts remain unresolved; no inference from another trial."
+}

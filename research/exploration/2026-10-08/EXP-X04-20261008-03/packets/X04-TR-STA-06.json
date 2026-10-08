@@ -1,0 +1,45 @@
+{
+  "condition": "A",
+  "mechanism": "stale",
+  "request": {
+    "key": "temperature_limit_c",
+    "scope": "north_depot",
+    "as_of": "2026-10-08"
+  },
+  "authoritative": {
+    "source_id": "fictional.safety",
+    "version": "v3",
+    "digest": "f1bbbd94d10d2a8a9d0ce953dd98d3c8c10c3ad7f2bb5dbdcbb60d9c3f77ed34"
+  },
+  "memory": [
+    {
+      "source_id": "fictional.safety",
+      "version": "v2",
+      "key": "temperature_limit_c",
+      "scope": "north_depot",
+      "value": 22,
+      "valid_until": "2026-10-01",
+      "digest": "29f68fe3b0fbb1d8accd0c3c39149c15d323ae8965322d576e97fb613d94a745"
+    }
+  ],
+  "local_sources": [
+    {
+      "source_id": "fictional.safety",
+      "version": "v3",
+      "key": "temperature_limit_c",
+      "scope": "north_depot",
+      "value": 18,
+      "valid_until": "2026-10-08",
+      "digest": "f1bbbd94d10d2a8a9d0ce953dd98d3c8c10c3ad7f2bb5dbdcbb60d9c3f77ed34"
+    }
+  ],
+  "index": [],
+  "trial_id": "X04-TR-STA-06",
+  "case_id": "X04-STA-06",
+  "capability": {
+    "retrieval_state": "missing",
+    "scope": "Synthetic availability; real filesystem tools exist but only granted pointers may be read."
+  },
+  "retrieval_pointer": null,
+  "routing_contract": "Use memory/local first; B may open ONLY its exact granted pointer when index identity matches. Missing/failing receipt grants no source evidence. A/C no lookup. Unknown facts remain unresolved; no inference from another trial."
+}

@@ -1,0 +1,16 @@
+{
+  "package_id": "EXP-X04-20261008-03",
+  "status": "active",
+  "session": "/root",
+  "thread_id": "01a10a9e-1700-7373-843c-34814db8a0b1",
+  "started_at": "2026-10-08T03:00:12.138839+00:00",
+  "base": "aeead03b7458127643b24eb600d486cbc3b185db",
+  "writers": {
+    "/root": "PLAN/packets/sources/assignments/groundtruth/grader/observations/REPORT/CHECKPOINT/NEXT_PACKAGE/OWNER and T016 progress",
+    "/root/trial_1": "trials/trial_1.json",
+    "/root/trial_2": "trials/trial_2.json",
+    "/root/trial_3": "trials/trial_3.json",
+    "/root/trial_4": "trials/trial_4.json"
+  },
+  "reviewer": "distinct /root/probe_review, only new R-GOV-016 records; not yet dispatched"
+}

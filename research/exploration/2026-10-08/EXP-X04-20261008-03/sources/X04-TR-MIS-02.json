@@ -1,0 +1,14 @@
+{
+  "state": "available",
+  "records": [
+    {
+      "source_id": "fictional.safety",
+      "version": "v3",
+      "key": "required_storage_limit_c",
+      "scope": "north_depot",
+      "value": 18,
+      "valid_until": null,
+      "digest": "fde2dddf00b638752eb1eb868dfff7417b575b7382bd09b4f7a975c05acfdd63"
+    }
+  ]
+}
