@@ -1,0 +1,8 @@
+{
+  "title": "Explore Agent Workflows",
+  "default_timezone": "Australia/Perth",
+  "timing_mode": "flexible_schedule",
+  "schedule": "BEGIN:VEVENT\nDTSTART;TZID=Australia/Perth:20261009T080000\nRRULE:FREQ=DAILY;COUNT=7\nEND:VEVENT",
+  "prompt_file": "automation-prompt.txt",
+  "status": "proposed; installation must be confirmed in T-GOV-012"
+}

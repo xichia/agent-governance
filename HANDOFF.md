@@ -1,6 +1,10 @@
 # Local-model handoff
 
-Updated 2026-10-05. This file supplies continuation context; [AGENTS.md](AGENTS.md) remains the instruction entry point and [the charter](governance/charter.md) defines authority.
+Updated 2026-10-08. This file supplies continuation context; [AGENTS.md](AGENTS.md) remains the instruction entry point and [the charter](governance/charter.md) defines authority.
+
+## Current continuation — T-GOV-012
+
+The owner requests continuing exploration until a check-in around next week and explicitly invokes both Luna Workflow and the supplied Luna Ideation Workflow. [T-GOV-012](records/tasks/T-GOV-012.md) tracks setup/review/scheduling and continuing research; [brief](research/exploration/2026-10-08/BRIEF.md), [synthesis](research/exploration/2026-10-08/SYNTHESIS.md) and [agenda](research/exploration/2026-10-08/AGENDA.md) preserve the pool, shortlist and bounded plan. Setup is under review; automation is installed only when confirmed in the task. Scheduled runtimes must verify repository/subagent access; conversation checkpoints are the fallback. Later findings do not inherit setup review, and no comparative trials, fresh development findings or operational activation are claimed by the plan.
 
 ## Current continuation — T-GOV-011
 
