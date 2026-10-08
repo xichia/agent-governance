@@ -1,0 +1,732 @@
+{
+  "schema_version": 1,
+  "cases": [
+    {
+      "id": "X04-CUR-01",
+      "mechanism": "current",
+      "condition": "A",
+      "rationale": "Full local bundle contains the trusted current inventory record.",
+      "request": {
+        "key": "inventory_count",
+        "scope": "north_depot",
+        "as_of": "2026-10-08"
+      },
+      "authoritative": {
+        "source_id": "fictional.catalog",
+        "version": "v2",
+        "digest": "dddaae7e4648412d6bdd1e90792c2c71825cd914aeea9e1eddf673b57af4c4e7"
+      },
+      "memory": [],
+      "local_sources": [
+        {
+          "source_id": "fictional.catalog",
+          "version": "v2",
+          "key": "inventory_count",
+          "scope": "north_depot",
+          "value": 40,
+          "valid_until": null,
+          "digest": "dddaae7e4648412d6bdd1e90792c2c71825cd914aeea9e1eddf673b57af4c4e7"
+        }
+      ],
+      "index": [],
+      "retrieval": {
+        "state": "available",
+        "records": []
+      },
+      "expected": {
+        "status": "current",
+        "value": 40,
+        "source_id": "fictional.catalog",
+        "version": "v2",
+        "complete": true
+      }
+    },
+    {
+      "id": "X04-CUR-02",
+      "mechanism": "current",
+      "condition": "B",
+      "rationale": "Selective/index path retrieves the exact current inventory record.",
+      "request": {
+        "key": "inventory_count",
+        "scope": "north_depot",
+        "as_of": "2026-10-08"
+      },
+      "authoritative": {
+        "source_id": "fictional.catalog",
+        "version": "v2",
+        "digest": "dddaae7e4648412d6bdd1e90792c2c71825cd914aeea9e1eddf673b57af4c4e7"
+      },
+      "memory": [],
+      "local_sources": [],
+      "index": [
+        {
+          "source_id": "fictional.catalog",
+          "version": "v2",
+          "digest": "dddaae7e4648412d6bdd1e90792c2c71825cd914aeea9e1eddf673b57af4c4e7"
+        }
+      ],
+      "retrieval": {
+        "state": "available",
+        "records": [
+          {
+            "source_id": "fictional.catalog",
+            "version": "v2",
+            "key": "inventory_count",
+            "scope": "north_depot",
+            "value": 40,
+            "valid_until": null,
+            "digest": "dddaae7e4648412d6bdd1e90792c2c71825cd914aeea9e1eddf673b57af4c4e7"
+          }
+        ]
+      },
+      "expected": {
+        "status": "current",
+        "value": 40,
+        "source_id": "fictional.catalog",
+        "version": "v2",
+        "complete": true
+      }
+    },
+    {
+      "id": "X04-CUR-03",
+      "mechanism": "current",
+      "condition": "C",
+      "rationale": "No-index ablation still resolves from an explicitly supplied local current record.",
+      "request": {
+        "key": "inventory_count",
+        "scope": "north_depot",
+        "as_of": "2026-10-08"
+      },
+      "authoritative": {
+        "source_id": "fictional.catalog",
+        "version": "v2",
+        "digest": "dddaae7e4648412d6bdd1e90792c2c71825cd914aeea9e1eddf673b57af4c4e7"
+      },
+      "memory": [],
+      "local_sources": [
+        {
+          "source_id": "fictional.catalog",
+          "version": "v2",
+          "key": "inventory_count",
+          "scope": "north_depot",
+          "value": 40,
+          "valid_until": null,
+          "digest": "dddaae7e4648412d6bdd1e90792c2c71825cd914aeea9e1eddf673b57af4c4e7"
+        }
+      ],
+      "index": [],
+      "retrieval": {
+        "state": "missing",
+        "records": []
+      },
+      "expected": {
+        "status": "current",
+        "value": 40,
+        "source_id": "fictional.catalog",
+        "version": "v2",
+        "complete": true
+      }
+    },
+    {
+      "id": "X04-CUR-04",
+      "mechanism": "current",
+      "condition": "B",
+      "rationale": "The retrieval payload has an altered digest and no local copy exists; the trusted descriptor alone cannot supply the value.",
+      "request": {
+        "key": "inventory_count",
+        "scope": "north_depot",
+        "as_of": "2026-10-08"
+      },
+      "authoritative": {
+        "source_id": "fictional.catalog",
+        "version": "v2",
+        "digest": "dddaae7e4648412d6bdd1e90792c2c71825cd914aeea9e1eddf673b57af4c4e7"
+      },
+      "memory": [],
+      "local_sources": [],
+      "index": [
+        {
+          "source_id": "fictional.catalog",
+          "version": "v2",
+          "digest": "dddaae7e4648412d6bdd1e90792c2c71825cd914aeea9e1eddf673b57af4c4e7"
+        }
+      ],
+      "retrieval": {
+        "state": "available",
+        "records": [
+          {
+            "source_id": "fictional.catalog",
+            "version": "v2",
+            "key": "inventory_count",
+            "scope": "north_depot",
+            "value": 40,
+            "valid_until": null,
+            "digest": "0000000000000000000000000000000000000000000000000000000000000000"
+          }
+        ]
+      },
+      "expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "complete": false
+      }
+    },
+    {
+      "id": "X04-STA-01",
+      "mechanism": "stale",
+      "condition": "A",
+      "rationale": "Stale memory says 80; full bundle establishes superseding v2 inventory of 40.",
+      "request": {
+        "key": "inventory_count",
+        "scope": "north_depot",
+        "as_of": "2026-10-08"
+      },
+      "authoritative": {
+        "source_id": "fictional.catalog",
+        "version": "v2",
+        "digest": "dddaae7e4648412d6bdd1e90792c2c71825cd914aeea9e1eddf673b57af4c4e7"
+      },
+      "memory": [
+        {
+          "source_id": "fictional.catalog",
+          "version": "v1",
+          "key": "inventory_count",
+          "scope": "north_depot",
+          "value": 80,
+          "valid_until": "2026-10-01",
+          "digest": "16fbbd645024e324c61a82dae24881d2629d470f098b16df7d0c9e0b2b04209a"
+        }
+      ],
+      "local_sources": [
+        {
+          "source_id": "fictional.catalog",
+          "version": "v2",
+          "key": "inventory_count",
+          "scope": "north_depot",
+          "value": 40,
+          "valid_until": null,
+          "digest": "dddaae7e4648412d6bdd1e90792c2c71825cd914aeea9e1eddf673b57af4c4e7"
+        }
+      ],
+      "index": [],
+      "retrieval": {
+        "state": "missing",
+        "records": []
+      },
+      "expected": {
+        "status": "current",
+        "value": 40,
+        "source_id": "fictional.catalog",
+        "version": "v2",
+        "complete": true
+      }
+    },
+    {
+      "id": "X04-STA-02",
+      "mechanism": "stale",
+      "condition": "B",
+      "rationale": "Stale memory is superseded by exact v3 policy record returned through a matching index.",
+      "request": {
+        "key": "temperature_limit_c",
+        "scope": "north_depot",
+        "as_of": "2026-10-08"
+      },
+      "authoritative": {
+        "source_id": "fictional.safety",
+        "version": "v3",
+        "digest": "3e547caaecd63a80b365aec22edd565885305a393d6ed35a6eff559d9a479d70"
+      },
+      "memory": [
+        {
+          "source_id": "fictional.safety",
+          "version": "v2",
+          "key": "temperature_limit_c",
+          "scope": "north_depot",
+          "value": 22,
+          "valid_until": "2026-10-01",
+          "digest": "29f68fe3b0fbb1d8accd0c3c39149c15d323ae8965322d576e97fb613d94a745"
+        }
+      ],
+      "local_sources": [],
+      "index": [
+        {
+          "source_id": "fictional.safety",
+          "version": "v3",
+          "digest": "3e547caaecd63a80b365aec22edd565885305a393d6ed35a6eff559d9a479d70"
+        }
+      ],
+      "retrieval": {
+        "state": "available",
+        "records": [
+          {
+            "source_id": "fictional.safety",
+            "version": "v3",
+            "key": "temperature_limit_c",
+            "scope": "north_depot",
+            "value": 18,
+            "valid_until": null,
+            "digest": "3e547caaecd63a80b365aec22edd565885305a393d6ed35a6eff559d9a479d70"
+          }
+        ]
+      },
+      "expected": {
+        "status": "current",
+        "value": 18,
+        "source_id": "fictional.safety",
+        "version": "v3",
+        "complete": true
+      }
+    },
+    {
+      "id": "X04-STA-03",
+      "mechanism": "stale",
+      "condition": "C",
+      "rationale": "Only a superseded v1 record is visible in the no-index condition; no current claim is justified.",
+      "request": {
+        "key": "inventory_count",
+        "scope": "north_depot",
+        "as_of": "2026-10-08"
+      },
+      "authoritative": {
+        "source_id": "fictional.catalog",
+        "version": "v2",
+        "digest": "dddaae7e4648412d6bdd1e90792c2c71825cd914aeea9e1eddf673b57af4c4e7"
+      },
+      "memory": [
+        {
+          "source_id": "fictional.catalog",
+          "version": "v1",
+          "key": "inventory_count",
+          "scope": "north_depot",
+          "value": 80,
+          "valid_until": "2026-10-01",
+          "digest": "16fbbd645024e324c61a82dae24881d2629d470f098b16df7d0c9e0b2b04209a"
+        }
+      ],
+      "local_sources": [
+        {
+          "source_id": "fictional.catalog",
+          "version": "v1",
+          "key": "inventory_count",
+          "scope": "north_depot",
+          "value": 80,
+          "valid_until": "2026-10-01",
+          "digest": "16fbbd645024e324c61a82dae24881d2629d470f098b16df7d0c9e0b2b04209a"
+        }
+      ],
+      "index": [],
+      "retrieval": {
+        "state": "missing",
+        "records": []
+      },
+      "expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "complete": false
+      }
+    },
+    {
+      "id": "X04-STA-04",
+      "mechanism": "stale",
+      "condition": "A",
+      "rationale": "A current-version-looking record fails request scope and another fails inclusive expiry; neither supports north-depot currentness.",
+      "request": {
+        "key": "inventory_count",
+        "scope": "north_depot",
+        "as_of": "2026-10-08"
+      },
+      "authoritative": {
+        "source_id": "fictional.catalog",
+        "version": "v2",
+        "digest": "dddaae7e4648412d6bdd1e90792c2c71825cd914aeea9e1eddf673b57af4c4e7"
+      },
+      "memory": [],
+      "local_sources": [
+        {
+          "source_id": "fictional.catalog",
+          "version": "v2",
+          "key": "inventory_count",
+          "scope": "south_depot",
+          "value": 40,
+          "valid_until": null,
+          "digest": "b18fcc017c4ef9d78121e03ad8da940790bad8bbc24d8e8a4b6855ce92288af6"
+        },
+        {
+          "source_id": "fictional.catalog",
+          "version": "v2",
+          "key": "inventory_count",
+          "scope": "north_depot",
+          "value": 40,
+          "valid_until": "2026-10-07",
+          "digest": "681932d5813826781c3e8cd545ab426d75217ee951ae57555aa3ca24064689e3"
+        }
+      ],
+      "index": [],
+      "retrieval": {
+        "state": "missing",
+        "records": []
+      },
+      "expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "complete": false
+      }
+    },
+    {
+      "id": "X04-MIS-01",
+      "mechanism": "missing_fact",
+      "condition": "A",
+      "rationale": "Inventory count is current, but the separately necessary storage limit is omitted; full bundle includes it.",
+      "request": {
+        "key": "required_storage_limit_c",
+        "scope": "north_depot",
+        "as_of": "2026-10-08"
+      },
+      "authoritative": {
+        "source_id": "fictional.safety",
+        "version": "v3",
+        "digest": "fde2dddf00b638752eb1eb868dfff7417b575b7382bd09b4f7a975c05acfdd63"
+      },
+      "memory": [],
+      "local_sources": [
+        {
+          "source_id": "fictional.safety",
+          "version": "v3",
+          "key": "required_storage_limit_c",
+          "scope": "north_depot",
+          "value": 18,
+          "valid_until": null,
+          "digest": "fde2dddf00b638752eb1eb868dfff7417b575b7382bd09b4f7a975c05acfdd63"
+        }
+      ],
+      "index": [],
+      "retrieval": {
+        "state": "missing",
+        "records": []
+      },
+      "expected": {
+        "status": "current",
+        "value": 18,
+        "source_id": "fictional.safety",
+        "version": "v3",
+        "complete": true
+      }
+    },
+    {
+      "id": "X04-MIS-02",
+      "mechanism": "missing_fact",
+      "condition": "B",
+      "rationale": "The omitted necessary fact can be recovered from a matching selective index entry.",
+      "request": {
+        "key": "required_storage_limit_c",
+        "scope": "north_depot",
+        "as_of": "2026-10-08"
+      },
+      "authoritative": {
+        "source_id": "fictional.safety",
+        "version": "v3",
+        "digest": "fde2dddf00b638752eb1eb868dfff7417b575b7382bd09b4f7a975c05acfdd63"
+      },
+      "memory": [],
+      "local_sources": [],
+      "index": [
+        {
+          "source_id": "fictional.safety",
+          "version": "v3",
+          "digest": "fde2dddf00b638752eb1eb868dfff7417b575b7382bd09b4f7a975c05acfdd63"
+        }
+      ],
+      "retrieval": {
+        "state": "available",
+        "records": [
+          {
+            "source_id": "fictional.safety",
+            "version": "v3",
+            "key": "required_storage_limit_c",
+            "scope": "north_depot",
+            "value": 18,
+            "valid_until": null,
+            "digest": "fde2dddf00b638752eb1eb868dfff7417b575b7382bd09b4f7a975c05acfdd63"
+          }
+        ]
+      },
+      "expected": {
+        "status": "current",
+        "value": 18,
+        "source_id": "fictional.safety",
+        "version": "v3",
+        "complete": true
+      }
+    },
+    {
+      "id": "X04-MIS-03",
+      "mechanism": "missing_fact",
+      "condition": "C",
+      "rationale": "No-index ablation exposes no record for the necessary fact, so completeness remains false.",
+      "request": {
+        "key": "required_storage_limit_c",
+        "scope": "north_depot",
+        "as_of": "2026-10-08"
+      },
+      "authoritative": {
+        "source_id": "fictional.safety",
+        "version": "v3",
+        "digest": "fde2dddf00b638752eb1eb868dfff7417b575b7382bd09b4f7a975c05acfdd63"
+      },
+      "memory": [],
+      "local_sources": [],
+      "index": [],
+      "retrieval": {
+        "state": "missing",
+        "records": []
+      },
+      "expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "complete": false
+      }
+    },
+    {
+      "id": "X04-MIS-04",
+      "mechanism": "missing_fact",
+      "condition": "B",
+      "rationale": "Current inventory 40 (superseding 80) is available, but the distinct required limit is absent from retrieval.",
+      "request": {
+        "key": "required_storage_limit_c",
+        "scope": "north_depot",
+        "as_of": "2026-10-08"
+      },
+      "authoritative": {
+        "source_id": "fictional.safety",
+        "version": "v3",
+        "digest": "fde2dddf00b638752eb1eb868dfff7417b575b7382bd09b4f7a975c05acfdd63"
+      },
+      "memory": [
+        {
+          "source_id": "fictional.catalog",
+          "version": "v1",
+          "key": "inventory_count",
+          "scope": "north_depot",
+          "value": 80,
+          "valid_until": "2026-10-01",
+          "digest": "16fbbd645024e324c61a82dae24881d2629d470f098b16df7d0c9e0b2b04209a"
+        }
+      ],
+      "local_sources": [],
+      "index": [
+        {
+          "source_id": "fictional.catalog",
+          "version": "v2",
+          "digest": "dddaae7e4648412d6bdd1e90792c2c71825cd914aeea9e1eddf673b57af4c4e7"
+        }
+      ],
+      "retrieval": {
+        "state": "available",
+        "records": [
+          {
+            "source_id": "fictional.catalog",
+            "version": "v2",
+            "key": "inventory_count",
+            "scope": "north_depot",
+            "value": 40,
+            "valid_until": null,
+            "digest": "dddaae7e4648412d6bdd1e90792c2c71825cd914aeea9e1eddf673b57af4c4e7"
+          }
+        ]
+      },
+      "expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "complete": false
+      }
+    },
+    {
+      "id": "X04-ABS-01",
+      "mechanism": "absent_retrieval",
+      "condition": "B",
+      "rationale": "No exact index pointer exists and the local memory is not evidence for the requested recall code.",
+      "request": {
+        "key": "recall_code",
+        "scope": "archive_a",
+        "as_of": "2026-10-08"
+      },
+      "authoritative": {
+        "source_id": "fictional.registry",
+        "version": "v1",
+        "digest": "32f9555a3e61613bc12f63f744135ec17530ea93b25a267286f92217dd85f515"
+      },
+      "memory": [
+        {
+          "source_id": "fictional.registry",
+          "version": "v0",
+          "key": "recall_code",
+          "scope": "archive_a",
+          "value": "R-16",
+          "valid_until": null,
+          "digest": "06ee07d2edd2997a70ced356de3cf4b3159541d04f3f402aab0e71b6a8c0445e"
+        }
+      ],
+      "local_sources": [],
+      "index": [],
+      "retrieval": {
+        "state": "missing",
+        "records": []
+      },
+      "expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "complete": false
+      }
+    },
+    {
+      "id": "X04-ABS-02",
+      "mechanism": "absent_retrieval",
+      "condition": "B",
+      "rationale": "A matching index descriptor exists but retrieval tool is missing; indexed metadata alone is not the source record.",
+      "request": {
+        "key": "recall_code",
+        "scope": "archive_a",
+        "as_of": "2026-10-08"
+      },
+      "authoritative": {
+        "source_id": "fictional.registry",
+        "version": "v1",
+        "digest": "32f9555a3e61613bc12f63f744135ec17530ea93b25a267286f92217dd85f515"
+      },
+      "memory": [],
+      "local_sources": [],
+      "index": [
+        {
+          "source_id": "fictional.registry",
+          "version": "v1",
+          "digest": "32f9555a3e61613bc12f63f744135ec17530ea93b25a267286f92217dd85f515"
+        }
+      ],
+      "retrieval": {
+        "state": "missing",
+        "records": []
+      },
+      "expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "complete": false
+      }
+    },
+    {
+      "id": "X04-ABS-03",
+      "mechanism": "absent_retrieval",
+      "condition": "B",
+      "rationale": "A matching pointer exists but retrieval fails; a supplied retrieval payload must not be treated as observed evidence.",
+      "request": {
+        "key": "recall_code",
+        "scope": "archive_a",
+        "as_of": "2026-10-08"
+      },
+      "authoritative": {
+        "source_id": "fictional.registry",
+        "version": "v1",
+        "digest": "32f9555a3e61613bc12f63f744135ec17530ea93b25a267286f92217dd85f515"
+      },
+      "memory": [],
+      "local_sources": [],
+      "index": [
+        {
+          "source_id": "fictional.registry",
+          "version": "v1",
+          "digest": "32f9555a3e61613bc12f63f744135ec17530ea93b25a267286f92217dd85f515"
+        }
+      ],
+      "retrieval": {
+        "state": "failing",
+        "records": [
+          {
+            "source_id": "fictional.registry",
+            "version": "v1",
+            "key": "recall_code",
+            "scope": "archive_a",
+            "value": "R-17",
+            "valid_until": null,
+            "digest": "32f9555a3e61613bc12f63f744135ec17530ea93b25a267286f92217dd85f515"
+          }
+        ]
+      },
+      "expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "complete": false
+      }
+    },
+    {
+      "id": "X04-ABS-04",
+      "mechanism": "absent_retrieval",
+      "condition": "C",
+      "rationale": "No-index ablation forbids pointer lookup; stale memory remains insufficient even when a trusted descriptor names the current record.",
+      "request": {
+        "key": "recall_code",
+        "scope": "archive_a",
+        "as_of": "2026-10-08"
+      },
+      "authoritative": {
+        "source_id": "fictional.registry",
+        "version": "v1",
+        "digest": "32f9555a3e61613bc12f63f744135ec17530ea93b25a267286f92217dd85f515"
+      },
+      "memory": [
+        {
+          "source_id": "fictional.registry",
+          "version": "v0",
+          "key": "recall_code",
+          "scope": "archive_a",
+          "value": "R-16",
+          "valid_until": null,
+          "digest": "06ee07d2edd2997a70ced356de3cf4b3159541d04f3f402aab0e71b6a8c0445e"
+        }
+      ],
+      "local_sources": [],
+      "index": [
+        {
+          "source_id": "fictional.registry",
+          "version": "v1",
+          "digest": "32f9555a3e61613bc12f63f744135ec17530ea93b25a267286f92217dd85f515"
+        }
+      ],
+      "retrieval": {
+        "state": "available",
+        "records": [
+          {
+            "source_id": "fictional.registry",
+            "version": "v1",
+            "key": "recall_code",
+            "scope": "archive_a",
+            "value": "R-17",
+            "valid_until": null,
+            "digest": "32f9555a3e61613bc12f63f744135ec17530ea93b25a267286f92217dd85f515"
+          }
+        ]
+      },
+      "expected": {
+        "status": "unresolved",
+        "value": null,
+        "source_id": null,
+        "version": null,
+        "complete": false
+      }
+    }
+  ]
+}
