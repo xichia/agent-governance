@@ -1,6 +1,6 @@
 {
   "package_id": "EXP-X04-20261008-04",
-  "status": "active",
+  "status": "released",
   "session": "/root",
   "thread_id": "01a10a9e-1700-7373-843c-34814db8a0b1",
   "started_at": "2026-10-08T04:05:11.506575+00:00",
@@ -10,5 +10,9 @@
     "/root/broker_builder": "broker.py, protocol.md",
     "/root/broker_cases": "cases.json, CASE_DESIGN.md"
   },
-  "reviewer": "distinct /root/broker_review; only new R017 records after freeze"
+  "reviewer": "distinct /root/broker_review; only new R017 records after freeze",
+  "released_at": "2026-10-08T04:17:01.786645+00:00",
+  "writer_completion": "Native final notifications and list_agents confirm builder, case writer and reviewer completed; accepted content writes stopped.",
+  "checkpoint": "CHECKPOINT.md",
+  "accepted_candidate": "ffb52d9f93f94569b2cabc47a305586536b53c22"
 }
