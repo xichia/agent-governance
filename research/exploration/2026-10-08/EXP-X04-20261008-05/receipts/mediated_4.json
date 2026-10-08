@@ -1,0 +1,825 @@
+{
+  "worker": "mediated_4",
+  "initial_sha256": "7c33e7ea07f4b648f2757ef4b3f2759d7f2e3fa70a0f5131fed8fb9b6c49de5b",
+  "broker_candidate": "ffb52d9f93f94569b2cabc47a305586536b53c22",
+  "results": [
+    {
+      "trial_id": "M05-13-R",
+      "submitted_request": {
+        "request_id": "req-M05-13-R",
+        "grant_id": "grant-M05-13-R",
+        "path": "M05-13-R.json",
+        "assignment": "mediated_4",
+        "scope": "archive_a",
+        "caller_label": "mediated_4"
+      },
+      "exact_declared_request": true,
+      "actual": {
+        "status": "served",
+        "reason": "verified_bytes",
+        "payload_b64": "eyJrZXkiOiJyZWNhbGxfY29kZSIsInNjb3BlIjoiYXJjaGl2ZV9hIiwic291cmNlX2lkIjoiZmljdGlvbmFsLnRyYW5zaXRpb24uWDA0LUFCUy0wMyIsInZhbGlkX3VudGlsIjoiMjAyNi0xMC0xNSIsInZhbHVlIjo4LCJ2ZXJzaW9uIjoidjMifQo=",
+        "event": {
+          "seq": 1,
+          "request_id": "req-M05-13-R",
+          "caller_label": "mediated_4",
+          "caller_authenticated": false,
+          "requested_path": "M05-13-R.json",
+          "grant_id": "grant-M05-13-R",
+          "assignment": "mediated_4",
+          "scope": "archive_a",
+          "status": "served",
+          "reason": "verified_bytes",
+          "observed_sha256": "6e799ddb812ac9d62278181e13a7ded7f92df3f5658cf9b7e063a06af46f7cf3",
+          "observed_byte_count": 140,
+          "served_byte_count": 140,
+          "observed_at": "2026-10-08T05:01:32.625405+00:00",
+          "time_source": "process_wall_clock"
+        }
+      }
+    },
+    {
+      "trial_id": "M05-13-W",
+      "submitted_request": {
+        "request_id": "req-M05-13-W",
+        "grant_id": "grant-M05-13-W",
+        "path": "M05-13-W.json",
+        "assignment": "mediated_4",
+        "scope": "archive_a",
+        "caller_label": "mediated_4"
+      },
+      "exact_declared_request": true,
+      "actual": {
+        "status": "denied",
+        "reason": "grant_not_found",
+        "payload_b64": null,
+        "event": {
+          "seq": 2,
+          "request_id": "req-M05-13-W",
+          "caller_label": "mediated_4",
+          "caller_authenticated": false,
+          "requested_path": "M05-13-W.json",
+          "grant_id": "grant-M05-13-W",
+          "assignment": "mediated_4",
+          "scope": "archive_a",
+          "status": "denied",
+          "reason": "grant_not_found",
+          "observed_sha256": null,
+          "observed_byte_count": 0,
+          "served_byte_count": 0,
+          "observed_at": "2026-10-08T05:01:32.625460+00:00",
+          "time_source": "process_wall_clock"
+        }
+      }
+    },
+    {
+      "trial_id": "M05-13-C",
+      "submitted_request": {
+        "request_id": "req-M05-13-C",
+        "grant_id": "grant-M05-13-C",
+        "path": "M05-13-C.json",
+        "assignment": "mediated_4",
+        "scope": "archive_a",
+        "caller_label": "mediated_4"
+      },
+      "exact_declared_request": true,
+      "actual": {
+        "status": "changed",
+        "reason": "content_mismatch",
+        "payload_b64": null,
+        "event": {
+          "seq": 3,
+          "request_id": "req-M05-13-C",
+          "caller_label": "mediated_4",
+          "caller_authenticated": false,
+          "requested_path": "M05-13-C.json",
+          "grant_id": "grant-M05-13-C",
+          "assignment": "mediated_4",
+          "scope": "archive_a",
+          "status": "changed",
+          "reason": "content_mismatch",
+          "observed_sha256": "9232c76efee7466bf3914e626e6edc3e948c2a3aefb734926a5530d814b21666",
+          "observed_byte_count": 141,
+          "served_byte_count": 0,
+          "observed_at": "2026-10-08T05:01:32.625496+00:00",
+          "time_source": "process_wall_clock"
+        }
+      }
+    },
+    {
+      "trial_id": "M05-13-S",
+      "submitted_request": {
+        "request_id": "req-M05-13-S",
+        "grant_id": "grant-M05-13-S",
+        "path": "M05-13-S.json",
+        "assignment": "mediated_4",
+        "scope": "archive_a",
+        "caller_label": "mediated_4"
+      },
+      "exact_declared_request": true,
+      "actual": {
+        "status": "served",
+        "reason": "verified_bytes",
+        "payload_b64": "eyJrZXkiOiJyZWNhbGxfY29kZSIsInNjb3BlIjoiYXJjaGl2ZV9hIiwic291cmNlX2lkIjoiZmljdGlvbmFsLnRyYW5zaXRpb24uWDA0LUFCUy0wMyIsInZhbGlkX3VudGlsIjoiMjAyNi0xMC0xNSIsInZhbHVlIjo4LCJ2ZXJzaW9uIjoidjMifQo=",
+        "event": {
+          "seq": 4,
+          "request_id": "req-M05-13-S",
+          "caller_label": "mediated_4",
+          "caller_authenticated": false,
+          "requested_path": "M05-13-S.json",
+          "grant_id": "grant-M05-13-S",
+          "assignment": "mediated_4",
+          "scope": "archive_a",
+          "status": "served",
+          "reason": "verified_bytes",
+          "observed_sha256": "6e799ddb812ac9d62278181e13a7ded7f92df3f5658cf9b7e063a06af46f7cf3",
+          "observed_byte_count": 140,
+          "served_byte_count": 140,
+          "observed_at": "2026-10-08T05:01:32.625516+00:00",
+          "time_source": "process_wall_clock"
+        }
+      }
+    },
+    {
+      "trial_id": "M05-14-R",
+      "submitted_request": {
+        "request_id": "req-M05-14-R",
+        "grant_id": "grant-M05-14-R",
+        "path": "M05-14-R.json",
+        "assignment": "mediated_4",
+        "scope": "archive_a",
+        "caller_label": "mediated_4"
+      },
+      "exact_declared_request": true,
+      "actual": {
+        "status": "served",
+        "reason": "verified_bytes",
+        "payload_b64": "eyJrZXkiOiJyZWNhbGxfY29kZSIsInNjb3BlIjoiYXJjaGl2ZV9hIiwic291cmNlX2lkIjoiZmljdGlvbmFsLnRyYW5zaXRpb24uWDA0LUFCUy0wNCIsInZhbGlkX3VudGlsIjoiMjAyNi0xMC0xNSIsInZhbHVlIjo4LCJ2ZXJzaW9uIjoidjMifQo=",
+        "event": {
+          "seq": 5,
+          "request_id": "req-M05-14-R",
+          "caller_label": "mediated_4",
+          "caller_authenticated": false,
+          "requested_path": "M05-14-R.json",
+          "grant_id": "grant-M05-14-R",
+          "assignment": "mediated_4",
+          "scope": "archive_a",
+          "status": "served",
+          "reason": "verified_bytes",
+          "observed_sha256": "08f6701f341208314c526611049eefddae935fe7d39830480dc2624af75522f3",
+          "observed_byte_count": 140,
+          "served_byte_count": 140,
+          "observed_at": "2026-10-08T05:01:32.625532+00:00",
+          "time_source": "process_wall_clock"
+        }
+      }
+    },
+    {
+      "trial_id": "M05-14-W",
+      "submitted_request": {
+        "request_id": "req-M05-14-W",
+        "grant_id": "grant-M05-14-W",
+        "path": "M05-14-W.json",
+        "assignment": "mediated_4",
+        "scope": "archive_a",
+        "caller_label": "mediated_4"
+      },
+      "exact_declared_request": true,
+      "actual": {
+        "status": "denied",
+        "reason": "grant_not_found",
+        "payload_b64": null,
+        "event": {
+          "seq": 6,
+          "request_id": "req-M05-14-W",
+          "caller_label": "mediated_4",
+          "caller_authenticated": false,
+          "requested_path": "M05-14-W.json",
+          "grant_id": "grant-M05-14-W",
+          "assignment": "mediated_4",
+          "scope": "archive_a",
+          "status": "denied",
+          "reason": "grant_not_found",
+          "observed_sha256": null,
+          "observed_byte_count": 0,
+          "served_byte_count": 0,
+          "observed_at": "2026-10-08T05:01:32.625539+00:00",
+          "time_source": "process_wall_clock"
+        }
+      }
+    },
+    {
+      "trial_id": "M05-14-C",
+      "submitted_request": {
+        "request_id": "req-M05-14-C",
+        "grant_id": "grant-M05-14-C",
+        "path": "M05-14-C.json",
+        "assignment": "mediated_4",
+        "scope": "archive_a",
+        "caller_label": "mediated_4"
+      },
+      "exact_declared_request": true,
+      "actual": {
+        "status": "changed",
+        "reason": "content_mismatch",
+        "payload_b64": null,
+        "event": {
+          "seq": 7,
+          "request_id": "req-M05-14-C",
+          "caller_label": "mediated_4",
+          "caller_authenticated": false,
+          "requested_path": "M05-14-C.json",
+          "grant_id": "grant-M05-14-C",
+          "assignment": "mediated_4",
+          "scope": "archive_a",
+          "status": "changed",
+          "reason": "content_mismatch",
+          "observed_sha256": "e0687ebd5fc0abca5000df7e5363cc3cb0066b07d837bca0109974e13ad0a8dc",
+          "observed_byte_count": 141,
+          "served_byte_count": 0,
+          "observed_at": "2026-10-08T05:01:32.625553+00:00",
+          "time_source": "process_wall_clock"
+        }
+      }
+    },
+    {
+      "trial_id": "M05-14-S",
+      "submitted_request": {
+        "request_id": "req-M05-14-S",
+        "grant_id": "grant-M05-14-S",
+        "path": "M05-14-S.json",
+        "assignment": "mediated_4",
+        "scope": "archive_a",
+        "caller_label": "mediated_4"
+      },
+      "exact_declared_request": true,
+      "actual": {
+        "status": "served",
+        "reason": "verified_bytes",
+        "payload_b64": "eyJrZXkiOiJyZWNhbGxfY29kZSIsInNjb3BlIjoiYXJjaGl2ZV9hIiwic291cmNlX2lkIjoiZmljdGlvbmFsLnRyYW5zaXRpb24uWDA0LUFCUy0wNCIsInZhbGlkX3VudGlsIjoiMjAyNi0xMC0xNSIsInZhbHVlIjo4LCJ2ZXJzaW9uIjoidjMifQo=",
+        "event": {
+          "seq": 8,
+          "request_id": "req-M05-14-S",
+          "caller_label": "mediated_4",
+          "caller_authenticated": false,
+          "requested_path": "M05-14-S.json",
+          "grant_id": "grant-M05-14-S",
+          "assignment": "mediated_4",
+          "scope": "archive_a",
+          "status": "served",
+          "reason": "verified_bytes",
+          "observed_sha256": "08f6701f341208314c526611049eefddae935fe7d39830480dc2624af75522f3",
+          "observed_byte_count": 140,
+          "served_byte_count": 140,
+          "observed_at": "2026-10-08T05:01:32.625567+00:00",
+          "time_source": "process_wall_clock"
+        }
+      }
+    },
+    {
+      "trial_id": "M05-15-R",
+      "submitted_request": {
+        "request_id": "req-M05-15-R",
+        "grant_id": "grant-M05-15-R",
+        "path": "M05-15-R.json",
+        "assignment": "mediated_4",
+        "scope": "north_depot",
+        "caller_label": "mediated_4"
+      },
+      "exact_declared_request": true,
+      "actual": {
+        "status": "served",
+        "reason": "verified_bytes",
+        "payload_b64": "eyJrZXkiOiJpbnZlbnRvcnlfY291bnQiLCJzY29wZSI6Im5vcnRoX2RlcG90Iiwic291cmNlX2lkIjoiZmljdGlvbmFsLnRyYW5zaXRpb24uWDA0LVNUQS0wNSIsInZhbGlkX3VudGlsIjoiMjAyNi0xMC0xNSIsInZhbHVlIjozNSwidmVyc2lvbiI6InYzIn0K",
+        "event": {
+          "seq": 9,
+          "request_id": "req-M05-15-R",
+          "caller_label": "mediated_4",
+          "caller_authenticated": false,
+          "requested_path": "M05-15-R.json",
+          "grant_id": "grant-M05-15-R",
+          "assignment": "mediated_4",
+          "scope": "north_depot",
+          "status": "served",
+          "reason": "verified_bytes",
+          "observed_sha256": "9c07d3cf88e034ea981208d0f3dc23952349d5adcab2ba5ddb3b4a7735a1e978",
+          "observed_byte_count": 147,
+          "served_byte_count": 147,
+          "observed_at": "2026-10-08T05:01:32.625581+00:00",
+          "time_source": "process_wall_clock"
+        }
+      }
+    },
+    {
+      "trial_id": "M05-15-W",
+      "submitted_request": {
+        "request_id": "req-M05-15-W",
+        "grant_id": "grant-M05-15-W",
+        "path": "M05-15-W.json",
+        "assignment": "mediated_4",
+        "scope": "north_depot",
+        "caller_label": "mediated_4"
+      },
+      "exact_declared_request": true,
+      "actual": {
+        "status": "denied",
+        "reason": "grant_not_found",
+        "payload_b64": null,
+        "event": {
+          "seq": 10,
+          "request_id": "req-M05-15-W",
+          "caller_label": "mediated_4",
+          "caller_authenticated": false,
+          "requested_path": "M05-15-W.json",
+          "grant_id": "grant-M05-15-W",
+          "assignment": "mediated_4",
+          "scope": "north_depot",
+          "status": "denied",
+          "reason": "grant_not_found",
+          "observed_sha256": null,
+          "observed_byte_count": 0,
+          "served_byte_count": 0,
+          "observed_at": "2026-10-08T05:01:32.625585+00:00",
+          "time_source": "process_wall_clock"
+        }
+      }
+    },
+    {
+      "trial_id": "M05-15-C",
+      "submitted_request": {
+        "request_id": "req-M05-15-C",
+        "grant_id": "grant-M05-15-C",
+        "path": "M05-15-C.json",
+        "assignment": "mediated_4",
+        "scope": "north_depot",
+        "caller_label": "mediated_4"
+      },
+      "exact_declared_request": true,
+      "actual": {
+        "status": "changed",
+        "reason": "content_mismatch",
+        "payload_b64": null,
+        "event": {
+          "seq": 11,
+          "request_id": "req-M05-15-C",
+          "caller_label": "mediated_4",
+          "caller_authenticated": false,
+          "requested_path": "M05-15-C.json",
+          "grant_id": "grant-M05-15-C",
+          "assignment": "mediated_4",
+          "scope": "north_depot",
+          "status": "changed",
+          "reason": "content_mismatch",
+          "observed_sha256": "cb2aa80edb9ad3d0f34a6f1e1327adafa1cb98f31d863c00120d44cb53011874",
+          "observed_byte_count": 147,
+          "served_byte_count": 0,
+          "observed_at": "2026-10-08T05:01:32.625598+00:00",
+          "time_source": "process_wall_clock"
+        }
+      }
+    },
+    {
+      "trial_id": "M05-15-S",
+      "submitted_request": {
+        "request_id": "req-M05-15-S",
+        "grant_id": "grant-M05-15-S",
+        "path": "M05-15-S.json",
+        "assignment": "mediated_4",
+        "scope": "north_depot",
+        "caller_label": "mediated_4"
+      },
+      "exact_declared_request": true,
+      "actual": {
+        "status": "served",
+        "reason": "verified_bytes",
+        "payload_b64": "eyJrZXkiOiJpbnZlbnRvcnlfY291bnQiLCJzY29wZSI6Im5vcnRoX2RlcG90Iiwic291cmNlX2lkIjoiZmljdGlvbmFsLnRyYW5zaXRpb24uWDA0LVNUQS0wNSIsInZhbGlkX3VudGlsIjoiMjAyNi0xMC0xNSIsInZhbHVlIjozNSwidmVyc2lvbiI6InYzIn0K",
+        "event": {
+          "seq": 12,
+          "request_id": "req-M05-15-S",
+          "caller_label": "mediated_4",
+          "caller_authenticated": false,
+          "requested_path": "M05-15-S.json",
+          "grant_id": "grant-M05-15-S",
+          "assignment": "mediated_4",
+          "scope": "north_depot",
+          "status": "served",
+          "reason": "verified_bytes",
+          "observed_sha256": "9c07d3cf88e034ea981208d0f3dc23952349d5adcab2ba5ddb3b4a7735a1e978",
+          "observed_byte_count": 147,
+          "served_byte_count": 147,
+          "observed_at": "2026-10-08T05:01:32.625611+00:00",
+          "time_source": "process_wall_clock"
+        }
+      }
+    },
+    {
+      "trial_id": "M05-16-R",
+      "submitted_request": {
+        "request_id": "req-M05-16-R",
+        "grant_id": "grant-M05-16-R",
+        "path": "M05-16-R.json",
+        "assignment": "mediated_4",
+        "scope": "north_depot",
+        "caller_label": "mediated_4"
+      },
+      "exact_declared_request": true,
+      "actual": {
+        "status": "served",
+        "reason": "verified_bytes",
+        "payload_b64": "eyJrZXkiOiJ0ZW1wZXJhdHVyZV9saW1pdF9jIiwic2NvcGUiOiJub3J0aF9kZXBvdCIsInNvdXJjZV9pZCI6ImZpY3Rpb25hbC50cmFuc2l0aW9uLlgwNC1TVEEtMDYiLCJ2YWxpZF91bnRpbCI6IjIwMjYtMTAtMTUiLCJ2YWx1ZSI6OCwidmVyc2lvbiI6InYzIn0K",
+        "event": {
+          "seq": 13,
+          "request_id": "req-M05-16-R",
+          "caller_label": "mediated_4",
+          "caller_authenticated": false,
+          "requested_path": "M05-16-R.json",
+          "grant_id": "grant-M05-16-R",
+          "assignment": "mediated_4",
+          "scope": "north_depot",
+          "status": "served",
+          "reason": "verified_bytes",
+          "observed_sha256": "b5a6f7b75b666a9d1fca72fadc3dde369590a7127645202cbeb1b420b686ee5c",
+          "observed_byte_count": 150,
+          "served_byte_count": 150,
+          "observed_at": "2026-10-08T05:01:32.625623+00:00",
+          "time_source": "process_wall_clock"
+        }
+      }
+    },
+    {
+      "trial_id": "M05-16-W",
+      "submitted_request": {
+        "request_id": "req-M05-16-W",
+        "grant_id": "grant-M05-16-W",
+        "path": "M05-16-W.json",
+        "assignment": "mediated_4",
+        "scope": "north_depot",
+        "caller_label": "mediated_4"
+      },
+      "exact_declared_request": true,
+      "actual": {
+        "status": "denied",
+        "reason": "grant_not_found",
+        "payload_b64": null,
+        "event": {
+          "seq": 14,
+          "request_id": "req-M05-16-W",
+          "caller_label": "mediated_4",
+          "caller_authenticated": false,
+          "requested_path": "M05-16-W.json",
+          "grant_id": "grant-M05-16-W",
+          "assignment": "mediated_4",
+          "scope": "north_depot",
+          "status": "denied",
+          "reason": "grant_not_found",
+          "observed_sha256": null,
+          "observed_byte_count": 0,
+          "served_byte_count": 0,
+          "observed_at": "2026-10-08T05:01:32.625627+00:00",
+          "time_source": "process_wall_clock"
+        }
+      }
+    },
+    {
+      "trial_id": "M05-16-C",
+      "submitted_request": {
+        "request_id": "req-M05-16-C",
+        "grant_id": "grant-M05-16-C",
+        "path": "M05-16-C.json",
+        "assignment": "mediated_4",
+        "scope": "north_depot",
+        "caller_label": "mediated_4"
+      },
+      "exact_declared_request": true,
+      "actual": {
+        "status": "changed",
+        "reason": "content_mismatch",
+        "payload_b64": null,
+        "event": {
+          "seq": 15,
+          "request_id": "req-M05-16-C",
+          "caller_label": "mediated_4",
+          "caller_authenticated": false,
+          "requested_path": "M05-16-C.json",
+          "grant_id": "grant-M05-16-C",
+          "assignment": "mediated_4",
+          "scope": "north_depot",
+          "status": "changed",
+          "reason": "content_mismatch",
+          "observed_sha256": "137a0236ccabe4bc7b582c2015e3b3aa5dab9cbc7d87ceb33497750733101b1c",
+          "observed_byte_count": 151,
+          "served_byte_count": 0,
+          "observed_at": "2026-10-08T05:01:32.625639+00:00",
+          "time_source": "process_wall_clock"
+        }
+      }
+    },
+    {
+      "trial_id": "M05-16-S",
+      "submitted_request": {
+        "request_id": "req-M05-16-S",
+        "grant_id": "grant-M05-16-S",
+        "path": "M05-16-S.json",
+        "assignment": "mediated_4",
+        "scope": "north_depot",
+        "caller_label": "mediated_4"
+      },
+      "exact_declared_request": true,
+      "actual": {
+        "status": "served",
+        "reason": "verified_bytes",
+        "payload_b64": "eyJrZXkiOiJ0ZW1wZXJhdHVyZV9saW1pdF9jIiwic2NvcGUiOiJub3J0aF9kZXBvdCIsInNvdXJjZV9pZCI6ImZpY3Rpb25hbC50cmFuc2l0aW9uLlgwNC1TVEEtMDYiLCJ2YWxpZF91bnRpbCI6IjIwMjYtMTAtMTUiLCJ2YWx1ZSI6OCwidmVyc2lvbiI6InYzIn0K",
+        "event": {
+          "seq": 16,
+          "request_id": "req-M05-16-S",
+          "caller_label": "mediated_4",
+          "caller_authenticated": false,
+          "requested_path": "M05-16-S.json",
+          "grant_id": "grant-M05-16-S",
+          "assignment": "mediated_4",
+          "scope": "north_depot",
+          "status": "served",
+          "reason": "verified_bytes",
+          "observed_sha256": "b5a6f7b75b666a9d1fca72fadc3dde369590a7127645202cbeb1b420b686ee5c",
+          "observed_byte_count": 150,
+          "served_byte_count": 150,
+          "observed_at": "2026-10-08T05:01:32.625651+00:00",
+          "time_source": "process_wall_clock"
+        }
+      }
+    }
+  ],
+  "events": [
+    {
+      "seq": 1,
+      "request_id": "req-M05-13-R",
+      "caller_label": "mediated_4",
+      "caller_authenticated": false,
+      "requested_path": "M05-13-R.json",
+      "grant_id": "grant-M05-13-R",
+      "assignment": "mediated_4",
+      "scope": "archive_a",
+      "status": "served",
+      "reason": "verified_bytes",
+      "observed_sha256": "6e799ddb812ac9d62278181e13a7ded7f92df3f5658cf9b7e063a06af46f7cf3",
+      "observed_byte_count": 140,
+      "served_byte_count": 140,
+      "observed_at": "2026-10-08T05:01:32.625405+00:00",
+      "time_source": "process_wall_clock"
+    },
+    {
+      "seq": 2,
+      "request_id": "req-M05-13-W",
+      "caller_label": "mediated_4",
+      "caller_authenticated": false,
+      "requested_path": "M05-13-W.json",
+      "grant_id": "grant-M05-13-W",
+      "assignment": "mediated_4",
+      "scope": "archive_a",
+      "status": "denied",
+      "reason": "grant_not_found",
+      "observed_sha256": null,
+      "observed_byte_count": 0,
+      "served_byte_count": 0,
+      "observed_at": "2026-10-08T05:01:32.625460+00:00",
+      "time_source": "process_wall_clock"
+    },
+    {
+      "seq": 3,
+      "request_id": "req-M05-13-C",
+      "caller_label": "mediated_4",
+      "caller_authenticated": false,
+      "requested_path": "M05-13-C.json",
+      "grant_id": "grant-M05-13-C",
+      "assignment": "mediated_4",
+      "scope": "archive_a",
+      "status": "changed",
+      "reason": "content_mismatch",
+      "observed_sha256": "9232c76efee7466bf3914e626e6edc3e948c2a3aefb734926a5530d814b21666",
+      "observed_byte_count": 141,
+      "served_byte_count": 0,
+      "observed_at": "2026-10-08T05:01:32.625496+00:00",
+      "time_source": "process_wall_clock"
+    },
+    {
+      "seq": 4,
+      "request_id": "req-M05-13-S",
+      "caller_label": "mediated_4",
+      "caller_authenticated": false,
+      "requested_path": "M05-13-S.json",
+      "grant_id": "grant-M05-13-S",
+      "assignment": "mediated_4",
+      "scope": "archive_a",
+      "status": "served",
+      "reason": "verified_bytes",
+      "observed_sha256": "6e799ddb812ac9d62278181e13a7ded7f92df3f5658cf9b7e063a06af46f7cf3",
+      "observed_byte_count": 140,
+      "served_byte_count": 140,
+      "observed_at": "2026-10-08T05:01:32.625516+00:00",
+      "time_source": "process_wall_clock"
+    },
+    {
+      "seq": 5,
+      "request_id": "req-M05-14-R",
+      "caller_label": "mediated_4",
+      "caller_authenticated": false,
+      "requested_path": "M05-14-R.json",
+      "grant_id": "grant-M05-14-R",
+      "assignment": "mediated_4",
+      "scope": "archive_a",
+      "status": "served",
+      "reason": "verified_bytes",
+      "observed_sha256": "08f6701f341208314c526611049eefddae935fe7d39830480dc2624af75522f3",
+      "observed_byte_count": 140,
+      "served_byte_count": 140,
+      "observed_at": "2026-10-08T05:01:32.625532+00:00",
+      "time_source": "process_wall_clock"
+    },
+    {
+      "seq": 6,
+      "request_id": "req-M05-14-W",
+      "caller_label": "mediated_4",
+      "caller_authenticated": false,
+      "requested_path": "M05-14-W.json",
+      "grant_id": "grant-M05-14-W",
+      "assignment": "mediated_4",
+      "scope": "archive_a",
+      "status": "denied",
+      "reason": "grant_not_found",
+      "observed_sha256": null,
+      "observed_byte_count": 0,
+      "served_byte_count": 0,
+      "observed_at": "2026-10-08T05:01:32.625539+00:00",
+      "time_source": "process_wall_clock"
+    },
+    {
+      "seq": 7,
+      "request_id": "req-M05-14-C",
+      "caller_label": "mediated_4",
+      "caller_authenticated": false,
+      "requested_path": "M05-14-C.json",
+      "grant_id": "grant-M05-14-C",
+      "assignment": "mediated_4",
+      "scope": "archive_a",
+      "status": "changed",
+      "reason": "content_mismatch",
+      "observed_sha256": "e0687ebd5fc0abca5000df7e5363cc3cb0066b07d837bca0109974e13ad0a8dc",
+      "observed_byte_count": 141,
+      "served_byte_count": 0,
+      "observed_at": "2026-10-08T05:01:32.625553+00:00",
+      "time_source": "process_wall_clock"
+    },
+    {
+      "seq": 8,
+      "request_id": "req-M05-14-S",
+      "caller_label": "mediated_4",
+      "caller_authenticated": false,
+      "requested_path": "M05-14-S.json",
+      "grant_id": "grant-M05-14-S",
+      "assignment": "mediated_4",
+      "scope": "archive_a",
+      "status": "served",
+      "reason": "verified_bytes",
+      "observed_sha256": "08f6701f341208314c526611049eefddae935fe7d39830480dc2624af75522f3",
+      "observed_byte_count": 140,
+      "served_byte_count": 140,
+      "observed_at": "2026-10-08T05:01:32.625567+00:00",
+      "time_source": "process_wall_clock"
+    },
+    {
+      "seq": 9,
+      "request_id": "req-M05-15-R",
+      "caller_label": "mediated_4",
+      "caller_authenticated": false,
+      "requested_path": "M05-15-R.json",
+      "grant_id": "grant-M05-15-R",
+      "assignment": "mediated_4",
+      "scope": "north_depot",
+      "status": "served",
+      "reason": "verified_bytes",
+      "observed_sha256": "9c07d3cf88e034ea981208d0f3dc23952349d5adcab2ba5ddb3b4a7735a1e978",
+      "observed_byte_count": 147,
+      "served_byte_count": 147,
+      "observed_at": "2026-10-08T05:01:32.625581+00:00",
+      "time_source": "process_wall_clock"
+    },
+    {
+      "seq": 10,
+      "request_id": "req-M05-15-W",
+      "caller_label": "mediated_4",
+      "caller_authenticated": false,
+      "requested_path": "M05-15-W.json",
+      "grant_id": "grant-M05-15-W",
+      "assignment": "mediated_4",
+      "scope": "north_depot",
+      "status": "denied",
+      "reason": "grant_not_found",
+      "observed_sha256": null,
+      "observed_byte_count": 0,
+      "served_byte_count": 0,
+      "observed_at": "2026-10-08T05:01:32.625585+00:00",
+      "time_source": "process_wall_clock"
+    },
+    {
+      "seq": 11,
+      "request_id": "req-M05-15-C",
+      "caller_label": "mediated_4",
+      "caller_authenticated": false,
+      "requested_path": "M05-15-C.json",
+      "grant_id": "grant-M05-15-C",
+      "assignment": "mediated_4",
+      "scope": "north_depot",
+      "status": "changed",
+      "reason": "content_mismatch",
+      "observed_sha256": "cb2aa80edb9ad3d0f34a6f1e1327adafa1cb98f31d863c00120d44cb53011874",
+      "observed_byte_count": 147,
+      "served_byte_count": 0,
+      "observed_at": "2026-10-08T05:01:32.625598+00:00",
+      "time_source": "process_wall_clock"
+    },
+    {
+      "seq": 12,
+      "request_id": "req-M05-15-S",
+      "caller_label": "mediated_4",
+      "caller_authenticated": false,
+      "requested_path": "M05-15-S.json",
+      "grant_id": "grant-M05-15-S",
+      "assignment": "mediated_4",
+      "scope": "north_depot",
+      "status": "served",
+      "reason": "verified_bytes",
+      "observed_sha256": "9c07d3cf88e034ea981208d0f3dc23952349d5adcab2ba5ddb3b4a7735a1e978",
+      "observed_byte_count": 147,
+      "served_byte_count": 147,
+      "observed_at": "2026-10-08T05:01:32.625611+00:00",
+      "time_source": "process_wall_clock"
+    },
+    {
+      "seq": 13,
+      "request_id": "req-M05-16-R",
+      "caller_label": "mediated_4",
+      "caller_authenticated": false,
+      "requested_path": "M05-16-R.json",
+      "grant_id": "grant-M05-16-R",
+      "assignment": "mediated_4",
+      "scope": "north_depot",
+      "status": "served",
+      "reason": "verified_bytes",
+      "observed_sha256": "b5a6f7b75b666a9d1fca72fadc3dde369590a7127645202cbeb1b420b686ee5c",
+      "observed_byte_count": 150,
+      "served_byte_count": 150,
+      "observed_at": "2026-10-08T05:01:32.625623+00:00",
+      "time_source": "process_wall_clock"
+    },
+    {
+      "seq": 14,
+      "request_id": "req-M05-16-W",
+      "caller_label": "mediated_4",
+      "caller_authenticated": false,
+      "requested_path": "M05-16-W.json",
+      "grant_id": "grant-M05-16-W",
+      "assignment": "mediated_4",
+      "scope": "north_depot",
+      "status": "denied",
+      "reason": "grant_not_found",
+      "observed_sha256": null,
+      "observed_byte_count": 0,
+      "served_byte_count": 0,
+      "observed_at": "2026-10-08T05:01:32.625627+00:00",
+      "time_source": "process_wall_clock"
+    },
+    {
+      "seq": 15,
+      "request_id": "req-M05-16-C",
+      "caller_label": "mediated_4",
+      "caller_authenticated": false,
+      "requested_path": "M05-16-C.json",
+      "grant_id": "grant-M05-16-C",
+      "assignment": "mediated_4",
+      "scope": "north_depot",
+      "status": "changed",
+      "reason": "content_mismatch",
+      "observed_sha256": "137a0236ccabe4bc7b582c2015e3b3aa5dab9cbc7d87ceb33497750733101b1c",
+      "observed_byte_count": 151,
+      "served_byte_count": 0,
+      "observed_at": "2026-10-08T05:01:32.625639+00:00",
+      "time_source": "process_wall_clock"
+    },
+    {
+      "seq": 16,
+      "request_id": "req-M05-16-S",
+      "caller_label": "mediated_4",
+      "caller_authenticated": false,
+      "requested_path": "M05-16-S.json",
+      "grant_id": "grant-M05-16-S",
+      "assignment": "mediated_4",
+      "scope": "north_depot",
+      "status": "served",
+      "reason": "verified_bytes",
+      "observed_sha256": "b5a6f7b75b666a9d1fca72fadc3dde369590a7127645202cbeb1b420b686ee5c",
+      "observed_byte_count": 150,
+      "served_byte_count": 150,
+      "observed_at": "2026-10-08T05:01:32.625651+00:00",
+      "time_source": "process_wall_clock"
+    }
+  ]
+}

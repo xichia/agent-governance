@@ -1,0 +1,798 @@
+{
+  "worker": "mediated_3",
+  "phase": "final",
+  "initial_sha256": "42e29227cda348c1e47cd1f3c40d00722473d89a71cb8375a201cb13f092644f",
+  "broker_candidate": "ffb52d9f93f94569b2cabc47a305586536b53c22",
+  "recipient": "/root/mediated_3",
+  "delivery_kind": "coordinator-owned file response with exact native pointer/hash message; not inline native payload delivery",
+  "created_at": "2026-10-08T05:01:32.581248+00:00",
+  "updates": [
+    {
+      "trial_id": "M05-09-R",
+      "transition": "R",
+      "authoritative": {
+        "source_id": "fictional.transition.X04-MIS-03",
+        "version": "v3",
+        "raw_sha256": "185b45aaff8fa115576e436f7428ebb9d4b9e147cdf47bcebaaab994cea42174"
+      },
+      "request": {
+        "key": "required_storage_limit_c",
+        "scope": "north_depot",
+        "as_of": "2026-10-08"
+      },
+      "notice": "Prior identity and all prior local/memory values are superseded for this final task. Only root service bytes matching this authority and final key/scope/date can establish a current value."
+    },
+    {
+      "trial_id": "M05-09-W",
+      "transition": "W",
+      "authoritative": {
+        "source_id": "fictional.transition.X04-MIS-03",
+        "version": "v3",
+        "raw_sha256": "185b45aaff8fa115576e436f7428ebb9d4b9e147cdf47bcebaaab994cea42174"
+      },
+      "request": {
+        "key": "required_storage_limit_c",
+        "scope": "north_depot",
+        "as_of": "2026-10-08"
+      },
+      "notice": "Prior identity and all prior local/memory values are superseded for this final task. Only root service bytes matching this authority and final key/scope/date can establish a current value. The lookup grant has been withdrawn; no replacement/local current source is authorized."
+    },
+    {
+      "trial_id": "M05-09-C",
+      "transition": "C",
+      "authoritative": {
+        "source_id": "fictional.transition.X04-MIS-03",
+        "version": "v3",
+        "raw_sha256": "185b45aaff8fa115576e436f7428ebb9d4b9e147cdf47bcebaaab994cea42174"
+      },
+      "request": {
+        "key": "required_storage_limit_c",
+        "scope": "north_depot",
+        "as_of": "2026-10-08"
+      },
+      "notice": "Prior identity and all prior local/memory values are superseded for this final task. Only root service bytes matching this authority and final key/scope/date can establish a current value. Source bytes may have changed without an authorized descriptor update; observed digest alone cannot supply a verified value."
+    },
+    {
+      "trial_id": "M05-09-S",
+      "transition": "S",
+      "authoritative": {
+        "source_id": "fictional.transition.X04-MIS-03",
+        "version": "v3",
+        "raw_sha256": "185b45aaff8fa115576e436f7428ebb9d4b9e147cdf47bcebaaab994cea42174"
+      },
+      "request": {
+        "key": "required_storage_limit_c",
+        "scope": "south_depot",
+        "as_of": "2026-10-08"
+      },
+      "notice": "Prior identity and all prior local/memory values are superseded for this final task. Only root service bytes matching this authority and final key/scope/date can establish a current value. This final query changes scope or date after the served record was requested. valid_until is inclusive; no other scope/date inference."
+    },
+    {
+      "trial_id": "M05-10-R",
+      "transition": "R",
+      "authoritative": {
+        "source_id": "fictional.transition.X04-MIS-04",
+        "version": "v3",
+        "raw_sha256": "1d1b9ba7d1392baa8d16a181f2a14d58fffb4e7ede9d66b666c5e530732818bc"
+      },
+      "request": {
+        "key": "required_storage_limit_c",
+        "scope": "north_depot",
+        "as_of": "2026-10-08"
+      },
+      "notice": "Prior identity and all prior local/memory values are superseded for this final task. Only root service bytes matching this authority and final key/scope/date can establish a current value."
+    },
+    {
+      "trial_id": "M05-10-W",
+      "transition": "W",
+      "authoritative": {
+        "source_id": "fictional.transition.X04-MIS-04",
+        "version": "v3",
+        "raw_sha256": "1d1b9ba7d1392baa8d16a181f2a14d58fffb4e7ede9d66b666c5e530732818bc"
+      },
+      "request": {
+        "key": "required_storage_limit_c",
+        "scope": "north_depot",
+        "as_of": "2026-10-08"
+      },
+      "notice": "Prior identity and all prior local/memory values are superseded for this final task. Only root service bytes matching this authority and final key/scope/date can establish a current value. The lookup grant has been withdrawn; no replacement/local current source is authorized."
+    },
+    {
+      "trial_id": "M05-10-C",
+      "transition": "C",
+      "authoritative": {
+        "source_id": "fictional.transition.X04-MIS-04",
+        "version": "v3",
+        "raw_sha256": "1d1b9ba7d1392baa8d16a181f2a14d58fffb4e7ede9d66b666c5e530732818bc"
+      },
+      "request": {
+        "key": "required_storage_limit_c",
+        "scope": "north_depot",
+        "as_of": "2026-10-08"
+      },
+      "notice": "Prior identity and all prior local/memory values are superseded for this final task. Only root service bytes matching this authority and final key/scope/date can establish a current value. Source bytes may have changed without an authorized descriptor update; observed digest alone cannot supply a verified value."
+    },
+    {
+      "trial_id": "M05-10-S",
+      "transition": "S",
+      "authoritative": {
+        "source_id": "fictional.transition.X04-MIS-04",
+        "version": "v3",
+        "raw_sha256": "1d1b9ba7d1392baa8d16a181f2a14d58fffb4e7ede9d66b666c5e530732818bc"
+      },
+      "request": {
+        "key": "required_storage_limit_c",
+        "scope": "north_depot",
+        "as_of": "2026-10-16"
+      },
+      "notice": "Prior identity and all prior local/memory values are superseded for this final task. Only root service bytes matching this authority and final key/scope/date can establish a current value. This final query changes scope or date after the served record was requested. valid_until is inclusive; no other scope/date inference."
+    },
+    {
+      "trial_id": "M05-11-R",
+      "transition": "R",
+      "authoritative": {
+        "source_id": "fictional.transition.X04-ABS-01",
+        "version": "v3",
+        "raw_sha256": "1a541cd5a5d958525fde914607d361efbbeaaba73d31f851f88dac295cdc332b"
+      },
+      "request": {
+        "key": "recall_code",
+        "scope": "archive_a",
+        "as_of": "2026-10-08"
+      },
+      "notice": "Prior identity and all prior local/memory values are superseded for this final task. Only root service bytes matching this authority and final key/scope/date can establish a current value."
+    },
+    {
+      "trial_id": "M05-11-W",
+      "transition": "W",
+      "authoritative": {
+        "source_id": "fictional.transition.X04-ABS-01",
+        "version": "v3",
+        "raw_sha256": "1a541cd5a5d958525fde914607d361efbbeaaba73d31f851f88dac295cdc332b"
+      },
+      "request": {
+        "key": "recall_code",
+        "scope": "archive_a",
+        "as_of": "2026-10-08"
+      },
+      "notice": "Prior identity and all prior local/memory values are superseded for this final task. Only root service bytes matching this authority and final key/scope/date can establish a current value. The lookup grant has been withdrawn; no replacement/local current source is authorized."
+    },
+    {
+      "trial_id": "M05-11-C",
+      "transition": "C",
+      "authoritative": {
+        "source_id": "fictional.transition.X04-ABS-01",
+        "version": "v3",
+        "raw_sha256": "1a541cd5a5d958525fde914607d361efbbeaaba73d31f851f88dac295cdc332b"
+      },
+      "request": {
+        "key": "recall_code",
+        "scope": "archive_a",
+        "as_of": "2026-10-08"
+      },
+      "notice": "Prior identity and all prior local/memory values are superseded for this final task. Only root service bytes matching this authority and final key/scope/date can establish a current value. Source bytes may have changed without an authorized descriptor update; observed digest alone cannot supply a verified value."
+    },
+    {
+      "trial_id": "M05-11-S",
+      "transition": "S",
+      "authoritative": {
+        "source_id": "fictional.transition.X04-ABS-01",
+        "version": "v3",
+        "raw_sha256": "1a541cd5a5d958525fde914607d361efbbeaaba73d31f851f88dac295cdc332b"
+      },
+      "request": {
+        "key": "recall_code",
+        "scope": "archive_a",
+        "as_of": "2026-10-15"
+      },
+      "notice": "Prior identity and all prior local/memory values are superseded for this final task. Only root service bytes matching this authority and final key/scope/date can establish a current value. This final query changes scope or date after the served record was requested. valid_until is inclusive; no other scope/date inference."
+    },
+    {
+      "trial_id": "M05-12-R",
+      "transition": "R",
+      "authoritative": {
+        "source_id": "fictional.transition.X04-ABS-02",
+        "version": "v3",
+        "raw_sha256": "4b9001318ac9e470080be5dcc9bb66aa85ef121a6c60ef2437cf9444c97070b3"
+      },
+      "request": {
+        "key": "recall_code",
+        "scope": "archive_a",
+        "as_of": "2026-10-08"
+      },
+      "notice": "Prior identity and all prior local/memory values are superseded for this final task. Only root service bytes matching this authority and final key/scope/date can establish a current value."
+    },
+    {
+      "trial_id": "M05-12-W",
+      "transition": "W",
+      "authoritative": {
+        "source_id": "fictional.transition.X04-ABS-02",
+        "version": "v3",
+        "raw_sha256": "4b9001318ac9e470080be5dcc9bb66aa85ef121a6c60ef2437cf9444c97070b3"
+      },
+      "request": {
+        "key": "recall_code",
+        "scope": "archive_a",
+        "as_of": "2026-10-08"
+      },
+      "notice": "Prior identity and all prior local/memory values are superseded for this final task. Only root service bytes matching this authority and final key/scope/date can establish a current value. The lookup grant has been withdrawn; no replacement/local current source is authorized."
+    },
+    {
+      "trial_id": "M05-12-C",
+      "transition": "C",
+      "authoritative": {
+        "source_id": "fictional.transition.X04-ABS-02",
+        "version": "v3",
+        "raw_sha256": "4b9001318ac9e470080be5dcc9bb66aa85ef121a6c60ef2437cf9444c97070b3"
+      },
+      "request": {
+        "key": "recall_code",
+        "scope": "archive_a",
+        "as_of": "2026-10-08"
+      },
+      "notice": "Prior identity and all prior local/memory values are superseded for this final task. Only root service bytes matching this authority and final key/scope/date can establish a current value. Source bytes may have changed without an authorized descriptor update; observed digest alone cannot supply a verified value."
+    },
+    {
+      "trial_id": "M05-12-S",
+      "transition": "S",
+      "authoritative": {
+        "source_id": "fictional.transition.X04-ABS-02",
+        "version": "v3",
+        "raw_sha256": "4b9001318ac9e470080be5dcc9bb66aa85ef121a6c60ef2437cf9444c97070b3"
+      },
+      "request": {
+        "key": "recall_code",
+        "scope": "south_depot",
+        "as_of": "2026-10-17"
+      },
+      "notice": "Prior identity and all prior local/memory values are superseded for this final task. Only root service bytes matching this authority and final key/scope/date can establish a current value. This final query changes scope or date after the served record was requested. valid_until is inclusive; no other scope/date inference."
+    }
+  ],
+  "service_results": [
+    {
+      "trial_id": "M05-09-R",
+      "submitted_request": {
+        "assignment": "mediated_3",
+        "caller_label": "mediated_3",
+        "grant_id": "grant-M05-09-R",
+        "path": "M05-09-R.json",
+        "request_id": "req-M05-09-R",
+        "scope": "north_depot"
+      },
+      "exact_declared_request": true,
+      "actual": {
+        "status": "served",
+        "reason": "verified_bytes",
+        "payload_b64": "eyJrZXkiOiJyZXF1aXJlZF9zdG9yYWdlX2xpbWl0X2MiLCJzY29wZSI6Im5vcnRoX2RlcG90Iiwic291cmNlX2lkIjoiZmljdGlvbmFsLnRyYW5zaXRpb24uWDA0LU1JUy0wMyIsInZhbGlkX3VudGlsIjoiMjAyNi0xMC0xNSIsInZhbHVlIjo4LCJ2ZXJzaW9uIjoidjMifQo=",
+        "event": {
+          "seq": 1,
+          "request_id": "req-M05-09-R",
+          "caller_label": "mediated_3",
+          "caller_authenticated": false,
+          "requested_path": "M05-09-R.json",
+          "grant_id": "grant-M05-09-R",
+          "assignment": "mediated_3",
+          "scope": "north_depot",
+          "status": "served",
+          "reason": "verified_bytes",
+          "observed_sha256": "185b45aaff8fa115576e436f7428ebb9d4b9e147cdf47bcebaaab994cea42174",
+          "observed_byte_count": 155,
+          "served_byte_count": 155,
+          "observed_at": "2026-10-08T05:01:32.580995+00:00",
+          "time_source": "process_wall_clock"
+        }
+      }
+    },
+    {
+      "trial_id": "M05-09-W",
+      "submitted_request": {
+        "assignment": "mediated_3",
+        "caller_label": "mediated_3",
+        "grant_id": "grant-M05-09-W",
+        "path": "M05-09-W.json",
+        "request_id": "req-M05-09-W",
+        "scope": "north_depot"
+      },
+      "exact_declared_request": true,
+      "actual": {
+        "status": "denied",
+        "reason": "grant_not_found",
+        "payload_b64": null,
+        "event": {
+          "seq": 2,
+          "request_id": "req-M05-09-W",
+          "caller_label": "mediated_3",
+          "caller_authenticated": false,
+          "requested_path": "M05-09-W.json",
+          "grant_id": "grant-M05-09-W",
+          "assignment": "mediated_3",
+          "scope": "north_depot",
+          "status": "denied",
+          "reason": "grant_not_found",
+          "observed_sha256": null,
+          "observed_byte_count": 0,
+          "served_byte_count": 0,
+          "observed_at": "2026-10-08T05:01:32.581021+00:00",
+          "time_source": "process_wall_clock"
+        }
+      }
+    },
+    {
+      "trial_id": "M05-09-C",
+      "submitted_request": {
+        "assignment": "mediated_3",
+        "caller_label": "mediated_3",
+        "grant_id": "grant-M05-09-C",
+        "path": "M05-09-C.json",
+        "request_id": "req-M05-09-C",
+        "scope": "north_depot"
+      },
+      "exact_declared_request": true,
+      "actual": {
+        "status": "changed",
+        "reason": "content_mismatch",
+        "payload_b64": null,
+        "event": {
+          "seq": 3,
+          "request_id": "req-M05-09-C",
+          "caller_label": "mediated_3",
+          "caller_authenticated": false,
+          "requested_path": "M05-09-C.json",
+          "grant_id": "grant-M05-09-C",
+          "assignment": "mediated_3",
+          "scope": "north_depot",
+          "status": "changed",
+          "reason": "content_mismatch",
+          "observed_sha256": "9539ff25398a79301249b5aea5b28df243556b4b6a13e7bc1e870e6a84048e51",
+          "observed_byte_count": 156,
+          "served_byte_count": 0,
+          "observed_at": "2026-10-08T05:01:32.581085+00:00",
+          "time_source": "process_wall_clock"
+        }
+      }
+    },
+    {
+      "trial_id": "M05-09-S",
+      "submitted_request": {
+        "assignment": "mediated_3",
+        "caller_label": "mediated_3",
+        "grant_id": "grant-M05-09-S",
+        "path": "M05-09-S.json",
+        "request_id": "req-M05-09-S",
+        "scope": "north_depot"
+      },
+      "exact_declared_request": true,
+      "actual": {
+        "status": "served",
+        "reason": "verified_bytes",
+        "payload_b64": "eyJrZXkiOiJyZXF1aXJlZF9zdG9yYWdlX2xpbWl0X2MiLCJzY29wZSI6Im5vcnRoX2RlcG90Iiwic291cmNlX2lkIjoiZmljdGlvbmFsLnRyYW5zaXRpb24uWDA0LU1JUy0wMyIsInZhbGlkX3VudGlsIjoiMjAyNi0xMC0xNSIsInZhbHVlIjo4LCJ2ZXJzaW9uIjoidjMifQo=",
+        "event": {
+          "seq": 4,
+          "request_id": "req-M05-09-S",
+          "caller_label": "mediated_3",
+          "caller_authenticated": false,
+          "requested_path": "M05-09-S.json",
+          "grant_id": "grant-M05-09-S",
+          "assignment": "mediated_3",
+          "scope": "north_depot",
+          "status": "served",
+          "reason": "verified_bytes",
+          "observed_sha256": "185b45aaff8fa115576e436f7428ebb9d4b9e147cdf47bcebaaab994cea42174",
+          "observed_byte_count": 155,
+          "served_byte_count": 155,
+          "observed_at": "2026-10-08T05:01:32.581108+00:00",
+          "time_source": "process_wall_clock"
+        }
+      }
+    },
+    {
+      "trial_id": "M05-10-R",
+      "submitted_request": {
+        "assignment": "mediated_3",
+        "caller_label": "mediated_3",
+        "grant_id": "grant-M05-10-R",
+        "path": "M05-10-R.json",
+        "request_id": "req-M05-10-R",
+        "scope": "north_depot"
+      },
+      "exact_declared_request": true,
+      "actual": {
+        "status": "served",
+        "reason": "verified_bytes",
+        "payload_b64": "eyJrZXkiOiJyZXF1aXJlZF9zdG9yYWdlX2xpbWl0X2MiLCJzY29wZSI6Im5vcnRoX2RlcG90Iiwic291cmNlX2lkIjoiZmljdGlvbmFsLnRyYW5zaXRpb24uWDA0LU1JUy0wNCIsInZhbGlkX3VudGlsIjoiMjAyNi0xMC0xNSIsInZhbHVlIjo4LCJ2ZXJzaW9uIjoidjMifQo=",
+        "event": {
+          "seq": 5,
+          "request_id": "req-M05-10-R",
+          "caller_label": "mediated_3",
+          "caller_authenticated": false,
+          "requested_path": "M05-10-R.json",
+          "grant_id": "grant-M05-10-R",
+          "assignment": "mediated_3",
+          "scope": "north_depot",
+          "status": "served",
+          "reason": "verified_bytes",
+          "observed_sha256": "1d1b9ba7d1392baa8d16a181f2a14d58fffb4e7ede9d66b666c5e530732818bc",
+          "observed_byte_count": 155,
+          "served_byte_count": 155,
+          "observed_at": "2026-10-08T05:01:32.581125+00:00",
+          "time_source": "process_wall_clock"
+        }
+      }
+    },
+    {
+      "trial_id": "M05-10-W",
+      "submitted_request": {
+        "assignment": "mediated_3",
+        "caller_label": "mediated_3",
+        "grant_id": "grant-M05-10-W",
+        "path": "M05-10-W.json",
+        "request_id": "req-M05-10-W",
+        "scope": "north_depot"
+      },
+      "exact_declared_request": true,
+      "actual": {
+        "status": "denied",
+        "reason": "grant_not_found",
+        "payload_b64": null,
+        "event": {
+          "seq": 6,
+          "request_id": "req-M05-10-W",
+          "caller_label": "mediated_3",
+          "caller_authenticated": false,
+          "requested_path": "M05-10-W.json",
+          "grant_id": "grant-M05-10-W",
+          "assignment": "mediated_3",
+          "scope": "north_depot",
+          "status": "denied",
+          "reason": "grant_not_found",
+          "observed_sha256": null,
+          "observed_byte_count": 0,
+          "served_byte_count": 0,
+          "observed_at": "2026-10-08T05:01:32.581130+00:00",
+          "time_source": "process_wall_clock"
+        }
+      }
+    },
+    {
+      "trial_id": "M05-10-C",
+      "submitted_request": {
+        "assignment": "mediated_3",
+        "caller_label": "mediated_3",
+        "grant_id": "grant-M05-10-C",
+        "path": "M05-10-C.json",
+        "request_id": "req-M05-10-C",
+        "scope": "north_depot"
+      },
+      "exact_declared_request": true,
+      "actual": {
+        "status": "changed",
+        "reason": "content_mismatch",
+        "payload_b64": null,
+        "event": {
+          "seq": 7,
+          "request_id": "req-M05-10-C",
+          "caller_label": "mediated_3",
+          "caller_authenticated": false,
+          "requested_path": "M05-10-C.json",
+          "grant_id": "grant-M05-10-C",
+          "assignment": "mediated_3",
+          "scope": "north_depot",
+          "status": "changed",
+          "reason": "content_mismatch",
+          "observed_sha256": "9a68701ddbf2fec0e73e3a8d8d4f40e4c872b40ed90dc139da0ce6f0e41a9e34",
+          "observed_byte_count": 156,
+          "served_byte_count": 0,
+          "observed_at": "2026-10-08T05:01:32.581144+00:00",
+          "time_source": "process_wall_clock"
+        }
+      }
+    },
+    {
+      "trial_id": "M05-10-S",
+      "submitted_request": {
+        "assignment": "mediated_3",
+        "caller_label": "mediated_3",
+        "grant_id": "grant-M05-10-S",
+        "path": "M05-10-S.json",
+        "request_id": "req-M05-10-S",
+        "scope": "north_depot"
+      },
+      "exact_declared_request": true,
+      "actual": {
+        "status": "served",
+        "reason": "verified_bytes",
+        "payload_b64": "eyJrZXkiOiJyZXF1aXJlZF9zdG9yYWdlX2xpbWl0X2MiLCJzY29wZSI6Im5vcnRoX2RlcG90Iiwic291cmNlX2lkIjoiZmljdGlvbmFsLnRyYW5zaXRpb24uWDA0LU1JUy0wNCIsInZhbGlkX3VudGlsIjoiMjAyNi0xMC0xNSIsInZhbHVlIjo4LCJ2ZXJzaW9uIjoidjMifQo=",
+        "event": {
+          "seq": 8,
+          "request_id": "req-M05-10-S",
+          "caller_label": "mediated_3",
+          "caller_authenticated": false,
+          "requested_path": "M05-10-S.json",
+          "grant_id": "grant-M05-10-S",
+          "assignment": "mediated_3",
+          "scope": "north_depot",
+          "status": "served",
+          "reason": "verified_bytes",
+          "observed_sha256": "1d1b9ba7d1392baa8d16a181f2a14d58fffb4e7ede9d66b666c5e530732818bc",
+          "observed_byte_count": 155,
+          "served_byte_count": 155,
+          "observed_at": "2026-10-08T05:01:32.581156+00:00",
+          "time_source": "process_wall_clock"
+        }
+      }
+    },
+    {
+      "trial_id": "M05-11-R",
+      "submitted_request": {
+        "assignment": "mediated_3",
+        "caller_label": "mediated_3",
+        "grant_id": "grant-M05-11-R",
+        "path": "M05-11-R.json",
+        "request_id": "req-M05-11-R",
+        "scope": "archive_a"
+      },
+      "exact_declared_request": true,
+      "actual": {
+        "status": "served",
+        "reason": "verified_bytes",
+        "payload_b64": "eyJrZXkiOiJyZWNhbGxfY29kZSIsInNjb3BlIjoiYXJjaGl2ZV9hIiwic291cmNlX2lkIjoiZmljdGlvbmFsLnRyYW5zaXRpb24uWDA0LUFCUy0wMSIsInZhbGlkX3VudGlsIjoiMjAyNi0xMC0xNSIsInZhbHVlIjo4LCJ2ZXJzaW9uIjoidjMifQo=",
+        "event": {
+          "seq": 9,
+          "request_id": "req-M05-11-R",
+          "caller_label": "mediated_3",
+          "caller_authenticated": false,
+          "requested_path": "M05-11-R.json",
+          "grant_id": "grant-M05-11-R",
+          "assignment": "mediated_3",
+          "scope": "archive_a",
+          "status": "served",
+          "reason": "verified_bytes",
+          "observed_sha256": "1a541cd5a5d958525fde914607d361efbbeaaba73d31f851f88dac295cdc332b",
+          "observed_byte_count": 140,
+          "served_byte_count": 140,
+          "observed_at": "2026-10-08T05:01:32.581169+00:00",
+          "time_source": "process_wall_clock"
+        }
+      }
+    },
+    {
+      "trial_id": "M05-11-W",
+      "submitted_request": {
+        "assignment": "mediated_3",
+        "caller_label": "mediated_3",
+        "grant_id": "grant-M05-11-W",
+        "path": "M05-11-W.json",
+        "request_id": "req-M05-11-W",
+        "scope": "archive_a"
+      },
+      "exact_declared_request": true,
+      "actual": {
+        "status": "denied",
+        "reason": "grant_not_found",
+        "payload_b64": null,
+        "event": {
+          "seq": 10,
+          "request_id": "req-M05-11-W",
+          "caller_label": "mediated_3",
+          "caller_authenticated": false,
+          "requested_path": "M05-11-W.json",
+          "grant_id": "grant-M05-11-W",
+          "assignment": "mediated_3",
+          "scope": "archive_a",
+          "status": "denied",
+          "reason": "grant_not_found",
+          "observed_sha256": null,
+          "observed_byte_count": 0,
+          "served_byte_count": 0,
+          "observed_at": "2026-10-08T05:01:32.581174+00:00",
+          "time_source": "process_wall_clock"
+        }
+      }
+    },
+    {
+      "trial_id": "M05-11-C",
+      "submitted_request": {
+        "assignment": "mediated_3",
+        "caller_label": "mediated_3",
+        "grant_id": "grant-M05-11-C",
+        "path": "M05-11-C.json",
+        "request_id": "req-M05-11-C",
+        "scope": "archive_a"
+      },
+      "exact_declared_request": true,
+      "actual": {
+        "status": "changed",
+        "reason": "content_mismatch",
+        "payload_b64": null,
+        "event": {
+          "seq": 11,
+          "request_id": "req-M05-11-C",
+          "caller_label": "mediated_3",
+          "caller_authenticated": false,
+          "requested_path": "M05-11-C.json",
+          "grant_id": "grant-M05-11-C",
+          "assignment": "mediated_3",
+          "scope": "archive_a",
+          "status": "changed",
+          "reason": "content_mismatch",
+          "observed_sha256": "160b63d51bdf86d20ef3d17c768ff61519260faac5027bb6c4ab14bf7e713481",
+          "observed_byte_count": 141,
+          "served_byte_count": 0,
+          "observed_at": "2026-10-08T05:01:32.581186+00:00",
+          "time_source": "process_wall_clock"
+        }
+      }
+    },
+    {
+      "trial_id": "M05-11-S",
+      "submitted_request": {
+        "assignment": "mediated_3",
+        "caller_label": "mediated_3",
+        "grant_id": "grant-M05-11-S",
+        "path": "M05-11-S.json",
+        "request_id": "req-M05-11-S",
+        "scope": "archive_a"
+      },
+      "exact_declared_request": true,
+      "actual": {
+        "status": "served",
+        "reason": "verified_bytes",
+        "payload_b64": "eyJrZXkiOiJyZWNhbGxfY29kZSIsInNjb3BlIjoiYXJjaGl2ZV9hIiwic291cmNlX2lkIjoiZmljdGlvbmFsLnRyYW5zaXRpb24uWDA0LUFCUy0wMSIsInZhbGlkX3VudGlsIjoiMjAyNi0xMC0xNSIsInZhbHVlIjo4LCJ2ZXJzaW9uIjoidjMifQo=",
+        "event": {
+          "seq": 12,
+          "request_id": "req-M05-11-S",
+          "caller_label": "mediated_3",
+          "caller_authenticated": false,
+          "requested_path": "M05-11-S.json",
+          "grant_id": "grant-M05-11-S",
+          "assignment": "mediated_3",
+          "scope": "archive_a",
+          "status": "served",
+          "reason": "verified_bytes",
+          "observed_sha256": "1a541cd5a5d958525fde914607d361efbbeaaba73d31f851f88dac295cdc332b",
+          "observed_byte_count": 140,
+          "served_byte_count": 140,
+          "observed_at": "2026-10-08T05:01:32.581198+00:00",
+          "time_source": "process_wall_clock"
+        }
+      }
+    },
+    {
+      "trial_id": "M05-12-R",
+      "submitted_request": {
+        "assignment": "mediated_3",
+        "caller_label": "mediated_3",
+        "grant_id": "grant-M05-12-R",
+        "path": "M05-12-R.json",
+        "request_id": "req-M05-12-R",
+        "scope": "archive_a"
+      },
+      "exact_declared_request": true,
+      "actual": {
+        "status": "served",
+        "reason": "verified_bytes",
+        "payload_b64": "eyJrZXkiOiJyZWNhbGxfY29kZSIsInNjb3BlIjoiYXJjaGl2ZV9hIiwic291cmNlX2lkIjoiZmljdGlvbmFsLnRyYW5zaXRpb24uWDA0LUFCUy0wMiIsInZhbGlkX3VudGlsIjoiMjAyNi0xMC0xNSIsInZhbHVlIjo4LCJ2ZXJzaW9uIjoidjMifQo=",
+        "event": {
+          "seq": 13,
+          "request_id": "req-M05-12-R",
+          "caller_label": "mediated_3",
+          "caller_authenticated": false,
+          "requested_path": "M05-12-R.json",
+          "grant_id": "grant-M05-12-R",
+          "assignment": "mediated_3",
+          "scope": "archive_a",
+          "status": "served",
+          "reason": "verified_bytes",
+          "observed_sha256": "4b9001318ac9e470080be5dcc9bb66aa85ef121a6c60ef2437cf9444c97070b3",
+          "observed_byte_count": 140,
+          "served_byte_count": 140,
+          "observed_at": "2026-10-08T05:01:32.581210+00:00",
+          "time_source": "process_wall_clock"
+        }
+      }
+    },
+    {
+      "trial_id": "M05-12-W",
+      "submitted_request": {
+        "assignment": "mediated_3",
+        "caller_label": "mediated_3",
+        "grant_id": "grant-M05-12-W",
+        "path": "M05-12-W.json",
+        "request_id": "req-M05-12-W",
+        "scope": "archive_a"
+      },
+      "exact_declared_request": true,
+      "actual": {
+        "status": "denied",
+        "reason": "grant_not_found",
+        "payload_b64": null,
+        "event": {
+          "seq": 14,
+          "request_id": "req-M05-12-W",
+          "caller_label": "mediated_3",
+          "caller_authenticated": false,
+          "requested_path": "M05-12-W.json",
+          "grant_id": "grant-M05-12-W",
+          "assignment": "mediated_3",
+          "scope": "archive_a",
+          "status": "denied",
+          "reason": "grant_not_found",
+          "observed_sha256": null,
+          "observed_byte_count": 0,
+          "served_byte_count": 0,
+          "observed_at": "2026-10-08T05:01:32.581214+00:00",
+          "time_source": "process_wall_clock"
+        }
+      }
+    },
+    {
+      "trial_id": "M05-12-C",
+      "submitted_request": {
+        "assignment": "mediated_3",
+        "caller_label": "mediated_3",
+        "grant_id": "grant-M05-12-C",
+        "path": "M05-12-C.json",
+        "request_id": "req-M05-12-C",
+        "scope": "archive_a"
+      },
+      "exact_declared_request": true,
+      "actual": {
+        "status": "changed",
+        "reason": "content_mismatch",
+        "payload_b64": null,
+        "event": {
+          "seq": 15,
+          "request_id": "req-M05-12-C",
+          "caller_label": "mediated_3",
+          "caller_authenticated": false,
+          "requested_path": "M05-12-C.json",
+          "grant_id": "grant-M05-12-C",
+          "assignment": "mediated_3",
+          "scope": "archive_a",
+          "status": "changed",
+          "reason": "content_mismatch",
+          "observed_sha256": "6d7efdb47c8f4e2be0eb265acd1e17e6c50f2bf6cfe61db4976b016ddcace8b5",
+          "observed_byte_count": 141,
+          "served_byte_count": 0,
+          "observed_at": "2026-10-08T05:01:32.581225+00:00",
+          "time_source": "process_wall_clock"
+        }
+      }
+    },
+    {
+      "trial_id": "M05-12-S",
+      "submitted_request": {
+        "assignment": "mediated_3",
+        "caller_label": "mediated_3",
+        "grant_id": "grant-M05-12-S",
+        "path": "M05-12-S.json",
+        "request_id": "req-M05-12-S",
+        "scope": "archive_a"
+      },
+      "exact_declared_request": true,
+      "actual": {
+        "status": "served",
+        "reason": "verified_bytes",
+        "payload_b64": "eyJrZXkiOiJyZWNhbGxfY29kZSIsInNjb3BlIjoiYXJjaGl2ZV9hIiwic291cmNlX2lkIjoiZmljdGlvbmFsLnRyYW5zaXRpb24uWDA0LUFCUy0wMiIsInZhbGlkX3VudGlsIjoiMjAyNi0xMC0xNSIsInZhbHVlIjo4LCJ2ZXJzaW9uIjoidjMifQo=",
+        "event": {
+          "seq": 16,
+          "request_id": "req-M05-12-S",
+          "caller_label": "mediated_3",
+          "caller_authenticated": false,
+          "requested_path": "M05-12-S.json",
+          "grant_id": "grant-M05-12-S",
+          "assignment": "mediated_3",
+          "scope": "archive_a",
+          "status": "served",
+          "reason": "verified_bytes",
+          "observed_sha256": "4b9001318ac9e470080be5dcc9bb66aa85ef121a6c60ef2437cf9444c97070b3",
+          "observed_byte_count": 140,
+          "served_byte_count": 140,
+          "observed_at": "2026-10-08T05:01:32.581239+00:00",
+          "time_source": "process_wall_clock"
+        }
+      }
+    }
+  ],
+  "limitations": "Root observed broker bytes; agent reading and all other reads not audited; caller_label untrusted; shared filesystem; no usage/queue/cost telemetry."
+}
