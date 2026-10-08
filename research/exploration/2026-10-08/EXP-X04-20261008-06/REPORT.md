@@ -1,6 +1,6 @@
 # Semantic source-status preservation — EXP-X04-20261008-06
 
-**Active draft, incomplete and not independently accepted.** The evidence-first condition C still has 64 final records pending. The current 192 final records have 191 structured answer matches, zero structured false-current claims and 191 exact service correspondences. An admissible refresh was incorrectly left unresolved with incorrect scope prose, and a separate answer copied an incorrect service sequence. Both original errors remain in the raw artifacts. Structured safe unknown is a narrower result than prose correctness.
+**Fixed-candidate draft pending independent review.** All four executors actually completed and stopped. The 256 final records have 255 structured answer matches, zero structured false-current claims and 255 exact service correspondences. An admissible refresh was incorrectly left unresolved with incorrect scope prose, and a separate answer copied an incorrect service sequence. Both original errors remain in the raw artifacts. Structured safe unknown is narrower than prose correctness; independent manual review remains required before acceptance.
 
 ## Objective and evidence
 
@@ -8,15 +8,15 @@ Package05's 64 final transition records matched its oracle, but all four executo
 
 Inputs were frozen before dispatch at d3da0c762e060db379403c1ecfd57f3eba35d9fc. Exact archived05 receipt exports bind the final query, fictional authority and payload identity. There are 64 unique actual05 broker events, 32 served, 16 denied and 16 changed, and zero new06 broker invocations. The 256 presentations do not create 256 new events or independent judgments. [PLAN](PLAN.md), [METHOD](METHOD.md), the frozen manifest, raw trial files, snapshots and native staged-message records provide reproducible evidence and limitations.
 
-## Current delivered observations
+## Delivered observations
 
 | Presentation | Delivered | Structured matches | Supported current | Structured unknown | False current | Service correspondence |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
 | A: complete packet with historic distraction | 64 | 64 | 20 | 44 | 0 | 64 |
 | B: concise packet plus exact archived pointer | 64 | 64 | 20 | 44 | 0 | 63 |
-| C: evidence before authority/query | 0 final; 64 preliminary pending | unavailable | unavailable | unavailable | unavailable | unavailable |
+| C: evidence before authority/query | 64 | 64 | 20 | 44 | 0 | 64 |
 | D: superseded claims before dated update | 64 | 63 | 19 | 45 | 0 | 64 |
-| Total final so far | 192 | 191 | 59 | 133 | 0 | 191 |
+| Total final | 256 | 255 | 79 | 177 | 0 | 255 |
 
 B first delivered eight answers, stopped, and then delivered only the 56 previously unanswered IDs in a separate continuation file. The eight original answers were snapshotted and not retried. C/D preliminary pending records are retained separately, not counted in final totals. All actual raw answers remain immutable after submission.
 
@@ -32,7 +32,7 @@ A/C reported incidental failed output-path attempts, and A reported temporary-fi
 
 ## Review, acceptance and recommendations
 
-A distinct configured gpt-6-luna reviewer completed read-only preliminary inspection and is waiting for the full fixed candidate. No final review verdict or completion is claimed. Manual review must compare every reason/limitation and lookup claim with frozen evidence; structured grading does not validate prose. Artifact repairs used: one of maximum two. Preliminary reviewer evidence exposed a reversed-scope account in the coordinator draft; this reporting error is corrected here, and the dated task correction preserves its original history. No raw answer was changed. Original model answers and oracle will not be repaired to improve outcomes.
+A distinct configured gpt-6-luna reviewer completed manual preliminary inspection of192 A/B/D rows against frozen evidence at51e07d2, recorded R-GOV-019-PRE01, and is assigned the complete fixed candidate next. All seven submitted final/preliminary files equal their stop snapshots; full grading reports no missing/duplicate/schema errors. No final review verdict or completion is claimed. Manual review must compare every reason/limitation and lookup claim with frozen evidence; structured grading does not validate prose. Artifact repairs used: one of maximum two. Preliminary reviewer evidence exposed a reversed-scope account in the coordinator draft; this reporting error is corrected here, and the dated task correction preserves its original history. No raw answer was changed. Original model answers and oracle will not be repaired to improve outcomes.
 
 Current source-backed refinement, not operational recommendations: keep structured status, factual prose support, event correspondence and method provenance separate; preserve raw partial and incorrect records; bind authority/query scope and expiry independently of byte service. Each adds evidence/coordination work and should be assessed in bounded tests. A practical next study, if06 completes, would adjudicate claim/receipt support against fixed evidence, including the observed scope and sequence failures and unverifiable method assertions. The sole live [NEXT_PACKAGE](NEXT_PACKAGE.md) remains SAME06 while incomplete.
 
@@ -40,4 +40,4 @@ Current source-backed refinement, not operational recommendations: keep structur
 
 Accepted01 supplies seven primary-source descriptions rather than measured local benefits; no new source scan or newly published development is claimed here, and two documentation dates remain unverified. Packages02/03/04/05 respectively provide scripted fixtures, actual model outputs with unaudited read reports, broker service observations, and script-assisted mediated outputs. Their accepted bytes and historical reviews remain unchanged. X01/T013 stays blocked at1191ac83ddb133fc4c2f14550ef2252737b6bafa with Unicode NBSP/NEL URL false accepts, two exhausted repairs and no extension.
 
-Configured model labels are dispatch settings; actual backend identity, usage, queue and cost are unknown. Shared repository/history, within-worker carryover and one worker per condition prevent blind or isolated comparison and confound worker with presentation. No comparative prompt/topology/efficiency/reliability claim or probabilistic calibration follows. No governance, historical artifact, operations, spending, cadence, idea pool or October15 boundary change is authorized or made. Ownership remains active until actual writers and review stop, with durable SAME06 continuation if incomplete.
+Configured model labels are dispatch settings; actual backend identity, usage, queue and cost are unknown. Shared repository/history, within-worker carryover and one worker per condition prevent blind or isolated comparison and confound worker with presentation. No comparative prompt/topology/efficiency/reliability claim or probabilistic calibration follows. No governance, historical artifact, operations, spending, cadence, idea pool or October15 boundary change is authorized or made. All executor writes have stopped; root ownership remains active through independent review and final persistence. If review or verification remains unfinished, the durable handoff continues SAME06.
