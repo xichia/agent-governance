@@ -1,7 +1,7 @@
 # T-GOV-014 — EXP-X04-20261008-01 primary-source evidence register
 
 - Package ID: **EXP-X04-20261008-01**, from installed CURRENT_HANDOFF seed; no agenda reselection.
-- Status: active. Coordinator / sole register-synthesis writer: `/root`, GPT-6; deployment identity unavailable. Automation/thread: `6ac6e443baec81919649551ebed63365` / `01a10a9e-1700-7373-843c-34814db8a0b1` (matches current CODEX_THREAD_ID).
+- Status: review. Coordinator / sole register-synthesis writer: `/root`, GPT-6; deployment identity unavailable. Automation/thread: `6ac6e443baec81919649551ebed63365` / `01a10a9e-1700-7373-843c-34814db8a0b1` (matches current CODEX_THREAD_ID).
 - Authority: owner's chained-work amendment; research/read-only public sources and new scoped records only. No spending, activation, contacts, governance amendment or historical artifact edits.
 - Base / governance: `ccd776f0254dbaa05ae800315a5b0bf24e7f5c62`, charter 0.1.1; branch `work`.
 - Start: activation 2026-10-08T01:04:56Z. Budget: approximately 60 minutes; checkpoint by02:04:56Z if incomplete. Estimates are not a minimum duration or enforced runtime/cost guarantee. Two repair/recheck rounds maximum for this defined artifact, independent of exhausted X01 budget. No new ideation batch.
@@ -26,3 +26,7 @@ Produce a small primary-source evidence register for context selection, memory l
 Recovery/ownership/framing8min; primary-source gathering24min; cards/synthesis10min; separate review10min; permitted corrections/verification5min; checkpoint/successor3min =60min estimated. No idle filler.
 
 Coordinator owns only new `research/exploration/2026-10-08/EXP-X04-20261008-01/{OWNER.json,REGISTER.md,REPORT.md,CHECKPOINT.md,NEXT_PACKAGE.md}` plus this task and scoped progress. Distinct reviewer owns only new review records. Coordinator retains ownership until register/synthesis writer has stopped; reviewer ownership ends only after actual completion notification. Fixed accepted artifacts stay unchanged; closure-only records can follow.
+
+## History
+
+- 2026-10-08: activation recovered seed handoff, matched current CODEX_THREAD_ID to automation thread and confirmed local absence of conflicting package claim. Atomic new OWNER.json created; prompt CURRENT_HANDOFF updated to active same-package continuation with exact returned prompt and unchanged schedule verified. Source/register writer is coordinator per owner seed; no implementation delegation falsely claimed. Local source lead inspection found seven accessible primary sources, two documentation dates unknown; no local model/performance experiment run. Candidate includes dated register, one falsifiable study and exactly one conditional successor. Active → review; no source/experiment acceptance claimed before separate verdict. Reviewer is a distinct configured gpt-6-luna session, backend identity unavailable; only new R-GOV-014-01/02/03 paths authorized. Current package ownership remains active until outputs stop and review completes.
