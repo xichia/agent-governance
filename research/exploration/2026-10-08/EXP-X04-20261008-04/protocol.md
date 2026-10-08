@@ -1,0 +1,17 @@
+# Local retrieval broker protocol
+
+`broker.py` provides the frozen EXP-X04-20261008-04 interface using only the Python standard library. Construct `Broker(root, grants)` with a trusted fixture directory and the decoded schema-version-1 grants document. Call `retrieve(request)` with `request_id`, `grant_id`, `assignment`, `scope`, `path`, and `caller_label`; it returns `status`, `reason`, `payload_b64`, and the corresponding `event`. The broker retains one event per call in `Broker.events`. Request IDs may repeat; sequence numbers do not.
+
+The grant document has a `grants` array. Each entry supplies a unique nonempty `grant_id`, relative POSIX `path`, nonempty exact `assignment` and `scope`, lowercase raw-byte SHA-256, and `mode` (`read` or `failing`). Invalid configuration raises `InvalidConfiguration` during construction, before retrieval can open a source. Requests require nonempty string values for `request_id`, `grant_id`, `assignment`, `scope`, and `caller_label`; `path` must be a string, while an empty path is a well-shaped request that returns `denied/invalid_path`. Other malformed request shapes return `invalid/invalid_request`. Paths reject absolute spelling, backslashes, NUL, empty components, `.` and `..`. Authorization compares path, assignment, and scope exactly; a failing grant is handled before opening its source. The broker walks from a directory descriptor with no-follow opens, uses nonblocking final opens before checking that the source is regular, rejects symlink components and non-regular final files, and fails closed if those descriptor flags are unavailable.
+
+Statuses and reasons follow the frozen matrix: `served/verified_bytes`, `changed/content_mismatch`, `missing/not_found`, `failing/injected_failure` or `failing/io_failure`, `invalid/invalid_request`, and `denied` with the applicable path, grant, assignment, scope, or file reason. Only `served` returns base64 bytes. A changed file reports its observed digest and byte count but no payload. Other unsuccessful cases report no digest and zero observed and served byte counts. Empty files can be served with an empty base64 string and verified empty-content digest.
+
+Run the matrix with:
+
+```sh
+PYTHONDONTWRITEBYTECODE=1 python broker.py --root fixtures --grants grants.json --cases cases.json
+```
+
+Standard output is one JSON object containing per-case actual and expected summaries, the ordered events, and mismatch counts. The expected values are consulted only after each retrieval. Exit status is zero when all status/reason comparisons match, one on comparison mismatch, and two on invalid input/configuration or CLI I/O failure. Events include a process wall-clock UTC timestamp, unauthenticated caller label, and request provenance fields. Timestamp variation is expected; sequence and result fields are deterministic for unchanged inputs and fixtures.
+
+This is a local audit aid, not an access-control boundary. The root and grant document are trusted inputs. It does not protect against hard links, process or filesystem tampering, another process reading files directly, or a compromised runtime. Events are retained in memory and emitted by the CLI; they are not crash-durable, authenticated, or tamper-evident. A caller label is untrusted and does not identify or authenticate an agent. A receipt establishes the bytes this broker returned, not what a model understood or whether all source access was mediated.

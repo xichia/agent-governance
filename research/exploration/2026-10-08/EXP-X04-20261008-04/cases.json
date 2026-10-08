@@ -1,0 +1,261 @@
+{
+  "schema_version": 1,
+  "cases": [
+    {
+      "id": "B01",
+      "request": {
+        "request_id": "req-B01",
+        "grant_id": "G-good",
+        "assignment": "A1",
+        "scope": "S1",
+        "path": "good.txt",
+        "caller_label": "local-unverified"
+      },
+      "expected": {
+        "status": "served",
+        "reason": "verified_bytes"
+      },
+      "rationale": "The trusted grant matches the request and its fixture bytes match the manifest digest, so a verified read is expected."
+    },
+    {
+      "id": "B02",
+      "request": {
+        "request_id": "req-B02",
+        "grant_id": "G-empty",
+        "assignment": "A1",
+        "scope": "S1",
+        "path": "empty.txt",
+        "caller_label": "local-unverified"
+      },
+      "expected": {
+        "status": "served",
+        "reason": "verified_bytes"
+      },
+      "rationale": "An authorized zero-byte fixture has the SHA-256 digest of the empty byte string; empty content is still a successful verified read."
+    },
+    {
+      "id": "B03",
+      "request": {
+        "request_id": "req-B01",
+        "grant_id": "G-good",
+        "assignment": "A1",
+        "scope": "S1",
+        "path": "good.txt",
+        "caller_label": "local-unverified"
+      },
+      "expected": {
+        "status": "served",
+        "reason": "verified_bytes"
+      },
+      "rationale": "This repeats B01 with the same request_id and request fields; it is a separate invocation and must yield its own served event."
+    },
+    {
+      "id": "B04",
+      "request": {
+        "request_id": "req-B04",
+        "grant_id": "G-missing",
+        "assignment": "A1",
+        "scope": "S1",
+        "path": "missing.txt",
+        "caller_label": "local-unverified"
+      },
+      "expected": {
+        "status": "missing",
+        "reason": "not_found"
+      },
+      "rationale": "The request exactly matches a read grant, but the named fixture does not exist, so retrieval reports missing."
+    },
+    {
+      "id": "B05",
+      "request": {
+        "request_id": "req-B05",
+        "grant_id": "G-failing",
+        "assignment": "A1",
+        "scope": "S1",
+        "path": "good.txt",
+        "caller_label": "local-unverified"
+      },
+      "expected": {
+        "status": "failing",
+        "reason": "injected_failure"
+      },
+      "rationale": "The grant matches but declares failing mode; the injected failure is returned before opening the otherwise present file."
+    },
+    {
+      "id": "B06",
+      "request": {
+        "request_id": "req-B06",
+        "grant_id": "G-changed",
+        "assignment": "A1",
+        "scope": "S1",
+        "path": "changed.txt",
+        "caller_label": "local-unverified"
+      },
+      "expected": {
+        "status": "changed",
+        "reason": "content_mismatch"
+      },
+      "rationale": "The changed fixture is readable under its grant but its raw-byte digest differs from the grant’s pinned digest."
+    },
+    {
+      "id": "B07",
+      "request": {
+        "request_id": "req-B07",
+        "grant_id": "G-no-such-grant",
+        "assignment": "A1",
+        "scope": "S1",
+        "path": "good.txt",
+        "caller_label": "local-unverified"
+      },
+      "expected": {
+        "status": "denied",
+        "reason": "grant_not_found"
+      },
+      "rationale": "The path spelling is safe, but no trusted grant has the requested grant_id."
+    },
+    {
+      "id": "B08",
+      "request": {
+        "request_id": "req-B08",
+        "grant_id": "G-good",
+        "assignment": "A1",
+        "scope": "S1",
+        "path": "",
+        "caller_label": "local-unverified"
+      },
+      "expected": {
+        "status": "denied",
+        "reason": "invalid_path"
+      },
+      "rationale": "The path field is a string but empty, which is outside the permitted relative POSIX path grammar."
+    },
+    {
+      "id": "B09",
+      "request": {
+        "request_id": "req-B09",
+        "grant_id": "G-good",
+        "assignment": "A1",
+        "scope": "S1",
+        "path": "/outside/not-real.txt",
+        "caller_label": "local-unverified"
+      },
+      "expected": {
+        "status": "denied",
+        "reason": "invalid_path"
+      },
+      "rationale": "An absolute path is forbidden even though it is paired with a known grant."
+    },
+    {
+      "id": "B10",
+      "request": {
+        "request_id": "req-B10",
+        "grant_id": "G-good",
+        "assignment": "A1",
+        "scope": "S1",
+        "path": "../good.txt",
+        "caller_label": "local-unverified"
+      },
+      "expected": {
+        "status": "denied",
+        "reason": "invalid_path"
+      },
+      "rationale": "A parent-directory component is forbidden and must not be normalized into an allowed path."
+    },
+    {
+      "id": "B11",
+      "request": {
+        "request_id": "req-B11",
+        "grant_id": "G-good",
+        "assignment": "A1",
+        "scope": "S1",
+        "path": "dir\\good.txt",
+        "caller_label": "local-unverified"
+      },
+      "expected": {
+        "status": "denied",
+        "reason": "invalid_path"
+      },
+      "rationale": "A backslash is forbidden in the POSIX path spelling and must not be treated as a separator."
+    },
+    {
+      "id": "B12",
+      "request": {
+        "request_id": "req-B12",
+        "grant_id": "G-good",
+        "assignment": "A1",
+        "scope": "S1",
+        "path": "./good.txt",
+        "caller_label": "local-unverified"
+      },
+      "expected": {
+        "status": "denied",
+        "reason": "invalid_path"
+      },
+      "rationale": "A dot component is forbidden and must not be normalized away."
+    },
+    {
+      "id": "B13",
+      "request": {
+        "request_id": "req-B13",
+        "grant_id": "G-good",
+        "assignment": "A1",
+        "scope": "S1",
+        "path": "ungranted.txt",
+        "caller_label": "local-unverified"
+      },
+      "expected": {
+        "status": "denied",
+        "reason": "path_not_granted"
+      },
+      "rationale": "The path is a safe relative spelling, but it does not exactly match the path authorized by G-good."
+    },
+    {
+      "id": "B14",
+      "request": {
+        "request_id": "req-B14",
+        "grant_id": "G-good",
+        "assignment": "A2",
+        "scope": "S1",
+        "path": "good.txt",
+        "caller_label": "local-unverified"
+      },
+      "expected": {
+        "status": "denied",
+        "reason": "assignment_mismatch"
+      },
+      "rationale": "Path and grant ID match, but the request assignment differs from the grant’s exact assignment A1."
+    },
+    {
+      "id": "B15",
+      "request": {
+        "request_id": "req-B15",
+        "grant_id": "G-good",
+        "assignment": "A1",
+        "scope": "S2",
+        "path": "good.txt",
+        "caller_label": "local-unverified"
+      },
+      "expected": {
+        "status": "denied",
+        "reason": "scope_mismatch"
+      },
+      "rationale": "Path and grant ID match, but the request scope differs from the grant’s exact scope S1."
+    },
+    {
+      "id": "B16",
+      "request": {
+        "request_id": "req-B16",
+        "grant_id": "G-good",
+        "assignment": "A1",
+        "scope": "S1",
+        "path": "good.txt",
+        "caller_label": "external-claim-16"
+      },
+      "expected": {
+        "status": "served",
+        "reason": "verified_bytes"
+      },
+      "rationale": "The grant and request authority fields match; caller_label is untrusted metadata and does not change authorization, while the event should mark it unauthenticated."
+    }
+  ]
+}

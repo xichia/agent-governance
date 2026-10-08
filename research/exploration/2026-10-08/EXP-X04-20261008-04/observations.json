@@ -1,0 +1,762 @@
+{
+  "results": [
+    {
+      "id": "B01",
+      "actual": {
+        "status": "served",
+        "reason": "verified_bytes",
+        "payload_b64": "ZmljdGlvbmFsIGludmVudG9yeSB2MjogNDAK",
+        "event": {
+          "seq": 1,
+          "request_id": "req-B01",
+          "caller_label": "local-unverified",
+          "caller_authenticated": false,
+          "requested_path": "good.txt",
+          "grant_id": "G-good",
+          "assignment": "A1",
+          "scope": "S1",
+          "status": "served",
+          "reason": "verified_bytes",
+          "observed_sha256": "13c0259118781ada9a17b08900f0323e65cced31df55a182a30e8dd2bc12d81b",
+          "observed_byte_count": 27,
+          "served_byte_count": 27,
+          "observed_at": "2026-10-08T04:11:29.931224+00:00",
+          "time_source": "process_wall_clock"
+        }
+      },
+      "expected": {
+        "status": "served",
+        "reason": "verified_bytes"
+      },
+      "matched": true
+    },
+    {
+      "id": "B02",
+      "actual": {
+        "status": "served",
+        "reason": "verified_bytes",
+        "payload_b64": "",
+        "event": {
+          "seq": 2,
+          "request_id": "req-B02",
+          "caller_label": "local-unverified",
+          "caller_authenticated": false,
+          "requested_path": "empty.txt",
+          "grant_id": "G-empty",
+          "assignment": "A1",
+          "scope": "S1",
+          "status": "served",
+          "reason": "verified_bytes",
+          "observed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "observed_byte_count": 0,
+          "served_byte_count": 0,
+          "observed_at": "2026-10-08T04:11:29.931269+00:00",
+          "time_source": "process_wall_clock"
+        }
+      },
+      "expected": {
+        "status": "served",
+        "reason": "verified_bytes"
+      },
+      "matched": true
+    },
+    {
+      "id": "B03",
+      "actual": {
+        "status": "served",
+        "reason": "verified_bytes",
+        "payload_b64": "ZmljdGlvbmFsIGludmVudG9yeSB2MjogNDAK",
+        "event": {
+          "seq": 3,
+          "request_id": "req-B01",
+          "caller_label": "local-unverified",
+          "caller_authenticated": false,
+          "requested_path": "good.txt",
+          "grant_id": "G-good",
+          "assignment": "A1",
+          "scope": "S1",
+          "status": "served",
+          "reason": "verified_bytes",
+          "observed_sha256": "13c0259118781ada9a17b08900f0323e65cced31df55a182a30e8dd2bc12d81b",
+          "observed_byte_count": 27,
+          "served_byte_count": 27,
+          "observed_at": "2026-10-08T04:11:29.931288+00:00",
+          "time_source": "process_wall_clock"
+        }
+      },
+      "expected": {
+        "status": "served",
+        "reason": "verified_bytes"
+      },
+      "matched": true
+    },
+    {
+      "id": "B04",
+      "actual": {
+        "status": "missing",
+        "reason": "not_found",
+        "payload_b64": null,
+        "event": {
+          "seq": 4,
+          "request_id": "req-B04",
+          "caller_label": "local-unverified",
+          "caller_authenticated": false,
+          "requested_path": "missing.txt",
+          "grant_id": "G-missing",
+          "assignment": "A1",
+          "scope": "S1",
+          "status": "missing",
+          "reason": "not_found",
+          "observed_sha256": null,
+          "observed_byte_count": 0,
+          "served_byte_count": 0,
+          "observed_at": "2026-10-08T04:11:29.931307+00:00",
+          "time_source": "process_wall_clock"
+        }
+      },
+      "expected": {
+        "status": "missing",
+        "reason": "not_found"
+      },
+      "matched": true
+    },
+    {
+      "id": "B05",
+      "actual": {
+        "status": "failing",
+        "reason": "injected_failure",
+        "payload_b64": null,
+        "event": {
+          "seq": 5,
+          "request_id": "req-B05",
+          "caller_label": "local-unverified",
+          "caller_authenticated": false,
+          "requested_path": "good.txt",
+          "grant_id": "G-failing",
+          "assignment": "A1",
+          "scope": "S1",
+          "status": "failing",
+          "reason": "injected_failure",
+          "observed_sha256": null,
+          "observed_byte_count": 0,
+          "served_byte_count": 0,
+          "observed_at": "2026-10-08T04:11:29.931314+00:00",
+          "time_source": "process_wall_clock"
+        }
+      },
+      "expected": {
+        "status": "failing",
+        "reason": "injected_failure"
+      },
+      "matched": true
+    },
+    {
+      "id": "B06",
+      "actual": {
+        "status": "changed",
+        "reason": "content_mismatch",
+        "payload_b64": null,
+        "event": {
+          "seq": 6,
+          "request_id": "req-B06",
+          "caller_label": "local-unverified",
+          "caller_authenticated": false,
+          "requested_path": "changed.txt",
+          "grant_id": "G-changed",
+          "assignment": "A1",
+          "scope": "S1",
+          "status": "changed",
+          "reason": "content_mismatch",
+          "observed_sha256": "3b14bca6b23d86fbab9dbaa0f9535f668bf697ca6155c6c841f90c3ec7b22dd2",
+          "observed_byte_count": 27,
+          "served_byte_count": 0,
+          "observed_at": "2026-10-08T04:11:29.931333+00:00",
+          "time_source": "process_wall_clock"
+        }
+      },
+      "expected": {
+        "status": "changed",
+        "reason": "content_mismatch"
+      },
+      "matched": true
+    },
+    {
+      "id": "B07",
+      "actual": {
+        "status": "denied",
+        "reason": "grant_not_found",
+        "payload_b64": null,
+        "event": {
+          "seq": 7,
+          "request_id": "req-B07",
+          "caller_label": "local-unverified",
+          "caller_authenticated": false,
+          "requested_path": "good.txt",
+          "grant_id": "G-no-such-grant",
+          "assignment": "A1",
+          "scope": "S1",
+          "status": "denied",
+          "reason": "grant_not_found",
+          "observed_sha256": null,
+          "observed_byte_count": 0,
+          "served_byte_count": 0,
+          "observed_at": "2026-10-08T04:11:29.931339+00:00",
+          "time_source": "process_wall_clock"
+        }
+      },
+      "expected": {
+        "status": "denied",
+        "reason": "grant_not_found"
+      },
+      "matched": true
+    },
+    {
+      "id": "B08",
+      "actual": {
+        "status": "denied",
+        "reason": "invalid_path",
+        "payload_b64": null,
+        "event": {
+          "seq": 8,
+          "request_id": "req-B08",
+          "caller_label": "local-unverified",
+          "caller_authenticated": false,
+          "requested_path": "",
+          "grant_id": "G-good",
+          "assignment": "A1",
+          "scope": "S1",
+          "status": "denied",
+          "reason": "invalid_path",
+          "observed_sha256": null,
+          "observed_byte_count": 0,
+          "served_byte_count": 0,
+          "observed_at": "2026-10-08T04:11:29.931345+00:00",
+          "time_source": "process_wall_clock"
+        }
+      },
+      "expected": {
+        "status": "denied",
+        "reason": "invalid_path"
+      },
+      "matched": true
+    },
+    {
+      "id": "B09",
+      "actual": {
+        "status": "denied",
+        "reason": "invalid_path",
+        "payload_b64": null,
+        "event": {
+          "seq": 9,
+          "request_id": "req-B09",
+          "caller_label": "local-unverified",
+          "caller_authenticated": false,
+          "requested_path": "/outside/not-real.txt",
+          "grant_id": "G-good",
+          "assignment": "A1",
+          "scope": "S1",
+          "status": "denied",
+          "reason": "invalid_path",
+          "observed_sha256": null,
+          "observed_byte_count": 0,
+          "served_byte_count": 0,
+          "observed_at": "2026-10-08T04:11:29.931349+00:00",
+          "time_source": "process_wall_clock"
+        }
+      },
+      "expected": {
+        "status": "denied",
+        "reason": "invalid_path"
+      },
+      "matched": true
+    },
+    {
+      "id": "B10",
+      "actual": {
+        "status": "denied",
+        "reason": "invalid_path",
+        "payload_b64": null,
+        "event": {
+          "seq": 10,
+          "request_id": "req-B10",
+          "caller_label": "local-unverified",
+          "caller_authenticated": false,
+          "requested_path": "../good.txt",
+          "grant_id": "G-good",
+          "assignment": "A1",
+          "scope": "S1",
+          "status": "denied",
+          "reason": "invalid_path",
+          "observed_sha256": null,
+          "observed_byte_count": 0,
+          "served_byte_count": 0,
+          "observed_at": "2026-10-08T04:11:29.931355+00:00",
+          "time_source": "process_wall_clock"
+        }
+      },
+      "expected": {
+        "status": "denied",
+        "reason": "invalid_path"
+      },
+      "matched": true
+    },
+    {
+      "id": "B11",
+      "actual": {
+        "status": "denied",
+        "reason": "invalid_path",
+        "payload_b64": null,
+        "event": {
+          "seq": 11,
+          "request_id": "req-B11",
+          "caller_label": "local-unverified",
+          "caller_authenticated": false,
+          "requested_path": "dir\\good.txt",
+          "grant_id": "G-good",
+          "assignment": "A1",
+          "scope": "S1",
+          "status": "denied",
+          "reason": "invalid_path",
+          "observed_sha256": null,
+          "observed_byte_count": 0,
+          "served_byte_count": 0,
+          "observed_at": "2026-10-08T04:11:29.931359+00:00",
+          "time_source": "process_wall_clock"
+        }
+      },
+      "expected": {
+        "status": "denied",
+        "reason": "invalid_path"
+      },
+      "matched": true
+    },
+    {
+      "id": "B12",
+      "actual": {
+        "status": "denied",
+        "reason": "invalid_path",
+        "payload_b64": null,
+        "event": {
+          "seq": 12,
+          "request_id": "req-B12",
+          "caller_label": "local-unverified",
+          "caller_authenticated": false,
+          "requested_path": "./good.txt",
+          "grant_id": "G-good",
+          "assignment": "A1",
+          "scope": "S1",
+          "status": "denied",
+          "reason": "invalid_path",
+          "observed_sha256": null,
+          "observed_byte_count": 0,
+          "served_byte_count": 0,
+          "observed_at": "2026-10-08T04:11:29.931364+00:00",
+          "time_source": "process_wall_clock"
+        }
+      },
+      "expected": {
+        "status": "denied",
+        "reason": "invalid_path"
+      },
+      "matched": true
+    },
+    {
+      "id": "B13",
+      "actual": {
+        "status": "denied",
+        "reason": "path_not_granted",
+        "payload_b64": null,
+        "event": {
+          "seq": 13,
+          "request_id": "req-B13",
+          "caller_label": "local-unverified",
+          "caller_authenticated": false,
+          "requested_path": "ungranted.txt",
+          "grant_id": "G-good",
+          "assignment": "A1",
+          "scope": "S1",
+          "status": "denied",
+          "reason": "path_not_granted",
+          "observed_sha256": null,
+          "observed_byte_count": 0,
+          "served_byte_count": 0,
+          "observed_at": "2026-10-08T04:11:29.931368+00:00",
+          "time_source": "process_wall_clock"
+        }
+      },
+      "expected": {
+        "status": "denied",
+        "reason": "path_not_granted"
+      },
+      "matched": true
+    },
+    {
+      "id": "B14",
+      "actual": {
+        "status": "denied",
+        "reason": "assignment_mismatch",
+        "payload_b64": null,
+        "event": {
+          "seq": 14,
+          "request_id": "req-B14",
+          "caller_label": "local-unverified",
+          "caller_authenticated": false,
+          "requested_path": "good.txt",
+          "grant_id": "G-good",
+          "assignment": "A2",
+          "scope": "S1",
+          "status": "denied",
+          "reason": "assignment_mismatch",
+          "observed_sha256": null,
+          "observed_byte_count": 0,
+          "served_byte_count": 0,
+          "observed_at": "2026-10-08T04:11:29.931372+00:00",
+          "time_source": "process_wall_clock"
+        }
+      },
+      "expected": {
+        "status": "denied",
+        "reason": "assignment_mismatch"
+      },
+      "matched": true
+    },
+    {
+      "id": "B15",
+      "actual": {
+        "status": "denied",
+        "reason": "scope_mismatch",
+        "payload_b64": null,
+        "event": {
+          "seq": 15,
+          "request_id": "req-B15",
+          "caller_label": "local-unverified",
+          "caller_authenticated": false,
+          "requested_path": "good.txt",
+          "grant_id": "G-good",
+          "assignment": "A1",
+          "scope": "S2",
+          "status": "denied",
+          "reason": "scope_mismatch",
+          "observed_sha256": null,
+          "observed_byte_count": 0,
+          "served_byte_count": 0,
+          "observed_at": "2026-10-08T04:11:29.931377+00:00",
+          "time_source": "process_wall_clock"
+        }
+      },
+      "expected": {
+        "status": "denied",
+        "reason": "scope_mismatch"
+      },
+      "matched": true
+    },
+    {
+      "id": "B16",
+      "actual": {
+        "status": "served",
+        "reason": "verified_bytes",
+        "payload_b64": "ZmljdGlvbmFsIGludmVudG9yeSB2MjogNDAK",
+        "event": {
+          "seq": 16,
+          "request_id": "req-B16",
+          "caller_label": "external-claim-16",
+          "caller_authenticated": false,
+          "requested_path": "good.txt",
+          "grant_id": "G-good",
+          "assignment": "A1",
+          "scope": "S1",
+          "status": "served",
+          "reason": "verified_bytes",
+          "observed_sha256": "13c0259118781ada9a17b08900f0323e65cced31df55a182a30e8dd2bc12d81b",
+          "observed_byte_count": 27,
+          "served_byte_count": 27,
+          "observed_at": "2026-10-08T04:11:29.931391+00:00",
+          "time_source": "process_wall_clock"
+        }
+      },
+      "expected": {
+        "status": "served",
+        "reason": "verified_bytes"
+      },
+      "matched": true
+    }
+  ],
+  "events": [
+    {
+      "seq": 1,
+      "request_id": "req-B01",
+      "caller_label": "local-unverified",
+      "caller_authenticated": false,
+      "requested_path": "good.txt",
+      "grant_id": "G-good",
+      "assignment": "A1",
+      "scope": "S1",
+      "status": "served",
+      "reason": "verified_bytes",
+      "observed_sha256": "13c0259118781ada9a17b08900f0323e65cced31df55a182a30e8dd2bc12d81b",
+      "observed_byte_count": 27,
+      "served_byte_count": 27,
+      "observed_at": "2026-10-08T04:11:29.931224+00:00",
+      "time_source": "process_wall_clock"
+    },
+    {
+      "seq": 2,
+      "request_id": "req-B02",
+      "caller_label": "local-unverified",
+      "caller_authenticated": false,
+      "requested_path": "empty.txt",
+      "grant_id": "G-empty",
+      "assignment": "A1",
+      "scope": "S1",
+      "status": "served",
+      "reason": "verified_bytes",
+      "observed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "observed_byte_count": 0,
+      "served_byte_count": 0,
+      "observed_at": "2026-10-08T04:11:29.931269+00:00",
+      "time_source": "process_wall_clock"
+    },
+    {
+      "seq": 3,
+      "request_id": "req-B01",
+      "caller_label": "local-unverified",
+      "caller_authenticated": false,
+      "requested_path": "good.txt",
+      "grant_id": "G-good",
+      "assignment": "A1",
+      "scope": "S1",
+      "status": "served",
+      "reason": "verified_bytes",
+      "observed_sha256": "13c0259118781ada9a17b08900f0323e65cced31df55a182a30e8dd2bc12d81b",
+      "observed_byte_count": 27,
+      "served_byte_count": 27,
+      "observed_at": "2026-10-08T04:11:29.931288+00:00",
+      "time_source": "process_wall_clock"
+    },
+    {
+      "seq": 4,
+      "request_id": "req-B04",
+      "caller_label": "local-unverified",
+      "caller_authenticated": false,
+      "requested_path": "missing.txt",
+      "grant_id": "G-missing",
+      "assignment": "A1",
+      "scope": "S1",
+      "status": "missing",
+      "reason": "not_found",
+      "observed_sha256": null,
+      "observed_byte_count": 0,
+      "served_byte_count": 0,
+      "observed_at": "2026-10-08T04:11:29.931307+00:00",
+      "time_source": "process_wall_clock"
+    },
+    {
+      "seq": 5,
+      "request_id": "req-B05",
+      "caller_label": "local-unverified",
+      "caller_authenticated": false,
+      "requested_path": "good.txt",
+      "grant_id": "G-failing",
+      "assignment": "A1",
+      "scope": "S1",
+      "status": "failing",
+      "reason": "injected_failure",
+      "observed_sha256": null,
+      "observed_byte_count": 0,
+      "served_byte_count": 0,
+      "observed_at": "2026-10-08T04:11:29.931314+00:00",
+      "time_source": "process_wall_clock"
+    },
+    {
+      "seq": 6,
+      "request_id": "req-B06",
+      "caller_label": "local-unverified",
+      "caller_authenticated": false,
+      "requested_path": "changed.txt",
+      "grant_id": "G-changed",
+      "assignment": "A1",
+      "scope": "S1",
+      "status": "changed",
+      "reason": "content_mismatch",
+      "observed_sha256": "3b14bca6b23d86fbab9dbaa0f9535f668bf697ca6155c6c841f90c3ec7b22dd2",
+      "observed_byte_count": 27,
+      "served_byte_count": 0,
+      "observed_at": "2026-10-08T04:11:29.931333+00:00",
+      "time_source": "process_wall_clock"
+    },
+    {
+      "seq": 7,
+      "request_id": "req-B07",
+      "caller_label": "local-unverified",
+      "caller_authenticated": false,
+      "requested_path": "good.txt",
+      "grant_id": "G-no-such-grant",
+      "assignment": "A1",
+      "scope": "S1",
+      "status": "denied",
+      "reason": "grant_not_found",
+      "observed_sha256": null,
+      "observed_byte_count": 0,
+      "served_byte_count": 0,
+      "observed_at": "2026-10-08T04:11:29.931339+00:00",
+      "time_source": "process_wall_clock"
+    },
+    {
+      "seq": 8,
+      "request_id": "req-B08",
+      "caller_label": "local-unverified",
+      "caller_authenticated": false,
+      "requested_path": "",
+      "grant_id": "G-good",
+      "assignment": "A1",
+      "scope": "S1",
+      "status": "denied",
+      "reason": "invalid_path",
+      "observed_sha256": null,
+      "observed_byte_count": 0,
+      "served_byte_count": 0,
+      "observed_at": "2026-10-08T04:11:29.931345+00:00",
+      "time_source": "process_wall_clock"
+    },
+    {
+      "seq": 9,
+      "request_id": "req-B09",
+      "caller_label": "local-unverified",
+      "caller_authenticated": false,
+      "requested_path": "/outside/not-real.txt",
+      "grant_id": "G-good",
+      "assignment": "A1",
+      "scope": "S1",
+      "status": "denied",
+      "reason": "invalid_path",
+      "observed_sha256": null,
+      "observed_byte_count": 0,
+      "served_byte_count": 0,
+      "observed_at": "2026-10-08T04:11:29.931349+00:00",
+      "time_source": "process_wall_clock"
+    },
+    {
+      "seq": 10,
+      "request_id": "req-B10",
+      "caller_label": "local-unverified",
+      "caller_authenticated": false,
+      "requested_path": "../good.txt",
+      "grant_id": "G-good",
+      "assignment": "A1",
+      "scope": "S1",
+      "status": "denied",
+      "reason": "invalid_path",
+      "observed_sha256": null,
+      "observed_byte_count": 0,
+      "served_byte_count": 0,
+      "observed_at": "2026-10-08T04:11:29.931355+00:00",
+      "time_source": "process_wall_clock"
+    },
+    {
+      "seq": 11,
+      "request_id": "req-B11",
+      "caller_label": "local-unverified",
+      "caller_authenticated": false,
+      "requested_path": "dir\\good.txt",
+      "grant_id": "G-good",
+      "assignment": "A1",
+      "scope": "S1",
+      "status": "denied",
+      "reason": "invalid_path",
+      "observed_sha256": null,
+      "observed_byte_count": 0,
+      "served_byte_count": 0,
+      "observed_at": "2026-10-08T04:11:29.931359+00:00",
+      "time_source": "process_wall_clock"
+    },
+    {
+      "seq": 12,
+      "request_id": "req-B12",
+      "caller_label": "local-unverified",
+      "caller_authenticated": false,
+      "requested_path": "./good.txt",
+      "grant_id": "G-good",
+      "assignment": "A1",
+      "scope": "S1",
+      "status": "denied",
+      "reason": "invalid_path",
+      "observed_sha256": null,
+      "observed_byte_count": 0,
+      "served_byte_count": 0,
+      "observed_at": "2026-10-08T04:11:29.931364+00:00",
+      "time_source": "process_wall_clock"
+    },
+    {
+      "seq": 13,
+      "request_id": "req-B13",
+      "caller_label": "local-unverified",
+      "caller_authenticated": false,
+      "requested_path": "ungranted.txt",
+      "grant_id": "G-good",
+      "assignment": "A1",
+      "scope": "S1",
+      "status": "denied",
+      "reason": "path_not_granted",
+      "observed_sha256": null,
+      "observed_byte_count": 0,
+      "served_byte_count": 0,
+      "observed_at": "2026-10-08T04:11:29.931368+00:00",
+      "time_source": "process_wall_clock"
+    },
+    {
+      "seq": 14,
+      "request_id": "req-B14",
+      "caller_label": "local-unverified",
+      "caller_authenticated": false,
+      "requested_path": "good.txt",
+      "grant_id": "G-good",
+      "assignment": "A2",
+      "scope": "S1",
+      "status": "denied",
+      "reason": "assignment_mismatch",
+      "observed_sha256": null,
+      "observed_byte_count": 0,
+      "served_byte_count": 0,
+      "observed_at": "2026-10-08T04:11:29.931372+00:00",
+      "time_source": "process_wall_clock"
+    },
+    {
+      "seq": 15,
+      "request_id": "req-B15",
+      "caller_label": "local-unverified",
+      "caller_authenticated": false,
+      "requested_path": "good.txt",
+      "grant_id": "G-good",
+      "assignment": "A1",
+      "scope": "S2",
+      "status": "denied",
+      "reason": "scope_mismatch",
+      "observed_sha256": null,
+      "observed_byte_count": 0,
+      "served_byte_count": 0,
+      "observed_at": "2026-10-08T04:11:29.931377+00:00",
+      "time_source": "process_wall_clock"
+    },
+    {
+      "seq": 16,
+      "request_id": "req-B16",
+      "caller_label": "external-claim-16",
+      "caller_authenticated": false,
+      "requested_path": "good.txt",
+      "grant_id": "G-good",
+      "assignment": "A1",
+      "scope": "S1",
+      "status": "served",
+      "reason": "verified_bytes",
+      "observed_sha256": "13c0259118781ada9a17b08900f0323e65cced31df55a182a30e8dd2bc12d81b",
+      "observed_byte_count": 27,
+      "served_byte_count": 27,
+      "observed_at": "2026-10-08T04:11:29.931391+00:00",
+      "time_source": "process_wall_clock"
+    }
+  ],
+  "comparison": {
+    "case_count": 16,
+    "mismatch_count": 0
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "case_count": 16,
+  "mismatches": 0,
+  "statuses": {
+    "served": 4,
+    "missing": 1,
+    "failing": 1,
+    "changed": 1,
+    "denied": 9
+  },
+  "repeat_id_retained": true,
+  "deterministic_fields_reproduced": true,
+  "timestamp_variation_expected": true,
+  "timestamp_source": "observed local process clock",
+  "cases_sha256": "505a29ff451bce5ca557906c64da79011019b381de35ce3712acf2c3e1b7fef4",
+  "source_or_model_authentication": "not established",
+  "usage_cost_queue": "unavailable"
+}
