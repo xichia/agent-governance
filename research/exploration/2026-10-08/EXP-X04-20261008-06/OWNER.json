@@ -10,10 +10,11 @@
   "writers": {
     "/root": "PLAN/packets/truth/receipt_exports/grading/observations/native_handoffs/method/report/checkpoint/NEXT_PACKAGE/OWNER/taskprogress",
     "/root/semantic_a": "trials/semantic_A.json",
-    "/root/semantic_b": "trials/semantic_B.json",
+    "/root/semantic_b": "trials/semantic_B.json and trials/semantic_B.continuation.json ONLY56previouslyunanswered IDs",
     "/root/semantic_c": "trials/semantic_C.preliminary.json and trials/semantic_C.json",
     "/root/semantic_d": "trials/semantic_D.preliminary.json and trials/semantic_D.json"
   },
   "reviewer": "separate configured gpt-6-luna /root/semantic_review; ONLY new R-GOV-019 records",
-  "worker_labels": "semantic_A..D are packet labels; actual native sessions /root/semantic_a..d (lowercase task names). Caller labels not authentication."
+  "worker_labels": "semantic_A..D are packet labels; actual native sessions /root/semantic_a..d (lowercase task names). Caller labels not authentication.",
+  "continuation_assignment_at": "2026-10-08T06:11:16.041587+00:00"
 }

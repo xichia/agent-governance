@@ -1,0 +1,9 @@
+{
+  "recipient": "/root/semantic_c",
+  "phase": "final",
+  "initial_sha256": "77e2a17bb5388efe3e070a496d8decb27ee27af562bba951e19ad7f2fac3cb29",
+  "final_packet": "/workspace/agent-governance/research/exploration/2026-10-08/EXP-X04-20261008-06/packets/semantic_C.json",
+  "final_packet_sha256": "e2d149b1a435c8eeb47adf62c2e63f1d04a3c5edd6d0742faa8b7a2e53528c7c",
+  "prepared_at": "2026-10-08T06:11:16.041587+00:00",
+  "delivery_kind": "native pointer/hash to frozen shared finalpacket, not inlinebytes ornewbroker service"
+}

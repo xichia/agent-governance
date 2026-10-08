@@ -1,0 +1,9 @@
+{
+  "recipient": "/root/semantic_d",
+  "phase": "final",
+  "initial_sha256": "9c464d80b39eb0a2213e014c2202d036fe3ac45f963911d9e301cfdaaf383788",
+  "final_packet": "/workspace/agent-governance/research/exploration/2026-10-08/EXP-X04-20261008-06/packets/semantic_D.json",
+  "final_packet_sha256": "b1cc3e0775fa03c20d54c5efb0e172a0f3d17ce65c9d8ef6dbc3e1dbd72465a5",
+  "prepared_at": "2026-10-08T06:11:16.041587+00:00",
+  "delivery_kind": "native pointer/hash to frozen shared finalpacket, not inlinebytes ornewbroker service"
+}
