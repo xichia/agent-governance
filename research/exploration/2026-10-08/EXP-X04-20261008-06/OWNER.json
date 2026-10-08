@@ -1,6 +1,6 @@
 {
   "package_id": "EXP-X04-20261008-06",
-  "status": "active",
+  "status": "checkpointed_incomplete",
   "session": "/root",
   "thread_id": "01a10a9e-1700-7373-843c-34814db8a0b1",
   "started_at": "2026-10-08T06:04:36.763339+00:00",
@@ -16,5 +16,12 @@
   },
   "reviewer": "separate configured gpt-6-luna /root/semantic_review; ONLY new R-GOV-019 records",
   "worker_labels": "semantic_A..D are packet labels; actual native sessions /root/semantic_a..d (lowercase task names). Caller labels not authentication.",
-  "continuation_assignment_at": "2026-10-08T06:11:16.041587+00:00"
+  "continuation_assignment_at": "2026-10-08T06:11:16.041587+00:00",
+  "last_checkpoint": "2026-10-08T07:09:48.663917+00:00",
+  "ownership_disposition": "retained for SAME06 closure; not released or transferred",
+  "contributors_actually_completed": true,
+  "closure_reviewer_actually_completed": true,
+  "closure_review": "R-GOV-019-02 INCONCLUSIVE at773e7d6: runtime overrun; core2246211 PASS unchanged",
+  "root_state": "checkpoint persistence only; no new substantive work",
+  "next_action": "verify prior root/native session status and same package ownership before continuing closure"
 }
