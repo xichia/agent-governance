@@ -1,0 +1,29 @@
+{
+  "package_id": "EXP-X04-20261008-02",
+  "session": "/root",
+  "thread_id": "01a10a9e-1700-7373-843c-34814db8a0b1",
+  "started_at": "2026-10-08T01:56:24.180967+00:00",
+  "status": "active",
+  "coordinator_paths": [
+    "PLAN.md",
+    "REPORT.md",
+    "CHECKPOINT.md",
+    "NEXT_PACKAGE.md",
+    "OWNER.json",
+    "observations.json"
+  ],
+  "writer_assignments": {
+    "/root/x04_builder": [
+      "protocol.md",
+      "fixture_runner.py"
+    ],
+    "/root/x04_cases": [
+      "cases.json",
+      "CASE_DESIGN.md"
+    ],
+    "/root/x04_review": [
+      "records/reviews/R-GOV-015-01.md (and bounded rechecks)"
+    ]
+  },
+  "model": "GPT-6 coordinator; contributor/reviewer configured gpt-6-luna; deployment identity unavailable"
+}
