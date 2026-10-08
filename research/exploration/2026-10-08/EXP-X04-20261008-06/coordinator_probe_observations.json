@@ -1,0 +1,8 @@
+{
+  "type": "synthetic grader probes only; no actual model trials or raw file changes",
+  "fabricated_current_on_denied": "caught",
+  "scripted_method_deviation": "64reported_script_rows; never verifiedunassisted",
+  "invalid_lookup_schema": "artifacterror without crash",
+  "baseline_incomplete": "Cfinalpending; completion mustnot be inferred",
+  "full_prose_validation": "notimplemented; independent manualreview required"
+}
