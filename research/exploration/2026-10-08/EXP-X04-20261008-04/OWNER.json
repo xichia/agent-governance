@@ -1,0 +1,14 @@
+{
+  "package_id": "EXP-X04-20261008-04",
+  "status": "active",
+  "session": "/root",
+  "thread_id": "01a10a9e-1700-7373-843c-34814db8a0b1",
+  "started_at": "2026-10-08T04:05:11.506575+00:00",
+  "base": "24fdefcd6178edc56ea8a7139222bf2d122c48ce",
+  "writers": {
+    "/root": "PLAN, grants.json, fixtures, REPORT, observations, CHECKPOINT, NEXT_PACKAGE, OWNER, T017 progress",
+    "/root/broker_builder": "broker.py, protocol.md",
+    "/root/broker_cases": "cases.json, CASE_DESIGN.md"
+  },
+  "reviewer": "distinct /root/broker_review; only new R017 records after freeze"
+}

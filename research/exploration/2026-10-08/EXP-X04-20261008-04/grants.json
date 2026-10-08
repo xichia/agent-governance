@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "grants": [
+    {
+      "grant_id": "G-good",
+      "path": "good.txt",
+      "assignment": "A1",
+      "scope": "S1",
+      "sha256": "13c0259118781ada9a17b08900f0323e65cced31df55a182a30e8dd2bc12d81b",
+      "mode": "read"
+    },
+    {
+      "grant_id": "G-missing",
+      "path": "missing.txt",
+      "assignment": "A1",
+      "scope": "S1",
+      "sha256": "13c0259118781ada9a17b08900f0323e65cced31df55a182a30e8dd2bc12d81b",
+      "mode": "read"
+    },
+    {
+      "grant_id": "G-failing",
+      "path": "good.txt",
+      "assignment": "A1",
+      "scope": "S1",
+      "sha256": "13c0259118781ada9a17b08900f0323e65cced31df55a182a30e8dd2bc12d81b",
+      "mode": "failing"
+    },
+    {
+      "grant_id": "G-changed",
+      "path": "changed.txt",
+      "assignment": "A1",
+      "scope": "S1",
+      "sha256": "13c0259118781ada9a17b08900f0323e65cced31df55a182a30e8dd2bc12d81b",
+      "mode": "read"
+    },
+    {
+      "grant_id": "G-empty",
+      "path": "empty.txt",
+      "assignment": "A1",
+      "scope": "S1",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mode": "read"
+    }
+  ]
+}
