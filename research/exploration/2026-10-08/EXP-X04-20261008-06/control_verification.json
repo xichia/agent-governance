@@ -1,0 +1,20 @@
+{
+  "type": "synthetic coordinator controls, in-memory copies only; not new model trials",
+  "unsupported_current": {
+    "trial_id": "M06-A-92b80419a6",
+    "false_current": true,
+    "matched": false
+  },
+  "declared_classification_code": {
+    "reported_rows": 64,
+    "actual_unassisted": "unknown_without_audit"
+  },
+  "missing_row": {
+    "removed": "M06-C-faf25957ea",
+    "delivered": 255,
+    "caught": true
+  },
+  "invalid_lookup_schema": "caught_without_crash",
+  "missing_method": "artifact_error",
+  "disk_raw_unchanged": true
+}
