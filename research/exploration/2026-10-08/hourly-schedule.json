@@ -1,0 +1,7 @@
+{
+  "automation_id": "6ac6e443baec81919649551ebed63365",
+  "default_timezone": "Australia/Perth",
+  "schedule": "BEGIN:VEVENT\nDTSTART;TZID=Australia/Perth:20261008T090000\nRRULE:FREQ=HOURLY;UNTIL=20261015T155959Z\nEND:VEVENT",
+  "prompt_composition": "hourly-continuation.txt + two newlines + unchanged automation-prompt.txt",
+  "status": "proposed amendment; verify successful update in T-GOV-012"
+}
