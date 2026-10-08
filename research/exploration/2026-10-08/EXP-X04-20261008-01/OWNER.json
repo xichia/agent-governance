@@ -2,7 +2,7 @@
   "package_id": "EXP-X04-20261008-01",
   "session": "/root",
   "thread_id": "01a10a9e-1700-7373-843c-34814db8a0b1",
-  "status": "active",
+  "status": "released",
   "started_at": "2026-10-08T01:08:03.015188+00:00",
   "owned_paths": [
     "research/exploration/2026-10-08/EXP-X04-20261008-01/REGISTER.md",
@@ -11,5 +11,7 @@
     "research/exploration/2026-10-08/EXP-X04-20261008-01/CHECKPOINT.md"
   ],
   "reviewer": "separate configured Luna session; writes only scoped review record",
-  "model": "GPT-6 coordinator; deployment identity unavailable"
+  "model": "GPT-6 coordinator; deployment identity unavailable",
+  "released_at": "2026-10-08T01:15:47.663889+00:00",
+  "disposition": "All scoped source writers stopped; reviewer completion confirmed; final package checkpoint saved. No further package writes planned."
 }
