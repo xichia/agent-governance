@@ -1,6 +1,6 @@
 {
   "package_id": "EXP-X04-20261008-03",
-  "status": "active",
+  "status": "released",
   "session": "/root",
   "thread_id": "01a10a9e-1700-7373-843c-34814db8a0b1",
   "started_at": "2026-10-08T03:00:12.138839+00:00",
@@ -12,5 +12,7 @@
     "/root/trial_3": "trials/trial_3.json",
     "/root/trial_4": "trials/trial_4.json"
   },
-  "reviewer": "distinct /root/probe_review, only new R-GOV-016 records; not yet dispatched"
+  "reviewer": "distinct /root/probe_review, only new R-GOV-016 records; not yet dispatched",
+  "released_at": "2026-10-08T03:06:29.094796+00:00",
+  "disposition": "All four executor and distinct reviewer final completion received; accepted content stopped; final checkpoint saved. No further package writes planned."
 }
