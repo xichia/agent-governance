@@ -9,7 +9,7 @@
   "checkpoint_limit": "2026-10-12T05:39:33+00:00",
   "base": "7d119ed5812a1f855c8e0aa424bf9cf8b64a6018",
   "writers": {
-    "/root": "PLAN.md/REPORT.md/CHECKPOINT.md/NEXT_PACKAGE.md/OWNER.json/task/progress",
+    "/root": "PLAN.md/REPORT.md/CHECKPOINT.md/NEXT_PACKAGE.md/OWNER.json/task/progress /analyst_submissions/SOURCE_MANIFEST/ANALYST_DISPOSITIONS",
     "/root/value_learning": "LEARNING_VALUE.md only",
     "/root/value_reuse": "REUSE_AND_BURDEN.md only"
   },
@@ -18,5 +18,6 @@
   "actual_deployment_identity": "unknown",
   "max_report_repairs": 2,
   "report_repairs_used": 0,
-  "deferred_successor": "EXP-X04-20261008-07; not dispatched pending owner decision"
+  "deferred_successor": "EXP-X04-20261008-07; not dispatched pending owner decision",
+  "assessment_correction_rounds_used": 1
 }

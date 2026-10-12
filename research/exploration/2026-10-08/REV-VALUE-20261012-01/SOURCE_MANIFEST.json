@@ -1,0 +1,17 @@
+{
+  "source_base": "7d119ed5812a1f855c8e0aa424bf9cf8b64a6018",
+  "source_versions": {
+    "source_register": "d46484fd36f013810decc5c79f8f3aa5e15489cc",
+    "X01_blocked": "1191ac83ddb133fc4c2f14550ef2252737b6bafa",
+    "X04_02": "5c5a08a4b619899199e5bb5d5155e99af38b35bf",
+    "X04_03": "966e62ce8e90bfd376333e5b3bf80a677845a256",
+    "X04_04": "ffb52d9f93f94569b2cabc47a305586536b53c22",
+    "X04_05": "a3daa24410eb10fa126d1f07b08509bdad835bb8",
+    "X04_06": "2246211f7381b2532c475c7791bf3f0b2ba2a63e"
+  },
+  "analyst_artifacts": {
+    "LEARNING_VALUE.md": "ed28bbcc737c0923bb3215f95f2bc2013efc2547ddd9a8ddac9d380b63d8f927",
+    "REUSE_AND_BURDEN.md": "6f81302d2ea4542e46fc69d5f3a50a341096441c29ca58ee7cd20061186c64f5"
+  },
+  "study_status": "decision review only; no new behavior trials or prototype implementation"
+}

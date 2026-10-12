@@ -1,0 +1,33 @@
+{
+  "first_submission": {
+    "LEARNING_VALUE.md": {
+      "original_sha256": "96f3df1db3635f3c854b22d3e20c5ce3188284f6734afe3f0577667f9fec08e6",
+      "original_submission_preserved": true,
+      "corrected_sha256": "ed28bbcc737c0923bb3215f95f2bc2013efc2547ddd9a8ddac9d380b63d8f927"
+    },
+    "REUSE_AND_BURDEN.md": {
+      "original_sha256": "d0fd4cc23dc189939807c8c0da68f92f8e4fbe2174f54870ecc6469cb7cbdd49",
+      "original_submission_preserved": true,
+      "corrected_sha256": "6f81302d2ea4542e46fc69d5f3a50a341096441c29ca58ee7cd20061186c64f5"
+    }
+  },
+  "correction_rounds_used": 1,
+  "maximum_new_assessment_rounds": 2,
+  "findings": [
+    {
+      "artifact": "LEARNING_VALUE.md",
+      "finding": "matched-baseline/unvalidated-hypothesis claim attributed to charter; actual source research/foundations.md:32",
+      "disposition": "fixed by sole analyst writer; original submission preserved; no old source change"
+    },
+    {
+      "artifact": "REUSE_AND_BURDEN.md",
+      "finding": "X04-05 incorrectly adds reviewrepair; accepted05checkpoint records one prefreezegeneratorrepair and no review-drivenrepair",
+      "disposition": "fixed by sole analyst writer; original submission preserved; no old source change"
+    },
+    {
+      "artifact": "REUSE_AND_BURDEN.md",
+      "finding": "recommend preserve scripts needs qualification:05temporaryclassification scripts notdurablyexported",
+      "disposition": "fixed by sole analyst writer; original submission preserved; no old source change"
+    }
+  ]
+}
