@@ -1,0 +1,22 @@
+{
+  "candidate": "30c85b6719d7bf8d861d9fde7919c66ae77f97b6",
+  "source_base": "7d119ed5812a1f855c8e0aa424bf9cf8b64a6018",
+  "accepted_exact_bytes": {
+    "REPORT.md": "4bbb73363247b35ec47963cd04d3b6dd0923e16d8164281571d5b84b97f33c55",
+    "LEARNING_VALUE.md": "ed28bbcc737c0923bb3215f95f2bc2013efc2547ddd9a8ddac9d380b63d8f927",
+    "REUSE_AND_BURDEN.md": "6f81302d2ea4542e46fc69d5f3a50a341096441c29ca58ee7cd20061186c64f5",
+    "SOURCE_MANIFEST.json": "a958d4e6e25ff5f95beceeb86b24a0307ac6ac060f0b58bff69ba8544ad56ca0",
+    "ANALYST_DISPOSITIONS.json": "00eecad4859b256aa08ccb851cf4c9d21726a33532423f0a4c764dd0f01e07ff",
+    "analyst_submissions/LEARNING_VALUE.md": "96f3df1db3635f3c854b22d3e20c5ce3188284f6734afe3f0577667f9fec08e6",
+    "analyst_submissions/REUSE_AND_BURDEN.md": "d0fd4cc23dc189939807c8c0da68f92f8e4fbe2174f54870ecc6469cb7cbdd49"
+  },
+  "historical_artifacts_unchanged": true,
+  "analysts_and_reviewer_actual_completed": true,
+  "report_repairs": 0,
+  "analyst_correction_rounds": 1,
+  "same_candidate_review_rechecks": 1,
+  "review_false_positive": "R02001 erroneous link finding disconfirmed immutable candidate; R02002 PASS with19validlinks",
+  "new_model_trials": 0,
+  "existing_checks": "reuseanalyst rehearsal27selftests/revisedfixturev2/02cases18; reviewer source/hash/19links checks; no broad rerun",
+  "checked_at": "2026-10-12T04:57:18.176805+00:00"
+}

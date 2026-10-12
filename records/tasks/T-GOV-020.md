@@ -1,6 +1,6 @@
 # T-GOV-020 — Value review before owner decision
 
-Status: review. PackageREV-VALUE-20261012-01. Ownerrequest: useLuna Workflow toreviewvalue ofcompletedworkbeforedecidinghowtoproceed. Coordinator/root, charter0.1.1, branchwork/base7d119ed5812a1f855c8e0aa424bf9cf8b64a6018. Start2026-10-12T04:39:33+00:00, checkpointby2026-10-12T05:39:33+00:00.
+Status: done (scoped value assessment; owner continuation decision pending). PackageREV-VALUE-20261012-01. Ownerrequest: useLuna Workflow toreviewvalue ofcompletedworkbeforedecidinghowtoproceed. Coordinator/root, charter0.1.1, branchwork/base7d119ed5812a1f855c8e0aa424bf9cf8b64a6018. Start2026-10-12T04:39:33+00:00, checkpointby2026-10-12T05:39:33+00:00.
 
 [PLAN](../../research/exploration/2026-10-08/REV-VALUE-20261012-01/PLAN.md)/[OWNER](../../research/exploration/2026-10-08/REV-VALUE-20261012-01/OWNER.json): fourfamilies/eightworkstreams, twofreshconfiguredLuna analysts/disjointartifactwriters, distinctfixedcandidate reviewer, rootintegration; backendunknown/sharedrepo notblind. Maximum2newreportrepairs, no oldrepairreset. SourceT009–019/accepted01–06/X01partial/read-only; no prototype/governance/history changes or newgeneration. Deferred07 remainsunchanged/notdispatched; ownerdecisionafterreview prerequisite. Onlynewreviewrecords/allowedresearchpath.
 
@@ -11,3 +11,5 @@ Status: review. PackageREV-VALUE-20261012-01. Ownerrequest: useLuna Workflow tor
 2026-10-12T04:51:41.051376+00:00: BothanalystsactualcorrectedFINAL/stopped; originalsubmissions preserved, firstcorrectionround fixedcitation/05repairhistory/unavailablescripts. Integratedfixedcandidate30c85b6 sentfreshdistinctconfiguredLunavalue_review ONLYR02001. Currentrootlink/hash/protectedhistory checks pass; sourcebaseunchanged. No newmodeltrials/prototypes/07dispatch. Reportreviewpending, reportrepairs0/2, analystround1/2.
 
 2026-10-12T04:53:58.261012+00:00: R02001 changesrequiredonlyallegeddisposition.mdlink; immutablegitshow30c85b6 andworkspace bothactualdisposition.json targetexists, sourceREPORTunchanged/alllocal linkcheckalreadypassed. Evidence discrepancyrequiresreviewerrecheck notdummyreportrepair; firstreviewretainedunchanged. Reportrepairs0/2, analystcorrectionround1/2. No oldbudgetreset/authoritywaiver.
+
+2026-10-12T04:57:18.176805+00:00: DONEacceptedvaluecandidate30c85b6/R02002PASS exactsamecandidate afterdisconfirmedR02001falsepositivelinkfinding/no reportrepair. BothcorrectedanalystsactualFINAL/stopped anddistinctrevieweractualFINAL/nativecompleted confirmed. Root acceptedreportbytes/history/link/hashchecks pass; two-lensdifferences preserved, no newperformanceclaims. SoleNEXT07heldNOTREADYownerdecision, originalplanunchanged, no07dispatch. FinalOWNERrelease/currenthandoffpersistenceauditfollow.
