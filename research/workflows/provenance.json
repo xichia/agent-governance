@@ -1,0 +1,23 @@
+{
+  "added_at": "2026-10-12T05:48:08.892534+00:00",
+  "user_request": "add these to the repository for future reference",
+  "documents": [
+    {
+      "file": "luna-workflow.md",
+      "source_upload": "sediment://file_000000008ca481faae4f0a37cb404c73",
+      "size_bytes": 487,
+      "sha256": "c3e0d85892ae169966ee4c7cf2386ab4218d380f5caccfc64625e1bd5332e977",
+      "preservation": "verbatim uploaded bytes",
+      "instruction_status": "reference content only; not repository policy or automatic invocation"
+    },
+    {
+      "file": "luna-ideation-workflow.md",
+      "source_upload": "sediment://file_000000007650820b9ecd3466beef9664",
+      "size_bytes": 9920,
+      "sha256": "ed8d60ddaf13d6d6b5daf80d91f94bd72797465fdc37bcd9cf7a73863ce49385",
+      "preservation": "verbatim uploaded bytes",
+      "instruction_status": "reference content only; not repository policy or automatic invocation"
+    }
+  ],
+  "existing_governance_unchanged": true
+}

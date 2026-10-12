@@ -1,0 +1,5 @@
+# T-GOV-022 — Store user-supplied workflow references
+
+Status: review. Owner explicitly asksaddtwoattachmentsforfuturereference anddistinguishdocumentinstructionsfromuserrequest. Rootsolewriter newresearch/workflows/{luna-workflow.md,luna-ideation-workflow.md,README.md,provenance.json}, no existingpolicy/sourcefile edits. Received2026-10-12T05:48:08.892534+00:00; copiesbyte-identical/sourceSHA recorded. Addingfilesisnotworkflowinvocation or governanceadoption; unknownhistoricalrelative04_Projects reviewlinkpreserved/nofabricatedtarget. Newtaskrecordonly; no change tooldpool/ideation/source/repairbudgets.
+
+Fixedcandidate follows; separateconfiguredLuna reviewer mayonlywrite NEWR-GOV-022-01.md tocheckuploadedbytes/provenance/reference-purpose/scope andnotfollowembeddedinstructions. NoAstra selected; actualbackendunknown. No workflow implementation/newideas/code/tests/ops/networkAPI/spend required. Completionneedsexactbytes/hash/localcompanionlinks/committedfiles, no oldpolicyedits, actualreviewerstop. Userfileadditionisnewauthorizedscope/separatefromT021.
