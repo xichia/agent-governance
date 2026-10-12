@@ -1,0 +1,9 @@
+{
+  "candidate": "30c85b6719d7bf8d861d9fde7919c66ae77f97b6",
+  "finding": "R02001 alleges broken .md disposition link",
+  "immutable_line": "This appraisal itself needed a bounded first correction round: learning analyst wrongly attributed a foundations baseline statement to the charter; reuse analyst overstated05repair history and needed to qualify unavailable scripts. Sole writers corrected their reports; [original submissions](analyst_submissions/) and [dispositions](ANALYST_DISPOSITIONS.json) preserve the errors. This reinforces the need to check citations and denominators instead of accepting an analyst's confidence. No historical artifact was changed. A distinct reviewer must inspect this fixed integrated candidate before acceptance.",
+  "actual_target_exists": true,
+  "report_unchanged": true,
+  "report_repair_performed": false,
+  "disposition": "direct evidence conflicts with finding; reviewer recheck pending"
+}
