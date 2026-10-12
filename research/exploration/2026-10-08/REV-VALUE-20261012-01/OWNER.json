@@ -1,7 +1,7 @@
 {
   "package_id": "REV-VALUE-20261012-01",
   "task": "T-GOV-020",
-  "status": "active",
+  "status": "released",
   "session": "/root",
   "thread_id": "01a10a9e-1700-7373-843c-34814db8a0b1",
   "activation_start": "2026-10-12T04:39:33+00:00",
@@ -18,6 +18,14 @@
   "actual_deployment_identity": "unknown",
   "max_report_repairs": 2,
   "report_repairs_used": 0,
-  "deferred_successor": "EXP-X04-20261008-07; not dispatched pending owner decision",
-  "assessment_correction_rounds_used": 1
+  "deferred_successor": "EXP-X04-20261008-07 NOT_READY until owner decision",
+  "assessment_correction_rounds_used": 1,
+  "released_at": "2026-10-12T04:57:54.943117+00:00",
+  "accepted_report_candidate": "30c85b6719d7bf8d861d9fde7919c66ae77f97b6",
+  "completion_commit": "261ee3c4ee8c61cb07b226f0a57eaa383df01a61",
+  "review": "R-GOV-020-02 PASS samecandidate; R02001falsepositive preserved",
+  "analyst_correction_rounds_used": 1,
+  "all_analysts_reviewer_actual_stopped": true,
+  "root_content_writes": "stopped before separate release; persistence/audit records only",
+  "owner_decision_pending": true
 }
