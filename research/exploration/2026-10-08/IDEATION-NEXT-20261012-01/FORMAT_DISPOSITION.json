@@ -1,0 +1,16 @@
+{
+  "plain_diff_check_exit": 2,
+  "plain_diff_check_output": "research/exploration/2026-10-08/IDEATION-NEXT-20261012-01/raw-simplify.md:3: trailing whitespace.\n+Session: `/root/next_simplify` (this contributor session)  \nresearch/exploration/2026-10-08/IDEATION-NEXT-20261012-01/raw-simplify.md:4: trailing whitespace.\n+Configured model: `gpt-6-luna`  \nresearch/exploration/2026-10-08/IDEATION-NEXT-20261012-01/raw-simplify.md:5: trailing whitespace.\n+Actual deployment/backend: unknown  \nresearch/exploration/2026-10-08/IDEATION-NEXT-20261012-01/raw-simplify.md:6: trailing whitespace.\n+Lens: simplification, consolidation, maintenance effort, recoverability, and research lifecycle  \nresearch/exploration/2026-10-08/IDEATION-NEXT-20261012-01/raw-simplify.md:7: trailing whitespace.\n+Source context: `IDEATION-NEXT-20261012-01/BRIEF.md`, `PLAN.md`, `OWNER.json`, `owner-ideation-workflow.md`, governance charter/workflow/access, and `REV-VALUE-20261012-01/REPORT.md`.  \n",
+  "intentional_markdown_two_space_hardbreak_lines": [
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "adjusted_other_whitespace_checks_exit": 0,
+  "raw_bytes_unchanged": true,
+  "disposition": "nonblocking Markdown formatting; preserve verbatimrawgeneration, independently recheck completion metadata correction",
+  "core_synthesis_repairs": 0,
+  "checkpoint_factual_corrections": 1
+}
