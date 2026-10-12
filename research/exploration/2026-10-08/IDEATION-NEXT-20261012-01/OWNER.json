@@ -1,0 +1,27 @@
+{
+  "package_id": "IDEATION-NEXT-20261012-01",
+  "task": "T-GOV-021",
+  "status": "active",
+  "thread_id": "01a10a9e-1700-7373-843c-34814db8a0b1",
+  "session": "/root",
+  "start": "2026-10-12T05:26:57+00:00",
+  "claim_at": "2026-10-12T05:29:28.603611+00:00",
+  "checkpoint_limit": "2026-10-12T06:26:57+00:00",
+  "source_base": "90c1b9322462ba71e79b29f1619a5f4dc944efa3",
+  "writers": {
+    "/root": "BRIEF/PLAN/pool-manifest/CLUSTERS/EVALUATION/SYNTHESIS/CHECKPOINT/NEXT/OWNER/taskprogress",
+    "/root/next_reuse": "raw-reuse.md/N01\u2013N04",
+    "/root/next_evidence": "raw-evidence.md/N05\u2013N08",
+    "/root/next_simplify": "raw-simplify.md/N09\u2013N12",
+    "/root/next_challenge": "raw-challenge.md/N13\u2013N16"
+  },
+  "reviewer": "fresh distinct /root/next_review ONLY new R-GOV-021 records after generation/evaluation fixedcandidate",
+  "configured_model": "gpt-6-luna",
+  "actual_backend": "unknown",
+  "new_pool_limit": 16,
+  "additional_batches_authorized": 0,
+  "new_synthesis_repair_limit": 2,
+  "repairs_used": 0,
+  "prior_pool_and_budgets": "unchanged; explicit Oct12 ownerrequest authorizes THIS new datedpool, not reset/restartold20+4",
+  "prototype_execution": "not authorized by ideation request;07held pending ownerchoice"
+}
