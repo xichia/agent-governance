@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "kind": "owner_repair_extension",
+  "lineage": "RSI-20261012-01",
+  "previous_limit": 2,
+  "additional_repairs": 1,
+  "total_limit": 3,
+  "owner_request": "yes finalise implementation commit and push",
+  "received_in": "current owner chat; /root session",
+  "recorded_at": "2026-10-12T10:03:57.979319+00:00",
+  "scope": "One additional diagnostic repair and necessary versioned evidence/budget representation; commit/push work branch. No old budget reset, governance amendment, additional repair or independent-review claim."
+}

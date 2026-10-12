@@ -1,0 +1,21 @@
+{
+  "producer_sha256": "813f7cde8b2d6329e82d5ffe9e176125eec780dadd5c26ecfcb20485eaae1110",
+  "repairs_used": 3,
+  "original_limit": 2,
+  "explicit_additional_allowance": 1,
+  "checks": [
+    "original frozen two-repair gate remains effective without extension",
+    "one bound 2-to-3 extension permits evaluation, never acceptance",
+    "review-pending handoff retains extension and used repairs",
+    "fourth repair remains forbidden",
+    "wrong lineage rejected",
+    "larger extension rejected",
+    "boolean allowance rejected",
+    "synthetic reviewed proposal inherits extension; labels remain unverified",
+    "child cannot drop inherited extension to erase repair accounting",
+    "NEG-01 returns structured invalid_evidence without traceback",
+    "malformed top-level suite has structured CLI failure"
+  ],
+  "matched": 11,
+  "review": "solo self-check; no independent review claimed"
+}

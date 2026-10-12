@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "purpose": "Concrete evidence-backed improvement candidates; not a new ideation pool or automatic assignments",
-  "current_next_action": "SAME package blocked: record pending independent review and request one additional new-artifact repair if owner wants diagnostic correction",
+  "current_next_action": "Implementation finalized; SAME RSI awaits actual independent review under current solo direction; no new cycle or further repair authorized",
   "items": [
     {
       "id": "RSI-B01",
@@ -74,16 +74,20 @@
     },
     {
       "id": "RSI-B05",
-      "status": "blocked_repair_limit",
+      "status": "fixed_review_pending",
       "problem": "A bound non-object JSON report can produce an uncaught AttributeError; failure is nonzero and not accepted",
       "source": {
         "path": "robustness_negative.json",
         "sha256": "ba3660b375b59e06743208ce8f10f1d75c659ccae9503b9660f95cf7698be077"
       },
       "hypothesis": "Treating AttributeError as invalid input in assessment/CLI produces a structured rejection",
-      "observable_outcome": "NEG-01 returns invalid_evidence with accepted=false; original20 controls and inheritance probes still match",
-      "proposal": "proposed-third-repair.patch; not applied or run",
-      "stop_rule": "Two of two artifact repairs used; one additional repair requires explicit owner extension; no old-limit reset"
+      "observable_outcome": "NEG-01 is structured invalid_evidence with accepted=false; original20controls,16extra and11repair checks match",
+      "proposal": "proposed-third-repair.patch applied with necessary one-off extension representation",
+      "stop_rule": "Three repairs used including explicit extra allowance; fourth repair still forbidden; independent acceptance pending",
+      "evidence": {
+        "path": "repair-003/findings.json"
+      },
+      "dated_disposition": "2026-10-12T10:11:25.434520+00:00: original failing observation preserved; owner-authorized round3resolved diagnostic defect"
     }
   ]
 }

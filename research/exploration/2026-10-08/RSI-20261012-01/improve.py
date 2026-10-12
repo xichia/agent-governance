@@ -227,6 +227,27 @@ def time_value(value):
     return parsed.astimezone(timezone.utc)
 
 
+def repair_limit(root, cycle):
+    """Preserve the frozen limit; bind the owner's one-off 2-to-3 extension.
+
+    The caller must establish real owner authorization outside this cooperative
+    checker. A JSON record or label is not authentication or new authority.
+    """
+    limit = cycle["budget"]["max_repairs"]
+    ref = cycle.get("repair_extension")
+    if ref is None:
+        return limit
+    extension = bound(root, ref)
+    if (not isinstance(extension, dict) or type(extension.get("schema_version")) is not int
+            or extension["schema_version"] != 1 or extension.get("kind") != "owner_repair_extension"
+            or extension.get("lineage") != cycle["lineage"] or limit != 2
+            or type(extension.get("previous_limit")) is not int or extension["previous_limit"] != 2
+            or type(extension.get("additional_repairs")) is not int or extension["additional_repairs"] != 1
+            or type(extension.get("total_limit")) is not int or extension["total_limit"] != 3):
+        raise EvidenceError("invalid one-off repair extension")
+    return 3
+
+
 def validate_cycle(root, cycle, seen=None):
     if (not isinstance(cycle, dict) or type(cycle.get("schema_version")) is not int
             or cycle.get("schema_version") != 1):
@@ -254,7 +275,7 @@ def validate_cycle(root, cycle, seen=None):
             or sha(read_file(safe_path(root, implementation["path"]))) != implementation["sha256"]):
         raise EvidenceError("implementation bytes changed or unbound")
     if (cycle["iteration"] > budget["max_cycles"]
-            or cycle["repairs_used"] > budget["max_repairs"]):
+            or cycle["repairs_used"] > repair_limit(root, cycle)):
         raise BudgetStop("cycle or repair budget exceeded")
     seen = set() if seen is None else seen
     if cycle["id"] in seen or len(seen) >= 20:
@@ -271,6 +292,9 @@ def validate_cycle(root, cycle, seen=None):
                 or cycle["iteration"] != parent["iteration"] + 1
                 or cycle["repairs_used"] < parent["repairs_used"]):
             raise EvidenceError("child resets lineage, suite or budget")
+        if (parent.get("repair_extension") is not None
+                and cycle.get("repair_extension") != parent["repair_extension"]):
+            raise EvidenceError("child drops or replaces inherited repair extension")
         review = bound(root, cycle.get("parent_review"))
         check_review(review, parent)
         old_suite = suite_data(root, parent["suite"])
@@ -302,7 +326,7 @@ def assess(root, cycle, now=None):
         validate_cycle(root, cycle)
         budget = cycle["budget"]
         if (now >= time_value(budget["deadline"]) or cycle["iteration"] > budget["max_cycles"]
-                or cycle["repairs_used"] > budget["max_repairs"]):
+                or cycle["repairs_used"] > repair_limit(root, cycle)):
             return {"status": "budget_exhausted", "next_action": "checkpoint; no automatic extension"}
         suite = suite_data(root, cycle["suite"])
         baseline, candidate = bound(root, cycle["baseline"]), bound(root, cycle["candidate"])
@@ -321,6 +345,7 @@ def assess(root, cycle, now=None):
                 "baseline_matches": sum(before.values()), "candidate_matches": sum(after.values()),
                 "case_count": len(before), "gains": gains, "regressions": regressions,
                 "remaining_failures": remaining, "candidate": cycle["candidate"],
+                "repairs_used": cycle["repairs_used"], "effective_repair_limit": repair_limit(root, cycle),
                 "next_action": "independent fixed-candidate review" if status == "review_pending"
                     else "checkpoint; use observed failures/stop rule, no automatic iteration",
                 "accepted": False, "reviewer_identity": "unverified",
@@ -328,7 +353,7 @@ def assess(root, cycle, now=None):
     except BudgetStop as exc:
         return {"status": "budget_exhausted", "reason": str(exc), "accepted": False,
                 "next_action": "checkpoint; no automatic extension"}
-    except (EvidenceError, KeyError, TypeError, OSError) as exc:
+    except (EvidenceError, KeyError, TypeError, AttributeError, OSError) as exc:
         return {"status": "invalid_evidence", "reason": str(exc),
                 "accepted": False, "next_action": "preserve error; recover exact evidence"}
 
@@ -353,7 +378,7 @@ def next_plan(root, cycle, cycle_ref, review_ref=None, now=None):
     if review_ref is None:
         return {"status": "review_pending", "decision": decision, "automatic_dispatch": False,
                 "remaining_failures": decision["remaining_failures"], "budget": cycle["budget"],
-                "repairs_used": cycle["repairs_used"]}
+                "repairs_used": cycle["repairs_used"], "repair_extension": cycle.get("repair_extension")}
     try:
         if bound(root, cycle_ref) != cycle:
             raise EvidenceError("parent cycle reference changed")
@@ -362,7 +387,7 @@ def next_plan(root, cycle, cycle_ref, review_ref=None, now=None):
         return {"status": "review_blocked", "reason": str(exc), "automatic_dispatch": False}
     if cycle["iteration"] >= cycle["budget"]["max_cycles"]:
         return {"status": "budget_exhausted", "automatic_dispatch": False}
-    return {"status": "proposal_only", "automatic_dispatch": False,
+    proposal = {"status": "proposal_only", "automatic_dispatch": False,
             "lineage": cycle["lineage"], "iteration": cycle["iteration"] + 1,
             "budget": cycle["budget"], "repairs_used": cycle["repairs_used"],
             "freeze": cycle["freeze"], "suite": cycle["suite"], "parent": cycle_ref,
@@ -370,6 +395,9 @@ def next_plan(root, cycle, cycle_ref, review_ref=None, now=None):
             "next_action": "name a distinct sourced defect, expected gain and permitted paths before implementation",
             "regression_rule": "expanded suites must retain every parent audit case unchanged; rerun both methods",
             "reviewer_identity": "labels unverified; record matching is a cooperative check, not authentication"}
+    if cycle.get("repair_extension") is not None:
+        proposal["repair_extension"] = cycle["repair_extension"]
+    return proposal
 
 
 def main():
@@ -411,7 +439,7 @@ def main():
                 code = 0 if result["status"] in ("review_pending", "proposal_only") else 1
         print(json.dumps(result, indent=2, allow_nan=False))
         return code
-    except (EvidenceError, OSError, KeyError, TypeError, ValueError) as exc:
+    except (EvidenceError, OSError, KeyError, TypeError, AttributeError, ValueError) as exc:
         print(json.dumps({"status": "invalid_evidence", "reason": str(exc), "accepted": False}))
         return 2
 

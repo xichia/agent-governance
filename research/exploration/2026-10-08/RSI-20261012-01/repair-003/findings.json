@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "repair_round": 3,
+  "source_before": "204369ea9b1b595069f35fa0fb5e1759109996a987a329e9ea090a5f09c1b828",
+  "source_after": "813f7cde8b2d6329e82d5ffe9e176125eec780dadd5c26ecfcb20485eaae1110",
+  "owner_extension": {
+    "path": "repair-003/authorization.json",
+    "sha256": "096999c93af585d3ca1c78a879b8d10beb86dbf1d657af1b896054783dbc16a0"
+  },
+  "finding": "NEG-01 non-object report yielded a traceback",
+  "disposition": "fixed; structured invalid_evidence/acceptedfalse, no stderr traceback",
+  "frozen_original_limit": 2,
+  "additional_allowance": 1,
+  "total_repairs_used": 3,
+  "necessary_budget_representation": "Original FREEZE unchanged; exact typed bound extension is inherited, never resets the count or proves authority",
+  "results": {
+    "path": "repair-003/repair_results.json",
+    "sha256": "6bf9dd5a0a8b5e78899c0c5b1c4f59be64b3b5401fab751cfeaecd45f39cce9f"
+  },
+  "review": "solo self-check; independent review unavailable"
+}

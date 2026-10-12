@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "suite_sha256": "a584642469783a8883cd93c176694b4500a0a95a5a71fca5c2ebc8ff87a96971",
+  "method": "existence_v0",
+  "producer_sha256": "813f7cde8b2d6329e82d5ffe9e176125eec780dadd5c26ecfcb20485eaae1110",
+  "observations": [
+    {
+      "id": "A01",
+      "outcome": "ok"
+    },
+    {
+      "id": "A02",
+      "outcome": "ok"
+    },
+    {
+      "id": "A03",
+      "outcome": "ok"
+    },
+    {
+      "id": "A04",
+      "outcome": "missing"
+    },
+    {
+      "id": "A05",
+      "outcome": "ok"
+    },
+    {
+      "id": "A06",
+      "outcome": "ok"
+    },
+    {
+      "id": "A07",
+      "outcome": "unsafe_path"
+    },
+    {
+      "id": "A08",
+      "outcome": "unsafe_path"
+    },
+    {
+      "id": "A09",
+      "outcome": "ok"
+    },
+    {
+      "id": "A10",
+      "outcome": "ok"
+    },
+    {
+      "id": "A11",
+      "outcome": "ok"
+    }
+  ],
+  "provenance": "local synthetic execution; labels and digests are not authenticated identity"
+}

@@ -1,0 +1,28 @@
+{
+  "status": "review_pending",
+  "cycle_id": "RSI-CYCLE-001",
+  "suite_sha256": "a584642469783a8883cd93c176694b4500a0a95a5a71fca5c2ebc8ff87a96971",
+  "baseline_matches": 5,
+  "candidate_matches": 11,
+  "case_count": 11,
+  "gains": [
+    "A03",
+    "A05",
+    "A06",
+    "A09",
+    "A10",
+    "A11"
+  ],
+  "regressions": [],
+  "remaining_failures": [],
+  "candidate": {
+    "path": "repair-003/candidate.json",
+    "sha256": "8c9b1e0d5f38d47ca89faf1e7ee98ce64dc6679690bdd816343cd7f750007868"
+  },
+  "repairs_used": 3,
+  "effective_repair_limit": 3,
+  "next_action": "independent fixed-candidate review",
+  "accepted": false,
+  "reviewer_identity": "unverified",
+  "limitations": "finite synthetic cases; report provenance must be independently reproduced"
+}

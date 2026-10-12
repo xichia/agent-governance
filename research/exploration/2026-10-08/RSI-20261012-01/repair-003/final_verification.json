@@ -1,0 +1,15 @@
+{
+  "checked_at": "2026-10-12T10:15:01.434765+00:00",
+  "source_sha256": "813f7cde8b2d6329e82d5ffe9e176125eec780dadd5c26ecfcb20485eaae1110",
+  "file_hashes": 39,
+  "local_links": 25,
+  "prior_raw_freeze": "byte-identical to5ceebca",
+  "primary_controls_matched": 20,
+  "original_extra_matched": 16,
+  "repair_controls_matched": 11,
+  "catalog_artifacts": 8,
+  "fresh_event_outputs_hashed": 5,
+  "syntax_compile": "all Python sources compile without bytecode writes",
+  "review": "solo only; independent review pending",
+  "push": "pending remote verification"
+}

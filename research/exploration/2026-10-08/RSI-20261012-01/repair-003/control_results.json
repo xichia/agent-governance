@@ -1,0 +1,128 @@
+{
+  "suite_sha256": "a584642469783a8883cd93c176694b4500a0a95a5a71fca5c2ebc8ff87a96971",
+  "producer_sha256": "813f7cde8b2d6329e82d5ffe9e176125eec780dadd5c26ecfcb20485eaae1110",
+  "primary_controls": [
+    {
+      "id": "A01",
+      "observed": "ok",
+      "matched": true
+    },
+    {
+      "id": "A02",
+      "observed": "ok",
+      "matched": true
+    },
+    {
+      "id": "A03",
+      "observed": "changed",
+      "matched": true
+    },
+    {
+      "id": "A04",
+      "observed": "missing",
+      "matched": true
+    },
+    {
+      "id": "A05",
+      "observed": "nonregular",
+      "matched": true
+    },
+    {
+      "id": "A06",
+      "observed": "symlink",
+      "matched": true
+    },
+    {
+      "id": "A07",
+      "observed": "unsafe_path",
+      "matched": true
+    },
+    {
+      "id": "A08",
+      "observed": "unsafe_path",
+      "matched": true
+    },
+    {
+      "id": "A09",
+      "observed": "unbound",
+      "matched": true
+    },
+    {
+      "id": "A10",
+      "observed": "invalid_digest",
+      "matched": true
+    },
+    {
+      "id": "A11",
+      "observed": "duplicate_id",
+      "matched": true
+    },
+    {
+      "id": "G01",
+      "observed": "review_pending",
+      "matched": true
+    },
+    {
+      "id": "G02",
+      "observed": "no_gain",
+      "matched": true
+    },
+    {
+      "id": "G03",
+      "observed": "regression",
+      "matched": true
+    },
+    {
+      "id": "G04",
+      "observed": "incomparable",
+      "matched": true
+    },
+    {
+      "id": "G05",
+      "observed": "invalid_evidence",
+      "matched": true
+    },
+    {
+      "id": "G06",
+      "observed": "invalid_evidence",
+      "matched": true
+    },
+    {
+      "id": "G07",
+      "observed": "budget_exhausted",
+      "matched": true
+    },
+    {
+      "id": "G08",
+      "observed": "budget_exhausted",
+      "matched": true
+    },
+    {
+      "id": "G09",
+      "observed": "budget_exhausted",
+      "matched": true
+    }
+  ],
+  "additional_checks": [
+    "no review cannot advance or dispatch",
+    "self-review label rejected",
+    "wrong candidate review rejected",
+    "synthetic distinct-label proposal retains bounds; identity remains unverified",
+    "child budget reset rejected",
+    "child rewritten regression oracle rejected",
+    "valid child with no new improvement stops at no_gain",
+    "child decreasing inherited used repairs rejected",
+    "matching review labels cannot advance a no-gain parent",
+    "whitespace self-review alias rejected",
+    "FIFO rejected by CLI within three-second bound",
+    "missing whole cycle has structured CLI failure",
+    "duplicate JSON keys rejected",
+    "symlink in ancestor rejected",
+    "boolean schema version rejected",
+    "existence-only baseline leaves byte matching unknown"
+  ],
+  "independent_review": "unavailable; coordinator self-check only",
+  "primary_matched": 20,
+  "baseline_audit_matches": 5,
+  "candidate_audit_matches": 11
+}

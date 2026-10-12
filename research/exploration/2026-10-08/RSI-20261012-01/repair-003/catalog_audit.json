@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "method": "bound_v1",
+  "rows": [
+    {
+      "id": "rehearsal-interface",
+      "path": "planning/events-agency/rehearsal/interface.md",
+      "outcome": "ok",
+      "expected_sha256": "65c5d7dd118d5b7659948685782b7078056aab06fe666ba6d7b384cf14145de7",
+      "observed_sha256": "65c5d7dd118d5b7659948685782b7078056aab06fe666ba6d7b384cf14145de7"
+    },
+    {
+      "id": "rehearsal-checker",
+      "path": "planning/events-agency/rehearsal/tools/check.py",
+      "outcome": "ok",
+      "expected_sha256": "f4f744b37316c92b968f2e94803ae83ebbcf55268e803d69c498c65ff40941b9",
+      "observed_sha256": "f4f744b37316c92b968f2e94803ae83ebbcf55268e803d69c498c65ff40941b9"
+    },
+    {
+      "id": "broker-service",
+      "path": "research/exploration/2026-10-08/EXP-X04-20261008-04/broker.py",
+      "outcome": "ok",
+      "expected_sha256": "330f6c5264f0a024c87c2e1e9a09afb71bd6679fdf775388d12a0ed22feedebd",
+      "observed_sha256": "330f6c5264f0a024c87c2e1e9a09afb71bd6679fdf775388d12a0ed22feedebd"
+    },
+    {
+      "id": "broker-protocol",
+      "path": "research/exploration/2026-10-08/EXP-X04-20261008-04/protocol.md",
+      "outcome": "ok",
+      "expected_sha256": "4112d8203992c6f3f6a40832e43af98a56cb92e744cec07782282da5cde3dc10",
+      "observed_sha256": "4112d8203992c6f3f6a40832e43af98a56cb92e744cec07782282da5cde3dc10"
+    },
+    {
+      "id": "model-error-report",
+      "path": "research/exploration/2026-10-08/EXP-X04-20261008-06/REPORT.md",
+      "outcome": "ok",
+      "expected_sha256": "b7d822fde085cd5f1384287bd9ac9d3114d2a8dbea13ca645a84409ac44a851c",
+      "observed_sha256": "b7d822fde085cd5f1384287bd9ac9d3114d2a8dbea13ca645a84409ac44a851c"
+    },
+    {
+      "id": "value-review",
+      "path": "research/exploration/2026-10-08/REV-VALUE-20261012-01/REPORT.md",
+      "outcome": "ok",
+      "expected_sha256": "4bbb73363247b35ec47963cd04d3b6dd0923e16d8164281571d5b84b97f33c55",
+      "observed_sha256": "4bbb73363247b35ec47963cd04d3b6dd0923e16d8164281571d5b84b97f33c55"
+    },
+    {
+      "id": "next-idea-pool",
+      "path": "research/exploration/2026-10-08/IDEATION-NEXT-20261012-01/SYNTHESIS.md",
+      "outcome": "ok",
+      "expected_sha256": "efb9ec2232165a2294d624aebcfcc759e8c1022bffa330e4d69e0b468c7011b0",
+      "observed_sha256": "efb9ec2232165a2294d624aebcfcc759e8c1022bffa330e4d69e0b468c7011b0"
+    },
+    {
+      "id": "blocked-x01",
+      "path": "research/exploration/2026-10-08/x01/CHECKPOINT.md",
+      "outcome": "ok",
+      "expected_sha256": "eb1a33af4537d5cb110997cfcbba2ebf8800026dfeb53e003ed610774c67ae79",
+      "observed_sha256": "eb1a33af4537d5cb110997cfcbba2ebf8800026dfeb53e003ed610774c67ae79"
+    }
+  ],
+  "issue_count": 0,
+  "all_bound_bytes_match": true,
+  "limitations": "byte identity only; no authority, truth or reading certification"
+}
