@@ -1,0 +1,29 @@
+{
+  "candidate_commit": "bfd152c42d94700880a6fd27b8e59103628b9cf2",
+  "checked_at": "2026-10-12T09:03:12.433185+00:00",
+  "accepted": false,
+  "manifest_files_verified": 23,
+  "historical_changed_paths": 0,
+  "local_links_verified": 19,
+  "catalog_artifacts_verified": 8,
+  "event_output_hashes_verified": 5,
+  "syntax_compile": "all .py files compile; no bytecode writes",
+  "plain_whitespace_check": {
+    "exit_code": 2,
+    "output": "research/exploration/2026-10-08/RSI-20261012-01/proposed-third-repair.patch:11: trailing whitespace.\n+ \nresearch/exploration/2026-10-08/RSI-20261012-01/proposed-third-repair.patch:20: trailing whitespace.\n+ \nresearch/exploration/2026-10-08/RSI-20261012-01/proposed-third-repair.patch:20: new blank line at EOF.\n",
+    "disposition": "literal unified-diff context blank lines retained in unapplied proposal; format-only self-assessment, independent review unavailable"
+  },
+  "adjusted_whitespace_check": {
+    "exit_code": 0,
+    "setting": "-blank-at-eol,-blank-at-eof; other classes retained"
+  },
+  "git_fsck": {
+    "exit_code": 0,
+    "output": ""
+  },
+  "blockers": [
+    "NEG-01 malformed report diagnostic",
+    "two artifact repair rounds exhausted",
+    "independent review unavailable in solo scope"
+  ]
+}
