@@ -1,0 +1,36 @@
+{
+  "suite_sha256": "a584642469783a8883cd93c176694b4500a0a95a5a71fca5c2ebc8ff87a96971",
+  "case_ids": [
+    "A01",
+    "A02",
+    "A03",
+    "A04",
+    "A05",
+    "A06",
+    "A07",
+    "A08",
+    "A09",
+    "A10",
+    "A11",
+    "G01",
+    "G02",
+    "G03",
+    "G04",
+    "G05",
+    "G06",
+    "G07",
+    "G08",
+    "G09"
+  ],
+  "count": 20,
+  "frozen_before_implementation": true,
+  "oracle_author": "/root",
+  "oracle_independent": false,
+  "source_base": "686ebe418594bf9e842a73cbf47a1e88560c74d1",
+  "expected_outcomes": "typed narrow checks, not general source truth",
+  "budget": {
+    "max_cycles": 3,
+    "max_repairs": 2,
+    "deadline": "2026-10-15T15:59:59+00:00"
+  }
+}

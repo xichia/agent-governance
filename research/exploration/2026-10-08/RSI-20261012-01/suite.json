@@ -1,0 +1,265 @@
+{
+  "schema_version": 1,
+  "purpose": "Synthetic artifact audit plus bounded-loop controls; no native model trials",
+  "audit_cases": [
+    {
+      "id": "A01",
+      "rationale": "valid exact bytes",
+      "files": {
+        "payload.txt": "current evidence\n"
+      },
+      "registry": {
+        "schema_version": 1,
+        "artifacts": [
+          {
+            "id": "one",
+            "path": "payload.txt",
+            "sha256": "bb83370a57f3e4a7196bfadd8675d874bc47df8a99f4b709b5499b01369f2366"
+          }
+        ]
+      },
+      "expected": "ok"
+    },
+    {
+      "id": "A02",
+      "rationale": "empty file is valid content",
+      "files": {
+        "payload.txt": ""
+      },
+      "registry": {
+        "schema_version": 1,
+        "artifacts": [
+          {
+            "id": "one",
+            "path": "payload.txt",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        ]
+      },
+      "expected": "ok"
+    },
+    {
+      "id": "A03",
+      "rationale": "changed bytes at same pointer",
+      "files": {
+        "payload.txt": "substituted evidence\n"
+      },
+      "registry": {
+        "schema_version": 1,
+        "artifacts": [
+          {
+            "id": "one",
+            "path": "payload.txt",
+            "sha256": "bb83370a57f3e4a7196bfadd8675d874bc47df8a99f4b709b5499b01369f2366"
+          }
+        ]
+      },
+      "expected": "changed"
+    },
+    {
+      "id": "A04",
+      "rationale": "source absent",
+      "files": {},
+      "registry": {
+        "schema_version": 1,
+        "artifacts": [
+          {
+            "id": "one",
+            "path": "payload.txt",
+            "sha256": "bb83370a57f3e4a7196bfadd8675d874bc47df8a99f4b709b5499b01369f2366"
+          }
+        ]
+      },
+      "expected": "missing"
+    },
+    {
+      "id": "A05",
+      "rationale": "directory at file pointer",
+      "files": {
+        "payload.txt": {
+          "kind": "directory"
+        }
+      },
+      "registry": {
+        "schema_version": 1,
+        "artifacts": [
+          {
+            "id": "one",
+            "path": "payload.txt",
+            "sha256": "bb83370a57f3e4a7196bfadd8675d874bc47df8a99f4b709b5499b01369f2366"
+          }
+        ]
+      },
+      "expected": "nonregular"
+    },
+    {
+      "id": "A06",
+      "rationale": "symlink to even an in-scope file",
+      "files": {
+        "real.txt": "current evidence\n",
+        "payload.txt": {
+          "kind": "symlink",
+          "target": "real.txt"
+        }
+      },
+      "registry": {
+        "schema_version": 1,
+        "artifacts": [
+          {
+            "id": "one",
+            "path": "payload.txt",
+            "sha256": "bb83370a57f3e4a7196bfadd8675d874bc47df8a99f4b709b5499b01369f2366"
+          }
+        ]
+      },
+      "expected": "symlink"
+    },
+    {
+      "id": "A07",
+      "rationale": "absolute path cannot escape declared base",
+      "files": {},
+      "registry": {
+        "schema_version": 1,
+        "artifacts": [
+          {
+            "id": "one",
+            "path": "/tmp/payload.txt",
+            "sha256": "bb83370a57f3e4a7196bfadd8675d874bc47df8a99f4b709b5499b01369f2366"
+          }
+        ]
+      },
+      "expected": "unsafe_path"
+    },
+    {
+      "id": "A08",
+      "rationale": "parent traversal cannot escape declared base",
+      "files": {},
+      "registry": {
+        "schema_version": 1,
+        "artifacts": [
+          {
+            "id": "one",
+            "path": "../payload.txt",
+            "sha256": "bb83370a57f3e4a7196bfadd8675d874bc47df8a99f4b709b5499b01369f2366"
+          }
+        ]
+      },
+      "expected": "unsafe_path"
+    },
+    {
+      "id": "A09",
+      "rationale": "pointer lacks digest binding",
+      "files": {
+        "payload.txt": "current evidence\n"
+      },
+      "registry": {
+        "schema_version": 1,
+        "artifacts": [
+          {
+            "id": "one",
+            "path": "payload.txt",
+            "sha256": null
+          }
+        ]
+      },
+      "expected": "unbound"
+    },
+    {
+      "id": "A10",
+      "rationale": "digest is malformed",
+      "files": {
+        "payload.txt": "current evidence\n"
+      },
+      "registry": {
+        "schema_version": 1,
+        "artifacts": [
+          {
+            "id": "one",
+            "path": "payload.txt",
+            "sha256": "not-a-digest"
+          }
+        ]
+      },
+      "expected": "invalid_digest"
+    },
+    {
+      "id": "A11",
+      "rationale": "duplicate IDs hide assignment identity",
+      "files": {
+        "payload.txt": "current evidence\n"
+      },
+      "registry": {
+        "schema_version": 1,
+        "artifacts": [
+          {
+            "id": "one",
+            "path": "payload.txt",
+            "sha256": "bb83370a57f3e4a7196bfadd8675d874bc47df8a99f4b709b5499b01369f2366"
+          },
+          {
+            "id": "one",
+            "path": "payload.txt",
+            "sha256": "bb83370a57f3e4a7196bfadd8675d874bc47df8a99f4b709b5499b01369f2366"
+          }
+        ]
+      },
+      "expected": "duplicate_id"
+    }
+  ],
+  "gate_cases": [
+    {
+      "id": "G01",
+      "rationale": "real suite improvement still requires separate review",
+      "scenario": "gain",
+      "expected": "review_pending"
+    },
+    {
+      "id": "G02",
+      "rationale": "extra prose or equal scores provide no measured gain",
+      "scenario": "no_gain",
+      "expected": "no_gain"
+    },
+    {
+      "id": "G03",
+      "rationale": "higher total cannot hide loss on an existing control",
+      "scenario": "regression",
+      "expected": "regression"
+    },
+    {
+      "id": "G04",
+      "rationale": "different suite hash invalidates comparison",
+      "scenario": "suite_changed",
+      "expected": "incomparable"
+    },
+    {
+      "id": "G05",
+      "rationale": "missing observation cannot count as a pass",
+      "scenario": "missing_row",
+      "expected": "invalid_evidence"
+    },
+    {
+      "id": "G06",
+      "rationale": "changed result bytes invalidate frozen receipt",
+      "scenario": "tampered_report",
+      "expected": "invalid_evidence"
+    },
+    {
+      "id": "G07",
+      "rationale": "elapsed deadline prevents further cycle work",
+      "scenario": "deadline",
+      "expected": "budget_exhausted"
+    },
+    {
+      "id": "G08",
+      "rationale": "new cycle cannot erase repairs beyond the root limit",
+      "scenario": "repair_overrun",
+      "expected": "budget_exhausted"
+    },
+    {
+      "id": "G09",
+      "rationale": "recursive depth cannot exceed original cycle allowance",
+      "scenario": "cycle_overrun",
+      "expected": "budget_exhausted"
+    }
+  ]
+}
