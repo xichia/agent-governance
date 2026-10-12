@@ -1,0 +1,13 @@
+{
+  "id": "NEG-01",
+  "observed_at": "2026-10-12T08:56:00.482264+00:00",
+  "input": "candidate report is a JSON array, with matching submitted digest",
+  "exit_code": 1,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"/workspace/agent-governance/research/exploration/2026-10-08/RSI-20261012-01/improve.py\", line 420, in <module>\n    sys.exit(main())\n             ^^^^^^\n  File \"/workspace/agent-governance/research/exploration/2026-10-08/RSI-20261012-01/improve.py\", line 404, in main\n    result = assess(args.root, cycle)\n             ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/agent-governance/research/exploration/2026-10-08/RSI-20261012-01/improve.py\", line 309, in assess\n    if any(report.get(\"suite_sha256\") != cycle[\"suite\"][\"sha256\"]\n       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/agent-governance/research/exploration/2026-10-08/RSI-20261012-01/improve.py\", line 309, in <genexpr>\n    if any(report.get(\"suite_sha256\") != cycle[\"suite\"][\"sha256\"]\n           ^^^^^^^^^^\nAttributeError: 'list' object has no attribute 'get'\n",
+  "false_acceptance": false,
+  "finding": "non-object report aborts via AttributeError instead of returning a structured invalid_evidence record",
+  "disposition": "unresolved; fails closed, diagnostic defect; pending independent review and any required repair extension",
+  "repairs_used": 2,
+  "repair_limit": 2
+}

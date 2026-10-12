@@ -1,7 +1,7 @@
 {
   "package_id": "RSI-20261012-01",
   "task": "T-GOV-023",
-  "status": "active",
+  "status": "checkpointed_incomplete",
   "session": "/root",
   "thread_id": "01a10a9e-1700-7373-843c-34814db8a0b1",
   "start": "2026-10-12T08:32:59+00:00",
@@ -13,7 +13,10 @@
   },
   "reviewer": "not dispatched; owner said do it yourself; self-check only, independent acceptance remains pending",
   "new_artifact_repair_limit": 2,
-  "repairs_used": 0,
+  "repairs_used": 2,
   "protected": "all prior artifacts, governance, workflows and X01; no old budget reset",
-  "runtime": "offline Python; no agents, Astra, network, APIs, spend or automatic code edits"
+  "runtime": "offline Python; no agents, Astra, network, APIs, spend or automatic code edits",
+  "checkpoint_at": "2026-10-12T09:00:49.195753+00:00",
+  "code_writes": "stopped; only closure metadata and authorized prompt persistence follow",
+  "acceptance": "blocked: repair limit and independent review"
 }

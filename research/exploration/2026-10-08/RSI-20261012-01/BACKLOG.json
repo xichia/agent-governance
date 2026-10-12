@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "purpose": "Concrete evidence-backed improvement candidates; not a new ideation pool or automatic assignments",
+  "current_next_action": "SAME package blocked: record pending independent review and request one additional new-artifact repair if owner wants diagnostic correction",
+  "items": [
+    {
+      "id": "RSI-B01",
+      "status": "implemented_review_pending",
+      "problem": "Existence-only checks miss drift, unbound identity and nonregular content",
+      "source": {
+        "path": "research/exploration/2026-10-08/REV-VALUE-20261012-01/REPORT.md",
+        "sha256": "4bbb73363247b35ec47963cd04d3b6dd0923e16d8164281571d5b84b97f33c55"
+      },
+      "hypothesis": "Pinning file bytes and rejecting unsafe/incomplete pointers improves the declared audit",
+      "observable_outcome": "11/11 audit controls versus synthetic5/11, zero regressions; eight real pointers match",
+      "evidence": {
+        "path": "cycle-001/assessment.json",
+        "sha256": "39702e47d1451187d4de25e119f0d027aa62b1152853bee362a551861205c84f"
+      },
+      "regressions": [
+        "A01",
+        "A02",
+        "A03",
+        "A04",
+        "A05",
+        "A06",
+        "A07",
+        "A08",
+        "A09",
+        "A10",
+        "A11"
+      ],
+      "stop_rule": "No gain or regression; no actual review means no advancement"
+    },
+    {
+      "id": "RSI-B02",
+      "status": "resolved_in_candidate_review_pending",
+      "problem": "This implementation accepted whitespace aliases, boolean schema versions, and a no-gain parent path",
+      "source": {
+        "path": "findings.json",
+        "sha256": "de25ab91e1273b212b2dd8c88fd848162ab3700eb3fd947469143f98eca8255a"
+      },
+      "hypothesis": "Explicit schema and parent-outcome checks reject the reproduced loopholes",
+      "observable_outcome": "Archived-source repro distinguishes old/new behavior; 16 extra checks pass",
+      "evidence": {
+        "path": "control_results.json",
+        "sha256": "9738a398e6ba8374faea9337c6e1fb214f0efbca4f98bf08d3f9326f70016166"
+      },
+      "stop_rule": "Two artifact repairs used; further material repair needs an explicit extension"
+    },
+    {
+      "id": "RSI-B03",
+      "status": "held_for_review",
+      "problem": "Report labels and self-checks cannot establish independent review, truthful execution or author identity",
+      "source": {
+        "path": "governance/access.md",
+        "sha256": "54fa9b73093281e54467909ec68c560471637c4ed82ff1d2a181ed507ab28a99"
+      },
+      "hypothesis": "Actual review reproduces fixed inputs/outputs and evaluates the same exact source candidate",
+      "observable_outcome": "Distinct reviewer findings and dispositions; labels alone remain unverified",
+      "stop_rule": "Do not auto-adopt from JSON, self-review or elapsed time"
+    },
+    {
+      "id": "RSI-B04",
+      "status": "conditional_future_input_only",
+      "problem": "New cases can become redundant expansion rather than evidence for a decision",
+      "source": {
+        "path": "research/exploration/2026-10-08/IDEATION-NEXT-20261012-01/raw-simplify.md",
+        "sha256": "84bfdd39aaa0759b42e8bacb5c898d3e50bffc313c5483dfc998fa1e73f2b250"
+      },
+      "hypothesis": "A sourced newly observed failure is a useful regression only if it changes a named decision",
+      "observable_outcome": "New case has distinct reachable outcome and unchanged parent cases; both methods rerun on same suite",
+      "stop_rule": "No distinct defect/decision means stop; do not create filler or reset the lineage"
+    },
+    {
+      "id": "RSI-B05",
+      "status": "blocked_repair_limit",
+      "problem": "A bound non-object JSON report can produce an uncaught AttributeError; failure is nonzero and not accepted",
+      "source": {
+        "path": "robustness_negative.json",
+        "sha256": "ba3660b375b59e06743208ce8f10f1d75c659ccae9503b9660f95cf7698be077"
+      },
+      "hypothesis": "Treating AttributeError as invalid input in assessment/CLI produces a structured rejection",
+      "observable_outcome": "NEG-01 returns invalid_evidence with accepted=false; original20 controls and inheritance probes still match",
+      "proposal": "proposed-third-repair.patch; not applied or run",
+      "stop_rule": "Two of two artifact repairs used; one additional repair requires explicit owner extension; no old-limit reset"
+    }
+  ]
+}

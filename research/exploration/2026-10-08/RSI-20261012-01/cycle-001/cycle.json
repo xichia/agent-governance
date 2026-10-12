@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "RSI-CYCLE-001",
+  "lineage": "RSI-20261012-01",
+  "iteration": 1,
+  "repairs_used": 2,
+  "implementer": "/root",
+  "objective": "Detect byte drift and unsafe/unbound artifact references",
+  "hypothesis": "Bound digest/path/identity checks match the fixed controls better than existence alone",
+  "stop_rule": "Stop on no gain, regression, unavailable review or exhausted original bounds",
+  "budget": {
+    "max_cycles": 3,
+    "max_repairs": 2,
+    "deadline": "2026-10-15T15:59:59+00:00"
+  },
+  "freeze": {
+    "path": "FREEZE.json",
+    "sha256": "b68dfe5702a1fa1625a2d8eeaea2d131f7730e46ebc3e22d3e18959d25064d04"
+  },
+  "suite": {
+    "path": "suite.json",
+    "sha256": "a584642469783a8883cd93c176694b4500a0a95a5a71fca5c2ebc8ff87a96971"
+  },
+  "implementation": {
+    "path": "improve.py",
+    "sha256": "204369ea9b1b595069f35fa0fb5e1759109996a987a329e9ea090a5f09c1b828"
+  },
+  "baseline": {
+    "path": "cycle-001/baseline.json",
+    "sha256": "07c09f535c4e2cec688e8e4cae975e9a2e4e7653334598059eaa4f86e1b3c124"
+  },
+  "candidate": {
+    "path": "cycle-001/candidate.json",
+    "sha256": "2ee4e8aac823704e0c5a640357d2edac1171eda997b8594802a83882d6b15ba7"
+  }
+}

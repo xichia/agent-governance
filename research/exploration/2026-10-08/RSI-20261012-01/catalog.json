@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "artifacts": [
+    {
+      "id": "rehearsal-interface",
+      "path": "planning/events-agency/rehearsal/interface.md",
+      "sha256": "65c5d7dd118d5b7659948685782b7078056aab06fe666ba6d7b384cf14145de7",
+      "source_commit": "686ebe418594bf9e842a73cbf47a1e88560c74d1",
+      "scope_note": "Typed fictional task contract; not real-event readiness"
+    },
+    {
+      "id": "rehearsal-checker",
+      "path": "planning/events-agency/rehearsal/tools/check.py",
+      "sha256": "f4f744b37316c92b968f2e94803ae83ebbcf55268e803d69c498c65ff40941b9",
+      "source_commit": "686ebe418594bf9e842a73cbf47a1e88560c74d1",
+      "scope_note": "Historical synthetic arithmetic/resource checker; later gaps preserved"
+    },
+    {
+      "id": "broker-service",
+      "path": "research/exploration/2026-10-08/EXP-X04-20261008-04/broker.py",
+      "sha256": "330f6c5264f0a024c87c2e1e9a09afb71bd6679fdf775388d12a0ed22feedebd",
+      "source_commit": "686ebe418594bf9e842a73cbf47a1e88560c74d1",
+      "scope_note": "Observed bounded byte service; not model reading/authentication"
+    },
+    {
+      "id": "broker-protocol",
+      "path": "research/exploration/2026-10-08/EXP-X04-20261008-04/protocol.md",
+      "sha256": "4112d8203992c6f3f6a40832e43af98a56cb92e744cec07782282da5cde3dc10",
+      "source_commit": "686ebe418594bf9e842a73cbf47a1e88560c74d1",
+      "scope_note": "Bounded service semantics and limits"
+    },
+    {
+      "id": "model-error-report",
+      "path": "research/exploration/2026-10-08/EXP-X04-20261008-06/REPORT.md",
+      "sha256": "b7d822fde085cd5f1384287bd9ac9d3114d2a8dbea13ca645a84409ac44a851c",
+      "source_commit": "686ebe418594bf9e842a73cbf47a1e88560c74d1",
+      "scope_note": "Preserves structured/prose/protocol distinctions; no superiority claim"
+    },
+    {
+      "id": "value-review",
+      "path": "research/exploration/2026-10-08/REV-VALUE-20261012-01/REPORT.md",
+      "sha256": "4bbb73363247b35ec47963cd04d3b6dd0923e16d8164281571d5b84b97f33c55",
+      "source_commit": "686ebe418594bf9e842a73cbf47a1e88560c74d1",
+      "scope_note": "Reviewed value appraisal; adoption recommendations remain scoped"
+    },
+    {
+      "id": "next-idea-pool",
+      "path": "research/exploration/2026-10-08/IDEATION-NEXT-20261012-01/SYNTHESIS.md",
+      "sha256": "efb9ec2232165a2294d624aebcfcc759e8c1022bffa330e4d69e0b468c7011b0",
+      "source_commit": "686ebe418594bf9e842a73cbf47a1e88560c74d1",
+      "scope_note": "Accepted idea artifact; not automatic implementation permission"
+    },
+    {
+      "id": "blocked-x01",
+      "path": "research/exploration/2026-10-08/x01/CHECKPOINT.md",
+      "sha256": "eb1a33af4537d5cb110997cfcbba2ebf8800026dfeb53e003ed610774c67ae79",
+      "source_commit": "686ebe418594bf9e842a73cbf47a1e88560c74d1",
+      "scope_note": "Blocked counterexample/repair history; do not repair or reuse as accepted code"
+    }
+  ],
+  "retrieval_root": "repository root; explicitly supplied to CLI",
+  "authority": "reference index only; byte identity does not inherit acceptance"
+}

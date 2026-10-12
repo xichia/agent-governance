@@ -1,0 +1,37 @@
+{
+  "review_kind": "solo self-check; not independent",
+  "repairs_used": 2,
+  "repair_limit": 2,
+  "findings": [
+    {
+      "round": 1,
+      "finding": "boolean schema version accepted",
+      "before": "ok",
+      "after": "EvidenceError",
+      "disposition": "fixed"
+    },
+    {
+      "round": 1,
+      "finding": "whitespace alias passes self-review label check",
+      "before": "record accepted",
+      "after": "EvidenceError",
+      "disposition": "fixed",
+      "limitation": "distinct arbitrary labels still do not authenticate people or agents"
+    },
+    {
+      "round": 1,
+      "finding": "no-gain parent could reach child assessment with a supplied review label",
+      "before": "no_gain",
+      "after": "invalid_evidence",
+      "disposition": "fixed",
+      "limitation": "synthetic review data only; no actual independent review occurred"
+    },
+    {
+      "round": 2,
+      "finding": "existence-only comparator incorrectly labels byte matching true",
+      "before": true,
+      "after": null,
+      "disposition": "fixed"
+    }
+  ]
+}

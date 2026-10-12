@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "status": "fixed solo candidate; blocked, not accepted",
+  "source_base": "686ebe418594bf9e842a73cbf47a1e88560c74d1",
+  "files": {
+    "BACKLOG.json": "89cf98346584fdab76bf6c6f464360d15a51a1390a8a1d7d331a4d1266cf41f0",
+    "FREEZE.json": "b68dfe5702a1fa1625a2d8eeaea2d131f7730e46ebc3e22d3e18959d25064d04",
+    "PLAN.md": "2da013151f62176ac5f26e73a38e689f07f8fcccbd9560ab4ad8b186ad4949e6",
+    "README.md": "5ad8cb7ce24f9e9d462372cdec99d653885487ab3ab2d07b7b9accd3bd6b01e1",
+    "REPORT.md": "5e8fb3416818a80c682034ee3febc60cdc1f3b2c78572414d75c3246553d4b6a",
+    "catalog.json": "148a728dbcae933fd4b3348b8a8aff614ae8369310bb21ce10de0a7b905361e0",
+    "catalog_audit.json": "d5db22deafc64863e2684e7220676ad27bc02a40a2c268496ab4cda2b0d763b2",
+    "control_results.json": "9738a398e6ba8374faea9337c6e1fb214f0efbca4f98bf08d3f9326f70016166",
+    "cycle-001/assessment.json": "39702e47d1451187d4de25e119f0d027aa62b1152853bee362a551861205c84f",
+    "cycle-001/baseline.json": "07c09f535c4e2cec688e8e4cae975e9a2e4e7653334598059eaa4f86e1b3c124",
+    "cycle-001/candidate.json": "2ee4e8aac823704e0c5a640357d2edac1171eda997b8594802a83882d6b15ba7",
+    "cycle-001/cycle.json": "4f83426085c1914dd3d53da34355d6cc396b03e23bcbcd209ef7f8172ceacfdf",
+    "cycle-001/next-plan.json": "47d3dbb20fe3957c5bc58822ac88175eaef48a53223c3b717baa75fb1e597a1e",
+    "events.jsonl": "3e2e9f20c8ffa30246674681a841b7737327b687788612a9761b05f1bd33a6e0",
+    "findings.json": "de25ab91e1273b212b2dd8c88fd848162ab3700eb3fd947469143f98eca8255a",
+    "history/before-round-1.py": "3fbcca65bd9dba3b7e5e7e3eb79653153a7911bccf8bc282fbbceccd7de83ef1",
+    "history/before-round-2.py": "695eb82eb405fc687a6f455c9f89bf922162116eaa662bd9a9d0b52b0dbde6c7",
+    "improve.py": "204369ea9b1b595069f35fa0fb5e1759109996a987a329e9ea090a5f09c1b828",
+    "proposed-third-repair.patch": "4a0e3d9a21904a0740463c655a2ab7eedfeeea9145572a649a51490ec8386937",
+    "reproduce_findings.py": "80f6a199d47412ce64a0eb936c1b08cd4e315d313a2a3a86c0967a0f9065e800",
+    "robustness_negative.json": "ba3660b375b59e06743208ce8f10f1d75c659ccae9503b9660f95cf7698be077",
+    "suite.json": "a584642469783a8883cd93c176694b4500a0a95a5a71fca5c2ebc8ff87a96971",
+    "verify.py": "5a6bdf4004abaaeadb91d4c5c7c3aea0164a1560d15187ff56ca23128c70664e"
+  },
+  "review_kind": "no independent review; root self-check only",
+  "repairs_used": 2,
+  "max_repairs": 2
+}

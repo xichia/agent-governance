@@ -1,0 +1,20 @@
+--- a/research/exploration/2026-10-08/RSI-20261012-01/improve.py
++++ b/research/exploration/2026-10-08/RSI-20261012-01/improve.py
+@@ -328,7 +328,7 @@
+     except BudgetStop as exc:
+         return {"status": "budget_exhausted", "reason": str(exc), "accepted": False,
+                 "next_action": "checkpoint; no automatic extension"}
+-    except (EvidenceError, KeyError, TypeError, OSError) as exc:
++    except (EvidenceError, KeyError, TypeError, AttributeError, OSError) as exc:
+         return {"status": "invalid_evidence", "reason": str(exc),
+                 "accepted": False, "next_action": "preserve error; recover exact evidence"}
+ 
+@@ -411,7 +411,7 @@
+                 code = 0 if result["status"] in ("review_pending", "proposal_only") else 1
+         print(json.dumps(result, indent=2, allow_nan=False))
+         return code
+-    except (EvidenceError, OSError, KeyError, TypeError, ValueError) as exc:
++    except (EvidenceError, OSError, KeyError, TypeError, AttributeError, ValueError) as exc:
+         print(json.dumps({"status": "invalid_evidence", "reason": str(exc), "accepted": False}))
+         return 2
+ 
