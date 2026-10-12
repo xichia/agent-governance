@@ -1,0 +1,12 @@
+{
+  "base": "7d119ed5812a1f855c8e0aa424bf9cf8b64a6018",
+  "report_candidate": "30c85b6719d7bf8d861d9fde7919c66ae77f97b6",
+  "corrected_analyst_hashes_match": true,
+  "historical_source_paths_unchanged": true,
+  "new_local_links_checked": 21,
+  "paths_outside_review_scope": [],
+  "actual_fresh_value_experiment": "none; appraisal only",
+  "new_report_repairs": 0,
+  "analyst_correction_rounds": 1,
+  "checks_at": "2026-10-12T04:51:41.051205+00:00"
+}
